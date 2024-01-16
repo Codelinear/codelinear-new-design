@@ -1,0 +1,137 @@
+.adupt-svg {
+  background-image: url("./aduptsvg/dollar.svg");
+}
+
+.adupt-cards:hover .adupt-svg {
+  background-image: url("./aduptsvg/ydolloar.svg");
+}
+
+.adupt-svg2 {
+  background-image: url("./aduptsvg/supply.svg");
+}
+
+.adupt-svg3 {
+  background-image: url("./aduptsvg/bulb.svg");
+}
+
+.adupt-svg4 {
+  background-image: url("./aduptsvg/heart.svg");
+}
+
+.adupt-svg5 {
+  background-image: url("./aduptsvg/real.svg");
+}
+
+.adupt-svg6 {
+  background-image: url("./aduptsvg/cart.svg");
+}
+
+.adupt-svg7 {
+  background-image: url("./aduptsvg/fork.svg");
+}
+
+.adupt-svg8 {
+  background-image: url("./aduptsvg/energy.svg");
+}
+
+.adupt-svg9 {
+  background-image: url("./aduptsvg/menu.svg");
+}
+
+.adupt-svg10 {
+  background-image: url("./aduptsvg/bean.svg");
+}
+
+.adupt-cards:hover .adupt-svg2 {
+  background-image: url("./aduptsvg/ysuply.svg");
+}
+
+.adupt-cards:hover .adupt-svg3 {
+  background-image: url("./aduptsvg/ybulb.svg");
+}
+.adupt-cards:hover .adupt-svg4 {
+  background-image: url("./aduptsvg/yheart.svg");
+}
+.adupt-cards:hover .adupt-svg5 {
+  background-image: url("./aduptsvg/ystate.svg");
+}
+// .adupt-cards:hover .adupt-svg5 {
+//     background-image: url("./aduptsvg/yheart.svg");
+//   }
+.adupt-cards:hover .adupt-svg6 {
+  background-image: url("./aduptsvg/ycart.svg");
+}
+.adupt-cards:hover .adupt-svg7 {
+  background-image: url("./aduptsvg/yfork.svg");
+}
+.adupt-cards:hover .adupt-svg8 {
+  background-image: url("./aduptsvg/yenergy.svg");
+}
+.adupt-cards:hover .adupt-svg9 {
+  background-image: url("./aduptsvg/ymenu.svg");
+}
+.adupt-cards:hover .adupt-svg10 {
+  background-image: url("./aduptsvg/ybean.svg");
+}
+
+.adupt-cards:hover .Industries {
+  //   opacity: 1;
+  text-decoration: underline #b7b7b7 50%;
+  // color: #fff;
+
+  text-decoration-thickness: 1.5px;
+  --webkit-text-decoration-thickness: 1.5px;
+}
+
+.clients img {
+  aspect-ratio: 1/2;
+  object-fit: contain;
+
+  // mix-blend-mode: color-dodge;
+}
+
+@media (max-width: 640px) {
+  .client-logos {
+    .b {
+      width: 50%;
+    }
+  }
+
+  .adupt-cards {
+    width: 40%;
+  }
+  .adupt-svg {
+    background-image: url("./aduptsvg/ydolloar.svg");
+  }
+
+  .adupt-svg2 {
+    background-image: url("./aduptsvg/ysuply.svg");
+  }
+  .adupt-svg3 {
+    background-image: url("./aduptsvg/ybulb.svg");
+  }
+  .adupt-svg4 {
+    background-image: url("./aduptsvg/yheart.svg");
+  }
+  .adupt-svg5 {
+    background-image: url("./aduptsvg/ystate.svg");
+  }
+  // .adupt-cards:hover .adupt-svg5 {
+  //     background-image: url("./aduptsvg/yheart.svg");
+  //   }
+  .adupt-svg6 {
+    background-image: url("./aduptsvg/ycart.svg");
+  }
+  .adupt-svg7 {
+    background-image: url("./aduptsvg/yfork.svg");
+  }
+  .adupt-svg8 {
+    background-image: url("./aduptsvg/yenergy.svg");
+  }
+  .adupt-svg9 {
+    background-image: url("./aduptsvg/ymenu.svg");
+  }
+  .adupt-svg10 {
+    background-image: url("./aduptsvg/ybean.svg");
+  }
+}

@@ -1,0 +1,122 @@
+.industry {
+  padding: 20px 0px;
+}
+
+.heading-industry {
+  width: 100%;
+  h1 {
+    width: 92%;
+    // color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    -webkit-leading-trim: both;
+    -webkit-text-edge: cap;
+    //   font-family: Almarai;
+    font-size: 89px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.desc-industry {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  height: 100%;
+  p {
+    width: 90%;
+    height: 83.002px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Sora;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+}
+
+.list-one {
+  height: 85.5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  overflow: hidden;
+  text-align: left;
+
+  color: #000;
+  font-family: Graphik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.list-one:hover + .left-bottom-img {
+  display: none;
+  opacity: 0;
+}
+
+.middle-consult {
+  color: #100e0e;
+  // font-family: Almarai;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.left-bottom-img {
+  position: absolute;
+  z-index: 1;
+}
+
+.right-concept {
+  z-index: 99;
+  width: 100%;
+}
+
+.left-consulting {
+  color: #fff;
+  // font-family: Sora;
+  font-size: 85.662px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  // transform: rotate(-8.976deg) translateY(50px);
+  // transform-origin: left;
+  visibility: hidden;
+  width: 500px;
+}
+
+.right-cosult {
+  visibility: hidden;
+  ul {
+    gap: 19px;
+    color: #fff;
+    //   font-family: Almarai;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    li {
+      color: #fff;
+      // font-family: Almarai;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}

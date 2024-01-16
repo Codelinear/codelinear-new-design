@@ -1,0 +1,66 @@
+.home-container {
+  .swiper-pagination-progressbar {
+    position: absolute;
+    top: 89%;
+    // bottom: 0;
+    width: 30%;
+    left: 60%;
+    height: 10px;
+    border-radius: 11px;
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #ffcd05;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
+  }
+
+  .swiper-button-prev::after {
+    content: "" !important;
+    width: 168px;
+    height: 27px;
+    background-color: aliceblue;
+    border-radius: 54px;
+    // padding-left: 30px;
+    background-position: 17px 3px;
+    background-image: url("./arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    left: 79%;
+    // rota
+    transform: rotate(180deg);
+    top: 77%;
+    width: 68px;
+    border-radius: 54px;
+  }
+  .swiper-button-next {
+    position: absolute;
+    right: 10%;
+    top: 77%;
+    width: 68px;
+    border-radius: 54px;
+  }
+  .swiper-button-next:after {
+    content: "" !important;
+    width: 168px;
+    height: 27px;
+    background-color: aliceblue;
+    border-radius: 54px;
+    // padding-left: 30px;
+    background-position: 17px 3px;
+    background-image: url("./arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  .mySwiper {
+    margin: 10px 20px !important;
+  }
+}

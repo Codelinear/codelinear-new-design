@@ -1,0 +1,52 @@
+.lets-talk {
+  font-size: 258px;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 2px black; /* Adjust the border thickness as needed */
+  background-image: linear-gradient(transparent 100%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 100%;
+  transition: all 5s ease-in-out;
+}
+
+.lets-talk:hover {
+  background-position: 0 0; /* Change to 0 0 to fill from bottom to top */
+  background-image: linear-gradient(transparent 0%, black 0%);
+}
+
+.bottom-line {
+  border: 2px solid black;
+  transition: all 0.5s ease-in-out;
+}
+
+.lets-talk:hover ~ .bottom-line {
+  background-color: black;
+  width: 78%;
+}
+
+@media (max-width: 767px) {
+  .lets-talk {
+    font-size: 158px;
+  }
+}
+@media (max-width: 370px) {
+  .lets-talk {
+    font-size: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .lets-talk {
+    font-size: 70px;
+    color: black !important;
+  }
+
+  .bottom-line {
+    background-color: black;
+    width: 90%;
+    height: 10px;
+  }
+}
