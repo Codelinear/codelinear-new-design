@@ -17,9 +17,9 @@ import img13 from "../../../../assets/homeassets/Tradejini logo black.jpg";
 const Clients = () => {
   return (
     <>
-      <div className="clients relative">
-        <div className="w-full h-[693px] px-[80px] pt-[20px] pb-[33.98px] bg-white flex-col justify-center items-center gap-[72px] inline-flex max-lg:h-full max-md:px-10">
-          <div className="w-[358.91px] text-center text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px] max-md:w-full">
+      <div className="clients relative ">
+        <div className="w-full h-[693px] px-[80px] pt-[20px] pb-[33.98px] bg-white flex-col justify-center items-center gap-[72px] inline-flex max-lg:h-full max-md:px-10 max-lg:mt-40 max-lg:px-[40px]">
+          <div className="w-[358.91px] text-center text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px] max-lg:w-full">
             People bettering the world with us.
           </div>
           <div className="client-logos self-stretch justify-start items-start inline-flex flex-wrap max-md:w-full max-lg:justify-center max-sm:w-[80%]">

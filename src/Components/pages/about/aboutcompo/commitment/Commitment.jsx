@@ -4,7 +4,7 @@ const Commitment = () => {
   return (
     <>
       <div className="commitment">
-        <div className="w-full h-[848px] pl-20 pr-[111.37px] pt-[73px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-md:h-full max-md:p-5">
+        <div className="w-full h-[848px] pl-20 pr-[111.37px] pt-[73px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-lg:h-full max-md:p-5">
           <div className="self-stretch flex-col justify-start items-start gap-9 inline-flex">
             <div className="w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
@@ -16,7 +16,7 @@ const Commitment = () => {
               Our commitments
             </div>
           </div>
-          <div className="self-stretch justify-start items-start gap-[52px] inline-flex flex-wrap">
+          <div className="about-comit self-stretch justify-start items-start gap-[52px] inline-flex flex-wrap">
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
                 <svg

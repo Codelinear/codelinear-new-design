@@ -38,7 +38,23 @@
     font-size: 50px;
   }
 }
-@media (max-width: 640px) {
+
+
+
+@media (max-width: 1024px) {
+  .lets-talk {
+    font-size: 149px;
+    color: black !important;
+  }
+  .bottom-line {
+    background-color: black;
+    width: 95%;
+    height: 10px;
+  }
+}
+
+
+@media (max-width: 440px) {
   .lets-talk {
     font-size: 70px;
     color: black !important;
@@ -47,6 +63,18 @@
   .bottom-line {
     background-color: black;
     width: 90%;
+    height: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .lets-talk {
+    font-size: 100px;
+    color: black !important;
+  }
+
+  .bottom-line {
+    background-color: black;
+    width: 80%;
     height: 10px;
   }
 }

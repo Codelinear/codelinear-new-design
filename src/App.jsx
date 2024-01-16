@@ -30,6 +30,7 @@ import Workshop from "./Components/pages/blogpages/blogcomponents/ineerblog/Work
 import Digital from "./Components/pages/blogpages/blogcomponents/ineerblog/Digital";
 import Contact from "./Components/pages/contactPage/contactpage";
 import Casestudy from "./Components/pages/casestudy/Casestudy";
+import Industry from "./Components/pages/industrypage/Industry";
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
           <Route exact path="/insights" element={<Blog />} />
           <Route exact path="/contactus" element={<Contact />} />
           <Route exact path="/casestudy" element={<Casestudy />} />
+          <Route exact path="/industry" element={<Industry />} />
           <Route exact path="/changingnature" element={<Changingnature />} />
           <Route exact path="/nocode" element={<Nocode />} />
           <Route exact path="/shopifyVsMagento" element={<Shopify />} />

@@ -168,7 +168,7 @@ const Productengineer = () => {
               </div>
             </div>
           </div>
-          <div className="w-[508px] mt-[76px] max-md:h-[500px]  max-md:w-full h-[611.01px] pb-[0.01px] flex-col justify-center items-center inline-flex">
+          <div className="w-[508px] mt-[76px] max-md:h-[500px]  max-md:w-full h-[611.01px] pb-[0.01px] flex-col justify-center items-center inline-flex max-xl:ml-[80px] max-md:ml-0">
             <img
               className="w-[662.66px] h-[611px] max-md:w-full max-sm:h-[404px]"
               src={img2}

@@ -53,9 +53,9 @@ const GameDevservice = () => {
               </div>
             </div>
             <div>
-              <div className="w-[359px]  max-md:w-full h-[434px] left-[730px] mt-[80px]  bg-zinc-100 flex-col justify-center items-center inline-flex">
+              <div className="w-[359px]  max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px] h-[434px] left-[730px] mt-[80px]  bg-zinc-100 flex-col justify-center items-center inline-flex">
                 <img
-                  className="w-[360px]  max-md:w-full h-[434px]"
+                  className="w-[360px] max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px] h-[434px]"
                   src={img}
                   alt="placeholder"
                 />

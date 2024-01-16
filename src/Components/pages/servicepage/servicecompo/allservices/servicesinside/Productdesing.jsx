@@ -47,9 +47,9 @@ const Productdesing = () => {
               </div>
             </div>
             <div>
-              <div className="w-[359px] h-[434px] left-[730px] mt-[80px]  bg-zinc-100 flex-col justify-center items-center inline-flex max-md:w-full">
+              <div className="w-[359px] max-lg:w-[665px] max-md:h-full max-lg:h-[800px] h-[434px] left-[730px] mt-[80px]  bg-zinc-100 flex-col justify-center items-center inline-flex max-md:w-full">
                 <img
-                  className="w-[360px] h-[434px] max-md:w-full"
+                  className="w-[360px] h-[434px] max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px]"
                   src={img2}
                   alt="placeholder"
                 />

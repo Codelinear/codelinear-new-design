@@ -107,14 +107,14 @@ const Allservice = () => {
           <div className="w-full h-full relative bg-white flex justify-between max-xl:flex-wrap-reverse">
             <div className="left max-md:w-full">
               <div className="flex h-[1150px] max-lg:flex-wrap  max-md:h-[600px] section max-md:p-5">
-                <div className="w-[738px] ml-[80px] mt-[59px]  text-black text-5xl font-normal font-['Graphik'] leading-[57.60px] max-lg:w-full max-lg:m-4 max-sm:m-0 max-md:mt-10  max-md:h-[200px] max-sm:text-[24px] max-sm:leading-[29px]">
+                <div className="w-[738px] ml-[80px] mt-[59px]  text-black text-5xl font-normal font-['Graphik'] leading-[57.60px] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10  max-md:h-[200px] max-sm:text-[24px] max-sm:leading-[29px]">
                   We help businesses launch their success and bring the luxury
                   of transformational technology and dynamic UI/UX right to
                   their threshold.
                 </div>
-                <div className="left-[405px] top-[388px] absolute  bglack justify-end items-center inline-flex max-xl:top-[700px] max-lg:left-[10%]  max-mdhidden max-md:w-full  max-md:relative max-md:left-0 max-md:top-0">
+                <div className="left-[405px] top-[388px] absolute  bglack justify-end items-center inline-flex max-xltop-[700px] max-lg:left-[10%]  max-mdhidden max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px]  max-md:relative max-md:left-0 max-md:top-0  max-xl:top-[450px]">
                   <img
-                    className="w-[507.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full max-md:h-[300px]"
+                    className="w-[507.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full  max-lg:w-[665px] max-lg:h-[800px] max-md:h-[400px]"
                     src={img}
                     alt=""
                   />
@@ -152,7 +152,7 @@ const Allservice = () => {
               </div>
             </div>
 
-            <div className="right sticky max-md:hidden h-[600px] top-28 max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px]">
+            <div className="right sticky max-xl:hidden h-[600px] top-28 max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px]">
               <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
                 <div className=" overview p-2 bgneutral-100 rounded-[7px] justify-center items-center gap-2 inline-flex">
                   <div

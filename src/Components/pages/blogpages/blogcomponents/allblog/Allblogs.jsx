@@ -316,23 +316,23 @@ const Allblogs = () => {
       <div className="all-blogs">
         <div className="category-section">
           <div className="w-full h-[142px]  max-lg:h-full   pl-20 pr-[0px] pt-[67px] pb-[35px] bg-white justify-start items-center inline-flex max-lg:p-5  max-lg:mt-10">
-            <div className="self-stretch justify-start items-start gap-5 inline-flex max-lg:flex-wrap">
-              <button
+            <div className="self-stretch justify-start items-start gap-5 inline-flex max-lgflex-wrap max-sm:flex-nowrap max-sm:w-full max-lg:overflow-scroll">
+              <div
                 ref={(el) => (all = el)}
                 onClick={onClickSort1}
-                className={`p-2 bg-zinc900 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-zinc900 rounded-[7px] justify-center items-center gap-2 flex max-lg:min-w-[100px] ${
                   isSortActive ? "active" : ""
                 }`}
               >
                 <div className="textwhite text-xl font-normal font-['Graphik'] leading-normal">
                   Show all
                 </div>
-              </button>
+              </div>
               <button
                 onClick={onClickSort6}
                 // className="p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex"
 
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[250px] ${
                   isSort6Active ? "active" : ""
                 }`}
               >
@@ -342,7 +342,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort3}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[150px] ${
                   isSort3Active ? "active" : ""
                 }`}
               >
@@ -352,7 +352,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort4}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[80px] ${
                   isSort4Active ? "active" : ""
                 }`}
               >
@@ -362,7 +362,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort2}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[80px]  ${
                   isSort2Active ? "active" : ""
                 }`}
               >
@@ -372,7 +372,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort5}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[200px] ${
                   isSort5Active ? "active" : ""
                 }`}
               >
@@ -382,7 +382,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort7}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[200px] ${
                   isSort7Active ? "active" : ""
                 }`}
               >
@@ -392,7 +392,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort8}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[80px] ${
                   isSort8Active ? "active" : ""
                 }`}
               >
@@ -402,7 +402,7 @@ const Allblogs = () => {
               </button>
               <button
                 onClick={onClickSort9}
-                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex ${
+                className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  max-lg:min-w-[150px] ${
                   isSort9Active ? "active" : ""
                 }`}
               >
@@ -415,7 +415,7 @@ const Allblogs = () => {
         </div>
 
         <div className="main-blog-section ml-[80px] mt-20 max-lg:m-5 max-md:px-4">
-          <div className="w-full h-full justify-start items-start gap-x-[165px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-md:justify-center max-md:items-center ">
+          <div className="w-full h-full justify-start items-start gap-x-[165px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-lg:justify-center max-lg:items-center ">
             <Link
               to={"/changingnature"}
               onClick={scrollToTop}

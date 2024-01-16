@@ -43,8 +43,12 @@
   top: 90% !important;
 }
 
-
-.mySwiper{
-    margin-right: 0 !important;
+.mySwiper {
+  margin-right: 0 !important;
 }
 
+@media (max-width: 1024px) {
+  .swiper-pagination {
+    left: -100px !important;
+  }
+}

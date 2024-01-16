@@ -24,10 +24,10 @@ const Homehero = () => {
     <>
       <div className="h-[600px] max-lg:h-full max-sm:m-5">
         <div className="w-full bg-white  h-[600px] z-0 max-lg:h-full ">
-          <div className="w-[58%] ml-[80px] mt-[20px]  text-black text-[66px] font-normal font-['Graphik'] leading-[71.41px] max-lg:mb-[20px] max-lg:w-[80%] max-md:ml-2 max-[500px]:text-[50px] max-sm:leading-[54px]   max-sm:pt-20">
+          <div className="w-[58%] ml-[80px] mt-[20px]  text-black text-[66px] font-normal font-['Graphik'] leading-[71.41px] max-lg:mb-[20px] max-lg:w-[80%] max-md:ml-2 max-sm:text-[50px] max-sm:leading-[54px]   max-sm:pt-20">
             Transforming businesses through design-led product engineering.
           </div>
-          <div className="w-[100%] flex justify-end items-end  max-xl:justify-start ">
+          <div className="w-[100%] flex justify-end items-end  max-xl:justify-start  max-lg:mt-20 ">
             <div className="flex justify-end w-[65%] items-end  max-xl:w-full ">
               <Swiper
                 spaceBetween={30}

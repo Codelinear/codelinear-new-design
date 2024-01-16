@@ -90,12 +90,20 @@
   // mix-blend-mode: color-dodge;
 }
 
+
 @media (max-width: 640px) {
   .client-logos {
     .b {
       width: 50%;
     }
-  }
+  }}
+
+@media (max-width: 1024px) {
+  // .client-logos {
+  //   .b {
+  //     width: 50%;
+  //   }
+  // }
 
   .adupt-cards {
     width: 40%;

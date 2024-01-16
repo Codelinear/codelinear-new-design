@@ -3,11 +3,11 @@ import React from "react";
 const Guide = () => {
   return (
     <>
-      <div className="guide max-md:p-5">
-        <div className="w-full h-[885px] relative bg-white max-md:h-full">
-          <div className="flex ju gap-40 max-md:flex-wrap max-md:gap-10">
-            <div className="sticky top-10 h-[300px] max-md:h-full max-md:relative"  >
-              <div className="ml-[80px] mt-[73px]  flex-col justify-start items-start gap-9 inline-flex max-md:m-0">
+      <div className="guide max-lg:p-5  max-lg:pl-12 max-md:pl-5">
+        <div className="w-full h-[885px] relative bg-white max-lg:h-full">
+          <div className="flex ju gap-40 max-lg:flex-wrap max-lg:gap-10">
+            <div className="sticky top-10 h-[300px] max-lg:h-full max-lg:relative"  >
+              <div className="ml-[80px] mt-[73px]  flex-col justify-start items-start gap-9 inline-flex max-lg:m-0">
                 <div className="w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
                   <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                     What we believe in
@@ -18,7 +18,7 @@ const Guide = () => {
                   <div className="text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
                     Guiding principles
                   </div>
-                  <div className="w-[413px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
+                  <div className="w-[413px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
                     Crafting ideal, innovative and impactful digital products
                     are the three core pillars around which each of our projects
                     is centred.Despite capital mindset overtaking business
@@ -36,7 +36,7 @@ const Guide = () => {
                 <div className="text-black text-4xl font-normal font-['Graphik'] leading-[43.92px]">
                   Ideal
                 </div>
-                <div className="w-[536.02px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
+                <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
                   We understand the varying needs of our clients, and therefore
                   custom-tailor every product ideally suited to their
                   requirements. Our diverse team of designers, developers,
@@ -49,7 +49,7 @@ const Guide = () => {
                 <div className="text-black text-4xl font-normal font-['Graphik'] leading-[43.92px]">
                   Innovation
                 </div>
-                <div className="w-[536.02px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
+                <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
                   We envision ourselves to be the trendsetters and strive to
                   make our clients one too. When organisations across the world
                   are on the verge of transformation or running the risk of
@@ -62,7 +62,7 @@ const Guide = () => {
                 <div className="text-black text-4xl font-normal font-['Graphik'] leading-[43.92px]">
                   Impact
                 </div>
-                <div className="w-[536.02px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
+                <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
                   Driven by impact, our ultimate focus is to build digital
                   products that address real-world problems. Our team of
                   industry experts ascertains that in addition to crafting

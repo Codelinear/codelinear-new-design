@@ -7,7 +7,7 @@ const Cases = () => {
   return (
     <>
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-md:h-full">
+        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full   max-md:p-5   max-lg:flex-wrap">
           <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
             <img className="w-[649.91px] h-[586.54px] max-md:w-full" src={img} alt="" />
           </div>
@@ -20,10 +20,10 @@ const Cases = () => {
             </div>
             <div className="flex-col justify-start items-start gap-[42px] flex">
               <div className="flex-col justify-start items-start gap-[22px] flex">
-                <div className="w-[551.45px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
+                <div className="w-[551.45px]  max-lg:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px] ">
                   Changing the way people shop.
                 </div>
-                <div className="w-[477.61px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[477.61px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal  max-md:w-full">
                   Donec vel habitant sapien sit. Ornare quam diam felis ligula
                   id id lectus. Ut ac dolor elit mi maecenas amet pellentesque.
                 </div>
@@ -42,7 +42,7 @@ const Cases = () => {
 
 
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-md:h-full">
+        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap-reverse">
          
 
 
@@ -55,10 +55,10 @@ const Cases = () => {
             </div>
             <div className="flex-col justify-start items-start gap-[42px] flex">
               <div className="flex-col justify-start items-start gap-[22px] flex">
-                <div className="w-[551.45px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
+                <div className="w-[551.45px]  max-lg:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
                 Helping the world switch to sustainable energy- seamlessly
                 </div>
-                <div className="w-[477.61px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[477.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Donec vel habitant sapien sit. Ornare quam diam felis ligula
                   id id lectus. Ut ac dolor elit mi maecenas amet pellentesque.
                 </div>
@@ -77,7 +77,7 @@ const Cases = () => {
         </div>
       </div>
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-md:h-full">
+        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
           <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
             <img className="w-[649.91px] h-[586.54px] max-md:w-full" src={img3} alt="" />
           </div>
@@ -90,10 +90,10 @@ const Cases = () => {
             </div>
             <div className="flex-col justify-start items-start gap-[42px] flex">
               <div className="flex-col justify-start items-start gap-[22px] flex">
-                <div className="w-[551.45px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
+                <div className="w-[551.45px]  max-lg:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
                 A Disruptive marketing solution
                 </div>
-                <div className="w-[477.61px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[477.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Donec vel habitant sapien sit. Ornare quam diam felis ligula
                   id id lectus. Ut ac dolor elit mi maecenas amet pellentesque.
                 </div>

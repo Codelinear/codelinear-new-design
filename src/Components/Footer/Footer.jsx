@@ -2,12 +2,17 @@ import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
 const Footer = () => {
+
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <footer className="bg-white relative 0 h[1800px]">
         {/* <div className=""> */}
         <div className="upr-footer">
-          <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-4">
+          <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-4  max-lg:pl-[50px]">
             <div className="w-[548.68px] text-neutral-900 text-2xl font-normal font-['Graphik'] leading-relaxed max-md:w-full ">
               Transforming Ideas into Competitive Advantages.
             </div>
@@ -19,14 +24,14 @@ const Footer = () => {
                 Let’s Talk.
               </h1>
 
-              <div className="bottom-line w-[223.13px] h-[19.14px] border -mt-20  max-md:mt-0 max-[350px]:w-full"></div>
+              <div className="bottom-line w-[223.13px] h-[19.14px] border -mt-20  max-xl:mt-0 max-[350px]:w-full"></div>
             </Link>
           </div>
         </div>
 
         <div className="down-footer mt-20">
           <div className="w-full h-[809px] relative bg-white max-lg:h-full">
-            <div className="flex gap-40 ml-[80px]  max-xl:flex-wrap max-lg:ml-0  max-lg:p-10 max-sm:gap-10">
+            <div className="flex gap-40 ml-[80px]  max-xl:flex-wrap max-lg:ml-0  max-lg:p-10 max-sm:gap-10 max-lg:gap-10">
               <div className="flex flex-col gap-20 max-[350px]:w-full">
                 <div className="w-[262.25px] h-[262.25px] px-[17.98px] py-[47.08px] left-[80.59px] top-[92.14px]  justify-center items-center inline-flex">
                   <div className="w-[226.29px] h-[168.09px] relative">
@@ -76,7 +81,7 @@ const Footer = () => {
                     experiences that resonate, innovate....
                   </div>
                 </div>
-                <div className="left-[80px] top-[586.39px]  justify-start items-start gap-[57px] inline-flex max-[350px]:w-full max-sm:flex-wrap max-[350px]:gap-4">
+                <div className="left-[80px] top-[586.39px]  justify-start items-start gap-[57px] inline-flex max-[350px]:w-full max-sm:flex-wrap max-[350px]:gap-4  max-lg:gap-48">
                   <div className="flex-col justify-start items-start gap-9 inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                       Reach out to us
@@ -183,7 +188,7 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-wrap gap-20 max-lg:p-0  max-md:flex-col max-md:w-full max-sm:flex-wrapreverse">
-                <div className="flex gap-20 h-[150px] pt-28 max-lg:flex-wrap max-lg:h-[300px] max-sm:h-[400px]">
+                <div className="flex gap-20 h-[150px] pt-28 max-lg:flex-wrap max-lg:h-[300px] max-sm:h-[400px] max-lg:gap-32 ">
                   <div className="w-60 h-[116px] flex-col justify-start items-start gap-5 inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
                       India
@@ -238,9 +243,11 @@ const Footer = () => {
                 </div>
 
                 <div className="left-[1056px] top-[201.89px]  flex-col justify-start items-start gap-9 inline-flex max-md:flex-wrap max-md:w-full">
+                
                   <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                     Industries
                   </div>
+
                   <div className="justify-start items-start gap-[35px] inline-flex max-sm:flex-wrap">
                     <div className="flex-col justify-start items-start gap-2 inline-flex">
                       <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -295,29 +302,31 @@ const Footer = () => {
                   <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                     Sitemap
                   </div>
+
+
                   <div className="w-[88px] justify-start items-start gap-[35px] inline-flex">
                     <div className="flex-col justify-start items-start gap-2 inline-flex">
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <Link onClick={scrollToTop} to={"/about"} className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         About us
-                      </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link onClick={scrollToTop} to="/service" className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Services
-                      </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link onClick={scrollToTop} to="/contact" className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Contact us
-                      </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link onClick={scrollToTop} to="insights" className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Insights
-                      </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link onClick={scrollToTop} to="case" className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Case study
-                      </div>
-                      <div className="w-[161.52px] opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link  onClick={scrollToTop} to="/industry" className="w-[161.52px] opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Industries
-                      </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      </Link>
+                      <Link onClick={scrollToTop} to='/career' className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         Careers
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>

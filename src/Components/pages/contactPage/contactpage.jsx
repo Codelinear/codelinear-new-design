@@ -4,6 +4,7 @@ import America from "./images/America.svg";
 import Europe from "./images/Europe.svg";
 import Asia from "./images/Asia.svg";
 import building from "./images/building.svg";
+import img from "./images/image 177.png";
 
 const Contact = () => {
   const [time, setTime] = useState(new Date());
@@ -176,18 +177,27 @@ const Contact = () => {
       </section>
       <section className="address">
         <div className="address-div">
+        <h1 className="address-head2">Our Offices</h1>
+
           <img src={building} alt="" />
           <div className="address-div2">
             <h1 className="address-head">Our Offices</h1>
             <div>
               <h1>USA</h1>
-              <p>600 B Street, Suite 300,<br /> San Diego, CA 92101</p>
+              <p>
+                600 B Street, Suite 300,
+                <br /> San Diego, CA 92101
+              </p>
             </div>
             <div>
+              <div className="max-3xl:hidden max-lg:block indiaimg">
+                <img className="max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px]" src={img} alt="" />
+              </div>
+
               <h1>India</h1>
               <p>
-                Wework Galaxy <br /> Shanthala Nagar, Ashok Nagar,<br /> Bengaluru, Karnataka
-                560001
+                Wework Galaxy <br /> Shanthala Nagar, Ashok Nagar,
+                <br /> Bengaluru, Karnataka 560001
               </p>
             </div>
           </div>

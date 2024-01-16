@@ -67,6 +67,10 @@
     }
   }
 }
+
+.indiaimg {
+  display: none;
+}
 .analog-clock {
   position: relative;
   width: 127px;
@@ -120,7 +124,7 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-family: Chivo Mono Medium;
+    // font-family: Chivo Mono Medium;
     font-size: 52.744px;
     font-style: normal;
     font-weight: 400;
@@ -264,6 +268,17 @@
     letter-spacing: -1.476px;
     margin-bottom: 66px;
   }
+  .address-head2 {
+    color: #000;
+    font-family: Graphik;
+    font-size: 49.202px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 59.042px */
+    letter-spacing: -1.476px;
+    margin-bottom: 66px;
+    display: none;
+  }
   div {
     margin-bottom: 36px;
     h1 {
@@ -318,6 +333,10 @@
   }
 }
 @media (max-width: 1024px) {
+
+  .indiaimg {
+    display: block;
+  }
   .contact-hero {
     .contact-form {
       .form {
@@ -348,8 +367,8 @@
 }
 @media (max-width: 866px) {
   .time-zones {
-    flex-direction: column;
-    gap: 0px;
+    // flex-direction: column;
+    gap: 30px;
     align-items: center;
     justify-content: center;
   }
@@ -375,6 +394,7 @@
   .working-areas {
     flex-direction: column;
     gap: 50px;
+
     div {
       gap: 20px;
     }
@@ -410,6 +430,15 @@
   }
 }
 @media (max-width: 670px) {
+ 
+
+  .address-head {
+    display: none;
+  }
+
+  .address-head2 {
+    display: block;
+  }
   .div-time {
     position: relative;
     top: 30px;
@@ -490,5 +519,43 @@
   .contact-hero .contact-hero-h1 {
     margin-left: 5%;
     width: 90%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .div-time {
+    position: relative;
+    top: 30px;
+    right: 0px;
+  }
+  .clocks {
+    flex-direction: row;
+  }
+
+  .contact-hero .contact-form .form .form-div {
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .contact-hero .contact-form .form .email {
+    width: 100%;
+    padding: 15px 0px;
+  }
+
+  .contact-hero .contact-form .form .text {
+    width: 100%;
+    padding: 15px 0px 80px 0px;
+  }
+
+  .contact-hero .contact-form {
+    width: 100%;
+  }
+
+  .contact-hero .contact-form .form{
+    margin-left: 0;
+    padding: 50px;
   }
 }

@@ -20,7 +20,7 @@ const Homeanimate = () => {
   });
   return (
     <>
-      {width <= 640 ? (
+      {width <= 1023 ? (
         <div className="home-container">
           <Swiper
             spaceBetween={30}

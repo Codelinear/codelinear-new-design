@@ -6,9 +6,9 @@ const Adupt = () => {
   return (
     <>
       <div className="adupt">
-        <div className="w-full h-[1147px]  max-xl:h-full relative bg-[#111]">
-          <div className="flex w-full justify-between max-lg:flex-wrap   max-md:py-10 mb-10">
-            <div className="w-[503.60px] ml-[80px] mt-[113.71px]  text-zinc-400 text-[32px] font-normal font-['Graphik'] leading-[38.40px]  max-md:w-full  max-md:m-4 ">
+        <div className="w-full h-[1147px]  max-xl:h-full relative bg-[#111]   max-lg:pb-[80px]">
+          <div className="flex w-full justify-between max-lg:flex-wrap   max-md:py-10 mb-10  max-lg:pr-[30px]">
+            <div className="w-[503.60px] ml-[80px] mt-[113.71px]  text-zinc-400 text-[32px] font-normal font-['Graphik'] leading-[38.40px]  max-md:w-full  max-md:m-4  ">
               In the fast-paced world of technology, we don't just adapt; we
               disrupt.
             </div>
@@ -18,7 +18,7 @@ const Adupt = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-4 justify-center mt-10 max-sm:w-full max-sm:pb-20">
+          <div className="flex flex-wrap gap-4 justify-center mt-10 max-sm:w-full max-xl:pb-20">
             <div className="adupt-cards w-[305px] h-[229px] pt-[62px] pb-[40.33px] left-[80px] top-[300px]  bg-neutral-900 flex-col justify-end items-center gap-[40.67px] inline-flex">
               <div className=" adupt-svg w-16 h-16 relative flex-col justify-start items-start flex"></div>
               <div className="Industries text-center text-zinc-400 text-xl font-normal font-['Graphik']">
