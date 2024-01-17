@@ -1,9 +1,15 @@
 import React from "react";
-import img from "../../blogassets/Frame 1000001793.png";
+import img from "../../blogassets/Frame 58.png";
 import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
 
+import img2 from "../../blogassets/Frame 43.png";
+import img3 from "../../blogassets/Frame 60.png";
+
 const Workshop = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="innerhero">
@@ -28,8 +34,11 @@ const Workshop = () => {
         <div className="w-full h-full relative bg-white max-xl:h-full">
           <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap-reverse max-lg:justify-center">
             <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
-              <div className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex  hover:bg-yellow-400 transition-all  hover:border-yellow-400 ">
-                <Link to="/insights" className="w-[31px] h-[21px] relative">
+              <Link
+                to="/insights"
+                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+              >
+                <Link to="/insights" className="w-[31px] h-[21px] relative ">
                   <img
                     className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
                     src={arrow}
@@ -39,7 +48,7 @@ const Workshop = () => {
                 <div className="opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Go Back
                 </div>
-              </div>
+              </Link>
 
               <div className="left-[80px] top-[201.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize">
                 Now Reading
@@ -48,46 +57,54 @@ const Workshop = () => {
                 Also Read
               </div>
               <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10">
-                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20" />
-                <div className="w-[53.39px] h-[5.34px] left-[68px] top-[59.66px] absolute bg-neutral-900" />
+                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img className="w-[68px] h-[65px]" src={img} alt="" />
+                </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    No-Code Revolut...
+                    <marquee> Discovery Workshop</marquee>
                   </div>
                 </div>
               </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10">
+              <Link
+                onClick={scrollToTop}
+                to="/empathy"
+                className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
-                  <img
-                    className="w-[68.11px] h-[69.01px]"
-                    src="https://via.placeholder.com/68x69"
-                    alt=""
-                  />
+                  <img className="w-[68.11px] h-[69.01px]" src={img2} alt="" />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Minimum viable...
+                    <marquee> Empathy In UX</marquee>
                   </div>
                 </div>
-              </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10">
+              </Link>
+
+              <Link
+                onClick={scrollToTop}
+                to="/story"
+                className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
                   <img
                     className="w-[68px] h-[68.87px]"
-                    src="https://via.placeholder.com/68x69"
+                    src={img3}
                     alt="placeholder"
                   />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    UX Design Benef...
+                    <marquee>Storytelling In Marketing</marquee>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 A noted health insurance company recognized the need to improve
                 its member portal to provide a better user experience. To
                 achieve this, the company engaged a web application development
@@ -115,7 +132,7 @@ const Workshop = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   What Is A Discovery Workshop?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   A discovery workshop is a crucial part of the website or
                   application development process. It is an opportunity for
                   stakeholders, including clients, developers, designers, and
@@ -139,7 +156,7 @@ const Workshop = () => {
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   One of the primary benefits of a discovery workshop is that it
                   provides an opportunity for stakeholders to discuss and
                   analyze user needs and requirements. By understanding the
@@ -153,7 +170,7 @@ const Workshop = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Improved communication and collaboration
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   A discovery workshop provides an opportunity for stakeholders
                   to come together to discuss the project's requirements, goals,
                   and objectives. This improves communication and collaboration
@@ -168,7 +185,7 @@ const Workshop = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Identification of potential challenges and risks
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   A discovery workshop provides an opportunity for stakeholders
                   to identify potential challenges and risks that may arise
                   during the development process. This allows the project team
@@ -182,7 +199,7 @@ const Workshop = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Saves time and money
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Conducting a discovery workshop may seem like an additional
                   cost, but it can actually save time and money in the long run.
                   By identifying potential challenges and risks early on, the
@@ -190,7 +207,7 @@ const Workshop = () => {
                   save time and money that would otherwise be spent trying to
                   fix issues after the development process has begun.
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Skipping a discovery workshop can lead to several risks,
                   including: 1. Lack of understanding : The primary purpose of a
                   discovery workshop is to gain a deep understanding of the
@@ -233,7 +250,7 @@ const Workshop = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Alright, so let's wrap this up! AI design tools are basically
                   like the creative Swiss Army knives of the digital world.
                   These tools aim to streamline and enhance the design workflow

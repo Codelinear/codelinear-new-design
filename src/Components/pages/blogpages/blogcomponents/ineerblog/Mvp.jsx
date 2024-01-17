@@ -62,6 +62,7 @@ const Mvp = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
+
                     An MVP
                   </div>
                 </div>
@@ -77,7 +78,9 @@ const Mvp = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                   Disruptive Branding
+                  <marquee>      Disruptive Branding</marquee>
+
+               
                   </div>
                 </div>
               </Link>
@@ -97,14 +100,16 @@ const Mvp = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Storytelling In Marketing
+                  <marquee>Storytelling In Marketing</marquee>
+
+                 
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 Only a few months ago, would you have ever imagined that Twitter
                 would be bought by SpaceX and Tesla founder Elon Musk? But the
                 real story is not written by Musk but was written by a group of
@@ -157,7 +162,7 @@ const Mvp = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. Create user profiles
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   While building an MVP, it is crucial to create user profiles
                   based on which your product may be tested among the actual set
                   of users.
@@ -183,7 +188,7 @@ const Mvp = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   2. Make a list of key features
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify ">
                   Based on the user’s persona, market research, and the problem
                   to be solved, you will now have enough data to list key
                   features of your product, service, or mobile application.
@@ -205,7 +210,7 @@ const Mvp = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   3. Create your MVP
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Instead of hiring expensive talent, teams, or resources, build
                   a strong framework for your product or service first. And then
                   train your existing team to build upon that framework. Once
@@ -223,7 +228,7 @@ const Mvp = () => {
                   4. Create a marketing strategy
                 </div>
                 <div className="flex-col justify-start items-start gap-2 flex">
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Identifying and building an important solution is one thing,
                     marketing the same is quite another.
                     <br />
@@ -260,7 +265,7 @@ const Mvp = () => {
                   5. Launch the product
                 </div>
                 <div className="flex-col justify-start items-start gap-2 flex">
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     First, focus on delighting your customers instead of sales.
                     It is important that a positive buzz be created around your
                     product or service. Create a feedback loop to help you get
@@ -279,7 +284,7 @@ const Mvp = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Remember that a product that’s well thought-out, has a solid
                   framework in terms of business and usage, and solves a
                   real-world problem will always find buyers.

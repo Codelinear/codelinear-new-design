@@ -23,7 +23,7 @@ import gsap from "gsap";
 import "./blog.scss";
 
 const Allblogs = () => {
-  const [isSortActive, setIsSortActive] = useState(true)  ;
+  const [isSortActive, setIsSortActive] = useState(true);
   // const [isSort1Active, setIsSort1Active] = useState(false);
   const [isSort2Active, setIsSort2Active] = useState(false);
   const [isSort3Active, setIsSort3Active] = useState(false);
@@ -156,7 +156,6 @@ const Allblogs = () => {
     setIsSort3Active(false);
     setIsSortActive(false);
     setIsSort2Active(false);
-
     setIsSort5Active(false);
     setIsSort6Active(false);
     setIsSort7Active(false);
@@ -316,18 +315,18 @@ const Allblogs = () => {
       <div className="all-blogs">
         <div className="category-section">
           <div className="w-full h-[142px]  max-lg:h-full   pl-20 pr-[0px] pt-[67px] pb-[35px] bg-white justify-start items-center inline-flex max-lg:p-5  max-lg:mt-10">
-            <div className="self-stretch justify-start items-start gap-5 inline-flex max-lgflex-wrap max-sm:flex-nowrap max-sm:w-full max-lg:overflow-scroll">
-              <div
+            <div className="filtere self-stretch justify-start items-start gap-5 inline-flex max-lgflex-wrap max-sm:flex-nowrap max-sm:w-full max-lg:overflow-scroll">
+              <button
                 ref={(el) => (all = el)}
                 onClick={onClickSort1}
-                className={`p-2 bg-zinc900 rounded-[7px] justify-center items-center gap-2 flex max-lg:min-w-[100px] ${
+                className={`p-2 bg-zinc900 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex max-lg:min-w-[100px] ${
                   isSortActive ? "active" : ""
                 }`}
               >
                 <div className="textwhite text-xl font-normal font-['Graphik'] leading-normal">
                   Show all
                 </div>
-              </div>
+              </button>
               <button
                 onClick={onClickSort6}
                 // className="p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex"
@@ -429,8 +428,8 @@ const Allblogs = () => {
                     the changing nature of sEO
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                    Gadget Flow is a well-known product discovery platform that
+                    helps readers find latest....
                   </div>
                 </div>
                 <Link
@@ -451,14 +450,13 @@ const Allblogs = () => {
               className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img3} alt="" />
-              <div className="w-[317px] flex-col justify-between items-start flex">
+              <div className="w-[317px] flex-col justify-between items-start gap-3 flex">
                 <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                   No-Code Revolution: 5 Platforms To Keep An....
                 </div>
                 <div className="flex-col justify-start items-start gap-6 flex">
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  The no-code creation in a website and application development is perhaps moving in the Lego direction.....
                   </div>
                   <Link
                     to="/nocode"
@@ -480,14 +478,13 @@ const Allblogs = () => {
             >
               <img className="w-[317px] h-[175.55px]" src={img2} alt="" />
 
-              <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex">
+              <div className="flex-col justify-center items-start gap-9 flex">
+                <div className="w-[317px] flex-col justify-between items-start gap-6   flex">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Shopify vs magento
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  If you're a business owner of any kind, you've probably heard of Shopify and Magento.....
                   </div>
                 </div>
                 <Link
@@ -515,12 +512,11 @@ const Allblogs = () => {
                     design system
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  A design system is a guide or a standard structure with parameters for design and code along with....
                   </div>
                 </div>
                 <Link
-                 onClick={scrollToTop}
+                  onClick={scrollToTop}
                   to="/design-system"
                   className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
@@ -544,8 +540,7 @@ const Allblogs = () => {
                     Gestalt psychology
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  The website redesign of the restaurant chain, Chili's, is a great case study in UX design using Gestalt Psychology.....
                   </div>
                 </div>
                 <Link
@@ -572,8 +567,7 @@ const Allblogs = () => {
                     Storytelling in marketing
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  A relatively new player pulled off a potentially risky storytelling marketing campaign in the late 2000....
                   </div>
                 </div>
                 <Link
@@ -602,8 +596,7 @@ const Allblogs = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-6 flex">
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  Testing a product is important. But should that product be complete or barely functional....
                   </div>
                   <Link
                     to="/mvp"
@@ -631,8 +624,7 @@ const Allblogs = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-6 flex">
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  One approach that has gained popularity in the field of marketing and digital marketing in recent....
                   </div>
                   <Link
                     to="/branding"
@@ -650,7 +642,6 @@ const Allblogs = () => {
               to="/ux"
               ref={(el) => (UXi = el)}
               onClick={scrollToTop}
-              
               className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img4} alt="" />
@@ -660,8 +651,7 @@ const Allblogs = () => {
                     UX design Benefits SMEs!
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  This trend became a reality in 2022 when businesses saw Google’s AI search becoming more....
                   </div>
                 </div>
                 <Link
@@ -688,8 +678,7 @@ const Allblogs = () => {
                     Bing Vs Google
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  In addition to its integration with Microsoft's ecosystem, Bing has also introduced several unique....
                   </div>
                 </div>
                 <Link
@@ -717,8 +706,7 @@ const Allblogs = () => {
                     Listening To Your Customer
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  After gathering similar feedback from several places across the United States it was hard to imagin,....
                   </div>
                 </div>
                 <Link
@@ -745,12 +733,10 @@ const Allblogs = () => {
                     React Native V/S Flutter
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
-                  </div>
+                  Only a decade ago, it was hard to imagine life without mobile apps. They now make our lives easier, with   </div>
                 </div>
                 <Link
-                onClick={scrollToTop}
+                  onClick={scrollToTop}
                   to="/ReactVsflutter"
                   className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
@@ -773,8 +759,7 @@ const Allblogs = () => {
                     Empathy In UX
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  The ability to get into your customers’ shoes results in user empathy. Intuit and Harley-Davidson are just two....
                   </div>
                 </div>
                 <Link
@@ -801,8 +786,7 @@ const Allblogs = () => {
                     AI-Powered Design Tools
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  AI-powered search engines use machine learning and natural language processing to understand user....
                   </div>
                 </div>
                 <Link
@@ -829,8 +813,7 @@ const Allblogs = () => {
                     Discovery Workshop
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  A discovery workshop is a crucial part of the website or application development process. It is an opportunity....
                   </div>
                 </div>
                 <Link
@@ -857,8 +840,7 @@ const Allblogs = () => {
                     Digital Marketing Trends 2023
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Our commitment is not just to design; it's to create
-                    experiences that resonate, innovate....
+                  The study then elaborated on how Domino’s and Diageo partnered with YouTube to actively fight against....
                   </div>
                 </div>
                 <Link

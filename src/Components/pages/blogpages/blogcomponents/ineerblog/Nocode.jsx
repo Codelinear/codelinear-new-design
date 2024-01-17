@@ -3,10 +3,9 @@ import img from "../../blogassets/Frame 569.png";
 import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
 
-
 import img2 from "../../blogassets/Frame 44.png";
 import img3 from "../../blogassets/unsplash_2cFZ_FB08UM.png";
-
+import img4 from "../../../servicepage/servicecompo/allservices/assets/Frame 1000002735 (3).png";
 
 const Nocode = () => {
   const scrollToTop = () => {
@@ -35,7 +34,7 @@ const Nocode = () => {
       <div className="blog-content">
         <div className="w-full h-[3704px] relative bg-white max-xl:h-full">
           <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap-reverse max-lg:justify-center">
-          <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
+            <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
               <Link
                 to="/insights"
                 className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
@@ -64,7 +63,9 @@ const Nocode = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Native V/S Flutter
+                  <marquee>  No-Code Revolution</marquee>
+
+                  
                   </div>
                 </div>
               </div>
@@ -79,7 +80,9 @@ const Nocode = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Digital Marketing
+                  <marquee>Digital Marketing</marquee>
+
+                 
                   </div>
                 </div>
               </Link>
@@ -99,13 +102,15 @@ const Nocode = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Gestalt Psychology
+                  <marquee> Gestalt Psychology</marquee>
+
+                   
                   </div>
                 </div>
               </Link>
             </div>
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 When Ole Kirk Christiansen went out of business back in the
                 1930s, little did he know that the scraps from his furniture
                 factory would help build a whole new business during the world
@@ -142,7 +147,7 @@ const Nocode = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   A No-Code Revolution Is Brewing
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Forbes reported in 2021 that “60% of all custom apps were
                   being developed outside of the IT department while 40% of
                   these users worked in a professional setting.” Many businesses
@@ -154,7 +159,7 @@ const Nocode = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   What Are No-Code Platforms?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   No-code tools or platforms are basically programming styles
                   and methodologies that do not require coding. Instead, these
                   platforms use GUI (Graphical User Interface) tools to create
@@ -171,7 +176,7 @@ const Nocode = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     1. Better allocation of IT/engineer hours :
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     -Since no-code platforms are more like drag-and-drop tools,
                     business users need not employ coders and engineers in the
                     website and application development. This technical
@@ -182,7 +187,7 @@ const Nocode = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     2. Faster time to market :
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     When it comes to developing a business website or a mobile
                     application, a business needs to go through several rounds
                     of approvals and iterations. With no-code platforms, the
@@ -196,7 +201,7 @@ const Nocode = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     3. Cost reduction :
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Through no-code environments, you can create more
                     applications in less time and resources, which leads to
                     lower costs. It also reduces the costs of hiring since
@@ -214,7 +219,7 @@ const Nocode = () => {
                     <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                       1. Appy Pie
                     </div>
-                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                       This is a no-code mobile and software application
                       development platform that involves the creation of chat
                       boxes, websites, intelligent workflows, and automation. It
@@ -238,7 +243,7 @@ const Nocode = () => {
                     <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                       2. Webflow
                     </div>
-                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                       The platform has been around for quite some time and has
                       evolved to be more than just a website builder. It allows
                       users to create responsive software and websites with
@@ -266,7 +271,7 @@ const Nocode = () => {
                     <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                       3. Bubble.io
                     </div>
-                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                       Bubble allows for easy custom web application development
                       offering a wide range of features including databases,
                       APIs, and e-commerce. Bubble is the most suitable web
@@ -291,7 +296,7 @@ const Nocode = () => {
                     <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                       4. Bildr
                     </div>
-                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                       Non-technical startup entrepreneurs use Bildr to create
                       functional and stunning websites for testing prototypes or
                       for reiteration of ideas. You can create web applications
@@ -314,7 +319,7 @@ const Nocode = () => {
                     <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                       5. Thunkable
                     </div>
-                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                       Thunkable is a drag-and-drop no-code application builder
                       that’s designed specifically for building native mobile
                       applications. It offers a wide variety of options for
@@ -341,6 +346,28 @@ const Nocode = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
+        <div class="self-stretch justify-center items-center gap-[75px] inline-flex max-lg:flex-wrap">
+          <div class="w-[359px] h-[434px] pt-[0.50px] bg-zinc-100 flex-col justify-center items-center inline-flex">
+            <img
+              class="w-[360px] h-[433.50px] max-lg:w-full"
+              src={img4}
+              alt=""
+            />
+          </div>
+          <div class="flex-col justify-start items-start gap-12 inline-flex">
+            <div class="w-[391.40px] text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]">
+              Explore our Low code No code services
+            </div>
+            <Link to="/service" onClick={scrollToTop} class="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
+              <div class="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                Learn more
+              </div>
+            </Link>
           </div>
         </div>
       </div>

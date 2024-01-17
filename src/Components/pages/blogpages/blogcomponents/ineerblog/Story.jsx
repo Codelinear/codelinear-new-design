@@ -3,7 +3,14 @@ import img from "../../blogassets/Frame 60.png";
 import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
 
+
+import img2 from "../../blogassets/Frame 43.png";
+import img3 from "../../blogassets/Frame 60.png";
+
 const Story = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="innerhero">
@@ -27,9 +34,12 @@ const Story = () => {
       <div className="blog-content">
         <div className="w-full h-full relative bg-white max-xl:h-full">
           <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap-reverse max-lg:justify-center">
-            <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
-              <div className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
-                <Link to="/insights" className="w-[31px] h-[21px] relative">
+          <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
+              <Link
+                to="/insights"
+                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+              >
+                <Link to="/insights" className="w-[31px] h-[21px] relative ">
                   <img
                     className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
                     src={arrow}
@@ -39,7 +49,7 @@ const Story = () => {
                 <div className="opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Go Back
                 </div>
-              </div>
+              </Link>
 
               <div className="left-[80px] top-[201.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize">
                 Now Reading
@@ -48,44 +58,63 @@ const Story = () => {
                 Also Read
               </div>
               <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10">
-                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20" />
-                <div className="w-[53.39px] h-[5.34px] left-[68px] top-[59.66px] absolute bg-neutral-900" />
+                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img className="w-[68px] h-[65px]" src={img} alt="" />
+                </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    No-Code Revolut...
+
+                  <marquee> Storytelling In Marketing</marquee>
+
+                
                   </div>
                 </div>
               </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10">
+              <Link
+                onClick={scrollToTop}
+                to="/empathy"
+                className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
-                  <img
-                    className="w-[68.11px] h-[69.01px]"
-                    src="https://via.placeholder.com/68x69"
-                  />
+                  <img className="w-[68.11px] h-[69.01px]" src={img2} alt="" />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Minimum viable...
+                  <marquee>    Empathy In UX</marquee>
+                  
+                
                   </div>
                 </div>
-              </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10">
+
+              </Link>
+
+
+              <Link
+                onClick={scrollToTop}
+                to="/story"
+                className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
                   <img
                     className="w-[68px] h-[68.87px]"
-                    src="https://via.placeholder.com/68x69"
+                    src={img3}
+                    alt="placeholder"
                   />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    UX Design Benef...
+                  <marquee>  Storytelling In Marketing</marquee>
+
+                    
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 A relatively new player pulled off a potentially risky
                 storytelling marketing campaign in the late 2000s. Today, the
                 campaign is a case study for marketing enthusiasts across all
@@ -123,7 +152,7 @@ const Story = () => {
                 <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. Evokes the right feelings
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Customers don’t buy products or services, they buy the feeling
                   that the said product or service evokes within them. Harvard
                   Business School professor Gerald Zaltman, in his book, quotes
@@ -138,7 +167,7 @@ const Story = () => {
                 <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px]">
                   2. Shows the ‘how’
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Of course, every marketing rep knows the importance of 'how'.
                   But when the ‘how’ is presented in the form of a story, it has
                   better retention, and can provoke action. In the case of
@@ -151,7 +180,7 @@ const Story = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     3. Does not feel like marketing
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     You are now dealing with possibly the most aware set of
                     customers with dwindling attention spans. They are discrete
                     about the time and energy that they spend, and so
@@ -169,7 +198,7 @@ const Story = () => {
                 <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. Reward the customer
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   As we discussed above, the ‘how’ factor is everything in
                   telling a brand story. But that ‘how’ needs to show what the
                   customer will receive. A principle that all great storytellers
@@ -195,12 +224,12 @@ const Story = () => {
                 <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px]">
                   2. Pack an emotional punch
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   There’s no telling a story without emotion. Consciously list
                   down the feelings that you would want your customers to get
                   while watching the story.
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Get ideas from some of these ‘high-impact’ emotional
                   motivators -
                   <br />
@@ -227,7 +256,7 @@ const Story = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     3. The truth factor
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     The story that you create may be fictional or a case study,
                     but it should still tell the truth in terms of its message.
                     Try not to not claim things your marketing team cannot pull
@@ -242,13 +271,13 @@ const Story = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     4. Connect with the audience
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     A Harvard Business Review study revealed that across a
                     sample of nine industry categories, fully connected
                     customers turned out to be 52% more valuable than those who
                     were just satisfied with the product.
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     This is how you can do that -
                     <br />
                     - create the personas of your target customers
@@ -273,7 +302,7 @@ const Story = () => {
                     Final Thoughts
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     In his New York Times bestseller ‘The Confident Speaker,"
                     Harrison Monarth has stated: "A story can go where
                     quantitative analysis is denied admission: our hearts. Data

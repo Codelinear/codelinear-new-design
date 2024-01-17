@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
+import Scrolltop from "./Scrolltop";
 const Footer = () => {
 
 
@@ -10,6 +11,9 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-white relative 0 h[1800px]">
+
+
+      <Scrolltop/>
         {/* <div className=""> */}
         <div className="upr-footer">
           <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-4  max-lg:pl-[50px]">

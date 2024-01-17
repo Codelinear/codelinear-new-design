@@ -5,8 +5,8 @@ import img from "../assets/Frame 1000002735e.png"
 const GameDevservice = () => {
   return (
     <>
-      <div className="serviepageCloud">
-      <div className="w-full h-[808] relative max-lg:h-full">
+      <div className="serviepageCloud max-sm:p-5">
+      <div className="w-full h-[668px] relative max-lg:h-full">
             <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
             <div>
               <div className="ml-[80px] max-md:ml-0 mt-[80px]  flex-col justify-start items-start gap-[30px] inline-flex">

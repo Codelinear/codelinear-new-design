@@ -61,7 +61,9 @@ const Branding = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Branded Environments
+                  <marquee>  Branded Environments</marquee>
+
+                  
                   </div>
                 </div>
               </div>
@@ -75,7 +77,9 @@ const Branding = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Minimum Viable Product
+                  <marquee>  Minimum Viable Product</marquee>
+
+                   
                   </div>
                 </div>
               </Link>
@@ -93,14 +97,16 @@ const Branding = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    UX Design Benefits SMEs!
+                  <marquee>  UX Design Benefits SMEs!</marquee>
+
+                   
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 Ever walked into Nike's flagship store in New York City? The
                 store is designed to be a "shrine" to the brand's values and
                 products, with interactive displays, cutting-edge technology,
@@ -135,7 +141,7 @@ const Branding = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   What Are Branded Environments?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Branded environments are physical spaces that are designed to
                   immerse consumers in a brand's story, values, and personality.
                   These spaces can range from retail stores and showrooms to
@@ -150,7 +156,7 @@ const Branding = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   The Art Of Disruptive Branding
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Branded environments are not just for large corporations with
                   huge budgets. Any business can create a branded environment
                   that engages and captivates consumers. Here are a few key
@@ -198,7 +204,7 @@ const Branding = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   A branded environment is a powerful tool for disruptive
                   branding that can help companies stand out from the
                   competition and create emotional connections with consumers.

@@ -7,7 +7,7 @@ import img2 from "../../blogassets/Frame 568.png";
 import img3 from "../../blogassets/Frame 566.png";
 
 const Bing = () => {
-  const scrollToTop = () => { 
+  const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
   return (
@@ -62,7 +62,7 @@ const Bing = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Bing Or Google?
+                    <marquee> Bing Or Google?</marquee>
                   </div>
                 </div>
               </div>
@@ -76,8 +76,9 @@ const Bing = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    
-Shopify Vs Magento
+                  <marquee>  Shopify Vs Magento</marquee>
+
+                   
                   </div>
                 </div>
               </Link>
@@ -95,14 +96,16 @@ Shopify Vs Magento
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Design System
+                  <marquee>Design System</marquee>
+                  
+             
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 search engines, there has been a noticeable shift in the market,
                 and Bing is emerging as a strong competitor. In this blog post,
                 we will explore the potential of AI-powered search engines and
@@ -171,7 +174,7 @@ Shopify Vs Magento
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. Invest in AI-Powered SEO Strategy
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   As AI-powered search engines become more prevalent, it is
                   essential for businesses to invest in AI-powered SEO
                   strategies. This means optimizing content for search engines
@@ -188,7 +191,7 @@ Shopify Vs Magento
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   2. Utilize Bing's Unique Features
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   While Google dominates the search engine market, Bing offers
                   unique features that businesses can take advantage of. For
                   example, Bing's Visual Search feature allows users to search
@@ -204,7 +207,7 @@ Shopify Vs Magento
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   3. Consider Advertising on Bing
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   While Google AdWords remains the most popular advertising
                   platform, businesses should not overlook the advertising
                   potential of Bing. Bing Ads can provide businesses with a
@@ -219,7 +222,7 @@ Shopify Vs Magento
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   4. Focus on Local SEO
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   As AI-powered search engines become more prevalent, local SEO
                   will become increasingly important for businesses. AI
                   algorithms, such as Bing's Local Intent algorithm, prioritize
@@ -236,7 +239,7 @@ Shopify Vs Magento
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   5. Stay Up-to-Date on AI Advancements
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify ">
                   Finally, it is crucial for businesses to stay up-to-date on
                   advancements in AI technology and search engine algorithms. AI
                   is a rapidly evolving field, and search engines are constantly
@@ -253,7 +256,7 @@ Shopify Vs Magento
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The use of AI in search engines is not new. The more data is
                   processed each day, these engines evolve continually producing
                   more refined results in the process. One big way these engines

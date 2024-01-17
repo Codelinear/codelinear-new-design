@@ -15,8 +15,8 @@ const Mainindustry = () => {
     <>
       <div className="industry-main">
         <div className="flex flex-wrap">
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
@@ -25,7 +25,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex w-[95%]">
                   <div className="w-8 h-8 relative">
                     {/* <div className="w-[10.05px] left[10.97px] top[4.50px] "> */}
                     <svg
@@ -72,7 +72,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -81,7 +81,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
                       <svg
@@ -121,7 +121,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -130,7 +130,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[90%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg
@@ -178,8 +178,8 @@ const Mainindustry = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
@@ -188,7 +188,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
                       <svg
@@ -242,7 +242,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -251,7 +251,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
                       <svg
@@ -312,7 +312,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -321,7 +321,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg
@@ -362,8 +362,8 @@ const Mainindustry = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
@@ -372,7 +372,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
                       <svg
@@ -419,7 +419,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -428,7 +428,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%] ">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute"> <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +475,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex">
+            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -484,7 +484,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[90%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg

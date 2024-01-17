@@ -20,7 +20,7 @@ const Appdevelopment = () => {
                   </div>
                   <div className="flex-col justify-start items-start gap-[42px] flex">
                     <div className="flex-col justify-start items-start gap-[22px] flex">
-                      <div className="w-[631.03px] max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
+                      <div className="w-[631.03px] max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px] max-sm:text-[40px]">
                         App Development and Modernization
                       </div>
                       <div className="w-[513.61px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -46,7 +46,7 @@ const Appdevelopment = () => {
                   <div className="w-[166.55px] left-[513px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
                     SaaS Development
                   </div>
-                  <div className="w-[195px] left-[80px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:w-[50%]">
+                  <div className="w-[166px] left-[80px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:w-[50%]">
                     API Development and Integration
                   </div>
                   <div className="w-[125.06px] left-[298.11px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[100%]">

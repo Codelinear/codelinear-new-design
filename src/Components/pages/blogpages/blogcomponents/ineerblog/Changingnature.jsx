@@ -62,7 +62,9 @@ const Changingnature = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    The Changing Nature Of SEO
+
+                  <h3><marquee> The Changing Nature Of SEO</marquee></h3>
+                  {/* The Changing Nature Of SEO */}
                   </div>
                 </div>
               </div>
@@ -76,7 +78,9 @@ const Changingnature = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    No-Code Revolution
+                  <h3><marquee>No-Code Revolution</marquee></h3>
+
+                  
                   </div>
                 </div>
               </Link>
@@ -94,14 +98,16 @@ const Changingnature = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Storytelling In Marketing
+                  <h3><marquee>Storytelling In Marketing</marquee></h3>
+
+          
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 Gadget Flow is a well-known product discovery platform that
                 helps readers find latest tech and gear apart from information
                 on unique crowdfunding campaigns.
@@ -138,7 +144,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   SEO - How Did It All Begin?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Search engine optimization (SEO) has been around for over two
                   decades, and it has undergone significant changes in that
                   time. SEO is the practice of optimizing a website's content to
@@ -156,7 +162,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Early SEO era
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   In the early days of SEO, it was all about finding ways to
                   manipulate search engines into ranking a website higher. This
                   often involved keyword stuffing, buying links, and other black
@@ -171,7 +177,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Emphasis on UX design
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   One of the biggest changes in SEO is the emphasis on user
                   experience. In the past, SEO was focused on technical factors
                   like keyword density, meta tags, and backlinks. Today,
@@ -186,7 +192,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Local heroes
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Another change in SEO is the importance of local search. With
                   the rise of mobile devices, people are increasingly using
                   search engines to find businesses near them. This has led to
@@ -202,7 +208,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Social media effect
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Social media has also had a significant impact on SEO. In the
                   past, social media was seen as a separate marketing channel,
                   but today, it is an essential part of any SEO strategy. Social
@@ -218,7 +224,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Voice search
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Voice search is also changing the nature of SEO. With the rise
                   of voice assistants like Alexa and Siri, people are
                   increasingly using voice search to find information online.
@@ -232,7 +238,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Artificial intelligence
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Finally, the rise of artificial intelligence (AI) is also
                   changing the nature of SEO. Google's algorithms are becoming
                   increasingly sophisticated, using machine learning to
@@ -248,7 +254,7 @@ const Changingnature = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   Social media effect
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Social media has also had a significant impact on SEO. In the
                   past, social media was seen as a separate marketing channel,
                   but today, it is an essential part of any SEO strategy. Social
@@ -270,7 +276,7 @@ const Changingnature = () => {
                     1. Create high-quality content
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Google's algorithm prioritizes content that is informative,
                     engaging, and relevant to the user. Businesses must create
                     content -
@@ -285,7 +291,7 @@ const Changingnature = () => {
                     - solves their problems.
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     This means researching keywords, understanding user intent,
                     and creating content that meets the needs of the target
                     audience.
@@ -296,7 +302,7 @@ const Changingnature = () => {
                     2. Focus on user experience
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     A website that is difficult to navigate or slow to load will
                     have a negative impact on search rankings. Businesses must
                     focus on creating a website that is easy to use, responsive,
@@ -312,7 +318,7 @@ const Changingnature = () => {
                     - make sure the website is mobile-friendly.
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify ">
                     Gadget Flow paid attention to its UX development by
                     improving their search tool and managed to attract qualified
                     leads and rank higher on search engine result pages (SERPs).
@@ -323,7 +329,7 @@ const Changingnature = () => {
                     3. Embrace local SEO
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                     Local SEO is becoming increasingly important as more people
                     use their mobile devices to search for local businesses.
                     <br />
@@ -349,7 +355,7 @@ const Changingnature = () => {
                     4. Use social media
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Social media is a great catalyzer of SEO. By creating
                     high-quality content that is shareable on social media,
                     businesses can drive traffic to their website and improve
@@ -364,7 +370,7 @@ const Changingnature = () => {
                     5. Keep up with the latest trends
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     SEO is a rapidly changing field, and businesses must stay up
                     to date with the latest trends to survive. This means
                     keeping up with Google's algorithm updates, understanding
@@ -379,7 +385,7 @@ const Changingnature = () => {
                     Final Thoughts
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     It's important to remember that SEO is an ongoing process,
                     and businesses must be willing to adapt and evolve to stay
                     relevant in today's digital landscape.

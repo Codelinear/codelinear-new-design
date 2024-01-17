@@ -64,7 +64,9 @@ const Customer = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Listening To Your Customer
+                  <marquee>    Listening To Your Customer</marquee>
+
+                
                   </div>
                 </div>
               </div>
@@ -78,7 +80,9 @@ const Customer = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Bing Or Google
+                  <marquee>   Bing Or Google</marquee>
+
+                  
                   </div>
                 </div>
               </Link>
@@ -96,14 +100,16 @@ const Customer = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Discovery Workshop
+                  <marquee>  Discovery Workshop</marquee>
+
+                  
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 A few years ago, a Fortune 500 company called American Family
                 Insurance (AFI) learned that more than half of Americans did not
                 have the cash to cover a $400 emergency expense like a hospital
@@ -146,7 +152,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When you want to establish expectations
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   A lot of businesses will wait until the product or service
                   launch, and then get the first feedback from their customers.
                   In order for your product or service to receive open arms from
@@ -161,7 +167,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When you want to improve your product
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full   max-sm:text-justify">
                   Ongoing customer feedback is an integral part of business
                   growth. Listening to customers is a great way to get
                   real-time, actual feedback about how your product or service
@@ -175,7 +181,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When they are complaining
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   This should be a no-brainer, and yet many big and small
                   businesses make the mistake of ignoring begrudged customers.
                   Of course, not every complaint that you receive may be
@@ -191,7 +197,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When you are not growing
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   In every business’ life, there comes a time when it hits a
                   wall. When sales are steady, but not growing exponentially.
                   This is the time to reach out to your customers, and
@@ -209,7 +215,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When you want to reinvent your business
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Until 2014, Swarovski had been known around the world (apart
                   from crystals) for producing iconic designs in their range of
                   chandeliers. With the rise of interface technology, the
@@ -230,7 +236,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   When you should not listen to your customers
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   In 1909, Harry Gordon Selfridge said, "The customer is not
                   always right." Listening to customers is great for growth,
                   improvement, and reinvention, but it is often not advisable
@@ -250,7 +256,7 @@ const Customer = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   The Best Ways To Listen To Your Customers More Fruitfully -
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   #1: Go to where they are
                   <br />
                   Listen to your customers on their preferred channels, such as
@@ -283,7 +289,7 @@ const Customer = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   The use of AI in search engines is not new. The more data is
                   processed each day, these engines evolve continually producing
                   more refined results in the process. One big way these engines

@@ -62,7 +62,9 @@ const Native = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Native V/S Flutter
+                  <marquee> React Native V/S Flutter</marquee>
+
+                 
                   </div>
                 </div>
               </div>
@@ -77,7 +79,9 @@ const Native = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Digital Marketing
+                  <marquee>   Digital Marketing</marquee>
+
+               
                   </div>
                 </div>
               </Link>
@@ -97,13 +101,15 @@ const Native = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Gestalt Psychology
+                  <marquee>Gestalt Psychology</marquee>
+
+              
                   </div>
                 </div>
               </Link>
             </div>
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 Only a decade ago, it was hard to imagine life without mobile
                 apps. They now make our lives easier, with some even assisting
                 us with our daily chores. Statista reports that mobile apps are
@@ -125,7 +131,7 @@ const Native = () => {
                   How Did React And Flutter Enter The Mobile Universe?
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Facebook launched its open-source framework, called React
                   Native back in 2015. It was the company’s attempt at equipping
                   developers with a JavaScript-based framework for the
@@ -153,7 +159,7 @@ const Native = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Why Are React And Flutter So Popular?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   While native apps work better on mobile phones, developing
                   native apps for each platform is quite a waste of time. As a
                   result, businesses are always looking for technologies that
@@ -170,7 +176,7 @@ const Native = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   React Native
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Based on React.JS, React Native uses JavaScript to create
                   mobile applications for iOS and Android. It also allows
                   developers to develop apps using one codebase. React offers
@@ -206,7 +212,7 @@ const Native = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Flutter
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Flutter helps create cross-platform applications using a
                   single codebase. So you don’t have to develop separate apps
                   for mobile, web, and desktop. Being an open-source platform,
@@ -250,7 +256,7 @@ const Native = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   How To Choose Between The Two?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Performance : React uses JavaScript while Flutter uses the
                   Dart programming language, which has a higher compilation rate
                   than JS. As a result, Flutter’s apps deliver high performance
@@ -277,7 +283,7 @@ const Native = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Statista states that 38% of developers used React Native in
                   2021, whereas 42% used Flutter for development. However, you
                   should make a decision based on your overall goals in terms of

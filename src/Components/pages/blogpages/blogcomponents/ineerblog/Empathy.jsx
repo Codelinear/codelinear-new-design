@@ -62,7 +62,9 @@ const Empathy = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Empathy In UX
+                  <marquee>    Empathy In UX</marquee>
+
+                
                   </div>
                 </div>
               </div>
@@ -77,7 +79,9 @@ const Empathy = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Minimum Viable Product
+                  <marquee> Minimum Viable Product</marquee>
+
+                 
                   </div>
                 </div>
               </Link>
@@ -97,14 +101,16 @@ const Empathy = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                   Disruptive Branding
+                  <marquee>       Disruptive Branding</marquee>
+
+             
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 Since 1989, Intuit (maker of Quickbooks, Mint, and TurboTax) has
                 run a “Follow me Home ” program that involves questionnaires,
                 observations, interviews, etc. with the actual users at
@@ -136,7 +142,7 @@ const Empathy = () => {
                   What Is Empathy?
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Empathy is a foundational principle in the concept of design
                   thinking – a user-based approach to problem-solving that
                   combines hands-on testing of a product or service with the
@@ -155,7 +161,7 @@ const Empathy = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Why Is Empathy So Important In UX?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The story is told of a local cafe in London that was
                   particularly concerned about the complaints the staff was
                   getting about ‘really bad tea. The first and most obvious
@@ -193,7 +199,7 @@ const Empathy = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. User Interactions
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   When Nielsen Norman Group’s co-founder Don Norman coined the
                   term ‘user experience’ in the 1990s, empathy was at the heart
                   of his definition. Norman said, "User experience encompasses
@@ -211,7 +217,7 @@ const Empathy = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   2. Enhancing UX
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   UX is really about what users think, and feel. Human beings,
                   by nature, are both emotional and rational. How a user
                   perceives a product is never purely based on its features but
@@ -230,7 +236,7 @@ const Empathy = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   3. Recognizing the context
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   You can never understand people’s circumstances unless you
                   have been in similar situations yourself. Empathy pushes
                   designers to go out of their way to understand the context as
@@ -242,7 +248,7 @@ const Empathy = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   4. Changing preferences
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Ongoing empathy towards users also leads to a deeper
                   connection with users, where UX may be made intuitive based on
                   the changing preferences of users. Just like how we saw it in
@@ -257,7 +263,7 @@ const Empathy = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Users are indeed changing every day. They are evolving with
                   each new product, each new application, and each new feature.
                   Millions of use cases are created unintentionally by users

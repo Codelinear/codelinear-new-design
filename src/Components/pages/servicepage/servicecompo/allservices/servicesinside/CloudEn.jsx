@@ -6,7 +6,7 @@ import img6 from "../assets/Frame 1000002735 (1).png"
 const CloudEn = () => {
   return (
     <div className="serviepageCloud">
-     <div className="w-full h-[808] relative max-lg:h-full">
+     <div className="w-full h-[700px] relative max-lg:h-full">
             <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
           <div>
             <div className="ml-[80px] max-md:ml-0 mt-[80px]  max-md:m-10  flex-col justify-start items-start gap-[30px] inline-flex">
@@ -44,7 +44,7 @@ const CloudEn = () => {
               <div className="w-[167.04px] left-[513px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
                 Cloud Security
               </div>
-              <div className="w-[175.04px] left-[80px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
+              <div className="w-[167.04px] left-[80px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
                 Cloud App Testing & Implementation
               </div>
               <div className="w-[167.04px] left-[298.11px] top-[570.33px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">

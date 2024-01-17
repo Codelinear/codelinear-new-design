@@ -7,3 +7,11 @@
     }
   }
 }
+
+.filtere::-webkit-scrollbar {
+  display: none;
+}
+
+// body {
+//   scrollbar-width: none;  /* Firefox */
+// }

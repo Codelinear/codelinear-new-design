@@ -62,7 +62,9 @@ const Designsystem = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Design System
+                  <marquee>  Design System</marquee>
+
+                  
                   </div>
                 </div>
               </div>
@@ -76,7 +78,9 @@ const Designsystem = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Gestalt Psychology
+                  <marquee>    Gestalt Psychology</marquee>
+
+                 
                   </div>
                 </div>
               </Link>
@@ -94,14 +98,16 @@ const Designsystem = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Storytelling In Marketing
+                  <marquee> Storytelling In Marketing</marquee>
+
+                   
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 Late Steve Jobs loved his childhood home for its simple design.
                 He lived in working-class subdivision homes between San
                 Francisco and San Jose. These were the postwar suburban homes
@@ -130,7 +136,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   What Is A Design System?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   A design system is a guide or a standard structure with
                   parameters for design and code along with design components
                   that will unify both. For instance, Apple built Human
@@ -179,7 +185,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   1. Design Principles
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The rules and values that drive your design team are your
                   design principles. Just as we saw in the example of Quartz,
                   you can create some non-negotiable ground rules that the team
@@ -191,7 +197,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   2. A design pattern library
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Patterns are standard structures of repeated design elements
                   that are used repeatedly in specific work situations. Your
                   design system needs a design pattern library as a central
@@ -203,7 +209,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   3. A UI kit
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   A UI kit is a component library with a collection of
                   UI-focused elements such as widgets, buttons, etc. This kit
                   helps your teams create UI-friendly designs consistently, and
@@ -227,7 +233,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   1. Audit the existing product/offering
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   What does your product or service stand for? How does it help
                   people? List down the features of your product, service, or
                   application and build a catalog of UI components, visual
@@ -239,7 +245,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   2. Create and define your design language
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   How will you bring your design principles to life? What do you
                   want your customers to feel? Excited? Curious? How does this
                   feeling align with your branding language? Do you want your
@@ -255,7 +261,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   3. Apply your design pattern library
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Create clear processes to execute the design pattern library
                   that you have created. Remember that there are two main types
                   of patterns - functional and perceptual. Functional patterns
@@ -268,7 +274,7 @@ const Designsystem = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   4. Document your design system
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   You need to draw out a clear plan about when and how to use
                   the design principles and patterns for the teams to follow in
                   future. Document shared practices, use cases and case studies
@@ -289,7 +295,7 @@ const Designsystem = () => {
                     Get Inspired
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Check out design systems of some of these noted companies
                     across industry verticals. You may get some real-life
                     examples of the elements that would be needed for your

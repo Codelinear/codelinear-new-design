@@ -63,7 +63,9 @@ const Gestalt = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Gestalt Psychology
+                  <marquee>   Gestalt Psychology</marquee>
+
+               
                   </div>
                 </div>
               </div>
@@ -78,7 +80,9 @@ const Gestalt = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  React Native V/S Flutter
+                  <marquee>    React Native V/S Flutter</marquee>
+
+                 
                   </div>
                 </div>
               </Link>
@@ -98,7 +102,9 @@ const Gestalt = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  AI-Powered Design Tools
+                  <marquee>     AI-Powered Design Tools</marquee>
+
+             
                   </div>
                 </div>
               </Link>
@@ -106,7 +112,7 @@ const Gestalt = () => {
 
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 The website redesign of the restaurant chain, Chili's, is a
                 great case study in UX design using Gestalt Psychology. The
                 company wanted to create a more modern and user-friendly website
@@ -146,13 +152,13 @@ const Gestalt = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   What Is Gestalt Psychology?
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   As UX designers at Codelinear, our primary goal is to create a
                   user-friendly and intuitive experience for the users of our
                   clients. One way to achieve this goal is by using Gestalt
                   psychology principles in UX design.
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   1. Figure-Ground Relationship The Gestalt principle of
                   figure-ground relationship explains how our brain separates
                   the visual elements in a design into foreground and
@@ -163,7 +169,7 @@ const Gestalt = () => {
                   or application, making it easier for users to navigate and
                   find the information they need.
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   2. Proximity : Proximity explains visual elements that are
                   close to each other as related. In UX design, this principle
                   can help you to group related elements together, making it
@@ -173,7 +179,7 @@ const Gestalt = () => {
                   photo editing app. In the case of Chilis, the menu items were
                   regrouped based on category.{" "}
                 </div>{" "}
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   3. Similarity : The principle of similarity, as the name
                   suggests, is about perceiving elements that share similar
                   attributes, such as color, shape, or size, as related. As a UX
@@ -183,7 +189,7 @@ const Gestalt = () => {
                   all the buttons that have the same function, such as the "Add
                   to Cart" buttons in an e-commerce app.
                 </div>{" "}
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   4. Closure: The closure principle explains how we see visual
                   elements that are incomplete as complete. This principle helps
                   you to simplify complex information by using visual cues that
@@ -192,7 +198,7 @@ const Gestalt = () => {
                   a sense of closure and a clear indication of how much work is
                   left.
                 </div>{" "}
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   5. Continuity The continuity principle describes how users
                   perceive factors that are arranged in a continuous line or
                   curve as related. This principle is helpful in creating a
@@ -202,7 +208,7 @@ const Gestalt = () => {
                   sections of a webpage or an application, making it easier for
                   users to navigate.
                 </div>{" "}
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   6. Symmetry The symmetry principle is about how we perceive
                   symmetrical elements as related. This principle helps
                   designers to create a sense of balance and harmony in the
@@ -219,7 +225,7 @@ const Gestalt = () => {
                     The Take-Away
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Gestalt psychology principles can inform your UX design
                     choices by providing you with a deeper understanding of how
                     users perceive visual elements as a whole. By using these

@@ -62,7 +62,7 @@ const Digital = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Digital Marketing 
+                    <marquee> Digital Marketing </marquee>
                   </div>
                 </div>
               </div>
@@ -77,12 +77,10 @@ const Digital = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Empathy In UX
+                    <marquee> Empathy In UX</marquee>
                   </div>
                 </div>
-
               </Link>
-
 
               <Link
                 onClick={scrollToTop}
@@ -99,14 +97,14 @@ const Digital = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Storytelling In Marketing
+                    <marquee>Storytelling In Marketing</marquee>
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 An interesting study published by Think With Google described
                 how Domino's and Diageo tackled ‘unintended bias’ in 2022. A
                 significant observation that the study made was about how brands
@@ -139,7 +137,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Customer Experience Over Keywords
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   This trend became a reality in 2022 when businesses saw
                   Google’s AI search becoming more and more humane. As a result,
                   content that really helped users or searchers began trending
@@ -168,7 +166,7 @@ const Digital = () => {
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Videos are not just about vertical or horizontal formats
                   anymore. They are about getting more information in less time.
                   Instagram Reels is just one of the many channels where your
@@ -196,7 +194,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   The Metaverse
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Since some of the biggest brands, such as Starbucks and Nike,
                   have jumped on the bandwagon of the metaverse, this may become
                   a huge trend in 2023. Metaverse is like a parallel virtual
@@ -221,7 +219,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Information As Bites
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   If short-videos are any indication, the attention span of your
                   customers is getting worse by the day. Users today consume
                   information like snacks - it needs to provide instant
@@ -253,7 +251,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Influencers Aren’t Going Anywhere
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   This trend of businesses leveraging expert individuals to
                   create brand advocacy has been going on for nearly five
                   years.2023 is not going to be an exception. In fact,
@@ -278,7 +276,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Linked-In Is A Thought Influencer In B2B
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify  ">
                   There’s no better advocacy for B2B companies than to reach out
                   and influence relevant audiences on Linked-in. And 2023 will
                   be the same. There’s a certain credibility attached to the
@@ -306,7 +304,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Not Every Trend Is For Your Business
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Just like we mentioned about metaverse, not every digital
                   marketing trend is for you. While it is crucial to know
                   beforehand what’s going on in the market, it is all the more
@@ -319,7 +317,7 @@ const Digital = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Keep Focusing On Your Foundation
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify ">
                   A trend that would never go out of fashion is to focus on your
                   foundations, such as -
                   <br />

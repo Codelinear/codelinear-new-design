@@ -61,7 +61,9 @@ const Ai = () => {
                 </div>{" "}
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    AI-Powered Design
+                    <h3>
+                      <marquee>AI-Powered Design</marquee>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -93,14 +95,16 @@ const Ai = () => {
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    The Changing.....
+                    <h3>
+                      <marquee> The Changing Nature of SEO</marquee>
+                    </h3>
                   </div>
                 </div>
               </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 So, AI finally became a thing. It is wildly different from its
                 dystopian counterpart in sci-fi movies. It was supposed to
                 control and destroy humanity. Surprisingly, it is creating
@@ -138,7 +142,7 @@ const Ai = () => {
                   Khroma
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   This is an AI color pair generation tool. You have to select
                   50 (yes 50) colors from pre-existing colors while getting
                   started. This trains the AI model and after a few minutes, you
@@ -156,7 +160,7 @@ const Ai = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Fontjoy
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The story is told of a local cafe in London that was Fontjoy
                   is pretty straightforward. No signing up, no getting started
                   just straight to generating fresh and interesting font pairs.
@@ -175,7 +179,7 @@ const Ai = () => {
                   Autodraw
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                   Autodraw is more like MS Paint with AI. It is very easy to use
                   and is quick at predicting what you are trying to draw. You
                   can create vector-like artwork quickly, but that's the only
@@ -193,7 +197,7 @@ const Ai = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Art Breeder
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Art Breeder is a powerhouse when it comes to artwork
                   generation, manipulation. It uses GANs (Generative Adversarial
                   Networks) to generate artwork. There are many features to
@@ -215,7 +219,7 @@ const Ai = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Framer
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Using Framer you can build a homepage in less than 2 minutes.
                   It also allows you to change the color palette and the font
                   post-generation. You can also edit individual sections
@@ -233,7 +237,7 @@ const Ai = () => {
                   Final Thoughts
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Alright, so let's wrap this up! AI design tools are basically
                   like the creative Swiss Army knives of the digital world.
                   These tools aim to streamline and enhance the design workflow

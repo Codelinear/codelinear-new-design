@@ -6,7 +6,7 @@ const QalityAssurance = () => {
   return (
     <>
       <div className="serviepagequality analist">
-        <div className="w-full h-[808] relative max-lg:h-full">
+        <div className="w-full h-[731px] relative max-lg:h-full">
           <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
             <div>
               <div className="ml-[80px] max-md:ml-0 mt-[80px]  flex-col justify-start items-start gap-[30px] inline-flex">

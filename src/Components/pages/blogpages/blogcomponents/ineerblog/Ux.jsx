@@ -3,7 +3,16 @@ import img from "../../blogassets/Frame 57.png";
 import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
 
+import img2 from "../../blogassets/Frame 43.png";
+import img3 from "../../blogassets/Frame 60.png";
+// import img4 from "../../blogassets/Frame 60.png";
+import img4 from "../../../servicepage/servicecompo/allservices/assets/diego-ph-fIq0tET6llw-unsplash 1.png";
+
+
 const Ux = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="innerhero">
@@ -27,9 +36,12 @@ const Ux = () => {
       <div className="blog-content">
         <div className="w-full h-full relative bg-white max-xl:h-full">
           <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap-reverse max-lg:justify-center">
-            <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
-              <div className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex  hover:bg-yellow-400 transition-all  hover:border-yellow-400">
-                <Link to="/insights" className="w-[31px] h-[21px] relative">
+          <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
+              <Link
+                to="/insights"
+                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+              >
+                <Link to="/insights" className="w-[31px] h-[21px] relative ">
                   <img
                     className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
                     src={arrow}
@@ -39,7 +51,7 @@ const Ux = () => {
                 <div className="opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Go Back
                 </div>
-              </div>
+              </Link>
 
               <div className="left-[80px] top-[201.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize">
                 Now Reading
@@ -48,44 +60,60 @@ const Ux = () => {
                 Also Read
               </div>
               <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10">
-                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20" />
-                <div className="w-[53.39px] h-[5.34px] left-[68px] top-[59.66px] absolute bg-neutral-900" />
+                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img className="w-[68px] h-[65px]" src={img} alt="" />
+                </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    No-Code Revolut...
+                  UX
                   </div>
                 </div>
               </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10">
+              <Link
+                onClick={scrollToTop}
+                to="/empathy"
+                className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
-                  <img
-                    className="w-[68.11px] h-[69.01px]"
-                    src="https://via.placeholder.com/68x69"
-                  />
+                  <img className="w-[68.11px] h-[69.01px]" src={img2} alt="" />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Minimum viable...
+                  <marquee>  Empathy In UX</marquee>
+
+                   
                   </div>
                 </div>
-              </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10">
+
+              </Link>
+
+
+              <Link
+                onClick={scrollToTop}
+                to="/story"
+                className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10"
+              >
                 <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
                   <img
                     className="w-[68px] h-[68.87px]"
-                    src="https://via.placeholder.com/68x69"
+                    src={img3}
+                    alt="placeholder"
                   />
                 </div>
+
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    UX Design Benef...
+                  <marquee> Storytelling In Marketing</marquee>
+
+                   
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
-              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+              <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 Once upon a 2008, when a 28-year-old Londoner named Richard
                 Pierson quit his job, and felt burned out even as a freelancer,
                 he turned to a Buddhist monk named Andy Puddicombe. While
@@ -117,7 +145,7 @@ const Ux = () => {
                   What Is UX Design?
                 </div>
 
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   This trend became a reality in 2022 when businesses saw
                   Google’s AI search becoming more and more humane. As a result,
                   content that really helped users or searchers began trending
@@ -146,7 +174,7 @@ const Ux = () => {
                 <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                   1. UX design increases conversions
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   For SMEs, the initial buzz around their product, or service
                   helps them scale faster while also bringing them investment.
                   Today, most customers will visit a business’ website or a
@@ -164,7 +192,7 @@ const Ux = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     2. UX design impacts brand loyalty
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     User experience speaks to the emotions of the users. When a
                     business pays attention to the UX of their digital
                     applications, users feel connected. This impacts their
@@ -180,7 +208,7 @@ const Ux = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     3. Saves run-up development costs
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     When SMEs focus on UX in the beginning of their product or
                     service launch, they can practically save redesign and
                     re-development costs considerably. Remember, it will cost
@@ -205,7 +233,7 @@ const Ux = () => {
                 {/* <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   1. Reward the customer
                 </div> */}
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The reason why good website or mobile application development
                   companies stress building a great UX design is because it
                   ultimately saves support costs in the long run. When users are
@@ -221,7 +249,7 @@ const Ux = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px]">
                   5. Leads to right messaging, and Google ranking
                 </div>
-                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   Very few SMEs realize the importance of their site or mobile
                   app's Google ranking, and the kind of messaging that their app
                   has. A smooth UX design helps put the most important messages
@@ -236,7 +264,7 @@ const Ux = () => {
                   <div className="w-[630px] text-black text-xl font-normal font-['Graphik'] leading-[30px] max-md:w-full">
                     6. Better understanding of your users
                   </div>
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     Headspace designers consciously put in graphics, details,
                     interface, and content language during UX design that
                     normalized meditation for people. For instance, the team
@@ -260,7 +288,7 @@ const Ux = () => {
                     You Need A Wise UX Design Strategy, And UX Design Partners
                   </div>
 
-                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                     UX design does not happen by accident or by instinct. It is
                     a practice that needs thoughtfulness, a smart strategy, and
                     trusted design partners. If you are trying to figure out how
@@ -270,6 +298,30 @@ const Ux = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
+        <div class="self-stretch justify-center items-center gap-[75px] inline-flex max-lg:flex-wrap">
+          <div class="w-[359px] h-[434px] pt-[0.50px] bg-zinc-100 flex-col justify-center items-center inline-flex">
+            <img
+              class="w-[360px] h-[433.50px] max-lg:w-full"
+              src={img4}
+              alt=""
+            />
+          </div>
+          <div class="flex-col justify-start items-start gap-12 inline-flex">
+            <div class="w-[391.40px] text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]">
+              Explore our UX Design services
+            </div>
+            <Link to="/service" onClick={scrollToTop} class="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
+              <div class="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                Learn more
+              </div>
+            </Link>
           </div>
         </div>
       </div>
