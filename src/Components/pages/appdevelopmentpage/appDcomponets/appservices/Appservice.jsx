@@ -5,6 +5,7 @@ import Progressive from "./appdeveservices/Progressive";
 import Sass from "./appdeveservices/Sass";
 import Apidev from "./appdeveservices/Apidev";
 import Legacy from "./appdeveservices/Legacy";
+import img from "../appservices/appdeveservices/assets/pexels-iryna-riabchykova-12876443 1 (1).svg";
 
 const Appservice = () => {
   const mobileAppRfu = useRef(null);
@@ -40,26 +41,23 @@ const Appservice = () => {
   };
   return (
     <>
-      <div className="app-devepage mt-40">
+      <div className="app-devepage mt-[65px]">
         <div className="w-full h-full pl-[80px] pb-[29px] bg-white justify-center items-center gap-[108px] inline-flex">
           <div className="flex justify-between w-full">
             <div className="left">
               <div>
-                <div className="w-[726.65px] self-stretch justify-center items-center inline-flex">
-                  <img
-                    className="w-[727.57px] h-[717.49px]"
-                    src="https://via.placeholder.com/728x717"
-                    alt=""
-                  />
+                <div className="w-full self-stretch justify-center items-center inline-flex">
+                  <img className="w-[727.57px] h-[717.49px]" src={img} alt="" />
                 </div>
               </div>
 
               <div>
                 <div className="w-full h-[462px] relative bg-white">
-                  <div className="w-[588.86px] ml[80px] mt-[80px]  text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]">
-                    Quis nec massa felis ornare mauris sagittis egestas ultrices
-                    massa. Ut mauris pellentesque adipiscing tortor nulla
-                    gravida ut senectus volutpat. Rhoncus faucibus feugia
+                  <div className="w-[670px] tracking-tighter mt-[130px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%]">
+                    We redefine app development by infusing design-led
+                    innovation into every line of code. Our services go beyond
+                    crafting applications; we shape digital experiences that
+                    resonate and build futures.
                   </div>
                   <Link
                     to="/"

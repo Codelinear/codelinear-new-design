@@ -9,9 +9,16 @@
 * {
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
   box-sizing: border-box;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: Graphik;
 }

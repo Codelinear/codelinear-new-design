@@ -22,10 +22,9 @@ const ArVr = () => {
                 </div>
               </div>
               <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                in tortor ultrices bibendum. Sodales lorem non magna praesent
-                elementum in congue massa non. Donec ornare pellentesque laoreet
-                orci sit neque.
+                Craft immersive worlds and redefine reality with our AR/VR game
+                development, merging cutting-edge technology for unparalleled
+                and captivating gaming experiences.
               </div>
             </div>
 
@@ -35,9 +34,9 @@ const ArVr = () => {
                   Immersive
                 </div>
                 <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                  in tortor ultrices bibendum. Sodales lorem non magna praesent
-                  elementum{" "}
+                  Deliver profound immersion, transport users into interactive
+                  realities, heightened senses, and reshape experiences with
+                  unparalleled technological engagement.
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
@@ -45,9 +44,8 @@ const ArVr = () => {
                   Life-like experience
                 </div>
                 <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                  in tortor ultrices bibendum. Sodales lorem non magna praesent
-                  elementum{" "}
+                  Create lifelike experiences, seamlessly blending virtual and
+                  real worlds, immersing users in interactive environments.
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
@@ -55,9 +53,9 @@ const ArVr = () => {
                   Enhanced Co-op interaction
                 </div>
                 <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                  in tortor ultrices bibendum. Sodales lorem non magna praesent
-                  elementum{" "}
+                  Enrich cooperative interaction, fostering shared experiences
+                  with immersive technologies, revolutionizing how users engage
+                  and collaborate in digital realms.
                 </div>
               </div>
             </div>

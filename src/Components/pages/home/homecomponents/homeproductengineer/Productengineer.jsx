@@ -1,14 +1,43 @@
 import React, { useEffect, useRef } from "react";
 import img from "../../../../../assets/homeassets/stefan-stefancik-pzA7QWNCIYg-unsplash 1.png";
 import img2 from "../../../../../assets/homeassets/image 178.png";
+import img3 from "../../../../../assets/homeassets/8.svg";
+import img4 from "../../../../../assets/homeassets/9.svg";
+import img5 from "../../../../../assets/homeassets/10.svg";
+import img6 from "../../../../../assets/homeassets/11.svg";
+import img7 from "../../../../../assets/homeassets/12.svg";
+import img8 from "../../../../../assets/homeassets/13.svg";
+import img9 from "../../../../../assets/homeassets/14.svg";
+import img10 from "../../../../../assets/homeassets/15.svg";
+import img11 from "../../../../../assets/homeassets/16.svg";
+import img12 from "../../../../../assets/homeassets/17.svg";
 
 import gsap from "gsap";
+import { Linear } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Make sure to register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
 const Productengineer = () => {
+  const animateclient = useRef(null);
+  const animateclient2 = useRef(null);
+  useEffect(() => {
+    gsap
+      .timeline({ repeat: -1, yoyo: true })
+      .fromTo(
+        animateclient.current,
+        { x: 50 },
+        { ease: Linear, x: -750, duration: 15 }
+      );
+    gsap
+      .timeline({ repeat: -1, yoyo: true })
+      .fromTo(
+        animateclient2.current,
+        { x: 50 },
+        { ease: Linear, x: -750, duration: 15 }
+      );
+  }, []);
   const sectionRef2 = useRef(null);
 
   useEffect(() => {
@@ -58,8 +87,15 @@ const Productengineer = () => {
         <div className="mainproduct">
           <div
             ref={sectionRef2}
-            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
+            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap-reverse max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
           >
+            <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-md:w-full   max-md:h-full  max-md:mt-5">
+              <img
+                className="w-[513.40px] max-md:w-full h-[770.23px] max-md:h-full"
+                src={img}
+                alt=""
+              />
+            </div>
             <div className="self-stretch flex-col justify-start items-start gap-[120px] inline-flex mt-28 max-md:w-full max-[800px]:mt-5">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
@@ -71,7 +107,8 @@ const Productengineer = () => {
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
                     <div className="text2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
-                    Building experiences that drive growth.                    </div>
+                      Building experiences that drive growth.{" "}
+                    </div>
                     <div className=" text3 text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
                       Codelinear leverages human sentiments, company values to
                       help leaders acheive digital excellence.
@@ -86,32 +123,26 @@ const Productengineer = () => {
               </div>
               <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
                 <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
-                <div className="justify-start items-start gap-[91px] inline-flex max-[350px]:gap-[40px]">
-                  <div className="flex-col justify-start items-start gap-2 inline-flex">
-                    <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                      40+
-                    </div>
-                    <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages{" "}
-                    </div>
-                  </div>
-                  <div className="flex-col justify-start items-start gap-2 inline-flex">
-                    <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                      40+
-                    </div>
-                    <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages{" "}
+                <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
+                  <div className="w-[521px] overflow-scroll max-sm:w-full">
+                    <div
+                      className="flex align-center opacity-70 gap-[48px] w-[600px]"
+                      ref={animateclient}
+                    >
+                      <img src={img3} alt="" />
+                      <img src={img4} alt="" />
+                      <img src={img5} alt="" />
+                      <img src={img6} alt="" />
+                      <img src={img7} alt="" />
+                      <img src={img3} alt="" />
+                      <img src={img4} alt="" />
+                      <img src={img5} alt="" />
+                      <img src={img6} alt="" />
+                      <img src={img7} alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-md:w-full   max-md:h-full  max-md:mt-5">
-              <img
-                className="w-[513.40px] max-md:w-full h-[770.23px] max-md:h-full"
-                src={img}
-                alt=""
-              />
             </div>
           </div>
         </div>
@@ -149,22 +180,21 @@ const Productengineer = () => {
             </div>
             <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
               <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
-              <div className="justify-start items-start gap-[91px] inline-flex max-[350px]:gap-[40px]">
-                <div className="flex-col justify-start items-start gap-2 inline-flex">
-                  <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                    40+
-                  </div>
-                  <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                    Codelinear leverages{" "}
-                  </div>
-                </div>
-                <div className="flex-col justify-start items-start gap-2 inline-flex">
-                  <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                    40+
-                  </div>
-                  <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                    Codelinear leverages{" "}
-                  </div>
+              <div className="w-[521px] overflow-scroll max-sm:w-full">
+                <div
+                  className="flex align-center opacity-70 gap-[48px] w-[600px]"
+                  ref={animateclient2}
+                >
+                  <img src={img8} alt="" />
+                  <img src={img9} alt="" />
+                  <img src={img10} alt="" />
+                  <img src={img11} alt="" />
+                  <img src={img12} alt="" />
+                  <img src={img8} alt="" />
+                  <img src={img9} alt="" />
+                  <img src={img10} alt="" />
+                  <img src={img11} alt="" />
+                  <img src={img12} alt="" />
                 </div>
               </div>
             </div>

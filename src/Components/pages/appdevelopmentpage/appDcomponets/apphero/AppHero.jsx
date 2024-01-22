@@ -3,9 +3,10 @@ import React from "react";
 const AppHero = () => {
   return (
     <>
-      <div className="w-full h-[472px] pl-20 pr[622px] pt-[233.78px] pb-[25.22px] bg-white justify-start items-center inline-flex">
-        <div className="w-[738px] text-black text-[66px] font-normal font-['Graphik'] leading-[71.28px]">
-          Elit ut urna aliquet vulputate et maecenas porttitor. Semper cras sit.
+      <div className="w-full h-[472px] pl-20 pr[622px] pt-[142px] pb-[25.22px] bg-white justify-start items-center inline-flex">
+        <div className="w-[856px] letter-spacing   text-black text-[66px] font-normal font-['Graphik'] leading-[100%]">
+          Build exceptional apps that meet the demands of tomorrow's digital
+          landscape.{" "}
         </div>
       </div>
     </>

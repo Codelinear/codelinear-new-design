@@ -31,27 +31,29 @@ import Digital from "./Components/pages/blogpages/blogcomponents/ineerblog/Digit
 import Contact from "./Components/pages/contactPage/contactpage";
 import Casestudy from "./Components/pages/casestudy/Casestudy";
 import Industry from "./Components/pages/industrypage/Industry";
+import Production from "./Components/pages/production/production";
+import Lowcode from "./Components/pages/lowCode/lowCode";
+import QualityAssurance from "./Components/pages/qualityAssurance/qualityAssurance";
+import Ecommerce from "./Components/pages/ecommerce/ecommerce";
+import VR from './Components/pages/VR/VR'
 
 function App() {
-
-
-
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 2,
-      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-      direction: 0,
-      smooth: true,
-      normalizeWheel: true,
-      smoothWheel: true,
-      lerp: 0.5
-    });
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }, []);
+  // useEffect(() => {
+  //   const lenis = new Lenis({
+  //     duration: 2,
+  //     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+  //     direction: 0,
+  //     smooth: true,
+  //     normalizeWheel: true,
+  //     smoothWheel: true,
+  //     lerp: 0.5
+  //   });
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+  //   requestAnimationFrame(raf);
+  // }, []);
 
   return (
     <>
@@ -60,15 +62,24 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          {/* <Route exact path="/gamedev" element={<Gamedev />} /> */}
+          <Route exact path="/gamedev" element={<Gamedev />} />
+          <Route exact path="/product-development" element={<Production />} />
+          <Route exact path="/low-code-no-code" element={<Lowcode />} />
           <Route exact path="/service" element={<Servicepage />} />
-          {/* <Route exact path="/appdev" element={<Appdevelop />} /> */}
+          <Route exact path="/appdev" element={<Appdevelop />} />
           <Route exact path="/insights" element={<Blog />} />
           <Route exact path="/contactus" element={<Contact />} />
           <Route exact path="/casestudy" element={<Casestudy />} />
           <Route exact path="/industry" element={<Industry />} />
           <Route exact path="/changingnature" element={<Changingnature />} />
           <Route exact path="/nocode" element={<Nocode />} />
+          <Route
+            exact
+            path="/Quality-Assurance"
+            element={<QualityAssurance />}
+          />
+          <Route exact path="/Ecommerce" element={<Ecommerce />} />
+          <Route exact path="/AR-VR-services" element={<VR />} />
           <Route exact path="/shopifyVsMagento" element={<Shopify />} />
           <Route exact path="/design-system" element={<Designsystem />} />
           <Route exact path="/Gestalt" element={<Gestalt />} />

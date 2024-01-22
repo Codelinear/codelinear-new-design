@@ -21,10 +21,9 @@ const Mobileapp = () => {
             </div>
           </div>
           <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-            Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui in
-            tortor ultrices bibendum. Sodales lorem non magna praesent elementum
-            in congue massa non. Donec ornare pellentesque laoreet orci sit
-            neque.
+            Craft exceptional mobile experiences with our design-led mobile app
+            development, integrating innovation, user-centric design, and
+            cutting-edge technologies.
           </div>
         </div>
         <div className="left-[80px] top-[356.27px]  text-black text-xl font-normal font-['Graphik'] leading-normal my-10">

@@ -21,10 +21,9 @@ const Unreal = () => {
             </div>
           </div>
           <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-            Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui in
-            tortor ultrices bibendum. Sodales lorem non magna praesent elementum
-            in congue massa non. Donec ornare pellentesque laoreet orci sit
-            neque.
+            Unreal Engine game production combines advanced graphics, intuitive
+            design tools, and powerful performance, crafting immersive and
+            unforgettable gaming experiences.
           </div>
         </div>
 
@@ -36,12 +35,12 @@ const Unreal = () => {
               alt=""
             />
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
                 Breath-taking visuals
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Deliver breathtaking visuals, pushing the boundaries of realism
+                and immersive gaming experiences.
               </div>
             </div>
           </div>
@@ -54,12 +53,12 @@ const Unreal = () => {
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
                 Real time rendering
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Achieve stunning real-time rendering, bringing visuals to life
+                instantly for unparalleled gaming experiences.
               </div>
             </div>
           </div>
@@ -70,12 +69,12 @@ const Unreal = () => {
               alt="kj"
             />
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
                 Quick prototyping
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Prototype swiftly, expediting the creation and testing of game
+                concepts easily and efficiently.
               </div>
             </div>
           </div>

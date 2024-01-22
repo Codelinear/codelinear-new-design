@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../gameassets/image 163.png";
+import img from "../../gameassets/image 163.svg";
 import img2 from "../../gameassets/cryengine-logo-vertical-black 1.svg";
 import img3 from "../../gameassets/image 167.png";
 import img4 from "../../gameassets/image 166.png";
@@ -24,25 +24,19 @@ const Desktopgame = () => {
             </div>
 
             <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-              Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui in
-              tortor ultrices bibendum. Sodales lorem non magna praesent
-              elementum in congue massa non. Donec ornare pellentesque laoreet
-              orci sit neque.
+              Desktop game development provides expansive graphics, processing
+              power, and immersive gameplay, catering to a dedicated gaming
+              audience seeking high-quality experiences.
             </div>
           </div>
           <div className="ml-[80px] top-[345px]  flex-col justify-start items-start gap-[35px] inline-flex">
             <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
               Technologies we use
             </div>
-            <div className="justify-start items-start gap-[47px] inline-flex">
-              <div className="flex-col justify-start items-center gap-4 inline-flex">
-                <div>
-                  <img
-                    //   className="w-[62.41px] h-[63.33px] left-[0.87px] top-[0.40px] "
-                    className="w-[64.14px] h-[64.14px] relative"
-                    src={img}
-                    alt=""
-                  />
+            <div className="w-[103px]  justify-start items-start gap-[47px] inline-flex">
+              <div className="w-[103px] flex-col justify-start items-center gap-4 inline-flex">
+                <div className="w-[64.14px] h-[64.14px] bg-black rounded-full justify-center items-center inline-flex">
+                  <img className="w-[64.14px] h-[64.14px]" src={img} alt="" />
                 </div>
                 <div className="text-black text-base font-normal font-['Graphik'] leading-tight">
                   Unreal Engine
@@ -97,32 +91,32 @@ const Desktopgame = () => {
           <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex">
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
-                Production
+                High-End Graphics Rendering{" "}
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                in tortor ultrices bibendum. Sodales lorem non magna praesent
-                elementum{" "}
+                Elevate visual experiences with cutting-edge graphics,
+                delivering lifelike environments and immersive gameplay for
+                unparalleled desktop gaming adventures.
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
-                Testing & Quality Assurance
+                Advanced Processing Power{" "}
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                in tortor ultrices bibendum. Sodales lorem non magna praesent
-                elementum{" "}
+                Harness the full potential of desktop hardware, ensuring
+                seamless and complex game mechanics, enabling a truly dynamic
+                and responsive gaming experience.
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
-                LiveOps
+                Expansive Gameplay Possibilities
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui
-                in tortor ultrices bibendum. Sodales lorem non magna praesent
-                elementum{" "}
+                Unleash creativity with vast, intricate game worlds,
+                sophisticated AI, and diverse gameplay mechanics, offering
+                players limitless engagement and exploration.
               </div>
             </div>
           </div>
@@ -131,9 +125,6 @@ const Desktopgame = () => {
           </div>
         </div>
       </div>
-
-
-      
     </>
   );
 };

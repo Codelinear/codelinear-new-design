@@ -40,7 +40,7 @@ const Navbar = () => {
     <>
       {width <= 900 ? (
         <>
-          <div className="w-full z-[99999990999999] h-[91px] px-20 bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0 max-sm:px-[20px]">
+          <div className="w-full z-[99999999999999] h-[91px] px-20 bg-white flex-col justify-end items-center gap-2.5 inline-flex sticky top-0 max-sm:px-[20px]">
             <div className="self-stretch pt-[30px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
               <div className="w-[123px] h-[51px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
@@ -223,7 +223,7 @@ const Navbar = () => {
               active ? "active " : ""
             }`}
           >
-            <div className="w-[100%] h-[100vh] relative bg-white ">
+            <div className="w-[100%] h-[100vh] z-[99999999999999] sticky top-0 relative bg-white ">
               <div className="w-[100%] px-5 pt-3 left-0 top-0 absolute justify-between items-center inline-flex">
                 <div className="w-[101.29px] h-[42px] pr-[5.27px] pt-[13.48px] flex-col justify-end items-start gap-[12.10px] inline-flex">
                   <div className="w-24 h-4 relative flex-col justify-start items-start flex">
@@ -423,8 +423,7 @@ const Navbar = () => {
                       isStopped={!isHovered}
                       isPaused={!isHovered}
                       autoplay={false}
-                      onMouseEnter={handleHover}
-                      onMouseLeave={handleHover}
+                      className="absolute w-[120px] bottom-0"
                     />{" "}
                   </Link>
                 </div>
@@ -463,7 +462,11 @@ const Navbar = () => {
                               </Link>
                             </div>
                             <div className="self-stretch justify-start items-start gap-3.5 inline-flex flex-wrap">
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
+                              <Link
+                                to={"/product-development"}
+                                onClick={toggleDropdown}
+                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
+                              >
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   Product Design and Innovation
                                 </div>
@@ -474,7 +477,7 @@ const Navbar = () => {
                                     </div>{" "}
                                   </div>
                                 </div>
-                              </div>
+                              </Link>
                               <Link
                                 to="/appdev"
                                 onClick={toggleDropdown}
@@ -503,7 +506,12 @@ const Navbar = () => {
                                   </div>
                                 </div>
                               </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
+                              <Link
+                                to="/Ecommerce"
+                                onClick={toggleDropdown}
+                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
+                              >
+                                {" "}
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   Ecommerce Marketplace Development
                                 </div>
@@ -514,7 +522,7 @@ const Navbar = () => {
                                     </div>{" "}
                                   </div>
                                 </div>
-                              </div>
+                              </Link>
                               <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   Cloud Engineering
@@ -543,7 +551,11 @@ const Navbar = () => {
                                   </div>
                                 </div>
                               </Link>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
+                              <Link
+                                to="/AR-VR-services"
+                                onClick={toggleDropdown}
+                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
+                              >
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   AR/VR Services
                                 </div>
@@ -554,8 +566,12 @@ const Navbar = () => {
                                     </div>{" "}
                                   </div>
                                 </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
+                              </Link>
+                              <Link
+                                to={"/low-code-no-code"}
+                                onClick={toggleDropdown}
+                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
+                              >
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   Low-code and No-code
                                 </div>
@@ -566,8 +582,12 @@ const Navbar = () => {
                                     </div>{" "}
                                   </div>
                                 </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
+                              </Link>
+                              <Link
+                                to={"/Quality-Assurance"}
+                                onClick={toggleDropdown}
+                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
+                              >
                                 <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
                                   Quality Assurance
                                 </div>
@@ -578,7 +598,7 @@ const Navbar = () => {
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                              </Link>
                             </div>
                           </div>
                         </div>

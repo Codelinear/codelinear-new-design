@@ -65,7 +65,7 @@ const Apidev = () => {
               </div>
               <Link
                 to=""
-                className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+                className="px-8 py-4 rounded-se-full border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
               >
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                   Talk to our experts

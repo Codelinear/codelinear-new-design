@@ -19,10 +19,9 @@ const Unity = () => {
             </div>
           </div>
           <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-            Enim in nunc mi ultricies risus nulla vitae. Feugiat vitae dui in
-            tortor ultrices bibendum. Sodales lorem non magna praesent elementum
-            in congue massa non. Donec ornare pellentesque laoreet orci sit
-            neque.
+            Elevate your gaming vision with Unity's versatile game development,
+            blending powerful tools, cross-platform capabilities, and incredible
+            interactive experiences.
           </div>
         </div>
         <div className="left-[80px] top-[350.20px] absolute justify-start items-start gap-[21px] inline-flex">
@@ -35,51 +34,48 @@ const Unity = () => {
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[183.22px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="w-[185.22px] text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
                 Easy cross-platform development
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Effortlessly create across platforms with streamlined and
+                user-friendly cross-platform development solutions.
               </div>
             </div>
           </div>
-          <div className="pl-[25.95px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
-            <div />
-
-            <img
-              className="w-[57.25px] h-[47.25px] relative flex-col justify-start items-start flex"
-              src={code}
-              alt=""
-            />
-
+          <div className="pl-[25.38px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
+            <div className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex">
+              <img
+                className="w-[47.71px] h-[35.78px] relative"
+                src={code}
+                alt=""
+              />
+            </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[195.10px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                Robust development environment
+              <div className="w-[195.22px] text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
+                Robust development environment{" "}
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Unity provides a robust development environment fostering
+                efficiency, and seamless integration.
               </div>
             </div>
           </div>
-          <div className="pl-[25.95px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
+          <div className="pl-[25.38px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
             <div className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex">
-              <div></div>
-
               <img
-                className="w-[37.18px] h-[47.20px] relative"
+                className="w-[47.71px] h-[35.78px] relative"
                 src={img2}
                 alt=""
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                2D & 3D capabilities
+              <div className="w-[159.22px] text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
+                2D & 3D capabilities{" "}
               </div>
               <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                Turpis feugiat aliquet imperdiet amet viverra ac condimentum
-                sed.{" "}
+                Unlock limitless creative possibilities , regardless of the type
+                of game you want to create.
               </div>
             </div>
           </div>

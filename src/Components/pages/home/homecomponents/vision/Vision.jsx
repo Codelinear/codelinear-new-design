@@ -2,6 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 
 import img from "../../../../../assets/homeassets/image 177.png";
 import gsap from "gsap";
+import { Linear } from "gsap";
+import img2 from "../../../../../assets/homeassets/2.svg";
+import img3 from "../../../../../assets/homeassets/3.svg";
+import img4 from "../../../../../assets/homeassets/4.svg";
+import img5 from "../../../../../assets/homeassets/5.svg";
+import img6 from "../../../../../assets/homeassets/6.svg";
+import img7 from "../../../../../assets/homeassets/7.svg";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -9,6 +16,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Vision = () => {
+  const animateclient = useRef(null);
+  useEffect(() => {
+    gsap
+      .timeline({ repeat: -1, yoyo: true, })
+      .fromTo(animateclient.current, { x: 50 }, {ease: Linear, x: -1050, duration: 15 });
+  }, []);
   useEffect(() => {
     // GSAP timeline for the first box
     const tl1 = gsap.timeline({
@@ -128,22 +141,23 @@ const Vision = () => {
               </div>
               <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
                 <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
-                <div className="justify-start items-start gap-[91px] inline-flex max-[350px]:gap-[40px]">
-                  <div className="flex-col justify-start items-start gap-2 inline-flex">
-                    <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                      40+
-                    </div>
-                    <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages{" "}
-                    </div>
-                  </div>
-                  <div className="flex-col justify-start items-start gap-2 inline-flex">
-                    <div className="text-[#B7B7B7] text-[57.06px] font-normal font-['Graphik'] leading-[68.47px]">
-                      40+
-                    </div>
-                    <div className="opacity-80 text-[#B7B7B7] text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages{" "}
-                    </div>
+                <div className="w-[521px] overflow-scroll max-sm:w-full">
+                  <div
+                    className="flex align-center opacity-70 gap-[48px] w-[600px]"
+                    ref={animateclient}
+                  >
+                    <img src={img2} alt="" />
+                    <img src={img3} alt="" />
+                    <img src={img4} alt="" />
+                    <img src={img5} alt="" />
+                    <img src={img6} alt="" />
+                    <img src={img7} alt="" />
+                    <img src={img2} alt="" />
+                    <img src={img3} alt="" />
+                    <img src={img4} alt="" />
+                    <img src={img5} alt="" />
+                    <img src={img6} alt="" />
+                    <img src={img7} alt="" />
                   </div>
                 </div>
               </div>

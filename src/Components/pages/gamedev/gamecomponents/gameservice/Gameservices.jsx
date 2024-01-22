@@ -6,6 +6,7 @@ import Unreal from "./maingameservices/Unreal";
 import Unity from "./maingameservices/Unity";
 import ArVr from "./maingameservices/ArVr";
 import { Link } from "react-router-dom";
+import img from '../gameassets/image 38.svg'
 // import Otherservice from "./gameservice/Otherservice";
 
 const Gameservices = () => {
@@ -43,24 +44,16 @@ const Gameservices = () => {
   return (
     <>
       <div className="game-service">
-        <div className="w-full hfull  bg-white">
+        <div className="w-full hfull mt-[80px]  bg-white">
           <div className="w-full h-full relative bg-white flex justify-between">
             <div className="leftt">
               <div>
                 <div className="flex gap-40 w-full">
-                  <div className="flex flex-col gap-40">
+                  <div className="flex flex-col gap-[471px]">
                     <p className="w-[305px] ml-[80px] pt-[40.08px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Turpis feugiat aliquet imperdiet amet viverra ac
-                      condimentum sed. Sed placerat ornare feugiat et adipiscing
-                      pellentesque velit ligula in. <br />
-                      <br />
-                      Suspendisse amet adipiscing pellentesque id amet quis.
-                      Sapien vitae aliquam aenean et pulvinar nulla mauris in
-                      tempus. Enim ut aenean maecenas euismod malesuada id id.
-                      Id non sed sit nunc massa tincidunt integer. <br />
-                      <br />
-                      Placerat vitae adipiscing odio dolor turpis ut curabitur
-                      est.{" "}
+                      Immerse players in visually stunning landscapes. Our
+                      design-centric approach ensures games that are not just
+                      playable but also a visual feast for users.
                     </p>
 
                     <div className="ml-[80px] top-[607.30px]  flex-col justify-start items-start gap-[25px] inline-flex">
@@ -78,7 +71,7 @@ const Gameservices = () => {
                   <div>
                     <img
                       className="w-[556.98px] h-[696.22px] left-[498.02px] top-[40.08px] "
-                      src="https://via.placeholder.com/557x696"
+                      src={img}
                       alt=""
                     />
                   </div>

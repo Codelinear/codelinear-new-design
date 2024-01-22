@@ -1,4 +1,5 @@
 import React from "react";
+import './home.scss'
 import Homehero from "../../homepageComp/homeHero/Homehero";
 import Vision from "./homecomponents/vision/Vision";
 import Productengineer from "./homecomponents/homeproductengineer/Productengineer";
