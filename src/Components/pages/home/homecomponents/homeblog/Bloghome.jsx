@@ -75,9 +75,9 @@ const Bloghome = () => {
       ref={component}
     >
       <div ref={slider} className="container">
-        <div className="flex justify-between mt-[100px] w-full px-[80px]">
+        <div className="flex justify-between mt-[100px] w-full px-[80px] mb-[60px]">
           <div>
-            <div className="w-[643.95px] text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
+            <div className="w-[443.95px] text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
               Stay in the know. Check our insights into big things happening
               now.
             </div>
@@ -104,10 +104,10 @@ const Bloghome = () => {
               className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[317px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                   {/* <div  /> */}
                   <img
-                    className="w-[318px] h-[317px] relative flex-col justify-start items-start flex"
+                    className="w-[318px]  object-cover h-[175px] relative flex-col justify-start items-start flex"
                     src={img5}
                     alt=""
                   />
@@ -138,9 +138,9 @@ const Bloghome = () => {
               className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[317px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] h-[317px] relative flex-col justify-start items-start flex"
+                    className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
                     src={img2}
                     alt=""
                   />
@@ -175,9 +175,9 @@ const Bloghome = () => {
               className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[317px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] h-[317px] relative flex-col justify-start items-start flex"
+                    className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
                     src={img3}
                     alt=""
                   />
@@ -208,9 +208,9 @@ const Bloghome = () => {
               className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[317px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] h-[317px] relative flex-col justify-start items-start flex"
+                    className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
                     src={img4}
                     alt=""
                   />
@@ -241,9 +241,9 @@ const Bloghome = () => {
               className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[317px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] h-[317px] relative flex-col justify-start items-start flex"
+                    className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
                     src={img6}
                     alt=""
                   />

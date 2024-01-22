@@ -46,9 +46,38 @@
 .mySwiper {
   margin-right: 0 !important;
 }
-
+.autoplay-progress {
+  position: relative;
+  width: 310px;
+  margin-left: 316px;
+  height: 12px; /* Set the height of the progress bar */
+  background-color: transparent; /* Set the background color of the progress bar container */
+  margin-top: -2px; /* Adjust as needed */
+}
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white; /* Set the color of the progress bar */
+  opacity: 0.7;
+  transition: width 0s ease; /* Add transition for a smooth effect */
+}
 @media (max-width: 1024px) {
   .swiper-pagination {
-    left: -100px !important;
+    left: 0px !important;
+  }
+}
+@media (max-width: 640px) {
+  .autoplay-progress {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    height: 12px; /* Set the height of the progress bar */
+    background-color: transparent; /* Set the background color of the progress bar container */
+    margin-top: -2px; /* Adjust as needed */
+  }
+  .swiper-pagination {
+    left: 0px !important;
   }
 }

@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import graphintersect from "./assets/Intersect.svg";
 import grapharrow from "./assets/Frame 1000002956.png";
-import grapharroww from "./assets/PSST.svg";
+import grapharrow2 from "./assets/file.svg";
 import "./circle.scss";
 
 import { TweenMax } from "gsap";
@@ -11,13 +11,17 @@ const Animatecircle = () => {
   let circle2 = useRef(null);
   let circle3 = useRef(null);
   let arrow = useRef(null);
-  // let intersect = useRef(null);
+  let arrow3 = useRef(null);
+  let arrow2 = useRef(null);
+  let intersecter = useRef(null);
   let circle4 = useRef(null);
 
   const mouseOverAnimation = () => {
     gsap.to(circle1, { opacity: 0 });
-    // gsap.to(intersect, { opacity: 1 });
+    gsap.to(intersecter.current, { width: "182px" });
     gsap.to(arrow, { opacity: 1 });
+    gsap.to(arrow2, { opacity: 1 });
+    gsap.to(arrow3, { opacity: 1 });
     gsap.to(circle2, { opacity: 1, y: 63, x: 98, scale: 1.5 });
     gsap.to(circle3, { opacity: 1, y: 64, x: -97, scale: 1.5 });
     gsap.to(circle4, { opacity: 1, y: -105, x: -5, scale: 1.5 });
@@ -26,28 +30,38 @@ const Animatecircle = () => {
   const mouseOutAnimation = () => {
     gsap.to(circle1, { opacity: 1 });
     gsap.to(arrow, { opacity: 0 });
+    gsap.to(arrow2, { opacity: 0 });
+    gsap.to(arrow3, { opacity: 0 });
     gsap.to(circle2, { opacity: 0, y: 0, x: 0, scale: 1 });
     gsap.to(circle3, { opacity: 0, y: 0, x: 0, scale: 1 });
     gsap.to(circle4, { opacity: 0, y: 0, scale: 1 });
+    gsap.to(intersecter.current, { width: 0 });
   };
 
   return (
-    <div onMouseOver={mouseOverAnimation} onMouseOut={mouseOutAnimation}>
+    <div className="pt-[50px] max-[901px]:h-[700px] max-[481px]:h-[500px]">
+      <div
+        className="w-[50%] ml-[25%] h-[500px] absolute z-[3] insert-hover max-[901px]:h-[700px] max-[481px]:h-[500px] "
+        onMouseOver={mouseOverAnimation}
+        onMouseOut={mouseOutAnimation}
+      ></div>
       <div className="circles-animation aboutsection my-20 max-md:h-full">
         <img
           src={graphintersect}
           alt=""
           className="intersect"
           // ref={(el) => (intersect = el)}
+          ref={intersecter}
         />
-        {/* {isDarkMode ? (
         <img
-          src={grapharroww}
+          src={grapharrow2}
           alt=""
-          className="arrowanimate"
-          ref={(el) => (arrow = el)}
+          className="arrow-small"
+          ref={(el) => (arrow2 = el)}
         />
-      ) : ( */}
+        <p className="text-graph" ref={(el) => (arrow3 = el)}>
+          We help you get here.
+        </p>
         <img
           src={grapharrow}
           alt=""

@@ -4,8 +4,8 @@ import img from "../assets/Frame 1000002958p.png"
 const Sastain = () => {
   return (
     <>
-      <div className="w-full h-[746px] pl-[132px] pr-20 pt-[74px] pb-[138px] bg-white justify-end items-start gap-[125px] inline-flex max-lg:h-full max-lg:p-5 max-lg:flex-wrap max-lg:justify-center max-lg:mt-20">
-        <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center">
+      <div className="w-full h-[670px] pl-[47px] pr-[47px] pt-[74px] pb-[138px] bg-white justify-center items-start gap-[9%] inline-flex max-lg:h-full max-lg:p-5 max-lg:flex-wrap max-lg:justify-center max-lg:mt-20">
+        <div className="self-stretch mb-{30px} w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center">
           <div className="h-[353px] flex-col justify-end items-center flex ">
             <img
               className="w-[321.78px] h-[402.39px] max-lg:w-full"
@@ -75,7 +75,7 @@ const Sastain = () => {
             </div>
           </div>
         </div>
-        <div className="w-[795px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-lg:p-5 max-lg:gap-5 ">
+        <div className="w-[740px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-lg:p-5 max-lg:gap-5 ">
           <div className="w-[551.45px] text-black text-5xl font-normal font-['Graphik'] leading-[57.60px] max-lg:w-full">
             Need help in making the next big thing?
           </div>

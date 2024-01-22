@@ -90,14 +90,22 @@
   // mix-blend-mode: color-dodge;
 }
 
-
 @media (max-width: 640px) {
   .client-logos {
     .b {
       width: 50%;
     }
-  }}
-
+  }
+}
+@media (max-width: 1023px) {
+  
+  .home-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 1024px) {
   // .client-logos {
   //   .b {
@@ -141,5 +149,12 @@
   }
   .adupt-svg10 {
     background-image: url("./aduptsvg/ybean.svg");
+  }
+}
+@media (max-width: 540px) {
+  .client-logos {
+    .b {
+      width: 40%;
+    }
   }
 }

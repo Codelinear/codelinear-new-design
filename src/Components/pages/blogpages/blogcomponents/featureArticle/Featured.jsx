@@ -11,7 +11,7 @@ const Featured = () => {
             {/* <div  /> */}
             <div>
               <img
-                className="w-[739px] h-[434px] ml-[80px] mt-[38px]  bg-black bg-opacity-20 max-xl:ml-10  max-lg:ml-0 max-md:w-full"
+                className="w-[739px] h-full ml-[80px] mt-[38px]  bg-black bg-opacity-20 max-xl:ml-10  max-lg:ml-0 max-md:w-full"
                 src={img}
                 alt=""
               />
@@ -25,7 +25,7 @@ const Featured = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-[482px] text-black text-4xl font-normal font-['Graphik'] leading-[43.20px] max-md:w-full">
+                <div className="w-[482px] text-black text-4xl font-normal font-['Graphik'] leading-[120%] max-md:w-full">
                   No-Code Revolution: 5 Platforms To Keep An Eye...
                 </div>
               </div>

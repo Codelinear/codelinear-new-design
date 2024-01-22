@@ -15,9 +15,9 @@ const Mainindustry = () => {
     <>
       <div className="industry-main">
         <div className="flex flex-wrap">
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
-              <div className="h-[353px] flex-col justify-start items-center flex">
+          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+              <div className="flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
                   src={img9}
@@ -72,7 +72,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -121,7 +121,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -178,8 +178,8 @@ const Mainindustry = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
@@ -242,7 +242,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col justify-start  pt-[74px] pb-[62px] items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -312,7 +312,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 pt-[74px] pb-[62px] inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -362,8 +362,8 @@ const Mainindustry = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[670px] pl-[147px] pr-[117px] pt-[74px] pb-[62px] bg-white justify-end items-start gap-[126px] inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col  pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img
                   className="w-[319.63px] h-[365.63px]"
@@ -419,7 +419,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
                 <img
                   className="w-[316.90px] h-[364.89px]"
@@ -475,7 +475,7 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"

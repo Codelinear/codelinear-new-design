@@ -14,16 +14,16 @@ const Nocode = () => {
   return (
     <>
       <div className="innerhero">
-        <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10">
-          <div className="w-[953px] text-black text-[66px] font-normal font-['Graphik'] leading-[71.28px] max-lg:w-full max-sm:text-[46px]">
+        <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:ml-[20px] max-sm:mt-[90px]">
+          <div className="w-[953px] text-black text-[66px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-sm:text-[46px]">
             No-Code Revolution: 5 Platforms To Keep An Eye On In 2023
           </div>
         </div>
 
         <div className="hero-img">
-          <div className="w-full h-[808px] px-20 py-[36.50px] bg-white justify-center items-center inline-flex max-md:px-0">
+          <div className="w-full h-full px-20 py-[36.50px] bg-white justify-center items-center inline-flex max-md:px-0">
             <img
-              className="w-full h-[735px] relative bg-black bg-opacity-20 flex-col justify-start items-start flex"
+              className="w-full h-full relative bg-black bg-opacity-20 flex-col justify-start items-start flex"
               src={img}
               alt=""
             />
@@ -32,12 +32,12 @@ const Nocode = () => {
       </div>
 
       <div className="blog-content">
-        <div className="w-full h-[3704px] relative bg-white max-xl:h-full">
-          <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap-reverse max-lg:justify-center">
-            <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full">
+        <div className="w-full h-full relative bg-white max-xl:h-full">
+          <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap max-lg:justify-center">
+            <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full max-sm:absolute max-sm:top-0 max-lg:h-full">
               <Link
                 to="/insights"
-                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:top-[0px] max-lg:left-[20px]"
               >
                 <Link to="/insights" className="w-[31px] h-[21px] relative ">
                   <img
@@ -51,28 +51,26 @@ const Nocode = () => {
                 </div>
               </Link>
 
-              <div className="left-[80px] top-[201.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize">
+              <div className="left-[80px] top-[201.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize max-lg:hidden">
                 Now Reading
               </div>
-              <div className="left-[80px] top-[352.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize">
+              <div className="left-[80px] top-[352.39px] absolute text-black text-2xl font-normal font-['Graphik'] capitalize max-lg:hidden">
                 Also Read
               </div>
-              <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10">
+              <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10 max-lg:hidden">
                 <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
                   <img className="w-[68px] h-[65px]" src={img} alt="" />
                 </div>
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  <marquee>  No-Code Revolution</marquee>
-
-                  
+                    <marquee> No-Code Revolution</marquee>
                   </div>
                 </div>
               </div>
               <Link
                 onClick={scrollToTop}
                 to="/digital"
-                className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10"
+                className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10 max-lg:hidden"
               >
                 <div className="w-[68px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
                   <img className="w-[68.11px] h-[69.01px]" src={img2} alt="" />
@@ -80,9 +78,7 @@ const Nocode = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  <marquee>Digital Marketing</marquee>
-
-                 
+                    <marquee>Digital Marketing</marquee>
                   </div>
                 </div>
               </Link>
@@ -90,7 +86,7 @@ const Nocode = () => {
               <Link
                 onClick={scrollToTop}
                 to="/Gestalt"
-                className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10"
+                className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10 max-lg:hidden"
               >
                 <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
                   <img
@@ -102,14 +98,12 @@ const Nocode = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  <marquee> Gestalt Psychology</marquee>
-
-                   
+                    <marquee> Gestalt Psychology</marquee>
                   </div>
                 </div>
               </Link>
             </div>
-            <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10">
+            <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10 max-sm:px-[20px] max-sm:mt-[80px]">
               <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
                 When Ole Kirk Christiansen went out of business back in the
                 1930s, little did he know that the scraps from his furniture
@@ -350,7 +344,7 @@ const Nocode = () => {
         </div>
       </div>
 
-      <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
+      {/* <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
         <div class="self-stretch justify-center items-center gap-[75px] inline-flex max-lg:flex-wrap">
           <div class="w-[359px] h-[434px] pt-[0.50px] bg-zinc-100 flex-col justify-center items-center inline-flex">
             <img
@@ -363,14 +357,18 @@ const Nocode = () => {
             <div class="w-[391.40px] text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]">
               Explore our Low code No code services
             </div>
-            <Link to="/service" onClick={scrollToTop} class="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
+            <Link
+              to="/service"
+              onClick={scrollToTop}
+              class="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+            >
               <div class="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                 Learn more
               </div>
             </Link>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </>
   );
 };

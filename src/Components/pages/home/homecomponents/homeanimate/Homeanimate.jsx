@@ -5,9 +5,10 @@ import "./homeanimate.scss";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import img from "../../../../../assets/aboutassets/spacejoy-IH7wPsjwomc-unsplash 1.png";
 import img2 from "../../../../../assets/homeassets/josh-nuttall-XVTWFHcNIko-unsplash 1.png";
 import img3 from "../../../../../assets/homeassets/oleg-laptev-QRKJwE6yfJo-unsplash 1.png";
@@ -25,24 +26,20 @@ const Homeanimate = () => {
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
             pagination={{
               clickable: true,
             }}
-            navigation={false}
-            modules={[Autoplay, Pagination, Navigation]}
+            effect={"fade"}
+            modules={[Autoplay, Pagination, Navigation, EffectFade]}
             // onAutoplayTimeLeft={onAutoplayTimeLeft}
-            className="mySwiper w-[90%] float-start  mr-0  z-[2] max-lgw-[90%] max-lg:mt-20 max-md:w- -5"
+            className="mySwiper w-[90%] float-start  mr-0  z-[2] max-lgw-[90%] max-lg:mt-20 max-sm:w-[300px]"
           >
             <SwiperSlide>
               {" "}
-              <div className="w-[620px] h-[274px] left-[730px] top-[469px]  bg-blue-700 flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-full ">
-                <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-md:w- max-sm:w-full">
+              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-blue-700 flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-[626px] ">
+                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-md:w- max-sm:w-[300px]">
                   <img
-                    className="w-[316.46px] max-md:h-full max-sm:w-full"
+                    className="w-[100%] h-[400px] max-md:h-full max-sm:w-full"
                     src={img}
                     alt=""
                   />
@@ -68,10 +65,10 @@ const Homeanimate = () => {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <div className="w-[620px] h-[274px] left-[730px] top-[469px]  bg-[#F4ECDE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-full">
-                <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
+              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-[#F4ECDE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-[626px]">
+                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
                   <img
-                    className="w-[316.46px]  max-md:h-full max-sm:w-full"
+                    className="w-[100%] h-[400px]  object-fill max-md:h-full max-sm:w-full"
                     src={img3}
                     alt=""
                   />
@@ -98,10 +95,10 @@ const Homeanimate = () => {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <div className="w-[620px] h-[274px] left-[730px] top-[469px]  bg-[#D1EBFE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-full">
-                <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
+              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-[#D1EBFE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-[626px]">
+                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
                   <img
-                    className="w-[316.46px]  max-md:h-full  max-sm:w-full"
+                    className="w-[100%] h-[400px]  object-fill max-md:h-full  max-sm:w-full"
                     src={img2}
                     alt=""
                   />
@@ -138,8 +135,9 @@ const Homeanimate = () => {
             pagination={{
               type: "progressbar",
             }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
+            navigation={true} 
+            effect={"fade"}
+            modules={[Autoplay, Pagination, Navigation, EffectFade]}
             className="mySwiper"
           >
             <SwiperSlide>

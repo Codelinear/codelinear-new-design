@@ -156,6 +156,7 @@ const Allblogs = () => {
     setIsSort3Active(false);
     setIsSortActive(false);
     setIsSort2Active(false);
+
     setIsSort5Active(false);
     setIsSort6Active(false);
     setIsSort7Active(false);
@@ -315,18 +316,18 @@ const Allblogs = () => {
       <div className="all-blogs">
         <div className="category-section">
           <div className="w-full h-[142px]  max-lg:h-full   pl-20 pr-[0px] pt-[67px] pb-[35px] bg-white justify-start items-center inline-flex max-lg:p-5  max-lg:mt-10">
-            <div className="filtere self-stretch justify-start items-start gap-5 inline-flex max-lgflex-wrap max-sm:flex-nowrap max-sm:w-full max-lg:overflow-scroll">
-              <button
+            <div className="self-stretch justify-start items-start gap-5 inline-flex max-lgflex-wrap max-sm:flex-nowrap max-sm:w-full max-[1392px]:overflow-scroll">
+              <div
                 ref={(el) => (all = el)}
                 onClick={onClickSort1}
-                className={`p-2 bg-zinc900 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex max-lg:min-w-[100px] ${
+                className={`p-2 bg-zinc900 rounded-[7px] justify-center items-center gap-2 flex max-lg:min-w-[100px] ${
                   isSortActive ? "active" : ""
                 }`}
               >
                 <div className="textwhite text-xl font-normal font-['Graphik'] leading-normal">
                   Show all
                 </div>
-              </button>
+              </div>
               <button
                 onClick={onClickSort6}
                 // className="p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex"
@@ -413,23 +414,23 @@ const Allblogs = () => {
           </div>
         </div>
 
-        <div className="main-blog-section ml-[80px] mt-20 max-lg:m-5 max-md:px-4">
-          <div className="w-full h-full justify-start items-start gap-x-[165px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-lg:justify-center max-lg:items-center ">
+        <div className="main-blog-section mx-[80px] mt-20 max-lg:m-5 max-md:px-4">
+          <div className="w-full mb-[100px] h-full justify-start items-start gap-x-[160px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-lg:justify-center max-lg:items-center max-[1432px]:gap-x-[100px]">
             <Link
               to={"/changingnature"}
               onClick={scrollToTop}
               ref={(el) => (NSEO = el)}
-              className="flex-col justify-start items-start gap-9 inline-flex max-md:wfull"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-md:wfull"
             >
               <img className="w-[317px] h-[175.55px]" src={img7} alt="" />
-              <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col justify-start items-start gap-4 flex">
+              <div className="w-[317px] flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col justify-start items-start gap-4 flex max-lg:h-[146px] max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
                     the changing nature of sEO
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
-                    Gadget Flow is a well-known product discovery platform that
-                    helps readers find latest....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -447,44 +448,46 @@ const Allblogs = () => {
               to="/nocode"
               ref={(el) => (NCR = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-md:wfull"
             >
               <img className="w-[317px] h-[175.55px]" src={img3} alt="" />
-              <div className="w-[317px] flex-col justify-between items-start gap-3 flex">
-                <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
-                  No-Code Revolution: 5 Platforms To Keep An....
-                </div>
-                <div className="flex-col justify-start items-start gap-6 flex">
-                  <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  The no-code creation in a website and application development is perhaps moving in the Lego direction.....
+              <div className="w-[317px] flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col justify-start items-start gap-4 flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    No-Code Revolution: 5 Platforms To Keep An....
                   </div>
-                  <Link
-                    to="/nocode"
-                    onClick={scrollToTop}
-                    className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
-                  >
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                      Read more
-                    </div>
-                  </Link>
+                  <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
+                  </div>
                 </div>
+                <Link
+                  to="/nocode"
+                  onClick={scrollToTop}
+                  className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+                >
+                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    Read more
+                  </div>
+                </Link>
               </div>
             </Link>
             <Link
               to="/shopifyVsMagento"
               ref={(el) => (SVM = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img2} alt="" />
 
-              <div className="flex-col justify-center items-start gap-9 flex">
-                <div className="w-[317px] flex-col justify-between items-start gap-6   flex">
+              <div className="flex-col justify-center items-start gap-6 flex">
+                <div className="w-[317px] flex-col justify-between items-start flex  max-lg:h-[146px]  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Shopify vs magento
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  If you're a business owner of any kind, you've probably heard of Shopify and Magento.....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -502,17 +505,18 @@ const Allblogs = () => {
               to="/design-system"
               ref={(el) => (design = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img} alt="" />
 
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="flex-col justify-start items-start gap-[41px] flex">
+                <div className="flex-col justify-start items-start gap-[41px] flex  max-lg:h-[146px] max-lg:justify-between">
                   <div className="text-black text-2xl font-normal font-['Graphik'] capitalize">
                     design system
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  A design system is a guide or a standard structure with parameters for design and code along with....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -530,17 +534,18 @@ const Allblogs = () => {
               to="/Gestalt"
               ref={(el) => (gp = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img8} alt="" />
 
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="flex-col justify-start items-start gap-[41px] flex">
+                <div className="flex-col justify-start items-start gap-[41px] flex  max-lg:h-[146px] max-lg:justify-between">
                   <div className="text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Gestalt psychology
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  The website redesign of the restaurant chain, Chili's, is a great case study in UX design using Gestalt Psychology.....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -558,16 +563,17 @@ const Allblogs = () => {
               to="/story"
               onClick={scrollToTop}
               ref={(el) => (STM = el)}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] justify-start items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img5} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start gap-9 flex">
+                <div className="w-[317px] flex-col justify-between items-start gap-9  max-lg:h-[146px] flex  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Storytelling in marketing
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  A relatively new player pulled off a potentially risky storytelling marketing campaign in the late 2000....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -585,18 +591,21 @@ const Allblogs = () => {
               to="/mvp"
               onClick={scrollToTop}
               ref={(el) => (MVP = el)}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
                 <img className="w-[317px] h-[175.55px]" src={img9} alt="" />
               </div>
-              <div className="flex-col justify-start items-start gap-[41px] flex">
-                <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
-                  Minimum viable product
-                </div>
-                <div className="flex-col justify-start items-start gap-6 flex">
-                  <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Testing a product is important. But should that product be complete or barely functional....
+              <div className="w-[317px] flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col justify-start items-start gap-4 flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    Minimum viable product
+                  </div>
+                  <div className="flex-col justify-start items-start gap-6 flex">
+                    <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      Our commitment is not just to design; it's to create
+                      experiences that resonate, innovate....
+                    </div>
                   </div>
                   <Link
                     to="/mvp"
@@ -614,17 +623,20 @@ const Allblogs = () => {
               to="/branding"
               onClick={scrollToTop}
               ref={(el) => (db = el)}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img6} alt="" />
 
-              <div className="flex-col justify-start items-start gap-4 flex">
-                <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
-                  The art of disruptive branding
-                </div>
-                <div className="flex-col justify-start items-start gap-6 flex">
-                  <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  One approach that has gained popularity in the field of marketing and digital marketing in recent....
+              <div className="w-[317px] flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col justify-start items-start gap-4 flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    The art of disruptive branding
+                  </div>
+                  <div className="flex-col justify-start items-start gap-6 flex">
+                    <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      Our commitment is not just to design; it's to create
+                      experiences that resonate, innovate....
+                    </div>
                   </div>
                   <Link
                     to="/branding"
@@ -642,16 +654,17 @@ const Allblogs = () => {
               to="/ux"
               ref={(el) => (UXi = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img4} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start gap-9 flex">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] gap-9 flex  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     UX design Benefits SMEs!
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  This trend became a reality in 2022 when businesses saw Google’s AI search becoming more....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -669,16 +682,17 @@ const Allblogs = () => {
               to="/Bingvsgoogle"
               ref={(el) => (Bg = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img12} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Bing Vs Google
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  In addition to its integration with Microsoft's ecosystem, Bing has also introduced several unique....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -697,16 +711,17 @@ const Allblogs = () => {
               to="/customer"
               ref={(el) => (Cust = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img15} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9 max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Listening To Your Customer
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  After gathering similar feedback from several places across the United States it was hard to imagin,....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -724,16 +739,18 @@ const Allblogs = () => {
               onClick={scrollToTop}
               to="/ReactVsflutter"
               ref={(el) => (RVF = el)}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img16} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9 max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     React Native V/S Flutter
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Only a decade ago, it was hard to imagine life without mobile apps. They now make our lives easier, with   </div>
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
+                  </div>
                 </div>
                 <Link
                   onClick={scrollToTop}
@@ -750,16 +767,17 @@ const Allblogs = () => {
               to="/empthy"
               ref={(el) => (empathy = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img10} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Empathy In UX
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  The ability to get into your customers’ shoes results in user empathy. Intuit and Harley-Davidson are just two....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -777,16 +795,17 @@ const Allblogs = () => {
               ref={(el) => (aii = el)}
               to="/ai"
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img17} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     AI-Powered Design Tools
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  AI-powered search engines use machine learning and natural language processing to understand user....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -804,16 +823,17 @@ const Allblogs = () => {
               to="/workshop"
               ref={(el) => (dw = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img13} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Discovery Workshop
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  A discovery workshop is a crucial part of the website or application development process. It is an opportunity....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link
@@ -831,16 +851,17 @@ const Allblogs = () => {
               to="/digital"
               ref={(el) => (digitalmarketing = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] items-start gap-9 inline-flex max-mdw-full"
             >
               <img className="w-[317px] h-[175.55px]" src={img11} alt="" />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="w-[317px] flex-col justify-between items-start flex gap-9">
+                <div className="w-[317px] flex-col justify-between items-start max-lg:h-[146px] flex gap-9  max-lg:justify-between">
                   <div className="w-[317px] text-black text-2xl font-normal font-['Graphik'] capitalize">
                     Digital Marketing Trends 2023
                   </div>
                   <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  The study then elaborated on how Domino’s and Diageo partnered with YouTube to actively fight against....
+                    Our commitment is not just to design; it's to create
+                    experiences that resonate, innovate....
                   </div>
                 </div>
                 <Link

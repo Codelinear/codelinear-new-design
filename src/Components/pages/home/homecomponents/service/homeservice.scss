@@ -6,6 +6,8 @@
   //   transition: opacity 1s ease-in-out;
   // background: #151515;
   transition: all 0.3s ease-in-out;
+  width: 414px;
+  height: 392px;
 }
 
 .service-heading {
@@ -55,9 +57,10 @@
 //   color: #fff;
 // }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .service-cards {
-    width: 48%;
+    width: 322px;
+    height: 424px;
   }
 }
 
@@ -70,8 +73,8 @@
 
 @media (max-width: 640px) {
   .service-cards {
-    width: 50%;
-    height: 100%;
+    width: 151px;
+    height:184px;
 
     .opacity-80 {
       display: none;

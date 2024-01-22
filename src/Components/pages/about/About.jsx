@@ -16,7 +16,7 @@ const About = () => {
       <Office />
       <Animatecircle />
       <Guide />
-      <Commitment />
+      <Commitment /> 
       {/* <Founder /> */}
       {/* <Ideal /> */}
     </>

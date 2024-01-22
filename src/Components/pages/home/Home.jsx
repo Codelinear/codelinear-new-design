@@ -19,7 +19,6 @@ const Home = () => {
       <Homeabout />
       <Homeservice />
       <Homeanimate />
-      {/* <Served /> */}
       <Clients />
       <Adupt />
       <Bloghome />

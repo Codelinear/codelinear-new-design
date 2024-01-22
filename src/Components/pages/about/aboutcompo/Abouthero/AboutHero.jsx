@@ -7,7 +7,7 @@ const AboutHero = () => {
   return (
     <>
       <div className="about-hero">
-        <div className="w-full h-[700px] px-[161px] pt-[20.64px] pb-[103.51px] bg-white flex-col justify-end items-center gap-[108.74px] inline-flex max-md:p-5 max-md:h-full max-md:my-20">
+        <div className="w-full h-[738px] px-[161px] pt-[96.64px] pb-[103.51px] bg-white flex-col justify-end items-center gap-[108.74px] max-lg:px-[40px] max-md:mt-[200px] inline-flex max-md:p-5 max-md:h-full max-md:my-20 max-sm:m-0 max-sm:pt-[116px]">
           {/* <img
             className="w-[918px] h-[381.10px]"
             src="https://via.placeholder.com/918x381"
@@ -15,7 +15,7 @@ const AboutHero = () => {
           /> */}
 
           <Lottie
-            className="mt5"
+            className="mt5 w-[918px] h-[381px] max-lg:w-[663px] max-lg:h-[275px] max-sm:h-fill max-sm:w-[100%]"
             animationData={animationData} // Your animation JSON
             loop={true} // Set to true if you want the animation to loop
             autoplay={true} // Set to true to automatically play the animation

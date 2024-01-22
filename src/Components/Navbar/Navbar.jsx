@@ -2,11 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./nav.scss";
 import img from "./ham.svg";
-import arrow from "./arrow.svg";
-
+import arrow from "../pages/home/homecomponents/homeanimate/arrow.svg";
+import navBar from "./nav bar.json";
+import Lottie from "lottie-react";
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   let [width, setWidth] = useState(window.innerWidth);
+  const [isHovered, setIsHovered] = useState(false);
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -14,6 +19,14 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
+    window.scrollTo(0, 0);
+  };
+  const toggleService = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+  const toggleother = () => {
+    setDropdownOpen(false);
+    window.scrollTo(0, 0);
   };
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -31,7 +44,13 @@ const Navbar = () => {
             <div className="self-stretch pt-[30px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
               <div className="w-[123px] h-[51px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
-                  <Link to="/">Codelinear</Link>
+                  <Link to="/" onClick={scrollToTop}>
+                    <Lottie
+                      animationData={navBar} // Your animation JSON
+                      loop={true} // Set to true if you want the animation to loop
+                      autoplay={true} // Set to true to automatically play the animation
+                    />{" "}
+                  </Link>
                 </div>
               </div>
 
@@ -204,8 +223,8 @@ const Navbar = () => {
               active ? "active " : ""
             }`}
           >
-            <div className="w-[360px] h-[100vh] relative bg-white">
-              <div className="w-[360px] px-5 pt-3 left-0 top-0 absolute justify-between items-center inline-flex">
+            <div className="w-[100%] h-[100vh] relative bg-white ">
+              <div className="w-[100%] px-5 pt-3 left-0 top-0 absolute justify-between items-center inline-flex">
                 <div className="w-[101.29px] h-[42px] pr-[5.27px] pt-[13.48px] flex-col justify-end items-start gap-[12.10px] inline-flex">
                   <div className="w-24 h-4 relative flex-col justify-start items-start flex">
                     <div className="h-4 relative"></div>
@@ -218,7 +237,7 @@ const Navbar = () => {
                 </div>
                 <div className="w-[65px] h-[42px] relative">
                   <div
-                    className="w-[23.83px] h-[23.83px] left-[20.59px] top-[9.08px] absolute "
+                    className="w-[23.83px] h-[23.83px] right-[5px] top-[9.08px] absolute "
                     onClick={hamburger}
                   >
                     <div className="w-[33.70px] h-[0px] left-0 top-0 absolute origin-top-left rotate-45 border border-black"></div>
@@ -226,7 +245,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="left-[20.04px] top-[93px] absolute flex-col justify-start items-start gap-3 inline-flex">
+              <div className="left-[20.04px] top-[39px] absolute flex-col justify-start items-start gap-3 inline-flex">
                 <Link
                   t0="/"
                   onClick={hamburger}
@@ -244,7 +263,6 @@ const Navbar = () => {
                 <Link
                   to="/service"
                   onClick={hamburger}
-
                   className="w-80 text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]"
                 >
                   Services
@@ -278,11 +296,11 @@ const Navbar = () => {
                   <div className="w-[166.88px] text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]">
                     Let’s Talk
                   </div>
-                  <div className="w-[43.87px] h-[43.87px] relative">
+                  <div className="w-[43.87px] h-[43.87px] relative justify-center items-center inline-flex">
                     <div className="w-[43.87px] h-[43.87px] left-0 top-0 absolute bg-yellow-400 rounded-full" />
-                    <div className="w-[22.11px] h-[22.11px] px-[5.57px] py-[2.83px] left-[10.88px] top-[10.88px] absolute justify-center items-center inline-flex">
-                      <div className="w-[10.97px] h-[16.45px] relative flex-col justify-start items-start flex">
-                        <div className="origin-top-left rotate[-135deg] w-[11.09px] h-[11.09px] relative">
+                    <div className="">
+                      <div className=" relative flex-col justify-start items-start flex">
+                        <div className="origin-top-left rotate[-135deg] w-[15.09px] relative">
                           <img src={arrow} alt="" />
                         </div>
                       </div>
@@ -290,7 +308,7 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
-              <div className="left-[20.04px] top-[548px] absolute flex-col justify-start items-start gap-6 inline-flex">
+              <div className="left-[20.04px] top-[485px] absolute flex-col justify-start items-start gap-6 inline-flex">
                 <div className="flex-col justify-start items-start gap-2 flex">
                   <div className="opacity-60 text-black text-base font-normal font-['Graphik'] underline leading-normal">
                     info@codelinear.com
@@ -398,17 +416,27 @@ const Navbar = () => {
               <div className="w-[0.21px] h-[2.18px] bg-black" />
             </div> */}
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
-                  <Link to="/">Codelinear</Link>
+                  <Link to="/" onClick={toggleother}>
+                    <Lottie
+                      loop={true}
+                      animationData={navBar}
+                      isStopped={!isHovered}
+                      isPaused={!isHovered}
+                      autoplay={false}
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
+                    />{" "}
+                  </Link>
                 </div>
               </div>
-              <div className="justify-center items-center gap-[45px] flex max-lghidden">
-                <div className="justify-start items-start gap-7 flex">
+              <div className="w-[620px] justify-center items-center gap-[45px] flex max-lghidden">
+                <div className="w-[476px] justify-start items-start gap-[28px] flex">
                   <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link onClick={toggleDropdown}>Services</Link>
+                    <Link onClick={toggleService}>Services</Link>
                     {isDropdownOpen && (
                       <>
                         <div className="service-nav fixed top-20 left-0 z-[9999999999999] w-full">
-                          <div className="w-full h-[531px] pl-20 pr-[10px] pt-[62px] pb-[68px] bg-white bg-opacity-1 backdrop-blur-[210.60px] justify-start items-start gap-[66.08px] inline-flex">
+                          <div className="w-full h-[531px] pl-20 pr-[10px] pt-[62px] pb-[68px] justify-start items-start gap-[66.08px] inline-flex">
                             <div className="self-stretch flex-col justify-start items-start gap-12 inline-flex ">
                               <div className="flex-col justify-start items-start gap-[26px] flex">
                                 <div className="self-stretch justify-start items-center gap-[26px] inline-flex">
@@ -441,7 +469,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -455,7 +485,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </Link>
@@ -465,7 +497,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -475,7 +509,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -485,7 +521,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -499,7 +537,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </Link>
@@ -509,7 +549,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -519,7 +561,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>{" "}
                                   </div>
                                 </div>
                               </div>
@@ -529,7 +573,9 @@ const Navbar = () => {
                                 </div>
                                 <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
                                   <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
+                                    <div className="origin-top-left w-[30px] rotate-180 flex justify-center align-center w-[21.83px] h-[21.83px] relative">
+                                      <img src={arrow} alt="" />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -540,21 +586,30 @@ const Navbar = () => {
                     )}
                   </div>
                   <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/about"}>About us</Link>
+                    <Link to={"/about"} onClick={toggleother}>
+                      About us
+                    </Link>
                   </div>
                   <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/casestudy"}>Case studies</Link>
+                    <Link to={"/casestudy"} onClick={toggleother}>
+                      Case studies
+                    </Link>
                   </div>
                   <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/insights"}>Insights</Link>
+                    <Link to={"/insights"} onClick={toggleother}>
+                      Insights
+                    </Link>
                   </div>
                   <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/industry"}>Industries</Link>
+                    <Link to={"/industry"} onClick={toggleother}>
+                      Industries
+                    </Link>
                   </div>
                 </div>
                 <Link
                   to={"/contactus"}
-                  className="talk-btn px-4 py-2 bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
+                  onClick={toggleother}
+                  className="w-[99px] talk-btn px-[16px] py-[8px] bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
                 >
                   <div className="text-black text-base font-normal font-['Graphik']">
                     Let’s Talk

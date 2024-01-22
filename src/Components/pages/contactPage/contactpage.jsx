@@ -1,21 +1,25 @@
 import "./contactpage.scss";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import America from "./images/America.svg";
 import Europe from "./images/Europe.svg";
 import Asia from "./images/Asia.svg";
 import building from "./images/building.svg";
+import buildingind from "./images/image 176.svg";
 import img from "./images/image 177.png";
+import gsap from "gsap";
 
 const Contact = () => {
   const [time, setTime] = useState(new Date());
   const [time2, setTime2] = useState(new Date());
+  const USA = useRef(null);
+  const USAh1 = useRef(null);
+  const India = useRef(null);
+  const Indiahi = useRef(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTime(new Date());
     }, 1000);
-
-    // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
   useEffect(() => {
@@ -26,8 +30,6 @@ const Contact = () => {
       });
       setTime2(new Date(pacificTime));
     }, 1000);
-
-    // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
   const hours = time.getHours();
@@ -80,6 +82,18 @@ const Contact = () => {
   const transformSecondStylep = {
     transform: `rotate(${secondAnglep}deg)`,
     transformOrigin: "bottom center",
+  };
+  const hover1 = () => {
+    gsap.to(India.current, { visibility: "visible" });
+    gsap.to(USA.current, { visibility: "hidden" });
+    gsap.to(Indiahi.current, { textDecoration: "underline" });
+    gsap.to(USAh1.current, { textDecoration: "none" });
+  };
+  const hover2 = () => {
+    gsap.to(India.current, { visibility: "hidden" });
+    gsap.to(USA.current, { visibility: "visible" });
+    gsap.to(Indiahi.current, { textDecoration: "none" });
+    gsap.to(USAh1.current, { textDecoration: "underline" });
   };
   return (
     <>
@@ -160,45 +174,56 @@ const Contact = () => {
       </section>
       <section className="regions">
         <h1>Regions we work in</h1>
-        <div className="working-areas">
-          <div>
-            <img src={America} alt="" />
-            <p>Americas</p>
-          </div>
-          <div>
-            <img src={Europe} alt="" />
-            <p>EMEA</p>
-          </div>
-          <div>
-            <img src={Asia} alt="" />
-            <p>Asia Pacific</p>
+        <div className="overflo">
+          <div className="working-areas">
+            <div>
+              <img src={America} alt="" />
+              <p>Americas</p>
+            </div>
+            <div>
+              <img src={Europe} alt="" />
+              <p>EMEA</p>
+            </div>
+            <div>
+              <img src={Asia} alt="" />
+              <p>Asia Pacific</p>
+            </div>
           </div>
         </div>
       </section>
       <section className="address">
         <div className="address-div">
-        <h1 className="address-head2">Our Offices</h1>
-
-          <img src={building} alt="" />
+          <div className="images">
+            <img src={building} alt="" ref={USA} />
+            <img src={buildingind} className="img" alt="" ref={India} />
+          </div>
           <div className="address-div2">
             <h1 className="address-head">Our Offices</h1>
             <div>
-              <h1>USA</h1>
-              <p>
-                600 B Street, Suite 300,
-                <br /> San Diego, CA 92101
-              </p>
+              <div className="max-3xl:hidden max-lg:block indiaimg">
+                <img src={building} className="indiaimg" alt="" />
+              </div>
+              <div onMouseEnter={hover2}>
+                <h1 ref={USAh1} className="USA">
+                  USA
+                </h1>
+                <p>
+                  600 B Street, Suite 300,
+                  <br /> San Diego, CA 92101
+                </p>
+              </div>
             </div>
             <div>
               <div className="max-3xl:hidden max-lg:block indiaimg">
-                <img className="max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px]" src={img} alt="" />
+                <img src={buildingind} className="indiaimg" alt="" />
               </div>
-
-              <h1>India</h1>
-              <p>
-                Wework Galaxy <br /> Shanthala Nagar, Ashok Nagar,
-                <br /> Bengaluru, Karnataka 560001
-              </p>
+              <div onMouseEnter={hover1}>
+                <h1 ref={Indiahi}>India</h1>
+                <p>
+                  Wework Galaxy <br /> Shanthala Nagar, Ashok Nagar,
+                  <br /> Bengaluru, Karnataka 560001
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -36,21 +36,22 @@ function App() {
 
 
 
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 2,
-  //     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-  //     direction: 0,
-  //     smooth: true,
-  //     normalizeWheel: true,
-  //     smoothWheel: true,
-  //   });
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-  // }, []);
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 2,
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+      direction: 0,
+      smooth: true,
+      normalizeWheel: true,
+      smoothWheel: true,
+      lerp: 0.5
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <>
@@ -59,9 +60,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/gamedev" element={<Gamedev />} />
+          {/* <Route exact path="/gamedev" element={<Gamedev />} /> */}
           <Route exact path="/service" element={<Servicepage />} />
-          <Route exact path="/appdev" element={<Appdevelop />} />
+          {/* <Route exact path="/appdev" element={<Appdevelop />} /> */}
           <Route exact path="/insights" element={<Blog />} />
           <Route exact path="/contactus" element={<Contact />} />
           <Route exact path="/casestudy" element={<Casestudy />} />

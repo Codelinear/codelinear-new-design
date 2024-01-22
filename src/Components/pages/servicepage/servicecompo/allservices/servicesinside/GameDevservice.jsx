@@ -18,7 +18,7 @@ const GameDevservice = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px]">
+                    <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik']  leading-[120%] max-sm:text-[36px]">
                       Game Development
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
