@@ -1,16 +1,15 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 
-
-import img from "../assets/Frame 1000002735 (2).png"
-
+import img from "../assets/services page-7 ARVR.jpg";
 
 const ARservice = () => {
   return (
     <>
       <div className="serviepagearrv">
-      <div className="w-full h-[640px] relative max-lg:h-full">
-            <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
+        <div className="w-full h-[640px] relative max-lg:h-full">
+          <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
             <div>
               <div className="ml-[80px] max-md:ml-0 mt-[80px]  flex-col justify-start items-start gap-[30px] inline-flex">
                 <div className="w-[521.42px]   max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
@@ -21,7 +20,7 @@ const ARservice = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
+                    <div className="w-[631.03px]  max-md:w-full text-black letter-spacing-2 text-[48px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
                       AR/VR Services
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -29,11 +28,13 @@ const ARservice = () => {
                       help leaders acheive digital excellence.
                     </div>
                   </div>
-                  <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                      Learn more
-                    </div>
-                  </button>
+                  <Link to={'/AR-VR-services'}>
+                    <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
+                      <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                        Learn more
+                      </div>
+                    </button>
+                  </Link>
                 </div>
               </div>
 

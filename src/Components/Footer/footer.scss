@@ -2,25 +2,26 @@
   font-size: 258px;
   margin: 0;
   padding: 10px;
+  padding-bottom: 0;
   display: inline-block;
   position: relative;
-  color: transparent;
-  -webkit-text-stroke: 2px black; /* Adjust the border thickness as needed */
-  background-image: linear-gradient(transparent 100%, black 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: white;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black,
+    1px -1px 0px black;
   background-position: 0 100%;
-  transition: all 5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .lets-talk:hover {
-  background-position: 0 0; /* Change to 0 0 to fill from bottom to top */
-  background-image: linear-gradient(transparent 0%, black 0%);
+  background-position: 0 0;
+  color: black;
+  text-shadow: 0px 0px 0px black, 0px 0px 0px black;
 }
 
 .bottom-line {
   border: 2px solid black;
   transition: all 0.5s ease-in-out;
+  margin-left: 31px;
 }
 
 .lets-talk:hover ~ .bottom-line {
@@ -78,12 +79,10 @@
 
 /* ScrollToTopButton.css */
 .scroll-to-top-button {
-  z-index: 999999999999999999999999999;
+  z-index: 99;
   position: absolute;
-  // bottom: 20px;
-  top: 50%;
-  right: 20px;
-  // background-color: #007bff;
+  top: 46%;
+  right: 80px;
   color: #fff;
   border: none;
   border-radius: 5px;

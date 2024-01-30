@@ -1,6 +1,6 @@
 import React from "react";
-
-import img3 from "../assets/pexels-iryna-riabchykova-12876443 1.png"
+import { Link } from "react-router-dom";
+import img3 from "../assets/services page-2 app development.jpg"
 
 
 const Appdevelopment = () => {
@@ -20,7 +20,7 @@ const Appdevelopment = () => {
                   </div>
                   <div className="flex-col justify-start items-start gap-[42px] flex">
                     <div className="flex-col justify-start items-start gap-[22px] flex">
-                      <div className="w-[631.03px] max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
+                      <div className="w-[631.03px] letter-spacing-2 max-md:w-full text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
                         App Development and Modernization
                       </div>
                       <div className="w-[513.61px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -28,11 +28,13 @@ const Appdevelopment = () => {
                         help leaders acheive digital excellence.
                       </div>
                     </div>
+                    <Link to={'/appdev'}>
                     <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                       <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                         Learn more
                       </div>
                     </button>
+                    </Link>
                   </div>
                 </div>
 

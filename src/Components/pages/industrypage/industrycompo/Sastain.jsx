@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/Frame 1000002958p.png"
+import img from "../assets/Industries01.jpg"
 
 const Sastain = () => {
   return (

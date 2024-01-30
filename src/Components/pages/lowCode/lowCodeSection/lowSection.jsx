@@ -13,13 +13,13 @@ const LowSection = () => {
         <h2>
           LOW CODE AND NO CODE <span></span>
         </h2>
-        <h1 className="whitespace-nowrap">Low-code and No-code</h1>
+        <h1 className="whitespace-nowrap max-sm:whitespace-normal">Low-code and No-code</h1>
         <p className="exp-p">
           Propel your ideas from concept to reality at unprecedented speed. Our
           Low Code No Code approach reduces development cycles, allowing you to
           innovate and iterate rapidly.
         </p>
-        <div className="prod-container w-[924px] flex-wrap">
+        <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" />
             <h3>Bubble</h3>
@@ -62,13 +62,13 @@ const LowSection = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex">
+      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px]">
         <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-          Need help in making the next big thing?
+           Need help in making the next big thing?
         </div>
         <Link
           to=""
-          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
             Talk to our experts

@@ -11,15 +11,7 @@ import QalityAssurance from "./servicesinside/QalityAssurance";
 import Lowcode from "./servicesinside/Lowcode";
 import "./service.scss";
 
-import img from "./assets/iStock-1348120238 1.png";
-import img2 from "./assets/diego-ph-fIq0tET6llw-unsplash 1.png";
-import img3 from "./assets/pexels-iryna-riabchykova-12876443 1.png";
-import img4 from "./assets/stefan-stefancik-pzA7QWNCIYg-unsplash 1.png";
-import img5 from "./assets/Frame 1000002735.png";
-import img6 from "./assets/Frame 1000002735 (1).png";
-import img7 from "./assets/Frame 1000002735 (2).png";
-import img8 from "./assets/Frame 1000002735 (3).png";
-import img9 from "./assets/Frame 1000002735 (4).png";
+import img from "./assets/service page 2nd fold.jpg";
 
 const Allservice = () => {
   const produc = useRef(null);
@@ -90,6 +82,7 @@ const Allservice = () => {
 
       if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
         setActiveSection(index);
+        console.log(index);
       }
     });
   };
@@ -107,7 +100,7 @@ const Allservice = () => {
           <div className="w-full h-full relative bg-white flex justify-between max-xl:flex-wrap-reverse">
             <div className="left max-md:w-full">
               <div className="flex h-[1150px] max-lg:flex-wrap  max-md:h-[650px] section max-md:p-5">
-                <div className="w-[738px] ml-[80px] mt-[59px]  text-black text-5xl font-normal font-['Graphik'] leading-[57.60px] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10  max-md:h-[200px] max-sm:text-[24px] max-sm:leading-[29px]">
+                <div className="w-[738px] ml-[80px] mt-[59px] letter-spacing-2  text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10  max-md:h-[200px] max-sm:text-[24px] max-sm:leading-[29px]">
                   We help businesses launch their success and bring the luxury
                   of transformational technology and dynamic UI/UX right to
                   their threshold.
@@ -148,9 +141,7 @@ const Allservice = () => {
                 </div>
                 <div className="section" id="quality" ref={quality}>
                   <QalityAssurance />
-                </div>
-                <div className="section invisible h-[100px]" id="qualityy" ref={quality}>
-                  {/* <QalityAssurance /> */}
+                  <div className="section h-[210px] w-100%"></div>
                 </div>
               </div>
             </div>
@@ -168,11 +159,11 @@ const Allservice = () => {
                     Overview
                   </div>
                 </div>
-                <div className=" w-[222px] h-[463px] relative max-xl:h-[200px] max-xl:w-full">
+                <div className=" w-[222px] h-[463px] relative left-[15px] max-xl:h-[200px] max-xl:w-full">
                   <div className="w-20 overview h-[35px] p-2 left-0 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                     <div
                       className={
-                        activeSection === 1
+                        activeSection >= 1
                           ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
                           : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
                       }
@@ -293,22 +284,9 @@ const Allservice = () => {
                       to="#quality"
                       onClick={scrollTowuality}
                       className={
-                        activeSection === 10
+                        activeSection >= 10
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                           : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      }
-                    >
-                      <div className="w-[118.98px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                        Quality Assurance
-                      </div>
-                    </Link>
-                    <Link
-                      to="#quality"
-                      onClick={scrollTowuality}
-                      className={
-                        activeSection === 11
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2  hidden"
-                          : " p-2 rounded-lg  justify-center items-center gap-2  hidden"
                       }
                     >
                       <div className="w-[118.98px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">

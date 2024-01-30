@@ -18,7 +18,7 @@ const ESection = () => {
         <h2 className="capitilize whitespace-nowrap">
           Ecommerce Marketplace Development <span></span>
         </h2>
-        <h1 className="whitespace-nowrap">
+        <h1 className="whitespace-nowrap max-sm:whitespace-normal">
           Ecommerce Marketplace <br /> Development
         </h1>
         <p className="exp-p">
@@ -26,7 +26,7 @@ const ESection = () => {
           Marketplace Development services are designed to transform your vision
           into a thriving digital marketplace.
         </p>
-        <div className="prod-container w-[924px] flex-wrap">
+        <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" />
             <h3>Custom e-commerce Development</h3>
@@ -113,13 +113,13 @@ const ESection = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-sm:ml-[20px] max-sm:ml-[40px]">
+        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal max-sm:w-[90%]">
           Need help in making the next big thing?
         </div>
         <Link
           to=""
-          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
             Talk to our experts

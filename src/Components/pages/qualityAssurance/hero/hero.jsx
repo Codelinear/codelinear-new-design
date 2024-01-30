@@ -1,4 +1,4 @@
-import image from "../../servicepage/servicecompo/allservices/assets/Frame 1000002735 (4).png";
+import image from "../assets/QA.jpg";
 
 const Hero = () => {
   return (

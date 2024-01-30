@@ -1,12 +1,13 @@
 import React from "react";
 
-import img from "../assets/Frame 1000002735 (4).png";
+import img from "../assets/services page-9 QA.jpg"
+import { Link } from "react-router-dom";
 
 const QalityAssurance = () => {
   return (
     <>
       <div className="serviepagequality analist">
-        <div className="w-full h-[731px] relative max-lg:h-full">
+        <div className="w-full h-[531px] relative max-lg:h-full">
           <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
             <div>
               <div className="ml-[80px] max-md:ml-0 mt-[80px]  flex-col justify-start items-start gap-[30px] inline-flex">
@@ -18,7 +19,7 @@ const QalityAssurance = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik']  leading-[120%] max-sm:text-[36px]">
+                    <div className="w-[631.03px]  max-md:w-full text-black letter-spacing-2 text-[48px] font-normal font-['Graphik']  leading-[120%] max-sm:text-[36px]">
                       Quality Assurance
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -26,11 +27,13 @@ const QalityAssurance = () => {
                       help leaders acheive digital excellence.
                     </div>
                   </div>
+                  <Link to={'/Quality-Assurance'}>
                   <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                     <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                       Learn more
                     </div>
                   </button>
+                  </Link>
                 </div>
               </div>
 

@@ -3,9 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import America from "./images/America.svg";
 import Europe from "./images/Europe.svg";
 import Asia from "./images/Asia.svg";
-import building from "./images/building.svg";
-import buildingind from "./images/image 176.svg";
-import img from "./images/image 177.png";
+import building from "./images/address01.jpg";
+import buildingind from "./images/address02.jpg";
 import gsap from "gsap";
 
 const Contact = () => {
@@ -24,7 +23,6 @@ const Contact = () => {
   }, []);
   useEffect(() => {
     const intervalId = setInterval(() => {
-      // Use the time zone for Pacific Time
       const pacificTime = new Date().toLocaleString("en-US", {
         timeZone: "America/Los_Angeles",
       });

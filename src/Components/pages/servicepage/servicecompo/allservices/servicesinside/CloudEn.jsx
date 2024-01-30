@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-
-import img6 from "../assets/Frame 1000002735 (1).png"
+import img6 from "../assets/services page-5 cloud engineering.jpg"
 
 const CloudEn = () => {
   return (
@@ -18,7 +18,7 @@ const CloudEn = () => {
               </div>
               <div className="flex-col justify-start items-start gap-[42px] flex">
                 <div className="flex-col justify-start items-start gap-[22px] flex">
-                  <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
+                  <div className="w-[631.03px]  max-md:w-full text-black letter-spacing-2 text-[48px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
                     Cloud Engineering
                   </div>
                   <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -26,11 +26,13 @@ const CloudEn = () => {
                     help leaders acheive digital excellence.
                   </div>
                 </div>
+                <Link to={'/cloud-engineering'}>
                 <button  className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Learn more
                   </div>
                 </button>
+                </Link>
               </div>
             </div>
 

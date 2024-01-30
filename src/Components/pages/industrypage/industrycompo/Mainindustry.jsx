@@ -1,14 +1,14 @@
 import React from "react";
 
-import img from "../assets/Frame 1000002958 (1).png"
-import img2 from "../assets/Frame 1000002958.png"
-import img3 from "../assets/Frame 1000002959 (1).png"
-import img4 from "../assets/Frame 1000002959 (2).png"
-import img5 from "../assets/Frame 1000002959.png"
-import img6 from "../assets/Frame 1000002960 (1).png"
-import img7 from "../assets/Frame 1000002960 (2).png"
-import img8 from "../assets/Frame 1000002960.png"
-import img9 from "../assets/image 180.png"
+import img from "../assets/Industries08.jpg"
+import img2 from "../assets/Industries09.jpg"
+import img3 from "../assets/Industries10.jpg"
+import img4 from "../assets/Industries05.jpg"
+import img5 from "../assets/Industries06.jpg"
+import img6 from "../assets/Industries07.jpg"
+import img7 from "../assets/Industries02.jpg"
+import img8 from "../assets/Industries03.jpg"
+import img9 from "../assets//Industries04.jpg"
 
 const Mainindustry = () => {
   return (

@@ -1,12 +1,9 @@
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import Homehero from "./Components/homepageComp/homeHero/Homehero";
 import Home from "./Components/pages/home/Home";
-import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
 
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Gamedev from "./Components/pages/gamedev/Gamedev";
 import Servicepage from "./Components/pages/servicepage/Servicepage";
 import Appdevelop from "./Components/pages/appdevelopmentpage/Appdevelop";
@@ -36,24 +33,9 @@ import Lowcode from "./Components/pages/lowCode/lowCode";
 import QualityAssurance from "./Components/pages/qualityAssurance/qualityAssurance";
 import Ecommerce from "./Components/pages/ecommerce/ecommerce";
 import VR from './Components/pages/VR/VR'
+import Career from './Components/pages/components/career'
 
 function App() {
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 2,
-  //     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-  //     direction: 0,
-  //     smooth: true,
-  //     normalizeWheel: true,
-  //     smoothWheel: true,
-  //     lerp: 0.5
-  //   });
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-  // }, []);
 
   return (
     <>
@@ -61,6 +43,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/career" element={<Career />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/gamedev" element={<Gamedev />} />
           <Route exact path="/product-development" element={<Production />} />
@@ -72,7 +55,7 @@ function App() {
           <Route exact path="/casestudy" element={<Casestudy />} />
           <Route exact path="/industry" element={<Industry />} />
           <Route exact path="/changingnature" element={<Changingnature />} />
-          <Route exact path="/nocode" element={<Nocode />} />
+          <Route exact path="/nocode" element={<Nocode />} /> 
           <Route
             exact
             path="/Quality-Assurance"

@@ -1,10 +1,10 @@
-import image from "../../servicepage/servicecompo/allservices/assets/Frame 1000002735.png";
+import image from "../assets/Ecommerce.jpg";
 
 const Hero = () => {
   return (
     <>
       <section id="prod-hero">
-        <h1 className="text-[66px] ml-[80px] leading-[100%] mt-[142px] letter-spacing w-[1023px]">
+        <h1 className="text-[66px] ml-[80px] leading-[100%] mt-[142px] letter-spacing w-[1023px] max-sm:text-[50px] max-lg:w-full max-sm:px-[20px] max-lg:px-[40px] max-lg:ml-0">
           Elevate your brand with our bespoke E-commerce Marketplace Development
           solutions.
         </h1>

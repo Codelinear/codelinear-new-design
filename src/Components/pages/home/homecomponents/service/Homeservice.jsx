@@ -589,7 +589,7 @@ const Homeservice = () => {
             <div className="flex-wrap items-start justify-between inline-flex max-md:w-full max-[1410px]:justify-center max-[1410px]:gap-[20px]">
               <div className="h-[150px] pl-[0px] pr-[] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:p-10  max-lg:  max-md:w-full  max-[376px]:h-[400px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
-                  <div className="w-[300.22px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[59.04px] max-[350px]:w-full">
+                  <div className="w-[300.22px] letter-spacing-2 text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-[350px]:w-full">
                     Our Services
                   </div>
 
@@ -605,7 +605,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -624,11 +624,11 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Product Design and Innovation
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -646,7 +646,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -688,12 +688,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex   max-[1025px]:w-full">
+                    <div className="service-heading  letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       App Development and Modernization
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -711,7 +711,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -746,11 +746,11 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Technology Consulting
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -768,7 +768,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -803,12 +803,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6   max-[1025px]:w-full">
-                    <div className="service-heading w-[280px]  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4 w-[280px]  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Ecommerce Marketplace Development
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -826,7 +826,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -847,12 +847,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Cloud Engineering
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -870,7 +870,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black   ">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -932,12 +932,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6   max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading  letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Game Development
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -955,7 +955,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1004,12 +1004,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       AR/VR Services
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -1027,7 +1027,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1076,12 +1076,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Low-code and No-code
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.
@@ -1098,7 +1098,7 @@ const Homeservice = () => {
                   </div>
                 </div>
               </div>
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col justify-end items-start gap-[46.12px] inline-flex  transitionall text-black  ">
+              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1147,12 +1147,12 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] flex-col justify-between items-start flex gap-6  max-[1025px]:w-full">
-                    <div className="service-heading  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Quality Assurance
                     </div>
-                    <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our commitment is not just to design; it's to create
                       experiences that resonate, innovate, and lead industries
                       into a bold new era.

@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 
 import img2 from "../../blogassets/Frame 43.png";
 import img3 from "../../blogassets/Frame 60.png";
-// import img4 from "../../blogassets/Frame 60.png";
-import img4 from "../../../servicepage/servicecompo/allservices/assets/diego-ph-fIq0tET6llw-unsplash 1.png";
+// import img4 from "../../../servicepage/servicecompo/allservices/assets/diego-ph-fIq0tET6llw-unsplash 1.png";
 
 
 const Ux = () => {
@@ -82,14 +81,9 @@ const Ux = () => {
                 <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
                   <marquee>  Empathy In UX</marquee>
-
-                   
                   </div>
                 </div>
-
               </Link>
-
-
               <Link
                 onClick={scrollToTop}
                 to="/story"
@@ -105,14 +99,11 @@ const Ux = () => {
 
                 <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                  <marquee> Storytelling In Marketing</marquee>
-
-                   
+                  <marquee> Storytelling In Marketing</marquee>                   
                   </div>
                 </div>
               </Link>
             </div>
-
             <div className="left-[405px] h-[full] mt-[81.39px]  flex-col justify-start items-start gap-14 inline-flex max-md:px-10 max-sm:px-[20px] max-sm:mt-[80px]">
               <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                 Once upon a 2008, when a 28-year-old Londoner named Richard
@@ -231,9 +222,6 @@ const Ux = () => {
                 <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   4. UX design lowers support cost
                 </div>
-                {/* <div className="text-black text-xl font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
-                  1. Reward the customer
-                </div> */}
                 <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full  max-sm:text-justify">
                   The reason why good website or mobile application development
                   companies stress building a great UX design is because it
@@ -305,7 +293,7 @@ const Ux = () => {
 
 
 
-      <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
+      {/* <div class="w-full h-[584px] max-lg:h-full px-[307.30px] pt-20 pb-[70px] bg-white justify-center items-center inline-flex">
         <div class="self-stretch justify-center items-center gap-[75px] inline-flex max-lg:flex-wrap">
           <div class="w-[359px] h-[434px] pt-[0.50px] bg-zinc-100 flex-col justify-center items-center inline-flex">
             <img
@@ -325,7 +313,7 @@ const Ux = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

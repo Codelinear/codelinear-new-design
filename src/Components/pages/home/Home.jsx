@@ -6,7 +6,6 @@ import Productengineer from "./homecomponents/homeproductengineer/Productenginee
 import Homeabout from "./homecomponents/homeabout/Homeabout";
 import Homeservice from "./homecomponents/service/Homeservice";
 import Clients from "./homecomponents/Clients";
-import Served from "./homecomponents/serverd/Served";
 import Bloghome from "./homecomponents/homeblog/Bloghome";
 import Adupt from "./homecomponents/Adupt";
 import Homeanimate from "./homecomponents/homeanimate/Homeanimate";

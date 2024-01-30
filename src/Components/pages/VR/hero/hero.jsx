@@ -1,10 +1,10 @@
-import image from "../../servicepage/servicecompo/allservices/assets/Frame 1000002735 (2).png";
+import image from "../assets/ARVR01.jpg";
 
 const Hero = () => {
   return (
     <>
       <section id="prod-hero">
-        <h1 className="text-[66px] ml-[80px] leading-[100%] mb-[80px] mt-[142px] letter-spacing w-[896px]">
+        <h1 className="text-[66px] ml-[80px] leading-[100%] mb-[80px] mt-[142px] letter-spacing w-[896px] max-lg:ml-[40px] max-sm:ml-[20px] max-sm:text-[50px] max-lg:w-[90%]">
           Immerse your audience in captivating digital experiences like never
           before.
         </h1>

@@ -1,6 +1,6 @@
 import React from "react";
-
-import img4 from "../assets/stefan-stefancik-pzA7QWNCIYg-unsplash 1.png";
+import img4 from "../assets/services page-3 technology consulting.jpg"
+import { Link } from "react-router-dom";
 
 const Consulting = () => {
   return (
@@ -18,7 +18,7 @@ const Consulting = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="w-[631.03px]  max-md:w-full text-black text-[49.20px] font-normal font-['Graphik']  leading-[120%] max-sm:text-[36px]">
+                    <div className="w-[631.03px]  max-md:w-full text-black text-[48px] letter-spacing-2 font-normal font-['Graphik']  leading-[120%] max-sm:text-[36px]">
                       Technology Consulting
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -26,11 +26,13 @@ const Consulting = () => {
                       help leaders acheive digital excellence.
                     </div>
                   </div>
-                  <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                      Learn more
-                    </div>
-                  </button>
+                  <Link to={"/consulting"}>
+                    <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
+                      <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                        Learn more
+                      </div>
+                    </button>
+                  </Link>
                 </div>
               </div>
 

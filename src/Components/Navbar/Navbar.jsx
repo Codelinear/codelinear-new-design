@@ -8,11 +8,6 @@ import Lottie from "lottie-react";
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   let [width, setWidth] = useState(window.innerWidth);
-  const [isHovered, setIsHovered] = useState(false);
-  const handleHover = () => {
-    setIsHovered(!isHovered);
-  };
-
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
@@ -46,9 +41,9 @@ const Navbar = () => {
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
                   <Link to="/" onClick={scrollToTop}>
                     <Lottie
-                      animationData={navBar} // Your animation JSON
-                      loop={true} // Set to true if you want the animation to loop
-                      autoplay={true} // Set to true to automatically play the animation
+                      animationData={navBar}
+                      loop={true}
+                      autoplay={false}
                     />{" "}
                   </Link>
                 </div>
@@ -57,173 +52,14 @@ const Navbar = () => {
               <div className="flex" onClick={hamburger}>
                 <img src={img} alt="" />
               </div>
-
-              {/* <div className="justify-center items-center gap-[45px] flex max-lg:hidden">
-                <div className="justify-start items-start gap-7 flex">
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link onClick={toggleDropdown}>Services</Link>
-                    {isDropdownOpen && (
-                      <>
-                        <div className="service-nav fixed top-20 left-0 z-[9999999999999] w-full">
-                          <div className="w-full h-[531px] pl-20 pr-[10px] pt-[62px] pb-[68px] bg-white bg-opacity-1 backdrop-blur-[210.60px] justify-start items-start gap-[66.08px] inline-flex">
-                            <div className="self-stretch flex-col justify-start items-start gap-12 inline-flex ">
-                              <div className="flex-col justify-start items-start gap-[26px] flex">
-                                <div className="self-stretch justify-start items-center gap-[26px] inline-flex">
-                                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
-                                    Our services
-                                  </div>
-                                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
-                                </div>
-                                <div className="flex-col justify-start items-start gap-[17px] flex">
-                                  <div className="w-[366.92px] text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
-                                    Iaculis amet consequat consequat viverra
-                                    diam.
-                                  </div>
-                                </div>
-                              </div>
-                              <Link
-                                onClick={toggleDropdown}
-                                to="/service"
-                                className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
-                              >
-                                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                                  Explore all services
-                                </div>
-                              </Link>
-                            </div>
-                            <div className="self-stretch justify-start items-start gap-3.5 inline-flex flex-wrap">
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Product Design and Innovation
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <Link
-                                to="/appdev"
-                                onClick={toggleDropdown}
-                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
-                              >
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  App Development and Modernization
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </Link>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Technology Consulting
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Ecommerce Marketplace Development
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Cloud Engineering
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <Link
-                                to="/gamedev"
-                                onClick={toggleDropdown}
-                                className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex"
-                              >
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Game Development
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </Link>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  AR/VR Services
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Low-code and No-code
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className=" nav-card h-[119px] p-4 rounded flex-col justify-between items-start inline-flex">
-                                <div className="w-[234px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                                  Quality Assurance
-                                </div>
-                                <div className="service-arrow w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black border-opacity0 justify-center items-center inline-flex">
-                                  <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                                    <div className="origin-top-left rotate-45 w-[21.83px] h-[21.83px] relative"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/about"}>About us</Link>
-                  </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/casestudy"}>Case studies</Link>
-                  </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/insights"}>Insights</Link>
-                  </div>
-                </div>
-                <Link
-                  to={"/contactus"}
-                  className="talk-btn px-4 py-2 bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
-                >
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    Let’s Talk
-                  </div>
-                </Link>
-              </div> */}
             </div>
           </div>
-
           <div
             class={`lists flex items-center justify-between flex-col ${
               active ? "active " : ""
             }`}
           >
-            <div className="w-[100%] h-[100vh] z-[99999999999999] sticky top-0 relative bg-white ">
+            <div className="w-[100%] h-[100vh] z-[99999990999999] sticky top-0 relative bg-white ">
               <div className="w-[100%] px-5 pt-3 left-0 top-0 absolute justify-between items-center inline-flex">
                 <div className="w-[101.29px] h-[42px] pr-[5.27px] pt-[13.48px] flex-col justify-end items-start gap-[12.10px] inline-flex">
                   <div className="w-24 h-4 relative flex-col justify-start items-start flex">
@@ -410,21 +246,20 @@ const Navbar = () => {
           <div className="w-full z-[99999990999999] h-[91px] px-20 bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0">
             <div className="self-stretch pt-[30px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
               <div className="w-[123px] h-[51px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
-                {/* <div className="w-[116.54px] h-[19.37px] relative flex-col justify-start items-start flex">
-              <div className="h-[19.37px] relative"></div>
-              <div className="w-[26.79px] h-[19.37px] relative"></div>
-              <div className="w-[0.21px] h-[2.18px] bg-black" />
-            </div> */}
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
-                  <Link to="/" onClick={toggleother}>
+                  <Link to="/" onClick={toggleother} className="hover-logo">
                     <Lottie
                       loop={true}
                       animationData={navBar}
-                      isStopped={!isHovered}
-                      isPaused={!isHovered}
+                      autoplay={true}
+                      className="absolute w-[120px] bottom-0 index-hover"
+                    />
+                    <Lottie
+                      loop={true}
+                      animationData={navBar}
                       autoplay={false}
-                      className="absolute w-[120px] bottom-0"
-                    />{" "}
+                      className="absolute w-[120px] bottom-0 index-hover2"
+                    />
                   </Link>
                 </div>
               </div>

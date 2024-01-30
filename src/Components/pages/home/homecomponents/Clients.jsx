@@ -1,16 +1,12 @@
 import React from "react";
 import img from "./clientslogo/warewell.svg";
-import img2 from "./clientslogo/cowboy.svg";
 import img3 from "./clientslogo/ikea.svg";
-import img4 from "./clientslogo/klub.svg";
 import img5 from "./clientslogo/lyra.svg";
 import img6 from "./clientslogo/soch.svg";
-import img7 from "./clientslogo/soch.svg";
 import img8 from "./clientslogo/mango.svg";
 import img9 from "./clientslogo/studio.svg";
 import img10 from "./clientslogo/move.svg";
 import img11 from "./clientslogo/middle.svg";
-import img12 from "./clientslogo/sdu.svg";
 import img13 from "../../../../assets/homeassets/Tradejini logo black.jpg";
 
 const Clients = () => {
@@ -18,23 +14,22 @@ const Clients = () => {
     <>
       <div className="clients relative ">
         <div className="w-full h-[693px] px-[80px] pt-[20px] pb-[33.98px] bg-white flex-col justify-center items-center gap-[72px] inline-flex max-lg:h-full max-md:px-10 max-lg:mt-40 max-lg:px-[40px] max-[550px]:px-[20px]">
-          <div className="w-[358.91px] text-center text-[#000] text-[32px] font-normal font-['Graphik'] leading-[38.40px] max-lg:w-full">
+          <div className="w-[358.91px] text-center text-[#000] text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-3 max-lg:w-full">
             People bettering the world with us.
           </div>
           <div className="client-logos self-stretch justify-start items-start inline-flex flex-wrap max-md:w-full max-lg:justify-center max-sm:w-[100%]">
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[24.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[23.79px]" src={img} alt="" />
+                <img className="w-[135.23px] opacity-80 h-[23.79px]" src={img} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b  border-neutral-200 justify-center items-center flex">
               <div className="w-[148.23px] h-[43.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[148.23px] h-[43.79px]" src={img13} alt="" />
+                <img className="w-[148.23px] h-[43.79px]" opacity-80 src={img13} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b border-neutral-200 justify-center items-center flex">
-              <div className="w-[135.23px] h[81px] relative flex-col justify-start items-start flex">
-                {/* <img className="w-[205.23px] h-[23.79px]" src={img2} alt="" /> */}
+              <div className="w-[135.23px] h[81px] relative opacity-80 flex-col justify-start items-start flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="215"
@@ -96,7 +91,7 @@ const Clients = () => {
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h[24.81px] relative flex-col justify-start items-start flex">
                 <img
-                  className="w-[100.23px] h-[40.79px] ml-[30px]"
+                  className="w-[100.23px] h-[40.79px] opacity-80 ml-[30px]"
                   src={img3}
                   alt=""
                 />
@@ -104,16 +99,16 @@ const Clients = () => {
             </div>
             <div className="w-[212.34px] h-[158.34px] pl-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[43.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[43.79px]" src={img6} alt="" />
+                <img className="w-[135.23px] h-[43.79px] opacity-80" src={img6} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] pl-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[24.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[23.79px]" src={img8} alt="" />
+                <img className="w-[135.23px] h-[23.79px] opacity-80" src={img8} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
-              <div className="w-[145.23px] h[52.81px] relative flex-col justify-start items-start flex">
+              <div className="w-[145.23px] opacity-80 h[52.81px] relative flex-col justify-start items-start flex">
                 {/* <img className="w-[135.23px] h[23.79px]" src={img4} alt="" /> */}
                 <svg
                   className="w-[135.23px] h[52.79px]"
@@ -952,26 +947,26 @@ const Clients = () => {
 
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[32.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[32.79px]" src={img5} alt="" />
+                <img className="w-[135.23px] h-[32.79px] opacity-80" src={img5} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[42.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[32.79px]" src={img9} alt="" />
+                <img className="w-[135.23px] h-[32.79px] opacity-80" src={img9} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[42.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[32.79px]" src={img10} alt="" />
+                <img className="w-[135.23px] h-[32.79px] opacity-80" src={img10} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
               <div className="w-[135.23px] h-[42.81px] relative flex-col justify-start items-start flex">
-                <img className="w-[135.23px] h-[32.79px]" src={img11} alt="" />
+                <img className="w-[135.23px] h-[32.79px] opacity-80" src={img11} alt="" />
               </div>
             </div>
             <div className="w-[212.34px] h-[158.34px] px-[38.56px] bg-white b -l border-neutral-200 justify-center items-center flex">
-              <div className="w-[135.23px] h[24.81px] ml-[20px] relative flex-col justify-start items-start flex">
+              <div className="w-[135.23px] opacity-80 h[24.81px] ml-[20px] relative flex-col justify-start items-start flex">
                 {/* <img className="w-[135.23px] h[23.79px]" src={img12} alt="" /> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

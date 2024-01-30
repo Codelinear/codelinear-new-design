@@ -17,25 +17,24 @@ import { Linear } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Make sure to register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
 const Productengineer = () => {
   const animateclient = useRef(null);
   const animateclient2 = useRef(null);
   useEffect(() => {
     gsap
-      .timeline({ repeat: -1, yoyo: true })
+      .timeline({ repeat: -1 })
       .fromTo(
         animateclient.current,
         { x: 50 },
-        { ease: Linear, x: -750, duration: 15 }
+        { ease: Linear.easeNone, x: -583, duration: 10 }
       );
     gsap
-      .timeline({ repeat: -1, yoyo: true })
+      .timeline({ repeat: -1})
       .fromTo(
         animateclient2.current,
         { x: 50 },
-        { ease: Linear, x: -750, duration: 15 }
+        { ease: Linear.easeNone, x: -587, duration: 10 }
       );
   }, []);
   const sectionRef2 = useRef(null);
@@ -47,8 +46,8 @@ const Productengineer = () => {
 
     ScrollTrigger.create({
       trigger: section,
-      start: "top 400",
-      end: "top center",
+      start: "top top",
+      end: "bottom center",
       // markers:true,
       onEnter: () => {
         section.style.background =
@@ -69,8 +68,8 @@ const Productengineer = () => {
 
     ScrollTrigger.create({
       trigger: section2,
-      start: "top 400",
-      end: "top center",
+      start: "top top",
+      end: "bottom center",
       // markers:true,
       onEnter: () => {
         section2.style.background =
@@ -83,11 +82,11 @@ const Productengineer = () => {
   }, []);
   return (
     <>
-      <div className="home-product-engineer relative">
+      <div className="home-product-engineer relative   max-sm:overflow-x-hidden">
         <div className="mainproduct">
           <div
             ref={sectionRef2}
-            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap-reverse max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
+            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-xl:flex-wrap-reverse max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:h-full max-xl:py-20 max-sm:gap-10"
           >
             <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-md:w-full   max-md:h-full  max-md:mt-5">
               <img
@@ -100,18 +99,19 @@ const Productengineer = () => {
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                   <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
-                    Digital transformation
+                    Technology consulting
                   </div>
                   <div className="w-[316px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="text2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
-                      Building experiences that drive growth.{" "}
+                    <div className="text2 letter-spacing-2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
+                      Helping businesses get ready for the future.{" "}
                     </div>
-                    <div className=" text3 text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                    <div className=" text3  leading-[150%] text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                      Our seasoned consultants bring a universal perspective to
+                      your unique challenges, offering insights that redefine
+                      possibilities.
                     </div>
                   </div>
                   <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
@@ -121,12 +121,12 @@ const Productengineer = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
-                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
-                <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
+              <div className="flex-col justify-start items-start gap-[38px] flex max-sm:w-full">
+                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-sm:w-full"></div>
+                <div className="flex-col justify-start items-start gap-[38px] flex">
                   <div className="w-[521px] overflow-scroll max-sm:w-full">
                     <div
-                      className="flex align-center opacity-70 gap-[48px] w-[600px]"
+                      className="flex align-center opacity-70 gap-[48px] w-[600px] max-sm:w-full"
                       ref={animateclient}
                     >
                       <img src={img3} alt="" />
@@ -148,7 +148,7 @@ const Productengineer = () => {
         </div>
       </div>
 
-      <div className="technology-consulting">
+      <div className="technology-consulting  max-sm:overflow-x-hidden">
         <div
           ref={sectionRef3}
           className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
@@ -157,18 +157,18 @@ const Productengineer = () => {
             <div className="flex-col justify-start items-start gap-[30px] flex">
               <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                 <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
-                  Digital transformation
+                  Product Engineering
                 </div>
                 <div className="w-[316px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
               </div>
               <div className="flex-col justify-start items-start gap-[42px] flex">
                 <div className="flex-col justify-start items-start gap-[22px] flex">
-                  <div className="text2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
-                    Transforming lives, one product at a time.
+                  <div className="text2 letter-spacing-2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
+                    Building experiences that drive growth.
                   </div>
-                  <div className=" text3 text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
-                    Codelinear leverages human sentiments, company values to
-                    help leaders acheive digital excellence.
+                  <div className=" text3 leading-[150%] text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    Sculpt digital products that stand out from the crowd, spark
+                    emotions, and redefine what's possible.
                   </div>
                 </div>
                 <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
@@ -178,11 +178,11 @@ const Productengineer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-[38px] flex max-sm:hidden">
+            <div className="flex-col justify-start items-start gap-[38px] flex">
               <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
               <div className="w-[521px] overflow-scroll max-sm:w-full">
                 <div
-                  className="flex align-center opacity-70 gap-[48px] w-[600px]"
+                  className="flex align-center opacity-70 gap-[48px] w-[600px] max-sm:w-full"
                   ref={animateclient2}
                 >
                   <img src={img8} alt="" />

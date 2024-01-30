@@ -11,13 +11,13 @@ const VR2 = () => {
         <h2 className="capitilize whitespace-nowrap">
           AR/VR Services <span></span>
         </h2>
-        <h1 className="whitespace-nowrap">VR Product Prototyping </h1>
+        <h1 className="whitespace-nowrap  max-sm:whitespace-normal">VR Product Prototyping </h1>
         <p className="exp-p">
           Transform concepts into tangible virtual models, fostering
           collaborative development and informed decision-making for businesses.
           Accelerate innovation with VR product prototyping
         </p>
-        <div className="prod-container w-[924px] flex-wrap">
+        <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" />
             <h3>Visualize Concepts Efficiently</h3>

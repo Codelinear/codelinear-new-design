@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import img2 from "../../blogassets/Frame 44.png";
 import img3 from "../../blogassets/unsplash_2cFZ_FB08UM.png";
-import img4 from "../../../servicepage/servicecompo/allservices/assets/Frame 1000002735 (3).png";
+// import img4 from "../../../production/images/alexander-shatov-DHl49oyrn7Y-unsplash 1.svg";
 
 const Nocode = () => {
   const scrollToTop = () => {
