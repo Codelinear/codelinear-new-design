@@ -1,4 +1,5 @@
 import React from "react";
+import img from '../../../../../assets/aboutassets/ph_medal-thin.jpg'
 
 const Commitment = () => {
   return (
@@ -12,7 +13,7 @@ const Commitment = () => {
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
             </div>
-            <div className="text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
+            <div className="text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2 max-sm:text-[36px]">
               Our commitments
             </div>
           </div>
@@ -33,7 +34,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Embracing Diversity
                 </div>
                 <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -58,7 +59,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Upholding Integrity
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -123,7 +124,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Nurturing Talent
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -159,7 +160,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Sustainable Practices
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -195,7 +196,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Leading Innovation
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -222,7 +223,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Connecting Globally
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -233,23 +234,10 @@ const Commitment = () => {
             </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="58"
-                  height="57"
-                  viewBox="0 0 58 57"
-                  fill="none"
-                >
-                  <path
-                    d="M20.073 49.7788H20.0728C19.8398 49.7788 19.6163 49.6862 19.4515 49.5215C19.2867 49.3567 19.1942 49.1332 19.1942 48.9002V34.7462C17.1649 33.1312 15.5746 31.031 14.5702 28.639C13.5564 26.2247 13.1728 23.5923 13.4554 20.989C13.7381 18.3857 14.6777 15.897 16.1861 13.7565C17.6945 11.616 19.7221 9.89393 22.0787 8.75207C24.4352 7.6102 27.0432 7.08597 29.6579 7.22859C32.2726 7.37121 34.8081 8.17601 37.0265 9.56742C39.2448 10.9588 41.0731 12.8912 42.3397 15.183C43.6063 17.4749 44.2697 20.0511 44.2675 22.6697M20.073 49.7788L44.1175 22.6695M20.073 49.7788C20.2091 49.7786 20.3434 49.7471 20.4654 49.6867L20.4659 49.6865L28.8163 45.5103M20.073 49.7788L28.8163 45.5103M44.2675 22.6697L44.1175 22.6695M44.2675 22.6697C44.2675 22.6696 44.2675 22.6696 44.2675 22.6696L44.1175 22.6695M44.2675 22.6697C44.2671 25.0038 43.7371 27.3074 42.7175 29.407C41.7086 31.4849 40.2462 33.3094 38.4385 34.7463M44.1175 22.6695C44.1171 24.981 43.5923 27.2622 42.5826 29.3415C41.5729 31.4208 40.1047 33.2439 38.2885 34.6737M38.4385 34.7463V34.6737H38.2885M38.4385 34.7463V48.9002V48.9002C38.4384 49.0498 38.4002 49.1968 38.3274 49.3275C38.2546 49.4581 38.1497 49.568 38.0225 49.6467C37.8954 49.7255 37.7503 49.7705 37.6009 49.7775C37.4515 49.7844 37.3028 49.7532 37.1689 49.6866L37.1686 49.6865L28.8163 45.5103M38.4385 34.7463C38.4195 34.7614 38.4004 34.7765 38.3813 34.7916L38.2885 34.6737M38.2885 34.6737L28.8163 45.5103M28.8165 13.0474H28.8163C26.9132 13.0474 25.0529 13.6117 23.4705 14.669C21.8882 15.7263 20.6549 17.2291 19.9266 18.9873C19.1983 20.7455 19.0078 22.6802 19.3791 24.5467C19.7503 26.4133 20.6667 28.1278 22.0124 29.4734C23.3581 30.8191 25.0726 31.7356 26.9391 32.1068C28.8057 32.4781 30.7404 32.2875 32.4986 31.5593C34.2568 30.831 35.7596 29.5977 36.8169 28.0153C37.8742 26.433 38.4385 24.5726 38.4385 22.6695V22.6694C38.4356 20.1184 37.4209 17.6727 35.617 15.8688C33.8132 14.065 31.3675 13.0503 28.8165 13.0474ZM28.4213 43.7421L20.9514 47.4789V35.9653C23.3304 37.3766 26.0469 38.1227 28.8163 38.1227C31.5857 38.1227 34.3023 37.3766 36.6812 35.9653V47.4789L29.2077 43.7421C29.0856 43.681 28.951 43.6492 28.8145 43.6492C28.678 43.6492 28.5434 43.681 28.4213 43.7421ZM28.8162 36.3635C26.1078 36.3635 23.4603 35.5603 21.2084 34.0556C18.9564 32.5509 17.2012 30.4122 16.1648 27.91C15.1283 25.4077 14.8571 22.6544 15.3855 19.998C15.9139 17.3416 17.2181 14.9016 19.1333 12.9865C21.0484 11.0713 23.4884 9.76711 26.1448 9.23873C28.8011 8.71034 31.5545 8.98153 34.0568 10.018C36.559 11.0545 38.6977 12.8096 40.2024 15.0616C41.7071 17.3135 42.5102 19.961 42.5103 22.6694C42.5065 26.3001 41.0625 29.781 38.4952 32.3484C35.9278 34.9157 32.4469 36.3597 28.8162 36.3635ZM28.8162 30.5345C27.2607 30.5344 25.7402 30.0732 24.4468 29.209C23.1534 28.3448 22.1454 27.1164 21.5501 25.6793C20.9548 24.2422 20.7991 22.6608 21.1025 21.1352C21.406 19.6095 22.1551 18.2081 23.255 17.1082C24.3549 16.0083 25.7563 15.2592 27.282 14.9558C28.8076 14.6523 30.389 14.808 31.8261 15.4033C33.2632 15.9986 34.4916 17.0067 35.3558 18.3C36.2199 19.5934 36.6812 21.1139 36.6812 22.6694C36.6789 24.7546 35.8495 26.7537 34.375 28.2282C32.9005 29.7027 30.9014 30.5321 28.8162 30.5345Z"
-                    fill="black"
-                    stroke="black"
-                    stroke-width="0.3"
-                  />
-                </svg>
+                <img src={img} alt="" />
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black max-md:w-full text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black max-md:w-full text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Pursuit of Excellence
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -274,7 +262,7 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                   Uncompromising Quality
                 </div>
                 <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">

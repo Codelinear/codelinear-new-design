@@ -15,7 +15,7 @@ const Guide = () => {
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
                 <div className="flex-col justify-start items-start gap-6 flex">
-                  <div className="text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px]">
+                  <div className="text-black text-[48px] font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[36px]">
                     Guiding principles
                   </div>
                   <div className="w-[413px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify">
@@ -31,7 +31,7 @@ const Guide = () => {
 
             <div className="left-[622px] mt-[136px]  flex-col justify-start items-start gap-[68px] inline-flex max-sm:mt-[32px] max-sm:gap-[32px]">
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="text-black text-4xl font-normal font-['Graphik'] leading-[120%] max-sm:text-[24px]">
+                <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Ideal
                 </div>
                 <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify max-[1200px]:w-[400px]">
@@ -44,7 +44,7 @@ const Guide = () => {
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="text-black text-4xl font-normal font-['Graphik']  leading-[120%] max-sm:text-[24px]">
+                <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Innovation
                 </div>
                 <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify max-[1200px]:w-[400px]">
@@ -57,7 +57,7 @@ const Guide = () => {
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="text-black text-4xl font-normal font-['Graphik']  leading-[120%] max-sm:text-[24px]">
+                <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Impact
                 </div>
                 <div className="w-[536.02px] max-lg:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:text-justify max-[1200px]:w-[400px]">

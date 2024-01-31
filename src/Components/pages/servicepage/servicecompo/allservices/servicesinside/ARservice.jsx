@@ -24,11 +24,12 @@ const ARservice = () => {
                       AR/VR Services
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                      Transport users to realms where the extraordinary becomes
+                      ordinary, boundaries blur, and possibilities are
+                      limitless.
                     </div>
                   </div>
-                  <Link to={'/AR-VR-services'}>
+                  <Link to={"/AR-VR-services"}>
                     <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                       <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                         Learn more
@@ -40,13 +41,22 @@ const ARservice = () => {
 
               <div className="flex ml-[80px] max-md:ml-0 mt-16 gap-10 w-[621px]  max-md:w-full flex-wrap">
                 <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
+                  Immersive Experiences{" "}
+                </div>
+                <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
+                  AR/VR App Development{" "}
+                </div>
+                <div className="w-[167.04px] left-[513px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  VR Product Prototyping{" "}
+                </div>
+                <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
                   Web AR/VR Integration
                 </div>
                 <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
-                  Immersive tours
+                  AR for E-commerce{" "}
                 </div>
                 <div className="w-[167.04px] left-[513px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Location based AR apps
+                  AR Navigation Solutions{" "}
                 </div>
               </div>
             </div>

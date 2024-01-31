@@ -2,7 +2,19 @@ import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
 import Scrolltop from "./Scrolltop";
+import { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import gsap from "gsap";
 const Footer = () => {
+  const footer = useRef(null);
+  const location = useLocation();
+
+  useEffect(() =>{
+    const live = location.pathname;
+    if (live === '/contactus'){
+      gsap.to(footer.current ,0, {display : "none"})
+    }
+  });
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -11,7 +23,7 @@ const Footer = () => {
       <footer className="bg-white relative 0 h[1800px]">
         <Scrolltop />
         {/* <div className=""> */}
-        <div className="upr-footer">
+        <div className="upr-footer" ref={footer}>
           <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-4  max-lg:pl-[50px]">
             <div className="w-[548.68px]  letter-spacing-4 text-400 text-[#101415] text-[24px] font-normal font-['Graphik'] leading-[120%] max-md:w-full ">
               Transforming Ideas into Competitive Advantages.
@@ -20,7 +32,7 @@ const Footer = () => {
               to="/contactus"
               className="w-full h-full relative flex-col justify-start items-start flex"
             >
-              <h1 className=" lets-talk text-[258.29px] w-full font-normal font-['Graphik'] max-md:text-[100px] max-[350px]:text-[25px]">
+              <h1 className=" lets-talk letter-spacing-7 text-[258.29px] w-full font-normal font-['Graphik'] max-md:text-[100px] max-[350px]:text-[25px]">
                 Let’s Talk.
               </h1>
 

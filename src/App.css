@@ -5,6 +5,11 @@
   src: url(./../public/GraphikRegular.otf);
   font-display: swap;
 }
+@font-face {
+  font-family: mono chivo;
+  src: url(./../public/ChivoMono-Medium.ttf);
+  font-display: swap;
+}
 
 * {
   margin: 0;

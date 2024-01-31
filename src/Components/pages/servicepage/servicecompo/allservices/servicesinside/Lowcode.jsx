@@ -21,8 +21,7 @@ const Lowcode = () => {
                       Low-code and No-code
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                    Create dynamic applications without diving into complex code. Our Low Code/No Code solutions help liberate your creativity. 
                     </div>
                   </div>
                   <Link to={'/low-code-no-code'}>

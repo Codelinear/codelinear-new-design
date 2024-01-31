@@ -63,7 +63,7 @@ const Homehero = () => {
                 centeredSlides={true}
                 effect={"fade"}
                 autoplay={{
-                  delay: 2500,
+                  delay: 5400,
                   disableOnInteraction: false,
                 }}
                 pagination={{
@@ -75,7 +75,7 @@ const Homehero = () => {
                 className="mySwiper float-end  mr-0  z-[2] max-lg:w-[90%] max-lg:mt-20  max-sm:mt-[10px]  max-md:w-full"
               >
                 <SwiperSlide>
-                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-blue-700 flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-[548px] ">
+                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-[#0A41CF] flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-[548px] ">
                     <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-md:w- max-sm:w-full">
                       <img
                         className="w-[316.46px] max-md:h-full max-sm:w-full max-sm:h-[274px]"
@@ -83,7 +83,7 @@ const Homehero = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col  justify-between p-[37.5px]">
+                    <div className="flex flex-col  justify-between p-[37.5px] pb-[44.5px]">
                       <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
                         <div className="text-[#FFCD05] text-base opacity-80 font-normal font-['Graphik']">
                           IKEA
@@ -93,9 +93,9 @@ const Homehero = () => {
                         </div>
                       </div>
                       <Link to={"/casestudy"}>
-                        <button className="px-[16px] py-[8px] left-[353px] top-[189.50px]  rounded-[30px] border border-yellow-400 justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-yellow-400 hover:text-black">
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-[#FFCD05] justify-center items-center gap-2 inline-flex hover:bg-[#FFCD05]  transition-all  hover:border-[#FFCD05]  text-[#FFCD05] hover:text-black">
                           <div className=" text-base font-normal font-['Graphik']">
-                            Read Case study
+                            View Case study
                           </div>
                         </button>
                       </Link>
@@ -114,7 +114,7 @@ const Homehero = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col  justify-between  p-[37.5px]">
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px]">
                       <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
                         <div className="text-black text-base font-normal opacity-80 font-['Graphik']">
                           COWBOY
@@ -125,9 +125,9 @@ const Homehero = () => {
                         </div>
                       </div>
                       <Link to={"/casestudy"}>
-                        <button className="px-[16px] py-[8px] left-[353px] top-[189.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
                           <div className="text- text-base font-normal font-['Graphik']">
-                            Read Case study
+                            View Case study
                           </div>
                         </button>
                       </Link>
@@ -146,7 +146,7 @@ const Homehero = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col  justify-between  p-[37.5px]">
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px]">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
                           <div className="text-[#EF5019] text-base opacity-80 font-normal font-['Graphik']">
@@ -158,9 +158,9 @@ const Homehero = () => {
                         </div>
                       </div>
                       <Link to={"/casestudy"}>
-                        <button className="px-[16px] py-[8px] left-[353px] top-[189.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
                           <div className="textyellow-400 text-base font-normal font-['Graphik']">
-                            Read Case study
+                            View Case study
                           </div>
                         </button>
                       </Link>
@@ -179,7 +179,7 @@ const Homehero = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col  justify-between  p-[37.5px]">
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px]">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
                           <div className="text-[#06212B] text-base opacity-80 font-normal font-['Graphik']">
@@ -191,7 +191,7 @@ const Homehero = () => {
                         </div>
                       </div>
                       <Link to={"/casestudy"}>
-                        <button className="px-[16px] py-[8px] left-[353px] top-[189.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
                           <div className="textyellow-400 text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
@@ -212,7 +212,7 @@ const Homehero = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col  justify-between p-[37.5px]">
+                    <div className="flex flex-col  justify-between p-[37.5px] pb-[44.5px]">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
                           <div className="text-[#15357A] text-base opacity-80 font-normal font-['Graphik']">
@@ -224,7 +224,7 @@ const Homehero = () => {
                         </div>
                       </div>
                       <Link to={"/casestudy"}>
-                        <button className="px-[16px] py-[8px] left-[353px] top-[189.50px]  rounded-[30px] border border-[#15357A] justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-[#15357A] justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
                           <div className="text-[#15357A] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>

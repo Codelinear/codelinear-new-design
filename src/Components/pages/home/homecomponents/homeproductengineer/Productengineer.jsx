@@ -95,7 +95,7 @@ const Productengineer = () => {
                 alt=""
               />
             </div>
-            <div className="self-stretch flex-col justify-start items-start gap-[120px] inline-flex mt-28 max-md:w-full max-[800px]:mt-5">
+            <div className="self-stretch h-[611px] flex-col justify-between items-start gap-[120px] inline-flex mt-[99.99px] max-md:w-full max-[800px]:mt-5">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                   <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
@@ -153,7 +153,7 @@ const Productengineer = () => {
           ref={sectionRef3}
           className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
         >
-          <div className="self-stretch flex-col justify-start items-start gap-[120px] inline-flex mt-28 max-md:w-full max-[800px]:mt-5">
+          <div className="self-stretch h-[611px] flex-col justify-between items-start gap-[120px] inline-flex mt-[99.99px] max-md:w-full max-[800px]:mt-5">
             <div className="flex-col justify-start items-start gap-[30px] flex">
               <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                 <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">

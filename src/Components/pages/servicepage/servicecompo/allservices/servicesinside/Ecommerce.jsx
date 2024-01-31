@@ -1,6 +1,6 @@
 import React from "react";
 
-import img5 from "../assets/services page-4 ecommerce.jpg"
+import img5 from "../assets/services page-4 ecommerce.jpg";
 import { Link } from "react-router-dom";
 
 const Ecommerce = () => {
@@ -23,11 +23,11 @@ const Ecommerce = () => {
                       Ecommerce Marketplace Development
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                      Elevate your business to new heights with our cutting-edge
+                      marketplace development services.
                     </div>
                   </div>
-                  <Link to={'/Ecommerce'}>
+                  <Link to={"/Ecommerce"}>
                     <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                       <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                         Learn more

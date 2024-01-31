@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import img6 from "../assets/services page-5 cloud engineering.jpg"
+import img6 from "../assets/services page-5 cloud engineering.jpg";
 
 const CloudEn = () => {
   return (
     <div className="serviepageCloud">
-     <div className="w-full h-[700px] relative max-lg:h-full">
-            <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
+      <div className="w-full h-[700px] relative max-lg:h-full">
+        <div className="flex max-lg:flex-col  max-lg:justify-center  max-lg:items-center ">
           <div>
             <div className="ml-[80px] max-md:ml-0 mt-[80px]  max-md:m-10  flex-col justify-start items-start gap-[30px] inline-flex">
               <div className="w-[521.42px]  max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
@@ -22,16 +22,17 @@ const CloudEn = () => {
                     Cloud Engineering
                   </div>
                   <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Codelinear leverages human sentiments, company values to
-                    help leaders acheive digital excellence.
+                    Engineered to meet the unique needs of your business,
+                    empower your business to thrive in the face of evolving
+                    challenges.
                   </div>
                 </div>
-                <Link to={'/cloud-engineering'}>
-                <button  className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Learn more
-                  </div>
-                </button>
+                <Link to={"/cloud-engineering"}>
+                  <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
+                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      Learn more
+                    </div>
+                  </button>
                 </Link>
               </div>
             </div>

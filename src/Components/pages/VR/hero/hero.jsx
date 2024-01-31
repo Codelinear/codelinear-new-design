@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <section id="prod-hero">
-        <h1 className="text-[66px] ml-[80px] leading-[100%] mb-[80px] mt-[142px] letter-spacing w-[896px] max-lg:ml-[40px] max-sm:ml-[20px] max-sm:text-[50px] max-lg:w-[90%]">
+        <h1 className="text-[66px] h-[100vh] pl-[80px] leading-[108%] pb-[80px] pt-[142px] letter-spacing-1 w-[976px] max-lg:pl-[40px] max-sm:pl-[20px] max-sm:text-[50px] max-lg:w-[90%]">
           Immerse your audience in captivating digital experiences like never
           before.
         </h1>

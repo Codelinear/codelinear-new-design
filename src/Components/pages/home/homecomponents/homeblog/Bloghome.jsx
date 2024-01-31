@@ -1,11 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 import "./homeblog.scss";
-import img2 from "../../../../../assets/homeassets/Frame 566.png";
-import img3 from "../../../../../assets/homeassets/Frame 569.png";
-import img4 from "../../../../../assets/homeassets/unsplash_2cFZ_FB08UM.png";
-import img5 from "../../../../../assets/homeassets/Frame 64.png";
-import img6 from "../../../../../assets/homeassets/Frame 61 (1).png";
+import img5 from "../../../../../assets/homeassets/BLogs01.jpg";
+import img3 from "../../../../../assets/homeassets/BLogs03.jpg";
+import img4 from "../../../../../assets/homeassets/BLogs06.jpg";
+import img2 from "../../../../../assets/homeassets/BLogs02.jpg";
+import img6 from "../../../../../assets/homeassets/BLogs07.jpg";
+import img7 from "../../../../../assets/homeassets/BLogs04.jpg";
+import img1 from "../../../../../assets/homeassets/BLogs05.jpg";
 import { Link } from "react-router-dom";
 
 const Bloghome = () => {
@@ -57,7 +59,7 @@ const Bloghome = () => {
           <Link
             to={"/changingnature"}
             onClick={scrollToTop}
-            className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex  pl-[80px] max-sm:pl-[20px] max-lg:pl-[40px]"
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[80px] max-sm:pl-[20px] max-lg:pl-[40px]"
           >
             <div className="flex-col justify-start items-start gap-9 flex">
               <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
@@ -68,12 +70,12 @@ const Bloghome = () => {
                 />
               </div>
             </div>
-            <div className="flex-col justify-center items-start gap-6 flex">
+            <div className="flex-col justify-center items-start gap-[24px] flex">
               <div className="flex-col justify-start items-start gap-4 flex">
-                <div className="w-[317px] text-black text-2xl letter-spacing-4 font-normal font-['Graphik'] capitalize">
-                  changing nature of seo
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  changing nature of SEO
                 </div>
-                <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Our commitment is not just to design; it's to create
                   experiences that resonate, innovate....
                 </div>
@@ -90,27 +92,23 @@ const Bloghome = () => {
           <Link
             to={"/design-system"}
             onClick={scrollToTop}
-            className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex  pl-[142.5px] max-sm:pl-[20px] max-lg:pl-[40px]"
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
           >
             <div className="flex-col justify-start items-start gap-9 flex">
               <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                 <img
-                  className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
                   src={img2}
                   alt=""
                 />
-                {/* <div className="w-[318px] h-[317px] relative flex-col justify-start items-start flex" /> */}
               </div>
             </div>
-            <div className="flex-col justify-center items-start gap-6 flex">
+            <div className="flex-col justify-center items-start gap-[24px] flex">
               <div className="flex-col justify-start items-start gap-4 flex">
-                <div
-                  onClick={scrollToTop}
-                  className="w-[317px] text-black text-2xl letter-spacing-4 font-normal font-['Graphik'] capitalize"
-                >
-                  design system
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  Design System{" "}
                 </div>
-                <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Our commitment is not just to design; it's to create
                   experiences that resonate, innovate....
                 </div>
@@ -127,56 +125,23 @@ const Bloghome = () => {
           <Link
             to={"/mvp"}
             onClick={scrollToTop}
-            className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex pl-[205px] max-sm:pl-[20px] max-lg:pl-[40px]"
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
           >
             <div className="flex-col justify-start items-start gap-9 flex">
               <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                 <img
-                  className="w-[318px] h-[175px] relative flex-col justify-start items-start flex"
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
                   src={img3}
                   alt=""
                 />
               </div>
             </div>
-            <div className="flex-col justify-center items-start gap-6 flex">
+            <div className="flex-col justify-center items-start gap-[24px] flex">
               <div className="flex-col justify-start items-start gap-4 flex">
-                <div className="w-[317px] text-black letter-spacing-4 text-2xl font-normal font-['Graphik'] capitalize">
-                  Minimum viable product
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  Minimum viable product{" "}
                 </div>
-                <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                  Our commitment is not just to design; it's to create
-                  experiences that resonate, innovate....
-                </div>
-              </div>
-              <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
-                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  Read more
-                </div>
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link
-            to={"/Gestalt"}
-            onClick={scrollToTop}
-            className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex pl-[267.5px] max-sm:pl-[20px] max-lg:pl-[40px]"
-          >
-            <div className="flex-col justify-start items-start gap-9 flex">
-              <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
-                <img
-                  className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
-                  src={img4}
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="flex-col justify-center items-start gap-6 flex">
-              <div className="flex-col justify-start items-start gap-4 flex">
-                <div className="w-[317px] text-black letter-spacing-4 text-2xl font-normal font-['Graphik'] capitalize">
-                  Gestalt psychology
-                </div>
-                <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Our commitment is not just to design; it's to create
                   experiences that resonate, innovate....
                 </div>
@@ -193,23 +158,23 @@ const Bloghome = () => {
           <Link
             to={"/branding"}
             onClick={scrollToTop}
-            className="w-[317px] h-[548px] flex-col justify-start items-start gap-5 inline-flex  pl-[330px] max-sm:pl-[20px] max-lg:pl-[40px]"
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
           >
             <div className="flex-col justify-start items-start gap-9 flex">
               <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
                 <img
-                  className="w-[318px] object-cover h-[175px] relative flex-col justify-start items-start flex"
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
                   src={img6}
                   alt=""
                 />
               </div>
             </div>
-            <div className="flex-col justify-center items-start gap-6 flex">
+            <div className="flex-col justify-center items-start gap-[24px] flex">
               <div className="flex-col justify-start items-start gap-4 flex">
-                <div className="w-[317px] text-black letter-spacing-4 text-2xl font-normal font-['Graphik'] capitalize">
-                  The art of disruptive branding
+                <div className="w-[317px] h-[29px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  The art of disruptive branding{" "}
                 </div>
-                <div className="w-[317px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Our commitment is not just to design; it's to create
                   experiences that resonate, innovate....
                 </div>
@@ -223,8 +188,105 @@ const Bloghome = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=""></div>
+          <Link
+            to={"/Gestalt"}
+            onClick={scrollToTop}
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
+          >
+            <div className="flex-col justify-start items-start gap-9 flex">
+              <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <img
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                  src={img4}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="flex-col justify-center items-start gap-[24px] flex">
+              <div className="flex-col justify-start items-start gap-4 flex">
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  Gestalt psychology{" "}
+                </div>
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  Our commitment is not just to design; it's to create
+                  experiences that resonate, innovate....
+                </div>
+              </div>
+              <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  Read more
+                </div>
+              </div>
+            </div>
+          </Link>
         </SwiperSlide>
+        <SwiperSlide>
+          <Link
+            to={"/nocode"}
+            onClick={scrollToTop}
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
+          >
+            <div className="flex-col justify-start items-start gap-9 flex">
+              <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <img
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                  src={img7}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="flex-col justify-center items-start gap-[24px] flex">
+              <div className="flex-col justify-start items-start gap-4 flex">
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  No Code Revolution{" "}
+                </div>
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  Our commitment is not just to design; it's to create
+                  experiences that resonate, innovate....
+                </div>
+              </div>
+              <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  Read more
+                </div>
+              </div>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link
+            to={"/shopifyVsMagento"}
+            onClick={scrollToTop}
+            className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  pl-[100px] max-sm:pl-[20px] max-lg:pl-[40px]"
+          >
+            <div className="flex-col justify-start items-start gap-9 flex">
+              <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <img
+                  className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                  src={img1}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="flex-col justify-center items-start gap-[24px] flex">
+              <div className="flex-col justify-start items-start gap-4 flex">
+                <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  Spotify vs Magento{" "}
+                </div>
+                <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  Our commitment is not just to design; it's to create
+                  experiences that resonate, innovate....
+                </div>
+              </div>
+              <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  Read more
+                </div>
+              </div>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide></SwiperSlide>
       </Swiper>
     </section>
   );

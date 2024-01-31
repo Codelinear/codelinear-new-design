@@ -146,15 +146,15 @@ const Homeanimate = () => {
                 <div className="h-[515.38px] flex-col justify-between items-start inline-flex">
                   <div className="w-[414px] flex-col justify-between items-start gap-9 flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-yellow-400 text-xl font-normal font-['Graphik']">
+                      <div className="opacity-80 text-[#FFCD05] text-xl font-normal font-['Graphik']">
                         IKEA
                       </div>
-                      <div className="w-[414px] text-yellow-400 text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
+                      <div className="w-[414px] text-[#FFCD05] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
                         Changing the way people shop.
                       </div>
                     </div>
                     <Link to={"/casestudy"}>
-                      <div className="px-8 absolute top-[326px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                      <div className="px-8 absolute top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study
                         </div>

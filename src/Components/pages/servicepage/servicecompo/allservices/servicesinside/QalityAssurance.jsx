@@ -1,6 +1,6 @@
 import React from "react";
 
-import img from "../assets/services page-9 QA.jpg"
+import img from "../assets/services page-9 QA.jpg";
 import { Link } from "react-router-dom";
 
 const QalityAssurance = () => {
@@ -23,27 +23,40 @@ const QalityAssurance = () => {
                       Quality Assurance
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                      Partner with a team that understands the universal
+                      standards of quality, and aligns seamlessly with your
+                      digital vision.
                     </div>
                   </div>
-                  <Link to={'/Quality-Assurance'}>
-                  <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                      Learn more
-                    </div>
-                  </button>
+                  <Link to={"/Quality-Assurance"}>
+                    <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
+                      <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                        Learn more
+                      </div>
+                    </button>
                   </Link>
                 </div>
               </div>
 
               <div className="flex ml-[80px] max-md:ml-0 mt-16 gap-10 w-[621px]  max-md:w-full flex-wrap">
                 <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
-                  QA Automation
-                </div>
+                Functional Testing                </div>
                 <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
-                  QA as a Service
-                </div>
+                Usability Testing                </div>
+                <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
+                Performance Testing                </div>
+                <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
+                Security Testing                </div>
+                <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
+                Penetration Testing                </div>
+                <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
+                Vulnerability Assessment                </div>
+                <div className="w-[167.11px] left-[80px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[50%]">
+                Integration Testing                </div>
+                <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
+                Regression Testing                </div>
+                <div className="w-[167.04px] left-[298px] top-[496px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-[30%]">
+                Independent Testing                </div>
               </div>
             </div>
             <div>

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <section id="prod-hero">
-        <h1 className="prod-hero-h1 letter-spacing">
+        <h1 className="prod-hero-h1 letter-spacing-1">
           Eliminate the need for intricate coding while ensuring a polished end
           product.{" "}
         </h1>

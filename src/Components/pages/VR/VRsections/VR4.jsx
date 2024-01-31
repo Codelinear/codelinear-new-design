@@ -19,7 +19,7 @@ const VR4 = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Interactive Wayfinding</h3>
             <p>
               Provide users with interactive and dynamic wayfinding, enhancing
@@ -27,7 +27,7 @@ const VR4 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" />
+            <img src={img2} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Location-Based Information</h3>
             <p>
               Deliver real-time, location-based information to users, offering
@@ -35,7 +35,7 @@ const VR4 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" />
+            <img src={img3} alt=""  className="w-[57px] h-[57px]"/>
             <h3 className="whitespace-nowrap">Seamless Navigation Experience</h3>
             <p>
               Utilize AR navigation to create a seamless and intuitive
@@ -46,7 +46,7 @@ const VR4 = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
             Need help in making the next big thing?
         </div>
         <Link

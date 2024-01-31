@@ -14,7 +14,7 @@ const VR6 = () => {
                 </div>
                 <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
               </div>
-              <div className="w-[631.03px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px] max-lg:w-[90%]">
+              <div className="w-[631.03px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px] max-lg:w-[90%]">
                 AR for E-commerce{" "}
               </div>
             </div>
@@ -32,7 +32,7 @@ const VR6 = () => {
       <div className="w-full h-[755px] pl-20 pr-[45px] pt-[0px] pb-[145.80px] bg-white justify-start items-start gap-[141.63px] inline-flex max-lg:flex-wrap max-lg:h-full max-lg:gap-[0px] max-lg:pl-[40px] max-sm:pl-[20px] max-sm:gap-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex">
             <div className="flex-col justify-start items-start gap-5 flex">
-              <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                 Virtual Product Try-On{" "}
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -41,7 +41,7 @@ const VR6 = () => {
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-5 flex">
-              <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                 Interactive Product Visualization{" "}
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
@@ -50,7 +50,7 @@ const VR6 = () => {
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-5 flex">
-              <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+              <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
                 Increased Confidence in Purchase{" "}
               </div>
               <div className="w-[291.37px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">

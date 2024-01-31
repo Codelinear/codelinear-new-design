@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 import graphintersect from "./assets/Intersect.svg";
-import grapharrow from "./assets/Frame 1000002956.png";
+import grapharrow from "./assets/about page arrow.svg";
 import grapharrow2 from "./assets/file.svg";
 import "./circle.scss";
+import React, { useRef } from "react";
 
-import { TweenMax } from "gsap";
-import React, { useEffect, useRef } from "react";
 const Animatecircle = () => {
   let circle1 = useRef(null);
   let circle2 = useRef(null);
@@ -15,6 +14,7 @@ const Animatecircle = () => {
   let arrow2 = useRef(null);
   let intersecter = useRef(null);
   let circle4 = useRef(null);
+  let we = useRef(null);
 
   const mouseOverAnimation = () => {
     gsap.to(circle1, { opacity: 0 });
@@ -22,9 +22,10 @@ const Animatecircle = () => {
     gsap.to(arrow, { opacity: 1 });
     gsap.to(arrow2, { opacity: 1 });
     gsap.to(arrow3, { opacity: 1 });
-    gsap.to(circle2, { opacity: 1, y: 63, x: 98, scale: 1.5 });
-    gsap.to(circle3, { opacity: 1, y: 64, x: -97, scale: 1.5 });
-    gsap.to(circle4, { opacity: 1, y: -105, x: -5, scale: 1.5 });
+    gsap.to(we, { opacity: 1 });
+    gsap.to(circle2, { opacity: 1, y: 83, x: 131, scale: 1 });
+    gsap.to(circle3, { opacity: 1, y: 83, x: -131, scale: 1 });
+    gsap.to(circle4, { opacity: 1, y: -143, x: -7, scale: 1 });
   };
 
   const mouseOutAnimation = () => {
@@ -32,16 +33,17 @@ const Animatecircle = () => {
     gsap.to(arrow, { opacity: 0 });
     gsap.to(arrow2, { opacity: 0 });
     gsap.to(arrow3, { opacity: 0 });
-    gsap.to(circle2, { opacity: 0, y: 0, x: 0, scale: 1 });
-    gsap.to(circle3, { opacity: 0, y: 0, x: 0, scale: 1 });
-    gsap.to(circle4, { opacity: 0, y: 0, scale: 1 });
+    gsap.to(we, { opacity: 0 });
+    gsap.to(circle2, { opacity: 0, y: 0, x: 0, scale: 0.7 });
+    gsap.to(circle3, { opacity: 0, y: 0, x: 0, scale: 0.7 });
+    gsap.to(circle4, { opacity: 0, y: 0, scale: 0.7 });
     gsap.to(intersecter.current, { width: 0 });
   };
 
   return (
-    <div className="pt-[50px] max-[901px]:h-[700px] max-[481px]:h-[500px]">
+    <div className="pt-[150px] max-[901px]:h-[700px] max-[481px]:h-[500px]">
       <div
-        className="w-[50%] ml-[25%] h-[500px] absolute z-[3] insert-hover max-[901px]:h-[700px] max-[481px]:h-[500px] "
+        className="w-[50%] ml-[25%] h-[644px] absolute z-[3] insert-hover max-[901px]:h-[700px] max-[481px]:h-[500px] "
         onMouseOver={mouseOverAnimation}
         onMouseOut={mouseOutAnimation}
       ></div>
@@ -68,21 +70,23 @@ const Animatecircle = () => {
           className="arrowanimate"
           ref={(el) => (arrow = el)}
         />
-        {/* ){"}"} */}
+        <p className="we"
+          ref={(el) => (we = el)}
+          >We help you get here.</p>
 
         <div
           // style={{ color:  ? "#000000" : "#d8d6d6", fontWeight: 900 }}
           className="circle11"
           ref={(el) => (circle1 = el)}
         >
-          Codelinear
+          codelinear
         </div>
         <div
           // style={{ color: isDarkMode ? "#000000" : "#d8d6d6", fontWeight: 800 }}
           className="circle20 circle21"
           ref={(el) => (circle2 = el)}
         >
-          Market
+          Disrupt
         </div>
         <div
           // style={{ color: isDarkMode ? "#000000" : "#d8d6d6", fontWeight: 800 }}

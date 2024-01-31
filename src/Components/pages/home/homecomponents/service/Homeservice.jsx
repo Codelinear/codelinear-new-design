@@ -605,7 +605,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32.451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -629,9 +629,8 @@ const Homeservice = () => {
                       Product Design and Innovation
                     </div>
                     <div className="w-[340px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Sculpt digital products that stand out from the crowd,
+                      spark emotions, and redefine what's possible.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -646,7 +645,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -694,9 +693,8 @@ const Homeservice = () => {
                       App Development and Modernization
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Build enduring app experiences that captivate users, drive
+                      growth, and leave a lasting impact.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -711,7 +709,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -751,9 +749,9 @@ const Homeservice = () => {
                       Technology Consulting
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Our seasoned consultants bring a universal perspective to
+                      your unique challenges, offering insights that redefine
+                      possibilities.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -768,7 +766,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -809,9 +807,8 @@ const Homeservice = () => {
                       Ecommerce Marketplace Development
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Elevate your business to new heights with our cutting-edge
+                      marketplace development services.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -826,7 +823,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -853,9 +850,9 @@ const Homeservice = () => {
                       Cloud Engineering
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Engineered to meet the unique needs of your business,
+                      empower your business to thrive in the face of evolving
+                      challenges.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -870,7 +867,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   ">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -938,9 +935,8 @@ const Homeservice = () => {
                       Game Development
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Breathe life into gaming experiences that resonate with
+                      players and leave an indelible mark.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -955,7 +951,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1010,9 +1006,9 @@ const Homeservice = () => {
                       AR/VR Services
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Transport users to realms where the extraordinary becomes
+                      ordinary, boundaries blur, and possibilities are
+                      limitless.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1027,7 +1023,7 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1082,9 +1078,9 @@ const Homeservice = () => {
                       Low-code and No-code
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Creating dynamic applications without diving into complex
+                      code. Our Low Code/No Code solutions help liberate your
+                      creativity.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1098,7 +1094,7 @@ const Homeservice = () => {
                   </div>
                 </div>
               </div>
-              <div className="mb-[17px] service-cards w-[32%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  ">
+              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  ">
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1153,9 +1149,9 @@ const Homeservice = () => {
                       Quality Assurance
                     </div>
                     <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
+                      Partner with a team that understands the universal
+                      standards of quality, and aligns seamlessly with your
+                      digital vision.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">

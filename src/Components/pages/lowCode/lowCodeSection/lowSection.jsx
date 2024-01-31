@@ -21,7 +21,7 @@ const LowSection = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Bubble</h3>
             <p>
               Empowers users with no-code development, enabling the creation of
@@ -29,7 +29,7 @@ const LowSection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" />
+            <img src={img2} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Webflow</h3>
             <p>
               Intuitive design tools for building responsive websites visually,
@@ -37,7 +37,7 @@ const LowSection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" />
+            <img src={img3} alt=""  className="w-[57px] h-[57px]"/>
             <h3>WordPress</h3>
             <p>
               Robust content management system, facilitating website creation
@@ -45,7 +45,7 @@ const LowSection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img4} alt="" />
+            <img src={img4} alt="" className="w-[57px] h-[57px]" />
             <h3>Wix</h3>
             <p>
               User-friendly website builder offering customizable templates and
@@ -53,7 +53,7 @@ const LowSection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img5} alt="" />
+            <img src={img5} alt="" className="w-[57px] h-[57px]" />
             <h3>HubSpot</h3>
             <p>
               Drag-and-drop design, SEO tools, and integrated marketing features
@@ -63,7 +63,7 @@ const LowSection = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
            Need help in making the next big thing?
         </div>
         <Link

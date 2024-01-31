@@ -1,5 +1,5 @@
 .contact-hero {
-  margin-bottom: 80px;
+  margin-bottom: 147px;
   .contact-hero-h1 {
     color: #000;
     font-family: Graphik;
@@ -9,7 +9,7 @@
     line-height: 108%;
     margin-left: 80px;
     margin-top: 62px;
-    letter-spacing: -2.64px;
+    letter-spacing: -1.98px;
     width: 685.552px;
   }
   .contact-form {
@@ -25,13 +25,21 @@
       margin-top: 62px;
       .form-div {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         .name {
           display: flex;
           padding: 15px 0px;
           width: 50%;
           align-items: center;
           border-bottom: 1px solid #000;
+        }
+        .name::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+          font-family: Graphik;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%; /* 24px */
         }
       }
       .email {
@@ -43,6 +51,14 @@
         border-bottom: 1px solid #000;
         margin: 32px 0;
       }
+      .email::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Graphik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+      }
       .text {
         display: flex;
         width: 628px;
@@ -51,6 +67,14 @@
         align-items: center;
         border-bottom: 1px solid #000;
         resize: none;
+      }
+      .text::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Graphik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
       }
     }
     button {
@@ -124,9 +148,10 @@
     align-items: flex-start;
     gap: 12px;
     color: #000;
+    color: #000;
     leading-trim: both;
     text-edge: cap;
-    // font-family: Chivo Mono Medium;
+    font-family: mono chivo;
     font-size: 52.744px;
     font-style: normal;
     font-weight: 400;

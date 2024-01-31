@@ -1,13 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./nav.scss";
 import img from "./ham.svg";
 import arrow from "../pages/home/homecomponents/homeanimate/arrow.svg";
 import navBar from "./nav bar.json";
+import { useLocation } from "react-router-dom";
 import Lottie from "lottie-react";
+import gsap from "gsap";
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   let [width, setWidth] = useState(window.innerWidth);
+  const location = useLocation();
+  const service= useRef(null);
+
+  useEffect(() =>{
+    const live = location.pathname;
+    if (live === '/service'){
+      gsap.to(service.current ,0, {textDecoration : "underline"});
+    }
+  });
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
@@ -274,15 +285,15 @@ const Navbar = () => {
                             <div className="self-stretch flex-col justify-start items-start gap-12 inline-flex ">
                               <div className="flex-col justify-start items-start gap-[26px] flex">
                                 <div className="self-stretch justify-start items-center gap-[26px] inline-flex">
-                                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
+                                  <div ref={service} className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                                     Our services
                                   </div>
                                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                                 </div>
                                 <div className="flex-col justify-start items-start gap-[17px] flex">
                                   <div className="w-[366.92px] text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
-                                    Iaculis amet consequat consequat viverra
-                                    diam.
+                                    We help you do amazing things through
+                                    cutting-edge technology.
                                   </div>
                                 </div>
                               </div>

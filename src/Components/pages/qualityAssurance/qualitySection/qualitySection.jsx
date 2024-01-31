@@ -100,7 +100,7 @@ const QualitySection = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal">
+        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
           Need help in making the next big thing?
         </div>
         <Link

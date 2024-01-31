@@ -92,7 +92,7 @@ const VR = () => {
           <VR4/>
           </div>
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[500px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
             <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div

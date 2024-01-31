@@ -1,5 +1,5 @@
 import React from "react";
-import img4 from "../assets/services page-3 technology consulting.jpg"
+import img4 from "../assets/services page-3 technology consulting.jpg";
 import { Link } from "react-router-dom";
 
 const Consulting = () => {
@@ -22,8 +22,9 @@ const Consulting = () => {
                       Technology Consulting
                     </div>
                     <div className="w-[513.61px]  max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                      Our seasoned consultants bring a universal perspective to
+                      your unique challenges, offering insights that redefine
+                      possibilities.
                     </div>
                   </div>
                   <Link to={"/consulting"}>

@@ -28,7 +28,7 @@ const ESection = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Custom e-commerce Development</h3>
             <p>
               Tailored solutions crafting unique online marketplaces, blending
@@ -36,7 +36,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" />
+            <img src={img2} alt=""  className="w-[57px] h-[57px]"/>
             <h3>WooCommerce</h3>
             <p>
               WordPress-integrated e-commerce solution offering customizable
@@ -44,7 +44,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" />
+            <img src={img3} alt="" className="w-[57px] h-[57px]" />
             <h3>NetSuite</h3>
             <p>
               Comprehensive cloud ERP solution, integrating financials, CRM, and
@@ -52,7 +52,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img4} alt="" />
+            <img src={img4} alt="" className="w-[57px] h-[57px]" />
             <h3>Shopify</h3>
             <p>
               E-commerce solution empowering businesses with user-friendly
@@ -61,7 +61,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img5} alt="" />
+            <img src={img5} alt=""  className="w-[57px] h-[57px]"/>
             <h3>Magento</h3>
             <p>
               Powerful open-source e-commerce solution enabling scalable and
@@ -69,7 +69,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img6} alt="" />
+            <img src={img6} alt="" className="w-[57px] h-[57px]" />
             <h3>BigCommerce</h3>
             <p>
               All-in-one e-commerce solution, offering customizable online
@@ -78,7 +78,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img7} alt="" />
+            <img src={img7} alt="" className="w-[57px] h-[57px]" />
             <h3>HubSpot Commerce Hub</h3>
             <p>
               Unified e-commerce platform seamlessly integrating sales,
@@ -87,7 +87,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img8} alt="" />
+            <img src={img8} alt="" className="w-[57px] h-[57px]" />
             <h3>WixCommerce</h3>
             <p>
               Intuitive e-commerce platform empowering businesses with
@@ -95,7 +95,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img9} alt="" />
+            <img src={img9} alt="" className="w-[57px] h-[57px]" />
             <h3>Squarespace</h3>
             <p>
               Elegant and user-friendly website builder, offering creative tools
@@ -104,7 +104,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img10} alt="" />
+            <img src={img10} alt="" className="w-[57px] h-[57px]" />
             <h3>Shift4Shop</h3>
             <p>
               Comprehensive e-commerce solution with customizable online stores,
@@ -114,7 +114,7 @@ const ESection = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-sm:ml-[20px] max-sm:ml-[40px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-normal max-sm:w-[90%]">
+        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[90%]">
           Need help in making the next big thing?
         </div>
         <Link

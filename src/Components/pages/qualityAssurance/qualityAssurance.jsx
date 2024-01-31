@@ -1,6 +1,6 @@
 import Hero from "./hero/hero";
 import QSection from "./qualitySection/qualitySection";
-import Explore from '../production/Explore'
+import Explore from "../production/Explore";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -37,16 +37,17 @@ const QualityAssurance = () => {
   return (
     <>
       <div className="flex">
-        <div className="left section">
+        <div className="left w-[80%]">
           <div className="section">
-          <Hero/>
+            <Hero />
           </div>
           <div className="section" id="produc" ref={produc}>
-          <QSection />
+            <div className="section">
+              <QSection />
+            </div>
           </div>
-
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[500px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
             <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div
@@ -59,7 +60,7 @@ const QualityAssurance = () => {
                 Overview
               </div>
             </div>
-            <div className=" w-[222px] h-[463px] relative left-[30px] max-xl:h-[200px] max-xl:w-full">
+            <div className=" w-[222px] h-[463px] relative left-[20px] max-xl:h-[200px] max-xl:w-full">
               <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={

@@ -22,11 +22,11 @@ const Productdesing = () => {
                       Product Design and Innovation
                     </div>
                     <div className="w-[513.61px] max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                      Codelinear leverages human sentiments, company values to
-                      help leaders acheive digital excellence.
+                      Sculpt digital products that stand out from the crowd,
+                      spark emotions, and redefine what's possible.
                     </div>
                   </div>
-                  <Link to={'/product-development'}>
+                  <Link to={"/product-development"}>
                     <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full">
                       <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                         Learn more
