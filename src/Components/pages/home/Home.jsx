@@ -1,5 +1,5 @@
-import React from "react";
-import './home.scss'
+import React, { useEffect } from "react";
+import "./home.scss";
 import Homehero from "../../homepageComp/homeHero/Homehero";
 import Vision from "./homecomponents/vision/Vision";
 import Productengineer from "./homecomponents/homeproductengineer/Productengineer";
@@ -11,8 +11,11 @@ import Adupt from "./homecomponents/Adupt";
 import Homeanimate from "./homecomponents/homeanimate/Homeanimate";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({top:0, left: 0, behavior: 'instant'})
+  });
   return (
-    <>
+    <div>
       <Homehero />
       <Vision />
       <Productengineer />
@@ -22,7 +25,7 @@ const Home = () => {
       <Clients />
       <Adupt />
       <Bloghome />
-    </>
+    </div>
   );
 };
 

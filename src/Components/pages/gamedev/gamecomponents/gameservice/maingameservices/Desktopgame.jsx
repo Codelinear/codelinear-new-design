@@ -16,7 +16,7 @@ const Desktopgame = () => {
                 <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                   game development services
                 </div>
-                <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
               </div>
               <div className="w-[631.03px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%]  max-sm:w-[90%] max-sm:text-[36px]">
                 Desktop Game Development
@@ -29,7 +29,7 @@ const Desktopgame = () => {
               audience seeking high-quality experiences.
             </div>
           </div>
-          <div className="ml-[80px] mb-[86px] mt-[60px] top-[345px]  flex-col justify-start items-start gap-[35px] inline-flex  max-sm:ml-[20px] max-lg:ml-[40px] max-sm:top-[150px]">
+          <div className="ml-[80px] mb-[86px] mt-[42px] top-[345px]  flex-col justify-start items-start gap-[35px] inline-flex  max-sm:ml-[20px] max-lg:ml-[40px] max-sm:top-[150px]">
             <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
               Technologies we use
             </div>

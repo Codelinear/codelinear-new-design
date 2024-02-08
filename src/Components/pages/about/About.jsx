@@ -7,6 +7,7 @@ import Guide from "./aboutcompo/guiding/Guide";
 import Commitment from "./aboutcompo/commitment/Commitment";
 
 const About = () => {
+  
   return (
     <>
       <AboutHero />

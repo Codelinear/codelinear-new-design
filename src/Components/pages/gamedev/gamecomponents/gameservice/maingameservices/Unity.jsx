@@ -12,7 +12,7 @@ const Unity = () => {
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 game development services
               </div>
-              <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+              <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
             </div>
             <div className="w-[631.03px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px] w-full">
               Unity Game Development

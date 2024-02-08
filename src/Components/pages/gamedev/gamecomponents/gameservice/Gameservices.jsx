@@ -50,7 +50,10 @@ const Gameservices = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition - 100 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
@@ -62,10 +65,13 @@ const Gameservices = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <div className="game-service">
-        <div className="w-full hfull mt-[80px]  bg-white">
+        <div className="w-full hfull mt-[40px]  bg-white">
           <div className="w-full h-full relative bg-white flex justify-between">
             <div className="leftt">
               <div>
@@ -85,11 +91,13 @@ const Gameservices = () => {
                       <p className="w-[305px] letter-spacing-4 text-black text-xl font-normal font-['Graphik']">
                         Have an idea and want to get started?
                       </p>
-                      <button className=" talk-btn  hover:bg-yellow-400 transition-all px-8 py-4 rounded-[31px]  hover:border-yellow-400  border border-black justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                          Let’s talk
-                        </div>
-                      </button>
+                      <Link onClick={scrollToTop} to={"/contact-us"}>
+                        <button className="section talk-btn  hover:bg-yellow-400 transition-all px-8 py-4 rounded-[31px]  hover:border-yellow-400  border border-black justify-center items-center gap-2 inline-flex">
+                          <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                            Let’s talk
+                          </div>
+                        </button>
+                      </Link>
                     </div>
                   </div>
 
@@ -104,25 +112,25 @@ const Gameservices = () => {
               </div>
 
               <div>
-                <div id="mobilegameu" className='section' ref={mobileGameRefu}>
+                <div id="mobilegameu" className="section" ref={mobileGameRefu}>
                   <Mobilegame />
                 </div>
-                <div id="desktopgame" className='section' ref={desktopgame}>
+                <div id="desktopgame" className="section" ref={desktopgame}>
                   <Desktopgame />
                 </div>
-                <div id="unreal" className='section' ref={unreal}>
+                <div id="unreal" className="section" ref={unreal}>
                   <Unreal />
                 </div>
-                <div id="unity" className='section' ref={unity}>
+                <div id="unity" className="section" ref={unity}>
                   <Unity />
                 </div>
-                <div id="arvr" className='section' ref={arvr}>
+                <div id="arvr" className="section" ref={arvr}>
                   <ArVr />
                 </div>
               </div>
             </div>
 
-            <div className="right sticky max-xl:hidden h-[600px] top-28 mt-10  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+            <div className="right sticky max-xl:hidden h-[600px] top-28 mt-10  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
               <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
                 <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
                   <div
@@ -135,8 +143,8 @@ const Gameservices = () => {
                     Overview
                   </div>
                 </div>
-                <div className=" w-[222px] h-[463px] relative left-[30px] max-xl:h-[200px] max-xl:w-full">
-                  <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+                <div className=" w-[190px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+                  <div className="w-[190px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                     <div
                       className={
                         activeSection >= 1
@@ -144,75 +152,75 @@ const Gameservices = () => {
                           : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
                       }
                     >
-                      Game Development
+                      Game Development services
                     </div>
                   </div>
-                  <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+                  <div className=" stick_list w-[197px] h-[412px] p-[8px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                     <Link
-                      to="#mobildeve"
+                      to="#Mobile-game-development"
                       onClick={scrollToMobileGameu}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Mobile game development
                       </div>
                     </Link>
                     <Link
-                      to="#progressive"
+                      to="#desktop-game-development"
                       onClick={scrollTodesktopgame}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Desktop game development
                       </div>
                     </Link>
                     <Link
-                      to="#sass"
+                      to="#unreal-game-development"
                       onClick={scrollTounreal}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                       Unreal game development
+                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        Unreal game development
                       </div>
                     </Link>
                     <Link
-                      to="#apidev"
+                      to="#unity-game-development"
                       onClick={scrollTounity}
                       className={
                         activeSection === 5
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[165.72px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[130.72px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Unity game development
                       </div>
                     </Link>
                     <Link
-                      to="#legacy"
+                      to="#ar-vr-game-development"
                       onClick={scrollToarvr}
                       className={
                         activeSection === 6
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[133.01px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[130.01px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         AR/VR game development
                       </div>
                     </Link>

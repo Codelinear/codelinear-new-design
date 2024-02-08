@@ -22,7 +22,7 @@ const Lowcode = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (scrollPosition + 300 >= sectionTop && scrollPosition < sectionBottom) {
         setActiveSection(index);
       }
     });
@@ -36,18 +36,18 @@ const Lowcode = () => {
   }, []);
   return (
     <>
-      <div className="flex">
-        <div className="left section w-[80%]">
-          <div className="section">
+      <div className="flex justify-between">
+        <div className="section left w-[80%] max-xl:w-full">
+          <div>
             <Hero />
           </div>
           <div className="section" id="produc">
             <LowSection />
           </div>
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
-          <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
-            <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
+        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[530px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
+          <div className="self-stretch flex-col justify-start items-start gap-[12px] inline-flex max-xl:w-full  max-xl:h-[300px]">
+            <div className=" overview mb-[2px] bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div
                 className={
                   activeSection === 0
@@ -58,8 +58,8 @@ const Lowcode = () => {
                 Overview
               </div>
             </div>
-            <div className=" w-[222px] h-[463px] relative max-xl:h-[200px] max-xl:w-full">
-              <div className="w-full overview h-[35px] p-2 top-0 absolute rounded-lg justify-start items-center gap-2 inline-flex max-xl:flex-wrap ">
+            <div className=" w-[143.4px] relative max-xl:h-[200px] max-xl:w-full">
+              <div className="w-full w-[117px] overview h-[35px] p-[8px] top-0 absolute rounded-lg justify-start items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
@@ -67,24 +67,8 @@ const Lowcode = () => {
                       : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
-                  Low code
+                  Low-code and No-code
                 </div>
-              </div>
-              <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
-                <Link
-                  to="#mobildeve"
-                  onClick={scrollToMobileGameu}
-                  // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                  className={
-                    activeSection === 2
-                      ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                  }
-                >
-                  <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    Low Code No Code
-                  </div>
-                </Link>
               </div>
             </div>
           </div>

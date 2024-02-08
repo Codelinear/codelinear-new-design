@@ -13,7 +13,9 @@ html,
 body {
   margin: 0;
 }
-
+.blog-more{
+  width: calc(100% + 150px);
+}
 .container {
   width: 600vw;
   height: 800px;
@@ -40,5 +42,23 @@ body {
   width: 400px;
   height: 100vh;
 }
-
-
+@media (max-width: 1371px) {
+  .blog-more{
+    width: calc(100% + 230px);
+  }
+}
+@media (max-width: 1128px) {
+  .blog-more{
+    width: calc(100% + 160px);
+  }
+}
+@media (max-width: 1085px) {
+  .blog-more{
+    width: calc(100% + 310px);
+  }
+}
+@media (max-width: 640px) {
+  .blog-more{
+    width: calc(100% + 330px);
+  }
+}

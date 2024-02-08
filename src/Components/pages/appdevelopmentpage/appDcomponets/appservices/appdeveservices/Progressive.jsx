@@ -10,7 +10,7 @@ const Progressive = () => {
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 App Development and Modernization
               </div>
-              <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+              <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
             </div>
             <div className="w-[562.77px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:w-[100%] max-sm:text-[36px]">
               Progressive Web App
@@ -23,7 +23,7 @@ const Progressive = () => {
           </div>
         </div>
 
-        <div className="flex gap-20 mt-20 max-lg:flex-wrap">
+        <div className="flex gap-20 mt-[54px] max-lg:flex-wrap">
           <div className="left-[80px] top-[376px]  flex-col justify-start items-start gap-[54px] inline-flex max-lg:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex max-sm:w-full">
               <div className="text-black letter-spacing-4 text-xl font-normal font-['Graphik'] leading-normal">

@@ -14,7 +14,7 @@ const Mobileapp = () => {
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 App Development and Modernization
               </div>
-              <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+              <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
             </div>
             <div className="w-[620.77px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-[688px]:w-full max-sm:text-[36px]">
               Mobile App Development
@@ -26,7 +26,7 @@ const Mobileapp = () => {
             cutting-edge technologies.
           </div>
         </div>
-        <div className="left-[80px] top-[356.27px]  text-black text-xl font-normal font-['Graphik'] leading-normal mt-[51px] mb-[45.73px] max-lg:w-[90%]">
+        <div className="left-[80px] top-[356.27px]  text-black text-xl font-normal font-['Graphik'] leading-normal mt-[42px] mb-[45.73px] max-lg:w-[90%]">
           Our capabilities
         </div>
 

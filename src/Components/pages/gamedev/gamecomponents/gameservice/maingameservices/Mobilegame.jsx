@@ -18,7 +18,7 @@ const Mobilegame = () => {
                   <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                     game development services
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="w-[631.03px] letter-spacing-2 z-[2] text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] z-[2] max-sm:text-[36px] max-[720px]:w-[90%]">
                   Mobile Game Development
@@ -32,7 +32,7 @@ const Mobilegame = () => {
             </div>
           </div>
 
-          <div className="flex gap-[21px] ml-[80px] mt-[65px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:justify-center  max-[720px]:flex-wrap">
+          <div className="flex gap-[21px] ml-[80px] mt-[42px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:justify-center  max-[720px]:flex-wrap">
             <div className="pl  -[25.95px] pr-11  z-[2] pt-[37.80px] pb-[40.20px]  top-[350.20px] back-drop  flex-col justify-center items-start gap-[41.75px] inline-flex">
               <img
                 className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex"

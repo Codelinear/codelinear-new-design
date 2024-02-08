@@ -6,12 +6,6 @@ import { Link } from "react-router-dom";
 
 const QualityAssurance = () => {
   const produc = useRef(null);
-
-  const scrollToMobileGameu = () => {
-    if (produc.current) {
-      produc.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const [activeSection, setActiveSection] = useState(null);
 
   const handleScroll = () => {
@@ -22,7 +16,7 @@ const QualityAssurance = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (scrollPosition +  200 >= sectionTop && scrollPosition < sectionBottom) {
         setActiveSection(index);
       }
     });
@@ -37,7 +31,7 @@ const QualityAssurance = () => {
   return (
     <>
       <div className="flex">
-        <div className="left w-[80%]">
+        <div className="left w-[75%] max-xl:w-full">
           <div className="section">
             <Hero />
           </div>
@@ -47,7 +41,7 @@ const QualityAssurance = () => {
             </div>
           </div>
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[530px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
             <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div
@@ -71,22 +65,6 @@ const QualityAssurance = () => {
                 >
                   Quality Assurance
                 </div>
-              </div>
-              <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
-                <Link
-                  to="#mobildeve"
-                  onClick={scrollToMobileGameu}
-                  // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                  className={
-                    activeSection === 2
-                      ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                  }
-                >
-                  <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    Quality Assurance
-                  </div>
-                </Link>
               </div>
             </div>
           </div>

@@ -2,17 +2,17 @@ import React from "react";
 import img from "../../blogassets/Frame 1000001793.png";
 import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
-import img2 from "../../blogassets/Gestalt 1.png";
-import img3 from "../../blogassets/Frame 64.png";
+import img2 from "../../blogassets/Blogs Animation Thumbnail03.jpg";
+import img3 from "../../blogassets/Blogs Animation Thumbnail06.jpg";
 
 const Ai = () => {
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
     <>
       <div className="innerhero">
-        <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:ml-[20px] max-sm:mt-[90px]">
+        <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:px-[20px] max-sm:mt-[90px]">
           <div className="w-[953px] text-black text-[66px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-sm:text-[46px]">
             AI-Powered Design Tools
           </div>
@@ -35,9 +35,14 @@ const Ai = () => {
             <div className="h-[600px] sticky top-10 w-[300px] max-lg:relative max-lg:w-full max-sm:absolute max-sm:top-0 max-lg:h-full">
               <Link
                 to="/insights"
+                onClick={scrollToTop}
                 className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:top-[0px] max-lg:left-[20px]"
               >
-                <Link to="/insights" className="w-[31px] h-[21px] relative ">
+                <Link
+                  to="/insights"
+                  onClick={scrollToTop}
+                  className="w-[31px] h-[21px] relative "
+                >
                   <img
                     className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
                     src={arrow}
@@ -56,48 +61,53 @@ const Ai = () => {
                 Also Read
               </div>
               <div className="w-[232px] h-[65px] left-[81px] top-[242px] absolute border border-black border-opacity-10 max-lg:hidden">
-                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
-                  <img className="w-[68px] h-[65px]" src={img} alt="" />
-                </div>{" "}
-                <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    <h3>
-                      <marquee>AI-Powered Design</marquee>
-                    </h3>
+                <div className="w-[68px] h-[65px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img
+                    className="w-[68px] h-[65px] object-cover"
+                    src={img}
+                    alt=""
+                  />
+                </div>
+                <div className="flex h-full items-center left-[67.31px] absolute justify-center items-center inline-flex">
+                  <div className="h-[24px]   text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <marquee>
+                      {" "}
+                      <p className="w-[214px]">AI Powered Design</p>
+                    </marquee>
                   </div>
                 </div>
               </div>
               <Link
                 onClick={scrollToTop}
-                to="/Gestalt"
+                to="/gestalt-psychology"
                 className="w-[232px] h-[65px] left-[81px] top-[393px] absolute border border-black border-opacity-10 max-lg:hidden"
               >
-                <div className="w-[68px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
-                  <img className="w-[68.11px] h-[69.01px]" src={img2} alt="" />
+                <div className="w-[68px] h-[65px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img className="w-[68px] h-[65px]" src={img2} alt="" />
                 </div>
-                <div className="left-[77.31px] top-[11.09px] absolute justify-center items-center inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    Gestalt Psychology
+                <div className="flex h-full items-center left-[67.31px] absolute justify-center items-center inline-flex">
+                  <div className="h-[24px]   text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <marquee>
+                      {" "}
+                      <p className="w-[214px]"> Gestalt Psychology</p>
+                    </marquee>
                   </div>
                 </div>
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/changingnature"
+                to="/the-changing-nature-of-seo"
                 className="w-[232px] h-[65px] left-[81px] top-[471px] absolute border border-black border-opacity-10 max-lg:hidden"
               >
-                <div className="w-[68px] h-[67px] left-0 top-[-1.39px] absolute bg-neutral-200 justify-center items-center inline-flex">
-                  <img
-                    className="w-[68px] h-[68.87px]"
-                    src={img3}
-                    alt="placeholder"
-                  />
+                <div className="w-[68px] h-[65px] left-0 top-[-1.39px] absolute bg-black bg-opacity-20">
+                  <img className="w-[68px] h-[65px]" src={img3} alt="" />
                 </div>
-                <div className="left-[77.31px] top-[11.09px] absolute justify-end items-center inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] leading-normal">
-                    <h3>
-                      <marquee> The Changing Nature of SEO</marquee>
-                    </h3>
+                <div className="flex h-full items-center left-[67.31px] absolute justify-center items-center inline-flex">
+                  <div className="h-[24px]   text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <marquee>
+                      {" "}
+                      <p className="w-[214px]">The Changing Nature of SEO</p>
+                    </marquee>
                   </div>
                 </div>
               </Link>

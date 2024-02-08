@@ -85,7 +85,6 @@
       gap: 8px;
       border-radius: 31px;
       border: 1px solid #000;
-      margin-left: 82px;
       transition: 0.3s;
     }
     button:hover {
@@ -141,8 +140,8 @@
 .digital-clock {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 19px;
+  justify-content: center;
+  gap: 0px;
   h1 {
     display: flex;
     align-items: flex-start;
@@ -177,7 +176,7 @@
 .hand.second {
   height: 40px;
   width: 1px;
-  background-color: #ffcd05;
+  background-color: #7C7C7C;
 }
 .hand.minute {
   height: 35px;
@@ -272,15 +271,30 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 24px */
-      text-decoration-line: underline;
+      line-height: 100%;
+      border-bottom: 2px solid black;
     }
   }
+}
+input:focus {
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+input {
+  color: rgba(0, 0, 0);
+  font-family: Graphik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }
 .address-div {
   display: flex;
   gap: 139px;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 13.54%;
   margin-top: 30px;
   margin-bottom: 50px;
 }
@@ -398,7 +412,6 @@
       }
       button {
         padding: 8px 25px;
-        margin-left: 50px;
       }
     }
   }
@@ -541,9 +554,6 @@
           padding: 15px 0px 80px 0px;
         }
       }
-      button {
-        margin-left: 5%;
-      }
     }
   }
   .working-areas {
@@ -592,13 +602,11 @@
     }
   }
   .working-areas {
-    padding: 70px auto;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    width: 950px;
     div {
-      width: 214px;
-      height: 214px;
+      width: 100%;
+      height: auto;
       p {
         font-size: 16px;
       }
@@ -699,5 +707,10 @@
   .contact-hero .contact-form .form {
     margin-left: 0;
     padding: 50px;
+  }
+}
+@media (max-width: 370px) {
+  .div-time{
+    transform: scale(0.9);
   }
 }

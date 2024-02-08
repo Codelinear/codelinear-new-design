@@ -5,8 +5,11 @@ import img3 from "../assets/One Finger Tap.svg";
 import { Link } from "react-router-dom";
 
 const VR3 = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
-    <>
+    <div className=" mb-[121px]">
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap">
           AR/VR services <span></span>
@@ -21,7 +24,7 @@ const VR3 = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" className="w-[57px] h-[57px]" />
+            <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Accessible User Experience</h3>
             <p>
               Enable AR/VR experiences directly within web browsers for a
@@ -29,7 +32,7 @@ const VR3 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" className="w-[57px] h-[57px]" />
+            <img src={img2} alt="" className="w-[50px] h-[50px]" />
             <h3>Platform Agnostic</h3>
             <p>
               Ensure compatibility across various devices and platforms,
@@ -38,7 +41,7 @@ const VR3 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" className="w-[57px] h-[57px]" />
+            <img src={img3} alt="" className="w-[50px] h-[50px]" />
             <h3>Enhanced Engagement</h3>
             <p>
               Integrate Web AR/VR to provide immersive and engaging content,
@@ -52,7 +55,8 @@ const VR3 = () => {
           Need help in making the next big thing?
         </div>
         <Link
-          to=""
+          to={"/contact-us"}
+          onClick={scrollToTop}
           className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
@@ -60,7 +64,7 @@ const VR3 = () => {
           </div>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 export default VR3;

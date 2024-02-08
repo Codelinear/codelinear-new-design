@@ -56,7 +56,10 @@ const VR = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 300 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
@@ -69,30 +72,33 @@ const VR = () => {
   }, []);
   return (
     <>
-      <div className="flex">
-        <div className="left section">
-        <div className="section"></div>
-          <Hero className='section'/>
-          <div id='vr1' className='section' ref={vr1}>
-          <VR1/>
+      <div className="flex justify-between">
+        <div className="left">
+          <div className="section">
+            <Hero />
           </div>
-          <div id='vr2' className='section' ref={vr2}>
-          <VR5/>
+          <div id="vr1" className="section" ref={vr1}>
+            <div id="vr1" className="section">
+              <VR1 />
+            </div>
           </div>
-          <div id='vr3' className='section' ref={vr3}>
-          <VR2/>
+          <div id="vr2" className="section" ref={vr2}>
+            <VR5 />
           </div>
-          <div id='vr4' className='section' ref={vr4}>
-          <VR3/>
+          <div id="vr3" className="section" ref={vr3}>
+            <VR2 />
           </div>
-          <div id='vr5' className='section' ref={vr5}>
-          <VR6/>
+          <div id="vr4" className="section" ref={vr4}>
+            <VR3 />
           </div>
-          <div id='vr6' className='section' ref={vr6}>
-          <VR4/>
+          <div id="vr5" className="section" ref={vr5}>
+            <VR6 />
+          </div>
+          <div id="vr6" className="section" ref={vr6}>
+            <VR4 />
           </div>
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[450px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
             <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div
@@ -105,8 +111,8 @@ const VR = () => {
                 Overview
               </div>
             </div>
-            <div className=" w-[222px] h-[463px] relative left-[30px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+            <div className=" w-[222px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-[160px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
@@ -114,92 +120,92 @@ const VR = () => {
                       : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
-                  AR/VR
+                  AR/VR services
                 </div>
               </div>
-              <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+              <div className=" stick_list w-[197px] h-[412px] left-[55px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                 <Link
-                  to="#vr1"
+                  to="#immersive-experiences"
                   onClick={scrollToMobileGameu}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 2
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    Immersive Design
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Immersive Experiences
                   </div>
                 </Link>
                 <Link
-                  to="#vr2"
+                  to="#ar-vr-app-development"
                   onClick={scrollTodesktopgame}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 3
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    AR/VR App Development 
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR/VR App Development
                   </div>
                 </Link>
                 <Link
-                  to="#vr3"
+                  to="#vr-product-prototyping"
                   onClick={scrollTounreal}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 4
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    VR product prototyping
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    VR Product Prototyping
                   </div>
                 </Link>
                 <Link
-                  to="#vr4"
+                  to="#web-ar-vr-integration"
                   onClick={scrollTovr4}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 5
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    Web AR/VR
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Web AR/VR Integration
                   </div>
                 </Link>
                 <Link
-                  to="#vr5"
+                  to="#ar-for-ecommerce"
                   onClick={scrollTovr5}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 6
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    AR for Ecommerce
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR for E-commerce
                   </div>
                 </Link>
                 <Link
-                  to="#vr6"
+                  to="#ar-navigation-solutions"
                   onClick={scrollTovr6}
                   // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 7
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
-                    AR navigation
+                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR navigation solutions
                   </div>
                 </Link>
               </div>

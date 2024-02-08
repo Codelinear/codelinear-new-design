@@ -9,17 +9,17 @@ const Cases = () => {
   return (
     <>
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
-          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
+        <div className="w-full h-[742px] max-lg:p-10 max-sm:p-5 pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-center max-lg:justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
+          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-lg:w-full">
             <img
-              className="w-[649.91px] h-full max-md:w-full"
+              className="w-[649.91px] h-full max-lg:w-full"
               src={img}
               alt=""
             />
           </div>
           <div className="self-stretch flex-col justify-start items-start gap-[30px] inline-flex max-lg:flex-wrap">
-            <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-              <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+            <div className="opacity-60 w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+              <div className="text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 ikea
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -39,16 +39,19 @@ const Cases = () => {
                   View Case study
                 </div>
               </div>
+              <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                Retail
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="cases">
-        <div className="w-full h-[742px] px-20 pt-[67.83px] pb-[128.12px] bg-white justify-between items-start inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
+        <div className="w-full h-[742px] max-lg:p-10 max-sm:p-5 px-20 pt-[67.83px] pb-[128.12px] bg-white justify-center max-lg:justify-start gap-[68px] items-start inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap-reverse">
           <div className="self-stretch flex-col justify-start items-start gap-[30px] inline-flex max-lg:flex-wrap">
-            <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-              <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+            <div className="opacity-60 w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+              <div className="text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 cowboy
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -68,11 +71,14 @@ const Cases = () => {
                   View Case study
                 </div>
               </div>
+              <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                Electric Bikes
+              </div>
             </div>
           </div>
-          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
+          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-lg:h-full max-lg:w-full">
             <img
-              className="w-[649.91px] h-full max-md:w-full"
+              className="w-[649.91px] h-full max-lg:w-full"
               src={img2}
               alt=""
             />
@@ -80,17 +86,17 @@ const Cases = () => {
         </div>
       </div>
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
-          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
+        <div className="w-full h-[742px] max-lg:p-10 max-sm:p-5 pl-20 pr-[117.55px] pt-[67.83px] pb-[128.12px] bg-white justify-center max-lg:justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
+          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-lg:w-full">
             <img
-              className="w-[649.91px] h-full max-md:w-full"
+              className="w-[649.91px] h-full max-lg:w-full"
               src={img3}
               alt=""
             />
           </div>
           <div className="self-stretch flex-col justify-start items-start gap-[30px] inline-flex max-lg:flex-wrap">
-            <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-              <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+            <div className="opacity-60 w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+              <div className="text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 sea
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -110,15 +116,18 @@ const Cases = () => {
                   View Case study
                 </div>
               </div>
+              <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                Marketing/Services{" "}
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="cases">
-        <div className="w-full h-[742px] px-20 pt-[67.83px] pb-[128.12px] bg-white justify-between items-start inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
+        <div className="w-full h-[742px] max-lg:p-10 max-sm:p-5 px-20 pt-[67.83px] pb-[128.12px] bg-white justify-center max-lg:justify-start gap-[68px] items-start inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap-reverse">
           <div className="self-stretch flex-col justify-start items-start gap-[30px] inline-flex max-lg:flex-wrap">
-            <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-              <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+            <div className="opacity-60 w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
+              <div className="text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 mango
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -138,11 +147,14 @@ const Cases = () => {
                   View Case study
                 </div>
               </div>
+              <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                Retail
+              </div>
             </div>
           </div>
-          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
+          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-lg:w-full">
             <img
-              className="w-[649.91px] h-full max-md:w-full"
+              className="w-[649.91px] h-full max-lg:w-full"
               src={img4}
               alt=""
             />
@@ -150,17 +162,17 @@ const Cases = () => {
         </div>
       </div>
       <div className="cases">
-        <div className="w-full h-[742px] pl-20 pr-[117.55px] pt-[67.83px] mb-[200px] bg-white justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
-          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-md:w-full">
+        <div className="w-full h-[742px] max-lg:p-10 max-sm:p-5 pl-20 pr-[117.55px] pt-[67.83px] max-lg:mb-[100px] mb-[200px] bg-white justify-center max-lg:justify-start items-start gap-[61px] inline-flex max-lg:h-full max-md:p-5   max-lg:flex-wrap">
+          <div className="w-[630px] bg-neutral-100 justify-end items-center inline-flex max-lg:w-full">
             <img
-              className="w-[649.91px] h-full max-md:w-full"
+              className="w-[649.91px] h-full max-lg:w-full"
               src={img5}
               alt=""
             />
           </div>
           <div className="self-stretch flex-col justify-start items-start gap-[30px] inline-flex max-lg:flex-wrap">
-            <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-              <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+            <div className="opacity-60 w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+              <div className="text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 Deel{" "}
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -179,6 +191,9 @@ const Cases = () => {
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                   View Case study
                 </div>
+              </div>
+              <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                Technology{" "}
               </div>
             </div>
           </div>

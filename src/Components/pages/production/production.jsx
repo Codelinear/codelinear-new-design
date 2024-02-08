@@ -24,9 +24,14 @@ const Production = () => {
   const containerRef = useRef(null);
   const sidebar = useRef(null);
   const produc = useRef(null);
+  const prod = useRef(null);
+  const imglap = useRef(null);
+  const bulbimg = useRef(null);
   const appdeve = useRef(null);
   const consult = useRef(null);
-  
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   const scrollToMobileGameu = () => {
     if (produc.current) {
       produc.current.scrollIntoView({ behavior: "smooth" });
@@ -52,18 +57,24 @@ const Production = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 200 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
   };
-  const body = document.getElementById('root')
+  const body = document.getElementById("root");
   const handleMouseEnter = () => {
-    gsap.to(body, { filter: "invert(100%)", duration: 0.8 })
+    gsap.to(body, { backgroundColor: '#E3E3E3', duration: 0.8 });
+    gsap.to(body, { filter: 'invert(100%)', duration: 0.8 });
   };
 
   const handleMouseLeave = () => {
-    gsap.to(body, { filter: "invert(0%)", duration: 0.8 })
+    gsap.to(body, { backgroundColor: 'transparent', duration: 0.8 });
+    gsap.to(body, { filter: 'invert(0%)', duration: 0.8 });
+
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -73,14 +84,14 @@ const Production = () => {
   }, []);
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-[white]" ref={prod}>
         <div className="left">
           <section id="prod-hero">
             <h1 className="prod-hero-h1 letter-spacing section">
               Tailored to turn your ideas into exceptional products{" "}
             </h1>
             <div className="section">
-              <img src={bulb} alt="" />
+              <img src={bulb} alt="" ref={bulbimg}/>
             </div>
             <p>
               We believe in the power of visionary design and cutting-edge
@@ -88,7 +99,9 @@ const Production = () => {
               of your concepts with our strategic blend of design thinking and
               technological expertise.
             </p>
-            <button>Talk to our experts</button>
+            <Link to={"/contact-us"} onClick={scrollToTop}>
+              <button>Talk to our experts</button>
+            </Link>
           </section>
           <section id="exp-design" className="exp-design section" ref={produc}>
             <h2>
@@ -130,13 +143,15 @@ const Production = () => {
               </div>
             </div>
             <div className="prod-container-2">
-              <img src={img4} alt="" />
+              <img src={img4} alt="" ref={imglap}/>
               <div className="prod-sub-container-2">
                 <h4>
                   Your users, our expertise – let's create digital delight
                   together.
                 </h4>
-                <button>Talk to our design experts</button>
+                <Link to={"/contact-us"} onClick={scrollToTop}>
+                  <button>Talk to our design experts</button>
+                </Link>
               </div>
             </div>
           </section>
@@ -220,7 +235,9 @@ const Production = () => {
                 <div className="talk-text">
                   Ready to transition into the future?
                 </div>
-                <button>Talk to our design experts</button>
+                <Link to={"/contact-us"} onClick={scrollToTop}>
+                  <button>Talk to our design experts</button>
+                </Link>
               </div>
             </section>
           </section>
@@ -265,32 +282,35 @@ const Production = () => {
             </div>
           </section>
         </div>
-        <div className="right sticky max-xl:hidden h-[600px] top-28 mt-[100vh]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]" ref={sidebar}>
+        <div
+          className="right sticky max-xl:hidden h-[100vh] top-0 pt-28 mt-[300px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]"
+          ref={sidebar}
+        >
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
             <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                    ? "active text-black text-base p-2 font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-2"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[222px] h-[463px] relative left-[30px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+            <div className=" w-[190px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-[190px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-[11px] inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                      ? "active  -2 text-black text-base font-normal font-['Graphik'] leading-tight"
+                      : "text-black  -2 text-base font-normal font-['Graphik'] leading-tight p-2"
                   }
                 >
-                  Product Development
+                  Product Design and Innovation
                 </div>
               </div>
-              <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+              <div className="mt-[11px] stick_list w-[190px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                 <Link
                   to="#mobildeve"
                   onClick={scrollToMobileGameu}
@@ -298,10 +318,10 @@ const Production = () => {
                   className={
                     activeSection === 2
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "acive1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                     Experience Design
                   </div>
                 </Link>
@@ -312,10 +332,10 @@ const Production = () => {
                   className={
                     activeSection === 3
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                     Product Engineering
                   </div>
                 </Link>
@@ -326,10 +346,10 @@ const Production = () => {
                   className={
                     activeSection === 5
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                      : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                     Innovation and Strategy
                   </div>
                 </Link>

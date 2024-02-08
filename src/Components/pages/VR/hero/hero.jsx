@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import image from "../assets/ARVR01.jpg";
-
 const Hero = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <section id="prod-hero">
-        <h1 className="text-[66px] h-[100vh] pl-[80px] leading-[108%] pb-[80px] pt-[142px] letter-spacing-1 w-[976px] max-lg:pl-[40px] max-sm:pl-[20px] max-sm:text-[50px] max-lg:w-[90%]">
+        <h1 className="text-[66px] max-sm:h-[full pl-[80px] leading-[108%] pb-[65px] max-sm:pb-0 max-sm:pt-[80px] max-sm:mb-[80px] pt-[142px] letter-spacing-1 w-[976px] max-lg:pl-[40px] max-sm:pl-[20px] max-sm:text-[50px] max-lg:w-[90%]">
           Immerse your audience in captivating digital experiences like never
           before.
         </h1>
@@ -16,7 +19,9 @@ const Hero = () => {
           immersive solutions that elevate your brand and captivate your
           audience.
         </p>
-        <button>Talk to our experts</button>
+        <Link to={"/contact-us"} onClick={scrollToTop}>
+          <button>Talk to our experts</button>
+        </Link>
       </section>
     </>
   );

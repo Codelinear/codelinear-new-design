@@ -11,6 +11,9 @@ import img9 from "../assets/ph_clipboard-light.svg";
 import { Link } from "react-router-dom";
 
 const QualitySection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <section id="exp-design" className="exp-design">
@@ -104,7 +107,8 @@ const QualitySection = () => {
           Need help in making the next big thing?
         </div>
         <Link
-          to=""
+          to={"/contact-us"}
+          onClick={scrollToTop}
           className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">

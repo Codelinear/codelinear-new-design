@@ -1,54 +1,80 @@
-.massSection{
-    padding: 70px 100px 95px 180px;
-    display: flex;
+.massSection {
+  padding: 70px 100px 95px 180px;
+  display: flex;
 }
-.massaContent h2{
-    color: #000;
-    /* font-family: Graphik; */
-    font-size: 36px;
-    font-style: normal;
-    text-align: left;
-    padding-left:180px;
-    padding-top:50px;
-    font-weight: 400;
-    line-height:  43.2px;
-    letter-spacing: -1.08px;
+.massaContent h2 {
+  color: #000;
+  font-family: Graphik;
+  font-size: 36px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 180px;
+  padding-top: 50px;
+  width: 501.16px;
+  font-weight: 400;
+  line-height: 43.2px;
+  letter-spacing: -1.08px;
 }
-.massaContent p{
-    color: #000;
-/* font-family: Graphik; */
-padding-left:180px;
-font-size: 16px;
-text-align: left;
-font-style: normal;
-font-weight: 400;
-line-height: 130%; /* 20.8px */
+.massaContent p {
+  color: #000;
+  /* font-family: Graphik; */
+  margin-left: 180px;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
 }
 /* media  */
-@media only screen and (max-width: 600px) {
-    .massSection{
-        padding: 57px 20px 57px 20px;
-        display: block;
-    }
-    .massiImage img{
-        width:280px;
-        height:300px;
-     
-    }
-    .massaContent h2{
+@media only screen and (max-width: 1310px) {
+    .massSection {
+        padding: 40px 40px;
+        display: flex;
+        gap: 75px;
+        flex-direction: column-reverse;
+      }
+      .massaContent h2 {
+        width: 501px;
         color: #000;
-        /* font-family: Graphik; */
-        font-size: 25px;
+        font-family: Graphik;
+        font-size: 36px;
         font-style: normal;
         text-align: left;
-        padding-left:0px;
-        padding-top:20px;
+        margin-left: 0px;
+        padding-top: 40px;
+        width: 501.16px;
         font-weight: 400;
-        line-height:  35px;
+        line-height: 43.2px;
         letter-spacing: -1.08px;
-    }
-    .massaContent p{
-        color: #000;
+      }
+      .massiImage{
+        display: flex;
+        justify-content: end;
+      }
+      .massaContent p{
+        margin-left: 0;
+      }
+}
+@media only screen and (max-width: 640px) {
+  .massSection {
+    padding: 57px 20px 57px 20px;
+  }
+  .massaContent h2 {
+    color: #000;
+    /* font-family: Graphik; */
+    font-size: 25px;
+    font-style: normal;
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -1.08px;
+  }
+  .massaContent p {
+    color: #000;
     /* font-family: Graphik; */
     padding-left: 0px;
     font-size: 16px;
@@ -56,5 +82,13 @@ line-height: 130%; /* 20.8px */
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 20.8px */
-    }
   }
+  .massSection {
+    padding: 40px 20px;
+    gap: 60px;
+  }
+  .massiImage{
+    width: 100%;
+    height: auto;
+  }
+}

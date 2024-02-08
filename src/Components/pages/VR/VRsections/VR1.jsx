@@ -5,13 +5,18 @@ import img3 from "../assets/ph_hand-light.svg";
 import { Link } from "react-router-dom";
 
 const VR1 = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap">
           AR/VR Services <span></span>
         </h2>
-        <h1 className="whitespace-nowrap max-sm:whitespace-normal">Immersive Experiences </h1>
+        <h1 className="whitespace-nowrap max-sm:whitespace-normal">
+          Immersive Experiences{" "}
+        </h1>
         <p className="exp-p">
           Dive into unparalleled sensory delight with our immersive experiences,
           where cutting-edge technology converges with design for captivating,
@@ -19,7 +24,7 @@ const VR1 = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Engaging Storytelling</h3>
             <p>
               Craft narratives that captivate users, leveraging immersive
@@ -27,7 +32,7 @@ const VR1 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" />
+            <img src={img2} alt="" className="w-[50px] h-[50px]" />
             <h3>Interactive Visuals</h3>
             <p>
               Incorporate interactive elements within the experience, allowing
@@ -35,7 +40,7 @@ const VR1 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" />
+            <img src={img3} alt="" className="w-[50px] h-[50px]" />
             <h3>Multi-Sensory Engagement</h3>
             <p>
               Enhance immersion by appealing to multiple senses, incorporating
@@ -45,12 +50,13 @@ const VR1 = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px] max-sm:mb-[50px]">
+      <div className="justify-start mb-[147px] items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-md:ml-[40px] max-sm:ml-[20px] max-sm:mb-[50px]">
         <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
           Need help in making the next big thing?
         </div>
         <Link
-          to=""
+          to={"/contact-us"}
+          onClick={scrollToTop}
           className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">

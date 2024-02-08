@@ -2,7 +2,8 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/pages/home/Home";
-
+import { useEffect, useState } from "react";
+import Lenis from "@studio-freight/lenis";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Gamedev from "./Components/pages/gamedev/Gamedev";
 import Servicepage from "./Components/pages/servicepage/Servicepage";
@@ -32,10 +33,28 @@ import Production from "./Components/pages/production/production";
 import Lowcode from "./Components/pages/lowCode/lowCode";
 import QualityAssurance from "./Components/pages/qualityAssurance/qualityAssurance";
 import Ecommerce from "./Components/pages/ecommerce/ecommerce";
-import VR from './Components/pages/VR/VR'
-import Career from './Components/pages/components/career'
+import VR from "./Components/pages/VR/VR";
+import Career from "./Components/pages/components/career";
+import Cloud from "./Components/pages/cloud/cloud";
+import Tech from "./Components/pages/TechConsulting/techConsulting";
+import AI from "./Components/pages/AI/AI";
+import Salesforce from "./Components/pages/salesforce/salesforce";
+import Sharepoint from "./Components/pages/sharepoint/sharepoint";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration :0.2,
+      smooth: true,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.1,
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <>
@@ -44,39 +63,44 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/career" element={<Career />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/gamedev" element={<Gamedev />} />
-          <Route exact path="/product-development" element={<Production />} />
-          <Route exact path="/low-code-no-code" element={<Lowcode />} />
-          <Route exact path="/service" element={<Servicepage />} />
-          <Route exact path="/appdev" element={<Appdevelop />} />
+          <Route exact path="/about-us" element={<About />} />
+          <Route exact path="/game-development" element={<Gamedev />} />
+          <Route exact path="/product-design-and-innovation" element={<Production />} />
+          <Route exact path="/salesforce-services" element={<Salesforce />} />
+          <Route exact path="/cloud-engineering" element={<Cloud />} />
+          <Route exact path="/technology-consulting" element={<Tech />} />
+          <Route exact path="/artificial-intelligence-(ai)-services" element={<AI />} />
+          <Route exact path="/microsoft-sharepoint-services" element={<Sharepoint />} />
+          <Route exact path="/low-code-and-no-code" element={<Lowcode />} />
+          <Route exact path="/services" element={<Servicepage />} />
+          <Route exact path="/app-development-and-modernization" element={<Appdevelop />} />
           <Route exact path="/insights" element={<Blog />} />
-          <Route exact path="/contactus" element={<Contact />} />
-          <Route exact path="/casestudy" element={<Casestudy />} />
-          <Route exact path="/industry" element={<Industry />} />
-          <Route exact path="/changingnature" element={<Changingnature />} />
-          <Route exact path="/nocode" element={<Nocode />} /> 
+          <Route exact path="/contact-us" element={<Contact />} />
+          <Route exact path="/case-study" element={<Casestudy />} />
+          <Route exact path="/industries" element={<Industry />} />
+          <Route exact path="/the-changing-nature-of-seo" element={<Changingnature />} />
+          <Route exact path="/no-code-revolution" element={<Nocode />} />
           <Route
             exact
-            path="/Quality-Assurance"
+            path="/quality-assurance"
             element={<QualityAssurance />}
           />
-          <Route exact path="/Ecommerce" element={<Ecommerce />} />
-          <Route exact path="/AR-VR-services" element={<VR />} />
-          <Route exact path="/shopifyVsMagento" element={<Shopify />} />
+          <Route exact path="/ecommerce-marketplace-development" element={<Ecommerce />} />
+          <Route exact path="/ar-vr-services" element={<VR />} />
+          <Route exact path="/shopify-vs-magento" element={<Shopify />} />
           <Route exact path="/design-system" element={<Designsystem />} />
-          <Route exact path="/Gestalt" element={<Gestalt />} />
-          <Route exact path="/story" element={<Story />} />
-          <Route exact path="/mvp" element={<Mvp />} />
-          <Route exact path="/branding" element={<Branding />} />
-          <Route exact path="/ux" element={<Ux />} />
-          <Route exact path="/Bingvsgoogle" element={<Bing />} />
-          <Route exact path="/customer" element={<Customer />} />
-          <Route exact path="/ReactVsflutter" element={<Native />} />
-          <Route exact path="/empthy" element={<Empathy />} />
-          <Route exact path="/ai" element={<Ai />} />
-          <Route exact path="/workshop" element={<Workshop />} />
-          <Route exact path="/digital" element={<Digital />} />
+          <Route exact path="/gestalt-psychology" element={<Gestalt />} />
+          <Route exact path="/storytelling-in-marketing" element={<Story />} />
+          <Route exact path="/minimum-viable-product" element={<Mvp />} />
+          <Route exact path="/the-art-of-disruptive-branding" element={<Branding />} />
+          <Route exact path="/ux-design-benefits-smes!" element={<Ux />} />
+          <Route exact path="/bing-vs-google" element={<Bing />} />
+          <Route exact path="/listing-to-your-customer" element={<Customer />} />
+          <Route exact path="/react-native-vs-flutter" element={<Native />} />
+          <Route exact path="/empthy-in-ux" element={<Empathy />} />
+          <Route exact path="/ai-powered-design-tools" element={<Ai />} />
+          <Route exact path="/discovery-workshop" element={<Workshop />} />
+          <Route exact path="/digital-marketing-trends-in-2023" element={<Digital />} />
         </Routes>
         <Footer />
       </BrowserRouter>

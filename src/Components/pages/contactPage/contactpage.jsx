@@ -6,6 +6,7 @@ import Asia from "./images/Asia.svg";
 import building from "./images/address01.jpg";
 import buildingind from "./images/address02.jpg";
 import gsap from "gsap";
+import check from './images/material-symbols-light_check.png';
 
 const Contact = () => {
   const [time, setTime] = useState(new Date());
@@ -108,6 +109,7 @@ const Contact = () => {
                 name="firstname"
                 placeholder="Enter your first name"
                 className="name"
+                required
               />
               <input
                 type="text"
@@ -115,6 +117,7 @@ const Contact = () => {
                 name="lastname"
                 className="name"
                 placeholder="Enter your last name"
+                required
               />
             </div>
             <input
@@ -123,6 +126,7 @@ const Contact = () => {
               name="lastname"
               placeholder="Enter your email"
               className="email"
+              required
             />
             <textarea
               id="subject"
@@ -131,25 +135,16 @@ const Contact = () => {
               className="text"
             ></textarea>
           </form>
-          <button>Submit</button>
+          <div className="text-success flex w-[100%] max-sm:h-[121.6px] max-sm:items-start max-sm:flex-wrap gap-[20px] pl-[82px] max-lg:px-[40px] max-sm:px-[20px] justify-between items-center">
+            <button>Submit</button>
+            <div className="bg-[#D4FFD5] text-base h-[24px] hidden rounded-[8px] w-[270px] justify-center h-[60px] flex gap-[2.25px] items-center">
+              <img src={check} alt="" className="w-[28.5px] h-[28.5px]"/>
+              Your message has been sent!</div>
+          </div>
         </div>
         <div className="div-time">
           <h1 className="time-h1">Our timezones</h1>
           <div className="clocks">
-            <div className="time-zones">
-              <div className="analog-clock">
-                <div className="hand hour" style={transformHourStyle}></div>
-                <div
-                  className="hand minute"
-                  style={transformMinuteStyle}
-                ></div>{" "}
-                <div className="hand second" style={transformSecondStyle}></div>
-              </div>
-              <div className="digital-clock">
-                <h1>{formattedTime}</h1>
-                <p>Indian Standard Time</p>
-              </div>
-            </div>
             <div className="time-zones">
               <div className="analog-clock">
                 <div className="hand hour" style={transformHourStylep}></div>
@@ -165,6 +160,20 @@ const Contact = () => {
               <div className="digital-clock">
                 <h1>{formattedTime2}</h1>
                 <p>Pacific Time Zone</p>
+              </div>
+            </div>
+            <div className="time-zones">
+              <div className="analog-clock">
+                <div className="hand hour" style={transformHourStyle}></div>
+                <div
+                  className="hand minute"
+                  style={transformMinuteStyle}
+                ></div>{" "}
+                <div className="hand second" style={transformSecondStyle}></div>
+              </div>
+              <div className="digital-clock">
+                <h1>{formattedTime}</h1>
+                <p>Indian Standard Time</p>
               </div>
             </div>
           </div>
@@ -232,15 +241,21 @@ const Contact = () => {
           <div className="contact-details">
             <div>
               <h1>Call us</h1>
-              <p>+1 415 523 5957</p>
+              <p>
+                <a href="tel:+1 415 523 5957">+1 415 523 5957</a>
+              </p>
             </div>
             <div>
               <h1>Write to us</h1>
-              <p>info@codelinear.com</p>
+              <p>
+                <a href="mailto:info@codelinear.com">info@codelinear.com</a>
+              </p>
             </div>
             <div>
               <h1>Career inquiry </h1>
-              <p>hr@codelinear.com</p>
+              <p>
+                <a href="mailto:info@codelinear.com">hr@codelinear.com</a>
+              </p>
             </div>
           </div>
         </div>

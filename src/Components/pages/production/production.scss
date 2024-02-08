@@ -11,9 +11,9 @@ html {
     line-height: 108%; /* 71.28px */
     letter-spacing: -1.98px;
     display: flex;
-    padding: 142px 0px 25px 80px;
-    width: 818px;
-    height: 100vh;
+    padding: 142px 0px 25px 0px;
+    margin-left: 80px;
+    width: 738px;
   }
   div {
     width: 100%;
@@ -103,7 +103,7 @@ html {
     width: 536.019px;
     height: 85.152px;
     opacity: 0.8;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
   }
   .prod-container {
     display: inline-flex;
@@ -221,7 +221,7 @@ html {
     line-height: 150%; /* 24px */
     width: 536.019px;
     opacity: 0.8;
-    margin-bottom: 68px;
+    margin-bottom: 42px;
     margin-left: 80px;
   }
   h3 {
@@ -271,6 +271,7 @@ html {
 }
 .explore-more {
   padding-bottom: 176px;
+  width: calc(100% + 140px);
   h1 {
     color: #000;
     font-family: Graphik;
@@ -282,8 +283,8 @@ html {
     margin: 100px 0 66px 80px;
   }
   .exp-slides {
-    width: 380px;
-    padding-left: 80px;
+    width: 300px;
+    margin-left: 80px;
     img {
       height: 360px;
       width: 100%;
@@ -458,6 +459,11 @@ html {
   z-index: 10;
   background-color: transparent;
 }
+@media (max-width: 1350px) {
+  .explore-more {
+    width: calc(100% + 200px);
+  }
+}
 @media (max-width: 1127px) {
   #prod-engg {
     .engg-container {
@@ -465,6 +471,7 @@ html {
     }
   }
   .explore-more {
+    width: calc(100% + 100px);
     .exp-slides {
       width: 290px;
       h6 {
@@ -478,6 +485,9 @@ html {
   }
 }
 @media (max-width: 1024px) {
+  .explore-more {
+    width: calc(100% + 530px);
+  }
   .exp-design {
     .prod-container-2 {
       flex-wrap: wrap-reverse;
@@ -608,13 +618,15 @@ html {
     }
   }
   .explore-more {
+    width: calc(100% + 250px);
     h1 {
       font-size: 24px;
-      margin-left: 20px;
+      margin-left: 40px;
     }
     .exp-slides {
       width: 253px;
-      padding-left: 20px;
+      padding-left: 0px;
+      margin-left: 40px;
       img {
         height: 293px;
       }
@@ -692,16 +704,22 @@ html {
   }
   .explore-more {
     padding-bottom: 50px;
+    width: calc(100% + 30px);
     h1 {
       font-size: 24px;
+      margin-left: 20px;
     }
     .exp-slides {
       width: 221px;
+      margin-left: 20px;
       img {
         height: 266px;
       }
       h6 {
         font-size: 16px;
+      }
+      .exp-design:last-child{
+        display: none;
       }
     }
   }

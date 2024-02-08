@@ -1,49 +1,94 @@
 .imageSectioncarrer {
-    padding: 120px 0px 55px 80px;
+  padding: 120px 0px 56px 80px;
+  display: flex;
+  gap: 100px;
+}
+.contentArea{
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    height: 715px;
+    justify-content: space-between;
 }
-.contentArea h2{
-    color: #000;
-/* font-family: Graphik; */
-font-size: 36px;
-font-style: normal;
-padding-right:80px;
-text-align: left;
-font-weight: 400;
-line-height: 120%; /* 43.2px */
-letter-spacing: -1.08px;
+.sub-container-career{
+    overflow-x: hidden;
 }
-.contentArea img{
-    padding-top:45px;
-    margin-left:120px;
+.contentArea h2 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  padding-right: 80px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  width: 588px;
+}
+.contentArea img {
+  margin-left: 120px;
 }
 /* media  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1310px) {
     .imageSectioncarrer{
-        display: block;
-        padding: 57px 0px 55px 0px;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+    .imgArea{
+        display: flex;
+        justify-content: center;
     }
     .contentArea h2{
-        color: #000;
+        margin-left: 40px;
+    }
+    .sub-container-career{
+        display: flex;
+        justify-content: end;
+    }
+
+}
+@media only screen and (max-width: 640px) {
+  .imageSectioncarrer {
+    display: block;
+    padding: 57px 0px 55px 0px;
+  }
+  .contentArea h2 {
+    color: #000;
     /* font-family: Graphik; */
     font-size: 25px;
     font-style: normal;
-    padding-left:20px;
+    padding-left: 20px;
     text-align: left;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: -1.08px;
-    }
-    .imgArea img{
-        width:280px;
-        height:300px;
-     
-    }
-    .contentArea img{
-        padding-top:45px;
-        margin-left:0px;
-        width:280px;
-        height:300px;
-    }
   }
+  .imgArea{
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+  .imgArea img{
+    width: 100%;
+  }
+  .contentArea{
+    gap: 40px;
+  }
+  .contentArea h2{
+    margin-left: 0;
+    margin-top: 62px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  .sub-container-career{
+    padding-left: 20px;
+    display: block;
+    margin-left: 0;
+  }
+  .sub-container-career img{
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .contentArea{
+    height: auto;
+  }
+}

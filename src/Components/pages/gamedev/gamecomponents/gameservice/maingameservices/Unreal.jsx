@@ -14,7 +14,7 @@ const Unreal = () => {
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 game development services
               </div>
-              <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+              <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
             </div>
             <div className="w-[631.03px]  letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-sm:text-[36px] w-full">
               Unreal Game Development
@@ -27,7 +27,7 @@ const Unreal = () => {
           </div>
         </div>
 
-        <div className="ml-[80px] mt-[50.20px]  justify-start items-start gap-[21px] inline-flex max-lg:flex-wrap max-lg:ml-[40px] max-sm:ml-[0px]  max-sm:justify-center">
+        <div className="ml-[80px] mt-[42.20px]  justify-start items-start gap-[21px] inline-flex max-lg:flex-wrap max-lg:ml-[40px] max-sm:ml-[0px]  max-sm:justify-center">
           <div className="pl-[25.86px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
             <img
               className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex"

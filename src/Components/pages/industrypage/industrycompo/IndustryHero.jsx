@@ -3,9 +3,9 @@ import React from "react";
 const IndustryHero = () => {
   return (
     <>
-      <div className="w-full h-[519px] px-[05.14px] pt-[94.83px] pb-[34.17px] bg-white justify-center items-center max-sm:justify-start inline-flex max-lg:p-5 ">
-        <div className="w-[70%] text-center text-black text-[87.74px] max-sm:text-[50px] max-sm:text-left   max-sm:leading-[54px] font-normal font-['Graphik'] leading-[94.76px]">
-          Urna adipiscing adipiscing ac eleifend
+      <div className="w-full px-[05.14px] pt-[204.83px] pb-[144.17px] bg-white justify-center items-center max-sm:justify-start inline-flex max-lg:pt-[120px] ">
+        <div className="w-[950px] letter-spacing-1 text-center text-black leading-[108%] text-[66px] max-sm:text-[50px] max-sm:text-left  font-normal font-['Graphik']">
+          Explore how we transform diverse sectors with innovation.{" "}
         </div>
       </div>
     </>

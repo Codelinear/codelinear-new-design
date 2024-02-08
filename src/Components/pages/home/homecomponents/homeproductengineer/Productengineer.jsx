@@ -11,7 +11,7 @@ import img9 from "../../../../../assets/homeassets/14.svg";
 import img10 from "../../../../../assets/homeassets/15.svg";
 import img11 from "../../../../../assets/homeassets/16.svg";
 import img12 from "../../../../../assets/homeassets/17.svg";
-
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { Linear } from "gsap";
 
@@ -30,7 +30,7 @@ const Productengineer = () => {
         { ease: Linear.easeNone, x: -583, duration: 10 }
       );
     gsap
-      .timeline({ repeat: -1})
+      .timeline({ repeat: -1 })
       .fromTo(
         animateclient2.current,
         { x: 50 },
@@ -80,22 +80,25 @@ const Productengineer = () => {
       },
     });
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
-      <div className="home-product-engineer relative   max-sm:overflow-x-hidden">
+      <div className="home-product-engineer relative max-sm:overflow-x-hidden">
         <div className="mainproduct">
           <div
             ref={sectionRef2}
-            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-xl:flex-wrap-reverse max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:h-full max-xl:py-20 max-sm:gap-10"
+            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[56px] max-sm:gap-[40px] inline-flex box  max-md:h-full  max-[800px]:justify-center max-[800px]:px-[40px] max-sm:py-[56px] max-md:p-5 max-xl:flex-wrap-reverse max-xl:justify-center max-xl:h-full max-xl:py-20 max-sm:gap-10"
           >
-            <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-md:w-full   max-md:h-full  max-md:mt-5">
+            <div className="w-[508px] max-sm:h-full h-[611.01px] flex-col justify-center items-center inline-flex max-xl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
-                className="w-[513.40px] max-md:w-full h-[770.23px] max-md:h-full"
+                className="w-[513.40px] max-xl:w-[536px] h-[770.23px] max-md:h-full"
                 src={img}
                 alt=""
               />
             </div>
-            <div className="self-stretch h-[611px] flex-col justify-between items-start gap-[120px] inline-flex mt-[99.99px] max-md:w-full max-[800px]:mt-5">
+            <div className="self-stretch max-sm:h-full h-[611px] flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[120px] max-sm:gap-[40px] max-lg:justify-start max-[800px]:mt-5">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                   <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
@@ -114,19 +117,22 @@ const Productengineer = () => {
                       possibilities.
                     </div>
                   </div>
-                  <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
-                    <div className="text-base font-normal font-['Graphik'] capitalize leading-normal ">
-                      Learn more
+
+                  <Link to={"/services"} onClick={scrollToTop}>
+                    <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
+                      <div className="text-base font-normal font-['Graphik'] capitalize leading-normal ">
+                        Learn more
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-[38px] flex max-sm:w-full">
-                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-sm:w-full"></div>
+              <div className="flex-col justify-start items-start gap-[38px] flex max-md:w-[100%]">
+                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-sm:opacity-0"></div>
                 <div className="flex-col justify-start items-start gap-[38px] flex">
-                  <div className="w-[521px] overflow-scroll max-sm:w-full">
+                  <div className="w-[521px] overflow-hidden max-md:w-[100%]">
                     <div
-                      className="flex align-center opacity-70 gap-[48px] w-[600px] max-sm:w-full"
+                      className="flex align-center opacity-60 gap-[48px] w-[600px] max-sm:w-full"
                       ref={animateclient}
                     >
                       <img src={img3} alt="" />
@@ -151,9 +157,9 @@ const Productengineer = () => {
       <div className="technology-consulting  max-sm:overflow-x-hidden">
         <div
           ref={sectionRef3}
-          className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-start items-center gap-[171px] inline-flex box max-md:flex-wrap max-md:h-full  max-xl:justify-center max-[800px]:px-[40px]  max-md:p-5 max-xl:flex-wrap max-xl:h-full max-xl:py-20 max-sm:gap-10"
+          className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[56px] max-sm:gap-[40px] inline-flex box max-md:flex-wrap max-md:h-full  max-[800px]:justify-center max-[800px]:px-[40px] max-sm:py-[56px] max-md:p-5 max-xl:flex-wrap max-xl:flex-wrap max-xl:justify-center max-xl:h-full max-xl:py-20 max-sm:gap-10"
         >
-          <div className="self-stretch h-[611px] flex-col justify-between items-start gap-[120px] inline-flex mt-[99.99px] max-md:w-full max-[800px]:mt-5">
+          <div className="self-stretch h-[611px] max-sm:h-full flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[120px] max-sm:gap-[40px] max-lg:justify-start max-[800px]:mt-5">
             <div className="flex-col justify-start items-start gap-[30px] flex">
               <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
                 <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
@@ -171,18 +177,21 @@ const Productengineer = () => {
                     emotions, and redefine what's possible.
                   </div>
                 </div>
-                <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
-                  <div className="text-base font-normal font-['Graphik'] capitalize leading-normal ">
-                    Learn more
+
+                <Link to={"/services"} onClick={scrollToTop}>
+                  <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
+                    <div className="text-base font-normal font-['Graphik'] capitalize leading-normal ">
+                      Learn more
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-[38px] flex">
-              <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full"></div>
-              <div className="w-[521px] overflow-scroll max-sm:w-full">
+              <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full max-sm:opacity-0"></div>
+              <div className="w-[521px] overflow-hidden max-sm:w-full">
                 <div
-                  className="flex align-center opacity-70 gap-[48px] w-[600px] max-sm:w-full"
+                  className="flex align-center opacity-60 gap-[48px] w-[600px] max-sm:w-full"
                   ref={animateclient2}
                 >
                   <img src={img8} alt="" />
@@ -199,9 +208,9 @@ const Productengineer = () => {
               </div>
             </div>
           </div>
-          <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-md:w-full   max-md:h-full  max-md:mt-5">
+          <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-xl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
             <img
-              className="w-[513.40px] max-md:w-full h-[770.23px] max-md:h-full"
+              className="w-[513.40px] max-xl:w-[536px] h-[770.23px] max-md:h-full"
               src={img2}
               alt=""
             />

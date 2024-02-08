@@ -11,7 +11,9 @@ const VR2 = () => {
         <h2 className="capitilize whitespace-nowrap">
           AR/VR Services <span></span>
         </h2>
-        <h1 className="whitespace-nowrap  max-sm:whitespace-normal">VR Product Prototyping </h1>
+        <h1 className="whitespace-nowrap  max-sm:whitespace-normal">
+          VR Product Prototyping{" "}
+        </h1>
         <p className="exp-p">
           Transform concepts into tangible virtual models, fostering
           collaborative development and informed decision-making for businesses.
@@ -19,7 +21,7 @@ const VR2 = () => {
         </p>
         <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Visualize Concepts Efficiently</h3>
             <p>
               Use VR for quick and efficient visualization of product concepts,
@@ -27,7 +29,7 @@ const VR2 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt="" />
+            <img src={img2} alt="" className="w-[50px] h-[50px]" />
             <h3>Enhance Collaboration</h3>
             <p>
               Facilitate collaborative decision-making by allowing stakeholders
@@ -35,7 +37,7 @@ const VR2 = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img3} alt="" />
+            <img src={img3} alt="" className="w-[50px] h-[50px]" />
             <h3>Iterative Development</h3>
             <p>
               Support iterative development processes by rapidly creating,

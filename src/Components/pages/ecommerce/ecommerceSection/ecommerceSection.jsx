@@ -12,10 +12,13 @@ import img10 from "../assets/shift4shop-logos-idK2bziH1E 1.svg";
 import { Link } from "react-router-dom";
 
 const ESection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <section id="exp-design" className="exp-design">
-        <h2 className="capitilize whitespace-nowrap">
+        <h2 className="capitilize whitespace-nowrap max-sm:whitespace-normal">
           Ecommerce Marketplace Development <span></span>
         </h2>
         <h1 className="whitespace-nowrap max-sm:whitespace-normal">
@@ -26,9 +29,9 @@ const ESection = () => {
           Marketplace Development services are designed to transform your vision
           into a thriving digital marketplace.
         </p>
-        <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
+        <div className="prod-container w-[924px] flex-wrap max-sm:w-[90%] max-lg:w-full">
           <div className="prod-sub-container">
-            <img src={img1} alt=""  className="w-[57px] h-[57px]"/>
+            <img src={img1} alt="" className="w-[57px] h-[57px]" />
             <h3>Custom e-commerce Development</h3>
             <p>
               Tailored solutions crafting unique online marketplaces, blending
@@ -36,7 +39,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img2} alt=""  className="w-[57px] h-[57px]"/>
+            <img src={img2} alt="" className="w-[57px] h-[57px]" />
             <h3>WooCommerce</h3>
             <p>
               WordPress-integrated e-commerce solution offering customizable
@@ -61,7 +64,7 @@ const ESection = () => {
             </p>
           </div>
           <div className="prod-sub-container">
-            <img src={img5} alt=""  className="w-[57px] h-[57px]"/>
+            <img src={img5} alt="" className="w-[57px] h-[57px]" />
             <h3>Magento</h3>
             <p>
               Powerful open-source e-commerce solution enabling scalable and
@@ -113,12 +116,13 @@ const ESection = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-sm:ml-[20px] max-sm:ml-[40px]">
+      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-sm:pl-[20px] max-sm:ml-[0px]">
         <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[90%]">
           Need help in making the next big thing?
         </div>
         <Link
-          to=""
+          to={"/contact-us"}
+          onClick={scrollToTop}
           className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">

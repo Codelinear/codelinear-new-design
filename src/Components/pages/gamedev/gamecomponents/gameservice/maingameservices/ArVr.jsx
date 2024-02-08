@@ -11,7 +11,7 @@ const ArVr = () => {
                 <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                   game development services
                 </div>
-                <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
               </div>
               <div className="w-[631.03px] letter-spacing-2 text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%]  max-sm:w-[90%] max-sm:text-[36px]">
                 AR/VR Game Development{" "}
@@ -28,7 +28,7 @@ const ArVr = () => {
       </div>
 
       <div className="features">
-        <div className="w-full h-[755px] pl-20 pr-[45px] pt-[67.20px] pb-[105.80px] bg-white justify-start items-start gap-[131.63px] inline-flex max-lg:pl-[40px] max-sm:pl-[20px] max-xl:flex-wrap max-xl:h-full max-sm:gap-[50px] max-sm:py-[50px]">
+        <div className="w-full h-[755px] pl-20 pr-[45px] pt-[54.20px] pb-[105.80px] bg-white justify-start items-start gap-[131.63px] inline-flex max-lg:pl-[40px] max-sm:pl-[20px] max-xl:flex-wrap max-xl:h-full max-sm:gap-[50px] max-sm:py-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex max-xl:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl letter-spacing-4 font-normal font-['Graphik'] leading-[120%]">

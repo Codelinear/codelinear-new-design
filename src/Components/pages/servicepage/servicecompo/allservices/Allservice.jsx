@@ -9,6 +9,9 @@ import GameDevservice from "./servicesinside/GameDevservice";
 import ARservice from "./servicesinside/ARservice";
 import QalityAssurance from "./servicesinside/QalityAssurance";
 import Lowcode from "./servicesinside/Lowcode";
+import AIservice from "./servicesinside/AIservice";
+import Salesforceservice from "./servicesinside/salesforceservice";
+import Sharepointservies from "./servicesinside/sharepoint";
 import "./service.scss";
 
 import img from "./assets/service page 2nd fold.jpg";
@@ -22,6 +25,9 @@ const Allservice = () => {
   const arvr = useRef(null);
   const quality = useRef(null);
   const cloud = useRef(null);
+  const ai = useRef(null);
+  const sp = useRef(null);
+  const sf = useRef(null);
   const lowcode = useRef(null);
 
   const scrollToMobileGameu = () => {
@@ -69,6 +75,21 @@ const Allservice = () => {
       lowcode.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollToai = () => {
+    if (ai.current) {
+      ai.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollTosf = () => {
+    if (sf.current) {
+      sf.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollTosp = () => {
+    if (sp.current) {
+      sp.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const [activeSection, setActiveSection] = useState(null);
 
@@ -80,7 +101,10 @@ const Allservice = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 300 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
         console.log(index);
       }
@@ -93,21 +117,22 @@ const Allservice = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <div className="allservice relative">
         <div className="main-allservice">
           <div className="w-full h-full relative bg-white flex justify-between max-xl:flex-wrap-reverse">
             <div className="left max-md:w-full">
-              <div className="flex h-[1150px] max-lg:flex-wrap  max-md:h-[650px] section max-md:p-5">
-                <div className="w-[738px] ml-[80px] mt-[59px] letter-spacing-2  text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10  max-md:h-[200px] max-sm:text-[24px] max-sm:leading-[29px]">
+              <div className="h-[1150px] max-lg:h-[1000px] max-md:h-[1000px] max-sm:h-[650px] max-[500px]:h-[620px] max-lg:flex-wrap max-md:w-full section max-md:p-5">
+                <div className="w-[738px] ml-[80px] mt-[59px] max-lg:mx-0 max-lg:px-10 max-md:p-0 letter-spacing-2 max-xl:ml-[40px] max-md:ml-0  text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10 max-sm:text-[24px] max-sm:leading-[29px]">
                   We help businesses launch their success and bring the luxury
                   of transformational technology and dynamic UI/UX right to
                   their threshold.
                 </div>
-                <div className="left-[405px] top-[388px] absolute  bglack justify-end items-center inline-flex max-xltop-[700px] max-lg:left-[5%]  max-mdhidden max-md:w-full max-md:h-full max-lg:w-[665px] max-lg:h-[800px]  max-md:relative max-md:left-0 max-md:top-0  max-xl:top-[450px] max-lg:top-[350px]">
+                <div className="mt-[39px] w-[707px] relative left-[23%] max-xl:w-full max-xl:left-[40px] max-lg:left-0 max-lg:p-10 max-md:p-0">
                   <img
-                    className="w-[707.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full  max-lg:w-[665px] max-lg:h-[800px] max-md:h-[400px]"
+                    className="w-[707.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full max-sm:h-[400px]  max-lg:w-[665px] max-lg:h-[500px]"
                     src={img}
                     alt=""
                   />
@@ -115,7 +140,11 @@ const Allservice = () => {
               </div>
 
               <div className="max-md:p-[20px]">
-                <div className="section" id="produc" ref={produc}>
+                <div
+                  className="section"
+                  id="product-design-and-innovation"
+                  ref={produc}
+                >
                   <Productdesing />
                 </div>
                 <div className="section" id="appdeve" ref={appdeve}>
@@ -123,6 +152,15 @@ const Allservice = () => {
                 </div>
                 <div className="section" id="consult" ref={consult}>
                   <Consulting />
+                </div>
+                <div className="section" id="arvr" ref={ai}>
+                  <AIservice />
+                </div>
+                <div className="section" id="Lowcode" ref={sf}>
+                  <Salesforceservice />
+                </div>
+                <div className="section" id="Lowcode" ref={sp}>
+                  <Sharepointservies />
                 </div>
                 <div className="section" id="ecommerce" ref={ecommerce}>
                   <Ecommerce />
@@ -141,155 +179,194 @@ const Allservice = () => {
                 </div>
                 <div className="section" id="quality" ref={quality}>
                   <QalityAssurance />
-                  <div className="section h-[210px] w-100%"></div>
+                  <div className="section h-[210px] w-100% max-sm:h-4"></div>
                 </div>
               </div>
             </div>
 
-            <div className="right sticky max-xl:hidden h-[600px] top-28 mt-10  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
-              <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
+            <div className="right bg-transparent sticky max-xl:hidden h-[600px] top-[76px] mt-14  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
+              <div className="self-stretch flex-col justify-start items-start gap-[4px] inline-flex max-xl:w-full  max-xl:h-[300px]">
                 <div className=" overview p-2 bgneutral-100 rounded-[7px] justify-center items-center gap-2 inline-flex">
                   <div
                     className={
                       activeSection === 0
-                        ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                        : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                        ? "active text-black text-[14px]  font-normal font-['Graphik'] leading-tight"
+                        : " text-black text-[14px]  font-normal font-['Graphik'] leading-tight p-3"
                     }
                   >
                     Overview
                   </div>
                 </div>
                 <div className=" w-[222px] h-[463px] relative left-[15px] max-xl:h-[200px] max-xl:w-full">
-                  <div className="w-20 overview h-[35px] p-2 left-0 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+                  <div className="w-20 overview h-[35px] p-2 left-0 top-0 absolute rounded-lg justify-center items-center gap-[11px] inline-flex max-xl:flex-wrap ">
                     <div
                       className={
                         activeSection >= 1
-                          ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                          : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                          ? "active text-black text-[14px] font-normal font-['Graphik'] leading-tight"
+                          : " text-black text-[14px] font-normal font-['Graphik'] leading-tight p-3"
                       }
                     >
                       Services
                     </div>
                   </div>
-                  <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+                  <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                     <Link
-                      to="#produc"
+                      to="#Product-Design-and-Innovation"
                       onClick={scrollToMobileGameu}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.52px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Product Design and Innovation
                       </div>
                     </Link>
                     <Link
-                      to="#appdeve"
+                      to="#App-Development-and-Modernization"
                       onClick={scrollTodesktopgame}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.52px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         App Development and Modernization
                       </div>
                     </Link>
                     <Link
-                      to="#consult"
+                      to="#Technology-Consulting"
                       onClick={scrollTounreal}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.52px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Technology Consulting
                       </div>
                     </Link>
                     <Link
-                      to="#ecommerce"
-                      onClick={scrollTounity}
+                      to="#Artificial-Intelligence-(AI)-services"
+                      onClick={scrollToai}
                       className={
                         activeSection === 5
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[165.72px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.25px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
+                        Artificial Intelligence (AI) services{" "}
+                      </div>
+                    </Link>
+                    <Link
+                      to="#Salesforce-Services"
+                      onClick={scrollTosf}
+                      className={
+                        activeSection === 6
+                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      }
+                    >
+                      <div className="w-[153.98px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
+                        Salesforce Services{" "}
+                      </div>
+                    </Link>
+                    <Link
+                      to="#Microsoft-SharePoint-Services"
+                      onClick={scrollTosp}
+                      className={
+                        activeSection === 7
+                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      }
+                    >
+                      <div className=" w-[153.98px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
+                        Microsoft SharePoint Services{" "}
+                      </div>
+                    </Link>
+                    <Link
+                      to="#Ecommerce-Marketplace-Development"
+                      onClick={scrollTounity}
+                      className={
+                        activeSection === 8
+                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                      }
+                    >
+                      <div className="w-[183.72px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Ecommerce Marketplace Development
                       </div>
                     </Link>
                     <Link
-                      to="#cloudd"
+                      to="#Cloud-Engineering"
                       onClick={scrollToarvrr}
                       className={
-                        activeSection === 6
+                        activeSection === 9
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[127.06px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.06px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Cloud Engineering
                       </div>
                     </Link>
                     <Link
-                      to="#gservice"
+                      to="#Game-Development"
                       onClick={scrollTogservice}
                       className={
-                        activeSection === 7
+                        activeSection === 10
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[133.01px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.01px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Game Development
                       </div>
                     </Link>
                     <Link
-                      to="#arvr"
+                      to="#AR/VR-Services"
                       onClick={scrollToarrv}
                       className={
-                        activeSection === 8
+                        activeSection === 11
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[105.25px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.25px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         AR/VR Services
                       </div>
                     </Link>
 
                     <Link
-                      to="#lowcode"
+                      to="#Low-code-and-No-code"
                       onClick={scrollTolowcode}
                       className={
-                        activeSection === 9
+                        activeSection === 12
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.52px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Low-code and No-code
                       </div>
                     </Link>
                     <Link
-                      to="#quality"
+                      to="#Quality-Assurance"
                       onClick={scrollTowuality}
                       className={
-                        activeSection >= 10
+                        activeSection === 13
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1  p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[118.98px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[153.98px] opacity-80 text-black text-[14px]  font-normal font-['Graphik'] leading-[16.80px]">
                         Quality Assurance
                       </div>
                     </Link>

@@ -3,7 +3,7 @@ import graphintersect from "./assets/Intersect.svg";
 import grapharrow from "./assets/about page arrow.svg";
 import grapharrow2 from "./assets/file.svg";
 import "./circle.scss";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 const Animatecircle = () => {
   let circle1 = useRef(null);
@@ -16,6 +16,7 @@ const Animatecircle = () => {
   let circle4 = useRef(null);
   let we = useRef(null);
 
+
   const mouseOverAnimation = () => {
     gsap.to(circle1, { opacity: 0 });
     gsap.to(intersecter.current, { width: "182px" });
@@ -26,6 +27,17 @@ const Animatecircle = () => {
     gsap.to(circle2, { opacity: 1, y: 83, x: 131, scale: 1 });
     gsap.to(circle3, { opacity: 1, y: 83, x: -131, scale: 1 });
     gsap.to(circle4, { opacity: 1, y: -143, x: -7, scale: 1 });
+    if (width <= 640) {
+      gsap.to(circle1, { opacity: 0 });
+      gsap.to(intersecter.current, { width: "182px" });
+      gsap.to(arrow, { opacity: 1 });
+      gsap.to(arrow2, { opacity: 1 });
+      gsap.to(arrow3, { opacity: 1 });
+      gsap.to(we, { opacity: 1 });
+      gsap.to(circle2, { opacity: 1, y: 83, x: 131, scale: 1 });
+      gsap.to(circle3, { opacity: 1, y: 83, x: -131, scale: 1 });
+      gsap.to(circle4, { opacity: 1, y: -143, x: -7, scale: 1 });
+    }
   };
 
   const mouseOutAnimation = () => {
@@ -38,10 +50,34 @@ const Animatecircle = () => {
     gsap.to(circle3, { opacity: 0, y: 0, x: 0, scale: 0.7 });
     gsap.to(circle4, { opacity: 0, y: 0, scale: 0.7 });
     gsap.to(intersecter.current, { width: 0 });
+    if (width <= 640) {
+      gsap.to(circle1, { opacity: 0 });
+      gsap.to(intersecter.current, { width: "182px" });
+      gsap.to(arrow, { opacity: 1 });
+      gsap.to(arrow2, { opacity: 1 });
+      gsap.to(arrow3, { opacity: 1 });
+      gsap.to(we, { opacity: 1 });
+      gsap.to(circle2, { opacity: 1, y: 83, x: 131, scale: 1 });
+      gsap.to(circle3, { opacity: 1, y: 83, x: -131, scale: 1 });
+      gsap.to(circle4, { opacity: 1, y: -143, x: -7, scale: 1 });
+    }
   };
-
+  const width = window.innerWidth;
+  useEffect(() => {
+    if (width <= 640) {
+      gsap.to(circle1, { opacity: 0 });
+      gsap.to(intersecter.current, { width: "182px" });
+      gsap.to(arrow, { opacity: 1 });
+      gsap.to(arrow2, { opacity: 1 });
+      gsap.to(arrow3, { opacity: 1 });
+      gsap.to(we, { opacity: 1 });
+      gsap.to(circle2, { opacity: 1, y: 83, x: 131, scale: 1 });
+      gsap.to(circle3, { opacity: 1, y: 83, x: -131, scale: 1 });
+      gsap.to(circle4, { opacity: 1, y: -143, x: -7, scale: 1 });
+    }
+  });
   return (
-    <div className="pt-[150px] max-[901px]:h-[700px] max-[481px]:h-[500px]">
+    <div className="pt-[150px] max-[901px]:h-[700px] max-sm:pt-0 max-sm:h-[380px]">
       <div
         className="w-[50%] ml-[25%] h-[644px] absolute z-[3] insert-hover max-[901px]:h-[700px] max-[481px]:h-[500px] "
         onMouseOver={mouseOverAnimation}
@@ -52,7 +88,6 @@ const Animatecircle = () => {
           src={graphintersect}
           alt=""
           className="intersect"
-          // ref={(el) => (intersect = el)}
           ref={intersecter}
         />
         <img
@@ -70,9 +105,9 @@ const Animatecircle = () => {
           className="arrowanimate"
           ref={(el) => (arrow = el)}
         />
-        <p className="we"
-          ref={(el) => (we = el)}
-          >We help you get here.</p>
+        <p className="we" ref={(el) => (we = el)}>
+          We help you get here.
+        </p>
 
         <div
           // style={{ color:  ? "#000000" : "#d8d6d6", fontWeight: 900 }}

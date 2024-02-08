@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import image from "../assets/QA.jpg";
-
 const Hero = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <section id="prod-hero">
-        <h1 className="prod-hero-h1 letter-spacing">
+        <h1 className="prod-hero-h1 letter-spacing max-sm:mt-[-50px]">
           We stand as your partners in ensuring seamless, flawless digital
           solutions.
         </h1>
@@ -16,7 +19,9 @@ const Hero = () => {
           We tailor our quality assurance strategies to align with your unique
           requirements, ensuring a bespoke and effective QA process.
         </p>
-        <button>Talk to our experts</button>
+        <Link to={"/contact-us"} onClick={scrollToTop}>
+          <button>Talk to our experts</button>
+        </Link>
       </section>
     </>
   );

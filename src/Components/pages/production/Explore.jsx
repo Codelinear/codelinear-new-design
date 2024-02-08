@@ -8,110 +8,201 @@ import img17 from "./Explore-assets/services carousel06.jpg";
 import img18 from "./Explore-assets/services carousel07.jpg";
 import img19 from "./Explore-assets/services carousel08.jpg";
 import img20 from "./Explore-assets/services carousel09.jpg";
+import img21 from "../AI/assets/simon-lee-zA66MV4EyXc-unsplash 1.jpg";
+import img22 from "../sharepoint/assets/Frame 1000002801 (1).jpg";
+import img23 from "../salesforce/assets/Frame 1000002801.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
 const Explore = () => {
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
-    <section className="explore-more">
-      <h1>Explore our other services</h1>
-      <div className="exp-slide">
-        <Swiper
-          freeMode={{ enabled: true, slidesPerGroup: 1 }}
-          spaceBetween={20}
-          slidesPerView={2}
-          modules={[FreeMode]}
-          breakpoints={{
-            690: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            901: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1124: {
-              slidesPerView: 4,
-              spaceBetween: 80,
-            },
-          }}
-          className="swipe mySwiper"
-        >
-          <SwiperSlide>
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/product-development"}>
-                <img src={img11} alt="" srcset="" />
-                <h6>Product Design and Innovation</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[30px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/appdev"}>
-                <img src={img12} alt="" srcset="" />
-                <h6>App Development and Modernization</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[50px]">
-            <div className="exp-slides">
-              <img src={img13} alt="" srcset="" />
-              <h6>Technology Consulting</h6>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[80px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/gamedev"}>
-                <img src={img17} alt="" srcset="" />
-                <h6>Game Development</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[110px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/AR-VR-services"}>
-                <img src={img18} alt="" srcset="" />
-                <h6>AR/VR Services</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[150px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/low-code-no-code"}>
-                <img src={img19} alt="" srcset="" />
-                <h6>Quality Assurance</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[190px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/Ecommerce"}>
-                <img src={img14} alt="" srcset="" />
-                <h6>Ecommerce Marketplace Development</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[230px]">
-            <div className="exp-slides">
-              <img src={img16} alt="" srcset="" />
-              <h6>Cloud Engineering</h6>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="pl-[270px]">
-            <div className="exp-slides">
-              <Link onClick={scrollToTop} to={"/Quality-Assurance"}>
-                <img src={img20} alt="" srcset="" />
-                <h6>Low code no code</h6>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-        </Swiper>
-      </div>
-    </section>
+    <div className="overflow-hidden">
+      <section className="explore-more">
+        <h1>Explore our other services</h1>
+        <div className="exp-slide">
+          <Swiper
+            freeMode={{ enabled: false, slidesPerGroup: 1 }}
+            spaceBetween={20}
+            slidesPerView={2}
+            modules={[FreeMode]}
+            breakpoints={{
+              590: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1125: {
+                slidesPerView: 4,
+                spaceBetween: 80,
+              },
+              1350: {
+                slidesPerView: 5,
+                spaceBetween: 80,
+              },
+            }}
+            className="swipe mySwiper"
+          >
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link
+                  onClick={scrollToTop}
+                  to={"/product-design-and-development"}
+                >
+                  <img src={img11} alt="" srcset="" />
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to={"/product-design-and-development"}
+                >
+                  <h6>Product Design and Innovation</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link
+                  onClick={scrollToTop}
+                  to={"/app-development-and-modernization"}
+                >
+                  <img src={img12} alt="" srcset="" />
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to={"/app-development-and-modernization"}
+                >
+                  <h6>App Development and Modernization</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/technology-consulting"}>
+                  <img src={img13} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/technology-consulting"}>
+                  <h6>Technology Consulting</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link
+                  onClick={scrollToTop}
+                  to={"/artificial-intelligence-(ai)-services"}
+                >
+                  <img src={img21} alt="" srcset="" />
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to={"/artificial-intelligence-(ai)-services"}
+                >
+                  <h6>Artificial Intellegence (AI) Services</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link
+                  onClick={scrollToTop}
+                  to={"/ecommerce-marketplace-development"}
+                >
+                  <img src={img14} alt="" srcset="" />
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to={"/ecommerce-marketplace-development"}
+                >
+                  <h6>Ecommerce Marketplace Development</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="ml-[30px] max-sm:ml-[10px]">
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/cloud-engineering"}>
+                  <img src={img16} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/cloud-engineering"}>
+                  <h6>Cloud Engineering</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/game-development"}>
+                  <img src={img17} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/game-development"}>
+                  <h6>Game Development</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/ar-vr-services"}>
+                  <img src={img18} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/ar-vr-services"}>
+                  <h6>AR/VR Services</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/low-code-and-no-code"}>
+                  <img src={img20} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/low-code-and-no-code"}>
+                  <h6>Low-code and No-code</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/salesforce-services"}>
+                  <img src={img23} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/salesforce-services"}>
+                  <h6>Salesforce Services</h6>
+                </Link>
+              </div>
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link
+                  onClick={scrollToTop}
+                  to={"/microsoft-sharepoint-services"}
+                >
+                  <img src={img22} alt="" srcset="" />
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to={"/microsoft-sharepoint-services"}
+                >
+                  <h6>Microsoft Sharepoint Services</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="exp-slides">
+                <Link onClick={scrollToTop} to={"/quality-assurance"}>
+                  <img src={img19} alt="" srcset="" />
+                </Link>
+                <Link onClick={scrollToTop} to={"/quality-assurance"}>
+                  <h6>Quality Assurance</h6>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide></SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+    </div>
   );
 };
 export default Explore;

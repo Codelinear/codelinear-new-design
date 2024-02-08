@@ -1,33 +1,32 @@
 import React from "react";
-
-import img from "../assets/Industries08.jpg"
-import img2 from "../assets/Industries09.jpg"
-import img3 from "../assets/Industries10.jpg"
-import img4 from "../assets/Industries05.jpg"
-import img5 from "../assets/Industries06.jpg"
-import img6 from "../assets/Industries07.jpg"
-import img7 from "../assets/Industries02.jpg"
-import img8 from "../assets/Industries03.jpg"
-import img9 from "../assets//Industries04.jpg"
+import { Link } from "react-router-dom";
+import img from "../assets/Industries02.jpg";
+import img2 from "../assets/Industries05.jpg";
+import img3 from "../assets/Industries06.jpg";
+import img4 from "../assets/Industries03.jpg";
+import img5 from "../assets/Industries09.jpg";
+import img6 from "../assets/Industries07.jpg";
+import img7 from "../assets/Industries04.jpg";
+import img8 from "../assets/Industries10.jpg";
+import img9 from "../assets//Industries08.jpg";
+import img10 from "../assets/Industries01.jpg";
 
 const Mainindustry = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <div className="industry-main">
         <div className="flex flex-wrap">
-          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+          <div className="w-full px-[132px] max-[1440px]:px-[80px] max-lg:px-[40px] max-lg:gap-[49px] max-sm:px-[20px] pb-[98px] bg-white justify-center gap-[126px] items-start inline-flex flex-wrap max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-start items-center flex">
-                <img
-                  className="w-[319.63px] h-[365.63px]"
-                  src={img9}
-                  alt=""
-                />
+                <img className="w-[319.63px] h-[365.63px]" src={img9} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex w-[100%]">
                   <div className="w-8 h-8 relative">
-                    {/* <div className="w-[10.05px] left[10.97px] top[4.50px] "> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -59,29 +58,26 @@ const Mainindustry = () => {
                     </svg>
                     {/* </div> */}
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Fintech
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design
+                    Revolutionize finance with our Fintech Solutions, delivering
+                    secure, efficient, and user-friendly financial services for
+                    modern consumers and businesses.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img
-                  className="w-[316.90px] h-[364.89px]"
-                  src={img5}
-                  alt=""
-                />
+                <img className="w-[316.90px] h-[364.89px]" src={img5} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
                       <svg
@@ -108,20 +104,21 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Technology
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Elevate operations with our Technology Solutions,
+                    integrating cutting-edge technology, and strategic expertise
+                    for business excellence.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -130,7 +127,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[90%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg
@@ -164,31 +161,26 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Ecommerce
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Our E-commerce Solutions merge technology, personalization,
+                    and seamless experiences for optimal engagement and
+                    conversions.
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch  w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
-                <img
-                  className="w-[319.63px] h-[365.63px]"
-                  src={img2}
-                  alt=""
-                />
+                <img className="w-[319.63px] h-[365.63px]" src={img2} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
                       <svg
@@ -229,29 +221,26 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Manufacturing
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design
+                    We ensure that your manufacturing solutions not only meet
+                    current demands but also anticipate future needs for
+                    sustained success.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col justify-start  pt-[74px] pb-[62px] items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img
-                  className="w-[316.90px] h-[364.89px]"
-                  src={img3}
-                  alt=""
-                />
+                <img className="w-[316.90px] h-[364.89px]" src={img3} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
                       <svg
@@ -299,20 +288,21 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Supply chain and logistics
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Streamline the supply chain with our integration solutions,
+                    enhance visibility, reduce lead times, and ensure seamless
+                    collaboration between stakeholders.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 pt-[74px] pb-[62px] inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -321,7 +311,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg
@@ -348,31 +338,26 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Healthcare
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Seamlessly blend design brilliance, cutting-edge technology,
+                    and strategic expertise to revolutionize healthcare
+                    delivery.
                   </div>
                 </div>
-              </div>
+              </div>{" "}
             </div>
-          </div>
-          <div className="w-full h-[670px] pl-[47px] pr-[47px] bg-white justify-center gap-[9%] items-start inline-flex max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch w-[308px] flex-col  pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col  justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
-                <img
-                  className="w-[319.63px] h-[365.63px]"
-                  src={img}
-                  alt=""
-                />
+                <img className="w-[319.63px] h-[365.63px]" src={img} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
                       <svg
@@ -406,76 +391,75 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Food and beverages
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design
+                    Food and beverages solutions that are future-proof,
+                    anticipating industry trends and technological advancements
+                    to keep your business agile and resilient.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img
-                  className="w-[316.90px] h-[364.89px]"
-                  src={img4}
-                  alt=""
-                />
+                <img className="w-[316.90px] h-[364.89px]" src={img4} alt="" />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[95%] ">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%] ">
                   <div className="w-8 h-8 relative">
-                    <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute"> <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <path
-                        d="M25.8994 22.2993H6.10156C5.10755 22.2993 4.30176 23.1051 4.30176 24.0991V25.8989C4.30176 26.8929 5.10755 27.6987 6.10156 27.6987H25.8994C26.8934 27.6987 27.6992 26.8929 27.6992 25.8989V24.0991C27.6992 23.1051 26.8934 22.2993 25.8994 22.2993Z"
-                        stroke="black"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M6.10156 22.2994V16.9C6.10156 14.2746 7.14447 11.7568 9.00088 9.90041C10.8573 8.04401 13.3751 7.0011 16.0005 7.0011C18.6258 7.0011 21.1436 8.04401 23.0001 9.90041C24.8564 11.7568 25.8994 14.2746 25.8994 16.9V22.2994"
-                        stroke="black"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M16 7.00109V4.30139"
-                        stroke="black"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg></div>
+                    <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
+                      {" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M25.8994 22.2993H6.10156C5.10755 22.2993 4.30176 23.1051 4.30176 24.0991V25.8989C4.30176 26.8929 5.10755 27.6987 6.10156 27.6987H25.8994C26.8934 27.6987 27.6992 26.8929 27.6992 25.8989V24.0991C27.6992 23.1051 26.8934 22.2993 25.8994 22.2993Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M6.10156 22.2994V16.9C6.10156 14.2746 7.14447 11.7568 9.00088 9.90041C10.8573 8.04401 13.3751 7.0011 16.0005 7.0011C18.6258 7.0011 21.1436 8.04401 23.0001 9.90041C24.8564 11.7568 25.8994 14.2746 25.8994 16.9V22.2994"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 7.00109V4.30139"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black">
-                   
-                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Hospitality
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Elevate guest experiences with our Hospitality Solutions,
+                    seamlessly merging technology innovation for unparalleled
+                    service.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col pt-[74px] pb-[62px] justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
                   className="w-[307.73px] h-[361.26px]"
@@ -484,7 +468,7 @@ const Mainindustry = () => {
                 />
               </div>
               <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[90%]">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
                       <svg
@@ -532,18 +516,101 @@ const Mainindustry = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize leading-[28.80px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Real estate
                   </div>
                   <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                    A design system is a guide or a standard structure with
-                    parameters for design{" "}
+                    Transform property ventures with our Real Estate Solutions,
+                    integrating tech innovation for optimal efficiency and
+                    success.
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="self-stretch mb-{30px} w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center">
+              <div className="h-[353px] flex-col justify-end items-center flex ">
+                <img
+                  className="w-[321.78px] h-[402.39px] max-lg:w-full"
+                  src={img10}
+                  alt=""
+                />
+              </div>
+              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex ">
+                <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
+                  <div className="w-8 h-8 relative">
+                    <div className="w-[19.51px] h-[25.36px] left-[6.25px] top-[3.32px] absolute">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.1242 17.8264C10.1487 21.1186 9.17285 25.2649 9.17285 28.6794H22.8275C22.8275 25.3057 21.875 21.2177 20.9112 17.9449"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 13.074V3.32068H16.9753C19.13 3.32068 20.8767 5.06737 20.8767 7.22201V9.17268C20.8767 11.3273 19.13 13.074 16.9753 13.074H16Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.123 18.926V16.9753C11.123 14.8207 12.8697 13.074 15.0244 13.074H15.9997V22.8273H15.0244C12.8697 22.8273 11.123 21.0806 11.123 18.926Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M25.7533 13.074H16V14.0493C16 16.204 17.7467 17.9506 19.9013 17.9506H21.852C24.0067 17.9506 25.7533 16.204 25.7533 14.0493V13.074Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.9994 12.0987V13.0741H6.24609V12.0987C6.24609 9.94407 7.99278 8.19739 10.1474 8.19739H12.0981C14.2527 8.19739 15.9994 9.94407 15.9994 12.0987Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
+                </div>
+                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
+                    Sustainable energy
+                  </div>
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    Power a greener future, integrating innovative technology
+                    for eco-friendly and efficient solutions.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[740px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-lg:p-5 max-lg:gap-5 ">
+              <div className="w-[551.45px] text-black text-5xl font-normal font-['Graphik']  letter-spacing-2 leading-[120%] max-lg:w-full">
+                Need help in making the next big thing?
+              </div>
+              <Link to={"/contactus"} onClick={scrollToTop}>
+                <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
+                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    Talk to our experts
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -49,7 +49,7 @@ const Appservice = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      if (scrollPosition + 200 >= sectionTop && scrollPosition < sectionBottom) {
         setActiveSection(index);
       }
     });
@@ -61,9 +61,12 @@ const Appservice = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const scrollToTop = () =>{
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }
   return (
     <>
-      <div className="app-devepage mt-[65px]">
+      <div className="app-devepage mt-[40px]">
         <div className="w-full h-full pl-[80px] pb-[29px] bg-white justify-center items-center gap-[108px] inline-flex max-lg:px-[40px] max-sm:px-[20px]">
           <div className="flex justify-between w-full">
             <div className="left">
@@ -82,7 +85,8 @@ const Appservice = () => {
                     resonate and build futures.
                   </div>
                   <Link
-                    to="/"
+                  onClick={scrollToTop}
+                    to="/contact-us"
                     className="px-8 py-4 ml80px] mt-[42px]  rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[100%]"
                   >
                     <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
@@ -109,7 +113,7 @@ const Appservice = () => {
                 </div>
               </div>
             </div>
-            <div className="right sticky max-xl:hidden h-[600px] top-28 mt-10  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[50px]">
+            <div className="right sticky max-xl:hidden h-[600px] top-28 mt-0  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
               <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
                 <div className=" overview bgneutral-100 p-2 rounded-[7px]  justify-center items-center gap-2 inline-flex">
                   <div
@@ -122,8 +126,8 @@ const Appservice = () => {
                     Overview
                   </div>
                 </div>
-                <div className=" w-[222px] h-[463px] relative left-[30px] max-xl:h-[200px] max-xl:w-full">
-                  <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+                <div className=" w-[222px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+                  <div className="w-[222px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                     <div
                       className={
                         activeSection >= 1
@@ -131,75 +135,75 @@ const Appservice = () => {
                           : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
                       }
                     >
-                      App Development
+                      App Development and Modernization
                     </div>
                   </div>
-                  <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-2 inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+                  <div className=" stick_list w-[197px] h-[412px] left-[25px] top-[62px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                     <Link
-                      to="#mobildeve"
+                      to="#mobile-app-development"
                       onClick={scrollToMobileGameu}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[137.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[170.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Mobile App Development
                       </div>
                     </Link>
                     <Link
-                      to="#progressive"
+                      to="#progressive-web-development"
                       onClick={scrollTodesktopgame}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[170.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Progressive Web Development
                       </div>
                     </Link>
                     <Link
-                      to="#sass"
+                      to="#sass-development"
                       onClick={scrollTounreal}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[153.52px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[170.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                        SaaS Development
                       </div>
                     </Link>
                     <Link
-                      to="#apidev"
+                      to="#api-development-and-integration"
                       onClick={scrollTounity}
                       className={
                         activeSection === 5
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[165.72px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[170.72px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         API Development and Integration
                       </div>
                     </Link>
                     <Link
-                      to="#legacy"
+                      to="#legacy-app-modernization"
                       onClick={scrollTogservice}
                       className={
                         activeSection === 6
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : " p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[133.01px] opacity-80 text-black text-sm font-normal font-['Graphik'] leading-[16.80px]">
+                      <div className="w-[170.01px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
                         Legacy App Modernization
                       </div>
                     </Link>

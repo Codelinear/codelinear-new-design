@@ -1,116 +1,338 @@
-import React from 'react'
-import Line from './Line.png';
-import Apbutton from './openingPositions.png';
-import './Openpositions.css';
+import React from "react";
+import Line from "./Line.png";
+import Apbutton from "./openingPositions.png";
+import "./Openpositions.css";
 function Openpositions() {
   return (
-    <div className='openPosition'>
-        <div className='openPositions'>
-            <span>Open positions</span> <img src={Line} alt="bgimage"/>
-            <h2>Ultrices cum duis maecenas ac condimentum amet. </h2>
+    <div className="openPosition">
+      <div className="openPositions">
+        <div className="position-container">
+          <span>Open positions</span> <img src={Line} alt="bgimage" />
         </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Product Designer</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+        <h2>Ultrices cum duis maecenas ac condimentum amet. </h2>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - CMS/E-Commerce</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Mobile Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Web Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - CMS/E-Commerce</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Mobile Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Web Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - CMS/E-Commerce</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Mobile Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
           </div>
-        </div>
-        <div className='positionslisting'>
-          <div className='productDesigner'>
-           <div className='positionName'> <h4>Software Development Engineer - Web Frontend</h4></div>
-           <div className='locationdetails'> <span>Bangalore</span></div>
-           <div className='expneed'> <span>3+ years of experience</span></div>
-           <div className='actionshow'>  <button className='iconBtn'> <img src={Apbutton} alt="bgimage"/></button></div>
-          <div className='applynowbtn'>  <button className='textBtnsz'>Apply Now</button></div>
-          
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
           </div>
-        </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
+      <div id="position" className="positionslisting">
+        <div className="productDesigner">
+          <div className="positionName">
+            <h4>Product Designer</h4>
+          </div>
+          <div className="loc-exp max-lg:hidden">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+          <div className="applynowbtn">
+            <button className="textBtnsz">Apply Now</button>
+          </div>
+        </div> 
+        <div className="loc-exp-2">
+            <div className="locationdetails">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed">
+              <span>3+ years of experience</span>
+            </div>
+          </div>
+        <p className="req">
+          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+        </p>
+          <div className="applynowbtn-2">
+            <button className="textBtnsz-2">Apply Now</button>
+          </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Openpositions
+export default Openpositions;

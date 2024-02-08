@@ -6,7 +6,19 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import {
+  Autoplay,
+  Pagination,
+  Navigation,
+  EffectFade,
+  Mousewheel,
+} from "swiper/modules";
+
+import homeimg from "../../../../../assets/homeassets/Hero section case study01.jpg";
+import img12 from "../../../../../assets/homeassets/Hero section case study02.jpg";
+import img13 from "../../../../../assets/homeassets/Hero section case study03.jpg";
+import img14 from "../../../../../assets/homeassets/Hero section case study04.jpg";
+import img15 from "../../../../../assets/homeassets/Hero section case study05.jpg";
 import img from "../../../../../assets/homeassets/case study ikea.webp";
 import img2 from "../../../../../assets/homeassets/case study cowboy.webp";
 import img3 from "../../../../../assets/homeassets/case study sea.webp";
@@ -19,123 +31,181 @@ const Homeanimate = () => {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       {width <= 1023 ? (
-        <div className="home-container">
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            pagination={{
-              clickable: true,
-            }}
-            effect={"fade"}
-            modules={[Autoplay, Pagination, Navigation, EffectFade]}
-            className="mySwiper w-[90%] float-start  mr-0  z-[2] max-lgw-[90%] max-lg:mt-20 max-sm:w-[300px]"
-          >
-            <SwiperSlide>
-              {" "}
-              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-blue-700 flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-[626px] ">
-                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-md:w- max-sm:w-[300px]">
-                  <img
-                    className="w-[100%] h-[400px] max-md:h-full max-sm:w-full"
-                    src={img}
-                    alt=""
-                  />
-                </div>
-                <div className="flex flex-col gap-10 p-10">
-                  <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
-                    <div className="text-yellow-400 text-base font-normal font-['Graphik']">
-                      IKEA
+        <>
+          <h1 className="max-sm:block hidden mb-[31px] mt-[81px] ml-[20px] text-[24px] leading-[120%]">Work we are proud of</h1>
+          <div className="hero-animate absolute right-[80px] bottom-[40px] max-lg:relative max-lg:right-0 max-lg:bottom-0 flex max-lg:justify-center max-lg:w-[100%]  max-sm:mt-[0px]  max-sm:w-[100%] max-sm:justify-center max-lg:mt-20 ">
+            <div className="flex maxlg:w-full justify-start w-[630px] max-lg:items-start items-end max-sm:w-full max-sm:px-[20px]">
+              <Swiper
+                spaceBetween={30}
+                navigation={false}
+                modules={[ Pagination, Navigation, EffectFade]}
+                className="mySwiper float-end maxlg:float-start  mr-0  z-[2] max-lg:mt-20  max-sm:mt-[10px]  max-md:w-full"
+              >
+                <SwiperSlide>
+                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-[#0A41CF] flex max-md:w-full max-sm:flex max-sm:flex-wrap max-sm:h-auto">
+                    <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center max-sm:items-start max-sm:justify-start inline-flex max-sm:h-auto max-sm:w-full">
+                      <img
+                        className="w-[316.46px] max-md:h-full max-sm:w-full max-sm:h-auto"
+                        src={homeimg}
+                        alt=""
+                      />
                     </div>
-                    <div className="w-[205.63px] text-yellow-400 text-xl font-normal font-['Graphik'] leading-normal">
-                      Changing the way people shop.
+                    <div className="flex flex-col  justify-between p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
+                      <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
+                        <div className="text-[#FFCD05] text-base opacity-80 font-normal font-['Graphik']">
+                          IKEA
+                        </div>
+                        <div className="w-[205.63px] text-[#FFCD05] text-[20px] leading-[120%] font-normal font-['Graphik']">
+                          Changing the way people shop.
+                        </div>
+                      </div>
+                      <Link onClick={scrollToTop} to={"/case-study"}>
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px] max-sm:w-full rounded-[30px] border border-[#FFCD05] justify-center items-center gap-2 inline-flex hover:bg-[#FFCD05]  transition-all  hover:border-[#FFCD05]  text-[#FFCD05] hover:text-black">
+                          <div className=" text-base font-normal font-['Graphik']">
+                            View Case study
+                          </div>
+                        </button>
+                      </Link>
                     </div>
                   </div>
-                  <Link to={"/casestudy"}>
-                    <button className="px-4 py-2 left-[353px] top-[189.50px]  rounded-[30px] border border-yellow-400 text-black  bg-white justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  textyellow-400 hover:text-black">
-                      <div className=" text-base font-normal font-['Graphik']">
-                        Read Case study
-                      </div>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-[#F4ECDE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-[626px]">
-                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
-                  <img
-                    className="w-[100%] h-[400px]  object-fill max-md:h-full max-sm:w-full"
-                    src={img2}
-                    alt=""
-                  />
-                </div>
-                <div className="flex flex-col gap-10 p-10">
-                  <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
-                    <div className="text-black text-base font-normal font-['Graphik']">
-                      COWBOY
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-[#F4ECDE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-auto">
+                    <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full max-sm:h-auto">
+                      <img
+                        className="w-[316.46px]  max-md:h-full max-sm:w-full  max-sm:h-auto "
+                        src={img13}
+                        alt=""
+                      />
                     </div>
-                    <div className="w-[205.63px] text-black text-xl font-normal font-['Graphik'] leading-normal">
-                      Helping the world switch to sustainable energy-
-                      seamlessly.
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
+                      <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex max-sm:gap-[12px] ">
+                        <div className="text-black text-base font-normal opacity-80 font-['Graphik']">
+                          COWBOY
+                        </div>
+                        <div className="w-[205.63px] text-black  text-[20px] leading-[120%] font-normal font-['Graphik']">
+                          Helping the world switch to sustainable energy-
+                          seamlessly.
+                        </div>
+                      </div>
+                      <Link onClick={scrollToTop} to={"/case-study"}>
+                        <button className="px-[16px] py-[8px] max-sm:w-full left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                          <div className="text- text-base font-normal font-['Graphik']">
+                            View Case study
+                          </div>
+                        </button>
+                      </Link>
                     </div>
                   </div>
-                  <Link to={"/casestudy"}>
-                    <button className="px-4 py-2 left-[353px] top-[189.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                      <div className="textyellow-400 text-base font-normal font-['Graphik']">
-                        Read Case study
-                      </div>
-                    </button>
-                  </Link>
-                </div>
-                {/* <div className="w-[8.54px] h-[8.92px] left-[316.12px] top-[265.08px]  bg-indigo-400" /> */}
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="w-[100%] h-[400px] left-[730px] top-[469px]  bg-[#D1EBFE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-[626px]">
-                <div className="w-[50%] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
-                  <img
-                    className="w-[100%] h-[400px]  object-fill max-md:h-full  max-sm:w-full"
-                    src={img3}
-                    alt=""
-                  />
-                </div>
-                <div className="flex flex-col gap-10 p-10">
-                  <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex">
-                    <div className="text-[#EF5019] text-base font-normal font-['Graphik']">
-                      SEA
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-[6230px] h-[274px] left-[730px] top-[469px]  bg-[#D1EBFE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-auto">
+                    <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
+                      <img
+                        className="w-[316.46px]  max-md:h-full  max-sm:w-full max-sm:h-auto"
+                        src={img12}
+                        alt=""
+                      />
                     </div>
-                    <div className="w-[205.63px] text-[#EF5019] text-xl font-normal font-['Graphik'] leading-normal">
-                      A Disruptive marketing solution
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
+                      <div>
+                        <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
+                          <div className="text-[#EF5019] text-base opacity-80 font-normal font-['Graphik']">
+                            SEA
+                          </div>
+                          <div className="w-[205.63px] text-[#EF5019]  text-[20px] leading-[120%] font-normal font-['Graphik']">
+                            A Disruptive marketing solution
+                          </div>
+                        </div>
+                      </div>
+                      <Link onClick={scrollToTop} to={"/case-study"}>
+                        <button className="px-[16px] py-[8px] left-[353px] top-[170.50px] max-sm:w-full rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                          <div className="textyellow-400 text-base font-normal font-['Graphik']">
+                            View Case study
+                          </div>
+                        </button>
+                      </Link>
                     </div>
                   </div>
-                  <Link to={"/casestudy"}>
-                    <button className="px-4 py-2 left-[353px] top-[189.50px]  rounded-[30px] border border-black bg-white text-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                      <div className="textyellow-400 text-base font-normal font-['Graphik']">
-                        Read Case study
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-[#F1F1F1] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-auto">
+                    <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
+                      <img
+                        className="w-[316.46px]  max-md:h-full  max-sm:w-full max-sm:h-auto"
+                        src={img14}
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex flex-col  justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
+                      <div>
+                        <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
+                          <div className="text-[#06212B] text-base opacity-80 font-normal font-['Graphik']">
+                            MANGO
+                          </div>
+                          <div className="w-[205.63px] text-[#06212B]  text-[20px] leading-[120%] font-normal font-['Graphik']">
+                            Expanding the global reach of a clothing giant.{" "}
+                          </div>
+                        </div>
                       </div>
-                    </button>
-                  </Link>
-                </div>
-                {/* <div className="w-[8.54px] h-[8.92px] left-[316.12px] top-[265.08px]  bg-indigo-400" /> */}
-              </div>
-            </SwiperSlide>
-
-            <div
-              className="autoplay-progress max-sm:hidden"
-              slot="container-end"
-            ></div>
-          </Swiper>
-        </div>
+                      <Link onClick={scrollToTop} to={"/case-study"}>
+                        <button className="px-[16px] max-sm:w-full py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                          <div className="textyellow-400 text-base font-normal font-['Graphik']">
+                            View Case study
+                          </div>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-[630px] h-[274px] left-[730px] top-[469px]  bg-[#EBF5FE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-auto">
+                    <div className="w-[316.12px] left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
+                      <img
+                        className="w-[316.46px]  max-md:h-full  max-sm:w-full max-sm:h-auto"
+                        src={img15}
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex flex-col max-sm:w-full  justify-between p-[37.5px] pb-[44.5px] max-sm:h-[274px]">
+                      <div>
+                        <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
+                          <div className="text-[#15357A] text-base opacity-80 font-normal font-['Graphik']">
+                            DEEL
+                          </div>
+                          <div className="w-[205.63px] text-[#15357A]  text-[20px] leading-[120%] font-normal font-['Graphik']">
+                            Making recruiting accessible worldwide{" "}
+                          </div>
+                        </div>
+                      </div>
+                      <Link onClick={scrollToTop} to={"/case-study"}>
+                        <button className="px-[16px] max-sm:w-full py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-[#15357A] justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
+                          <div className="text-[#15357A] text-base font-normal font-['Graphik']">
+                            View Case study
+                          </div>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </>
       ) : (
         <div className="home-container">
           <Swiper
             navigation={true}
+            allowTouchMove={false}
             loop={true}
             effect={"fade"}
-            modules={[Autoplay, Pagination, Navigation, EffectFade]}
+            modules={[Autoplay, Mousewheel, Navigation, EffectFade]}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -153,7 +223,7 @@ const Homeanimate = () => {
                         Changing the way people shop.
                       </div>
                     </div>
-                    <Link to={"/casestudy"}>
+                    <Link onClick={scrollToTop} to={"/case-study"}>
                       <div className="px-8 absolute top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study
@@ -195,7 +265,7 @@ const Homeanimate = () => {
                         seamlessly{" "}
                       </div>
                     </div>
-                    <Link to={"/casestudy"}>
+                    <Link onClick={scrollToTop} to={"/case-study"}>
                       <div className="px-8 absolute top-[326px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study
@@ -236,7 +306,7 @@ const Homeanimate = () => {
                         A Disruptive marketing solution{" "}
                       </div>
                     </div>
-                    <Link to={"/casestudy"}>
+                    <Link onClick={scrollToTop} to={"/case-study"}>
                       <div className="px-8 absolute top-[326px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study
@@ -277,7 +347,7 @@ const Homeanimate = () => {
                         Expanding the global reach of a clothing giant.{" "}
                       </div>
                     </div>
-                    <Link to={"/casestudy"}>
+                    <Link onClick={scrollToTop} to={"/case-study"}>
                       <div className="px-8 absolute top-[326px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study
@@ -318,7 +388,7 @@ const Homeanimate = () => {
                         Making recruiting accessible worldwide{" "}
                       </div>
                     </div>
-                    <Link to={"/casestudy"}>
+                    <Link onClick={scrollToTop} to={"/case-study"}>
                       <div className="px-8 absolute top-[326px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
                         <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                           View Case study

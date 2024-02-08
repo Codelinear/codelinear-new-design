@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./homeservice.scss";
+import SP from "../../../../../assets/homeassets/Group 1000001871.svg";
+import SC from "../../../../../assets/homeassets/Group.svg";
+import AI from "../../../../../assets/homeassets/Group 1000001873.svg";
+import arrow from "../../../../../assets/homeassets/3 (1).svg";
 
-import arrow from "../../../../../assets/homeassets/arrow.svg";
 import { Link } from "react-router-dom";
 const Homeservice = () => {
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
 
   let [width, setWidth] = useState(window.innerWidth);
@@ -17,7 +20,7 @@ const Homeservice = () => {
     <>
       {width <= 640 ? (
         <div className="homeserv relative">
-          <div className="w-full flex-wrap h-[1808px] px-20 py-[50px] bg-neutral-50 flex-col justify-center items-center inline-flex max-lg:h-full max-lg:p-10 max-md:w-full   max-md:p-4">
+          <div className="w-full flex-wrap h-[1808px] px-20 py-[50px] bg-neutral-50 flex-col justify-center items-center inline-flex max-lg:h-full max-lg:p-10 max-md:w-full max-sm:pt-[48px]  max-md:p-4">
             <div className="self-stretch flex-wrap justify-start items-start gap-[19px] inline-flex max-md:w-full">
               <div className="h-[150px] pl-[0px] pr-[89.78px] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:p-10  max-lg:  max-md:w-full  max-sm:h-[80px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
@@ -27,8 +30,12 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-[18px]">
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+              <div className="flex flex-wrap justify-center gap-[18px] max-sm:gap-[12px]">
+                <Link
+                  to={"/product-design-and-innovation"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -51,11 +58,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Product Design and Innovation
                       </div>
-                      {/* <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-lg:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
-                    </div> */}
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -67,9 +69,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/app-development-and-modernization"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -129,9 +135,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/technology-consulting"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -184,9 +194,45 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/artificial-intelligence-(ai)-services"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
+                  <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
+                    <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
+                      <img src={AI} alt="" />
+                    </div>
+                  </div>
+                  <div className="flex-col justify-end items-start gap-6 inline-flex">
+                    <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
+                      <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
+                        Artificial Intelligence (AI) services{" "}
+                      </div>
+                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
+                        Drive business transformation with our cutting-edge
+                        Artificial Intelligence services for enhanced efficiency
+                        and innovation.
+                      </div>
+                    </div>
+                    <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                      <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
+                        <img
+                          className=" rotate-180 w-[18px] absolute -top[25px]"
+                          src={arrow}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  to={"/ecommerce-marketplace-development"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -239,9 +285,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/cloud-engineering"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -280,9 +330,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/game-development"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -362,9 +416,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/ar-vr-services"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -431,9 +489,13 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                <Link
+                  to={"/low-code-and-no-code"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -500,8 +562,76 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full">
+                </Link>
+
+                <Link
+                  to={"/salesforce-services"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
+                  <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
+                    <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
+                      <img src={SC} alt="" />
+                    </div>
+                  </div>
+                  <div className="flex-col justify-end items-start gap-6 inline-flex">
+                    <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
+                      <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
+                        Salesforce Consulting
+                      </div>
+                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
+                        Optimize Salesforce for streamlined operations, improved
+                        customer engagement, and scalable business growth
+                        solutions.
+                      </div>
+                    </div>
+                    <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                      <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
+                        <img
+                          className=" rotate-180 w-[18px] absolute -top[25px]"
+                          src={arrow}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  to={"/microsoft-sharepoint-services"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
+                  <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
+                    <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
+                      <img src={SP} alt="" />
+                    </div>
+                  </div>
+                  <div className="flex-col justify-end items-start gap-6 inline-flex">
+                    <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
+                      <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
+                        Microsoft SharePoint services{" "}
+                      </div>
+                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
+                        Enhance collaboration, secure data management, and
+                        streamline workflows with Microsoft SharePoint services.
+                      </div>
+                    </div>
+                    <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                      <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
+                        <img
+                          className=" rotate-180 w-[18px] absolute -top[25px]"
+                          src={arrow}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  to={"/quality-assurance"}
+                  onClick={scrollToTop}
+                  className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
+                >
                   <div className=" w-[32px] h-[32px] justify-center items-center inline-flex">
                     <div className=" w-[32px] h-[32px] relative flex-col justify-start items-start flex">
                       <svg
@@ -568,12 +698,11 @@ const Homeservice = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-
+                </Link>
                 <Link
-                  to="/service"
+                  to="/services"
                   onClick={scrollToTop}
-                  className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full mb-10"
+                  className="px-8 py-4 mt-[20px] rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full mb-10"
                 >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Explore all services
@@ -586,7 +715,7 @@ const Homeservice = () => {
       ) : (
         <div className="homeserv relative">
           <div className="w-full flex-wrap px-20 py-[80px] bg-neutral-50 flex-col justify-center items-center inline-flex max-lg:h-full max-lg:p-10 max-md:w-full   max-md:p-4">
-            <div className="flex-wrap items-start justify-between inline-flex max-md:w-full max-[1410px]:justify-center max-[1410px]:gap-[20px]">
+            <div className="flex-wrap items-start justify-between inline-flex max-md:w-full max-[1320px]:justify-center max-[1320px]:gap-[20px]">
               <div className="h-[150px] pl-[0px] pr-[] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:p-10  max-lg:  max-md:w-full  max-[376px]:h-[400px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
                   <div className="w-[300.22px] letter-spacing-2 text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-[350px]:w-full">
@@ -594,7 +723,7 @@ const Homeservice = () => {
                   </div>
 
                   <Link
-                    to="/service"
+                    to="/services"
                     onClick={scrollToTop}
                     className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                   >
@@ -605,7 +734,11 @@ const Homeservice = () => {
                 </div>
               </div>
 
-              <div className="mb-[17px] service-cards w-[32.451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <Link
+                to={"/product-design-and-innovation"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -623,29 +756,29 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1310px]:w-full">
                     <div className="service-heading letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Product Design and Innovation
                     </div>
-                    <div className="w-[340px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1310px]:w-full">
                       Sculpt digital products that stand out from the crowd,
                       spark emotions, and redefine what's possible.
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <Link
+                to={"/app-development-and-modernization"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -686,8 +819,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex   max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1025px]:w-full">
                     <div className="service-heading  letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       App Development and Modernization
@@ -698,18 +831,18 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <Link
+                to={"/technology-consulting"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -743,8 +876,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1025px]:w-full">
                     <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Technology Consulting
                     </div>
@@ -755,18 +888,47 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <Link
+                to={"/artificial-intelligence-(ai)-services"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+              >
+                <div className="justify-center items-center inline-flex">
+                  <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
+                    <img src={AI} alt="" />
+                  </div>
+                </div>
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      {" "}
+                      Artificial Intelligence (AI) services{" "}
+                    </div>
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                      Drive business transformation with our cutting-edge
+                      Artificial Intelligence services for enhanced efficiency
+                      and innovation.
+                    </div>
+                  </div>
+                  <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                to={"/ecommerce-marketplace-development"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -800,8 +962,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[800px]:h-[174px] max-[1025px]:w-full">
                     <div className="service-heading letter-spacing-4 w-[280px]  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Ecommerce Marketplace Development
@@ -812,18 +974,18 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <Link
+                to={"/cloud-engineering"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -843,8 +1005,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col max-[800px]:h-[174px] justify-between items-start flex max-[1025px]:w-full">
                     <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Cloud Engineering
@@ -856,18 +1018,18 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   ">
+              <Link
+                to={"/game-development"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   "
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -928,8 +1090,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] flex-col max-[800px]:h-[174px] justify-between items-start flex max-[1025px]:w-full">
                     <div className="service-heading  letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Game Development
@@ -940,18 +1102,18 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black ">
+              <Link
+                to={"/ar-vr-services"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -999,8 +1161,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
                     <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       AR/VR Services
@@ -1012,18 +1174,18 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black">
+              <Link
+                to={"/low-code-and-no-code"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1071,8 +1233,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
                     <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Low-code and No-code
@@ -1084,17 +1246,74 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  ">
+              </Link>
+              <Link
+                to={"/salesforce-services"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+              >
+                <div className="justify-center items-center inline-flex">
+                  <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
+                    <img src={SC} alt="" />
+                  </div>
+                </div>
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      {" "}
+                      Salesforce Services{" "}
+                    </div>
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                      Optimize Salesforce for streamlined operations, improved
+                      customer engagement, and scalable business growth
+                      solutions.
+                    </div>
+                  </div>
+                  <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                to={"/microsoft-sharepoint-services"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+              >
+                <div className="justify-center items-center inline-flex">
+                  <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
+                    <img src={SP} alt="" />
+                  </div>
+                </div>
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      {" "}
+                      Microsoft SharePoint services{" "}
+                    </div>
+                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                      Enhance collaboration, secure data management, and
+                      streamline workflows with Microsoft SharePoint services.
+                    </div>
+                  </div>
+                  <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                to={"/quality-assurance"}
+                onClick={scrollToTop}
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+              >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
                     <svg
@@ -1142,8 +1361,8 @@ const Homeservice = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col justify-end items-start gap-6 inline-flex">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[1025px]:w-full">
+                <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
+                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
                     <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
                       Quality Assurance
@@ -1155,16 +1374,12 @@ const Homeservice = () => {
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
-                    <div className="w-[31px] h-[21px] relative origin-top-left -rotate-180 flex-col justify-start items-start flex">
-                      <img
-                        className="origin-top-left rotate-180 w-[21.83px] h-[21.83px] absolute -top[25px]"
-                        src={arrow}
-                        alt=""
-                      />
+                    <div className="w-[31px] h-[21px] relative  flex-col justify-start items-start flex">
+                      <img className="w-[31px] h-[21px]" src={arrow} alt="" />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

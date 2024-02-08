@@ -26,62 +26,14 @@
 
 .lets-talk:hover ~ .bottom-line {
   background-color: black;
-  width: 78%;
-}
-
-@media (max-width: 767px) {
-  .lets-talk {
-    font-size: 158px;
-  }
-}
-@media (max-width: 370px) {
-  .lets-talk {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .lets-talk {
-    font-size: 149px;
-    color: black !important;
-  }
-  .bottom-line {
-    background-color: black;
-    width: 95%;
-    height: 10px;
-  }
-}
-
-@media (max-width: 440px) {
-  .lets-talk {
-    font-size: 70px;
-    color: black !important;
-  }
-
-  .bottom-line {
-    background-color: black;
-    width: 90%;
-    height: 10px;
-  }
-}
-@media (max-width: 640px) {
-  .lets-talk {
-    font-size: 100px;
-    color: black !important;
-  }
-
-  .bottom-line {
-    background-color: black;
-    width: 80%;
-    height: 10px;
-  }
+  width: 1039px;
 }
 
 /* ScrollToTopButton.css */
 .scroll-to-top-button {
   z-index: 99;
   position: absolute;
-  top: 51%;
+  bottom: 600px;
   right: 80px;
   color: #fff;
   border: none;
@@ -98,11 +50,12 @@
 
 .goup {
   height: 30px;
-  width: 30px;
-  position: absolute;
-  left: 6px;
-  top: 7px;
-  // margin-top: -20px;
+  width: 30px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15px;
   transition: all 1s ease;
 }
 .bottonn {
@@ -111,7 +64,7 @@
 
 .bottonn:hover .goup {
   // top: -15px;
-  top: -20px;
+  top: -16px;
   // margin-top: -20px;
 }
 .bottonn:hover .topto {
@@ -124,3 +77,78 @@
 // .bottonn:hover .twoarrow {
 //   top: 15px;
 // }
+@media (max-width: 1229px) {
+  .scroll-to-top-button {
+    position: absolute;
+    bottom: 600px;
+    right: 40px;
+  }
+  .lets-talk {
+    font-size: 160px;
+  }
+}
+@media (max-width: 1075px) {
+  .scroll-to-top-button {
+    position: absolute;
+    bottom: 1200px;
+    right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .lets-talk {
+    font-size: 149px;
+    color: black !important;
+  }
+  .bottom-line {
+    background-color: black;
+    width: 95%;
+    height: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 787px) {
+  .lets-talk {
+    font-size: 138px;
+  }
+  .scroll-to-top-button {
+    position: absolute;
+    bottom: 1500px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lets-talk {
+    font-size: 90px;
+    color: black !important;
+  }
+  .scroll-to-top-button {
+    z-index: 99;
+    position: absolute;
+    bottom: 890px;
+    right: 0px;
+    padding: 0;
+  }
+  .bottom-line {
+    background-color: black;
+    width: 380px;
+    height: 7px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .lets-talk {
+    font-size: 63px;
+    color: black !important;
+  }
+  .letter-spacing-7 {
+    letter-spacing: -0.64px;
+  }
+  .bottom-line {
+    background-color: black;
+    width: 270px;
+    height: 5.71px;
+    margin-left: 13px;
+  }
+}

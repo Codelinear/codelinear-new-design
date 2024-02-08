@@ -40,11 +40,11 @@ const Scrolltop = () => {
       className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
     >
-      <div class="bottonn w-[189.13px] h-[29.13px] opacity-80 justify-start items-center gap-3 inline-flex">
+      <div class="bottonn w-[189.13px] max-sm:w-[168px] max-sm:h-full h-[29.13px] opacity-80 justify-start items-center gap-3 inline-flex">
         <div class="w-[29.13px] h-[29.13px] relative overflow-hidden">
           <div class="w-[29.13px] h-[29.13px] left-0 top-0 absolute rounded-full border border-black"></div>
           <div className="goup flex gap-4 flex-col">
-            <div class="onearrow origin-top-left rotate[135deg] w-[10.45px] h-[10.45px] left-[5.95px] top-[5.40px] ">
+            <div class="onearrow rotate[135deg]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -66,7 +66,7 @@ const Scrolltop = () => {
                 />
               </svg>
             </div>
-            <div class=" twoarrow origin-top-left rotate[135deg] w-[10.45px] h-[10.45px] left-[5.95px] top-[25.40px] ">
+            <div class=" twoarrow rotate[135deg] left-[5.95px] top-[25.40px] ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

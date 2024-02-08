@@ -7,11 +7,14 @@ import img5 from "../assets/4373224_hubspot_logo_logos_icon 1.svg";
 import { Link } from "react-router-dom";
 
 const LowSection = () => {
+  const scrollToTop = () =>{
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }
   return (
     <>
       <section id="exp-design" className="exp-design">
         <h2>
-          LOW CODE AND NO CODE <span></span>
+          LOW-CODE AND NO-CODE <span></span>
         </h2>
         <h1 className="whitespace-nowrap max-sm:whitespace-normal">Low-code and No-code</h1>
         <p className="exp-p">
@@ -67,7 +70,8 @@ const LowSection = () => {
            Need help in making the next big thing?
         </div>
         <Link
-          to=""
+          to={"/contact-us"}
+          onClick={scrollToTop}
           className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">

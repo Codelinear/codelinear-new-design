@@ -17,7 +17,7 @@
 }
 .letter-spacing-2 {
   letter-spacing: -1.44px;
-} 
+}
 .letter-spacing-3 {
   letter-spacing: -0.64px;
 }
@@ -159,17 +159,63 @@
   .swiper-pagination {
     left: 0px !important;
   }
+  .letter-spacing-7 {
+    letter-spacing: -3.44px;
+  }
 }
 @media (max-width: 640px) {
-  .autoplay-progress {
-    position: relative;
-    width: 100%;
-    margin-left: 0;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -2px; /* Adjust as needed */
+  .hero-animate {
+    .autoplay-progress {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      height: 12px; /* Set the height of the progress bar */
+      background-color: transparent; /* Set the background color of the progress bar container */
+      margin-top: -2px; /* Adjust as needed */
+      margin-left: 0%;
+    }
+    .autoplay-progress1 {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      height: 12px; /* Set the height of the progress bar */
+      background-color: transparent; /* Set the background color of the progress bar container */
+      margin-top: -12px; /* Adjust as needed */
+      margin-left: 0%;
+    }
+    .autoplay-progress2 {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      height: 12px; /* Set the height of the progress bar */
+      background-color: transparent; /* Set the background color of the progress bar container */
+      margin-top: -12px; /* Adjust as needed */
+      margin-left: 0%;
+    }
+    .autoplay-progress3 {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      height: 12px; /* Set the height of the progress bar */
+      background-color: transparent; /* Set the background color of the progress bar container */
+      margin-top: -12px; /* Adjust as needed */
+      margin-left: 0%;
+    }
+    .autoplay-progress4 {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      height: 12px; /* Set the height of the progress bar */
+      background-color: transparent; /* Set the background color of the progress bar container */
+      margin-top: -12px; /* Adjust as needed */
+      margin-left: 0%;
+    }
+    .swiper-pagination {
+      left: calc( 100% - 100px) !important;
+      top: calc(100% - 50px) !important;
+    }
   }
-  .swiper-pagination {
-    left: 0px !important;
+  .letter-spacing-7 {
+    letter-spacing: -1.44px;
   }
 }

@@ -4,12 +4,12 @@ const Guide = () => {
   return (
     <>
       <div className="guide max-lg:p-5  max-lg:pl-12 max-md:pl-5">
-        <div className="w-full h-[885px] relative bg-white max-lg:h-full">
+        <div className="w-full h-[809px] mb-[76px] relative bg-white max-lg:h-full">
           <div className="flex ju gap-40 max-lg:flex-wrap max-lg:gap-10 max-[1200px]:gap-[90px]">
-            <div className="sticky top-10 h-[300px] max-lg:h-full max-lg:relative">
+            <div className="sticky top-10 h-[360px] max-lg:h-full max-lg:relative">
               <div className="ml-[80px] mt-[73px]  flex-col justify-start items-start gap-9 inline-flex max-lg:m-0">
-                <div className="w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
+                <div className="opacity-60 w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
+                  <div className=" text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                     What we believe in
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>

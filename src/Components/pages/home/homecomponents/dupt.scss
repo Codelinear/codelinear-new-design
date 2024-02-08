@@ -2,106 +2,55 @@
   background-image: url("./aduptsvg/dollar.svg");
   background-repeat: no-repeat;
 }
-
-.adupt-cards:hover .adupt-svg {
-  background-image: url("./aduptsvg/ydolloar.svg");
-  background-repeat: no-repeat;
+.adupt-cards {
+  transition: 0.5s;
+}
+.adupt-cards:hover {
+  filter: invert(100%);
 }
 
 .adupt-svg2 {
   background-image: url("./aduptsvg/supply.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg3 {
   background-image: url("./aduptsvg/bulb.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg4 {
   background-image: url("./aduptsvg/heart.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg5 {
   background-image: url("./aduptsvg/real.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg6 {
   background-image: url("./aduptsvg/cart.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg7 {
   background-image: url("./aduptsvg/fork.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg8 {
   background-image: url("./aduptsvg/energy.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg9 {
   background-image: url("./aduptsvg/menu.svg");
   background-repeat: no-repeat;
-
 }
 
 .adupt-svg10 {
   background-image: url("./aduptsvg/bean.svg");
-  background-repeat: no-repeat;
-
-}
-
-.adupt-cards:hover .adupt-svg2 {
-  background-image: url("./aduptsvg/ysuply.svg");
-  background-repeat: no-repeat;
-}
-
-.adupt-cards:hover .adupt-svg3 {
-  background-image: url("./aduptsvg/ybulb.svg");
-  background-repeat: no-repeat;
-}
-
-.adupt-cards:hover .adupt-svg4 {
-  background-image: url("./aduptsvg/yheart.svg");
-  background-repeat: no-repeat;
-}
-
-.adupt-cards:hover .adupt-svg5 {
-  background-image: url("./aduptsvg/ystate.svg");
-  background-repeat: no-repeat;
-}
-// .adupt-cards:hover .adupt-svg5 {
-//     background-image: url("./aduptsvg/yheart.svg");
-//   }
-.adupt-cards:hover .adupt-svg6 {
-  background-image: url("./aduptsvg/ycart.svg");
-  background-repeat: no-repeat;
-}
-.adupt-cards:hover .adupt-svg7 {
-  background-image: url("./aduptsvg/yfork.svg");
-  background-repeat: no-repeat;
-}
-.adupt-cards:hover .adupt-svg8 {
-  background-image: url("./aduptsvg/yenergy.svg");
-  background-repeat: no-repeat;
-}
-.adupt-cards:hover .adupt-svg9 {
-  background-image: url("./aduptsvg/ymenu.svg");
-  background-repeat: no-repeat;
-}
-.adupt-cards:hover .adupt-svg10 {
-  background-image: url("./aduptsvg/ybean.svg");
   background-repeat: no-repeat;
 }
 
@@ -114,23 +63,21 @@
   --webkit-text-decoration-thickness: 1.5px;
 }
 
-.clients img {
-  aspect-ratio: 1/2;
-  object-fit: contain;
+// .clients img {
+//   aspect-ratio: 1/2;
+//   object-fit: contain;
 
-  // mix-blend-mode: color-dodge;
-}
+//   // mix-blend-mode: color-dodge;
+// }
 
-@media (max-width: 640px) {
-  .client-logos {
-    .b {
-      width: 50%;
-    }
+@media (max-width: 1440px) {
+  .adupt-cards {
+    width: 305px;
+    height: 229px;
   }
 }
 @media (max-width: 1023px) {
-  
-  .home-container{
+  .home-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -182,10 +129,30 @@
     background-image: url("./aduptsvg/ybean.svg");
   }
 }
+@media (max-width: 800px) {
+  .adupt-cards {
+    height: 259px;
+  }
+}
+@media (max-width: 640px) {
+  .client-logos {
+    .b {
+      width: 50%;
+    }
+  }
+  .adupt-cards {
+    width: 180px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 540px) {
   .client-logos {
     .b {
       width: 40%;
+    }
+    img {
+      width: 50%;
     }
   }
 }

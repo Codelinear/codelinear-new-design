@@ -1,80 +1,150 @@
-.openPosition{
-    padding: 87px 80px 87px 80px;
+.openPosition {
+  padding: 87px 80px 87px 80px;
 }
 .openPositions {
-    text-align: left;
-    /* padding-left: 80px; */
+  padding-bottom: 64px;
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.6);
 }
-.openPositions h2{
-    width: 588.858px;
-    color: #000;
-/* font-family: Graphik; */
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 120%; /* 43.2px */
-letter-spacing: -1.08px;
+.position-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 36px;
+  opacity: 0.7;
+  gap: 13.36px;
+}
+.openPositions {
+  text-align: left;
+  /* padding-left: 80px; */
+}
+.openPositions h2 {
+  width: 588.858px;
+  color: #000;
+  /* font-family: Graphik; */
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 43.2px */
+  letter-spacing: -1.08px;
 }
 
 .productDesigner {
-    display: flex;
-    /* gap: 160px; */
-    padding-top: 0px !important;
-    align-items: baseline;
-    border-top: 0.8px solid rgba(0, 0, 0, 0.60);
-    border-bottom: 0.8px solid rgba(0, 0, 0, 0.60);
-    align-items: center;
-    padding-top: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  /* gap: 160px; */
+  padding-top: 0px !important;
+  align-items: baseline;
+  align-items: center;
+  padding-top: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.positionslisting {
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.6);
+  height: 130px;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loc-exp {
+  display: flex;
+  gap: 32px;
+}
+.loc-exp-2 {
+  display: flex;
+  gap: 32px;
+  display: none;
 }
 .iconBtn {
-    background: #fff0;
-    border: none;
-    width: 56px;
+  background: #fff0;
+  border: none;
+  width: 56px;
 
-    height: 56px;
-    /* margin-top: -9px; */
+  height: 56px;
+  /* margin-top: -9px; */
 }
-.textBtnsz{
-    /* display: flex; */
-padding: 16px 32px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 31px;
-border: 1px solid #000;
+.textBtnsz {
+  /* display: flex; */
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 31px;
+  border: 1px solid #000;
+  transition: 0.3s;
 }
-
-
+.textBtnsz-2 {
+  /* display: flex; */
+  padding: 16px 32px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 31px;
+  border: 1px solid #000;
+  transition: 0.3s;
+  display: none;
+}
+.positionName {
+  width: 40%;
+}
+.textBtnsz:hover {
+  background-color: #ffcd05;
+  border: 1px solid #ffcd05;
+}
+.textBtnsz2:hover {
+  background-color: #ffcd05;
+  border: 1px solid #ffcd05;
+}
 /* media  */
-@media only screen and (max-width: 600px) {
-    .openPosition {
-        padding: 57px 20px 57px 20px;
-    }
-    .productDesigner {
-        display: flex;
-        /* gap: 38px; */
-        padding-top: 0px !important;
-        align-items: stretch;
-        border-top: 0.8px solid rgba(0, 0, 0, 0.60);
-        border-bottom: 0.8px solid rgba(0, 0, 0, 0.60);
-        align-items: center;
-        padding-top: 0px;
-        width: 520px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-direction: row;
-    }
-    .openPositions h2{
-        width: 588.858px;
-        color: #000;
+@media only screen and (max-width: 1024px) {
+  .openPosition {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .loc-exp-2 {
+    display: flex;
+    gap: 32px;
+  }
+
+  .loc-exp {
+    display: flex;
+    gap: 32px;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .openPosition {
+    padding: 32px 20px;
+  }
+  .positionName{
+    width: 100%;
+  }
+  .positionslisting{
+    padding: 32px 0px;
+  }
+  .position-container img{
+    width: 50%;
+  }
+  .openPositions h2 {
+    width: 588.858px;
+    color: #000;
     /* font-family: Graphik; */
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 43.2px */
     letter-spacing: -1.08px;
-    }
+    padding: 0px;
+    width: 100%;
   }
+  .textBtnsz {
+    display: none;
+  }
+  .positionslisting {
+    height: 272px;
+  }
+  .textBtnsz-2 {
+    display: block;
+  }
+}
