@@ -71,7 +71,7 @@ const Vision = () => {
     <>
       <div className="vision z-[9999] relative  max-sm:overflow-x-hidden">
         <div className="main-vision">
-          <div className="w-full h-] pl-[225.34px] pr-[224.34px] pb-[129px] pt-[38px] bgwhite justify-center items-center inline-flex max-lg:p-10 max-lg:my-20 max-sm:p-[20px] max-xl:px-4">
+          <div className="w-full h-] px-[80px] pb-[129px] pt-[38px] bgwhite justify-center items-center inline-flex max-lg:p-10 max-lg:my-20 max-sm:p-[20px]">
             <div className="w-[1090.32px] letter-spacing-2 text-center text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-md:w-full max-sm:text-[36px] max-sm:text-left">
               Our vision is to propel humanity forward by building digital
               products that uplift our client's value proposition and enrich
@@ -80,22 +80,22 @@ const Vision = () => {
           </div>
           <div
             ref={sectionReff}
-            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[56px] max-sm:gap-[40px] inline-flex box max-md:flex-wrap max-md:h-full  max-[800px]:justify-center max-[800px]:px-[40px] max-sm:py-[56px] max-md:p-5 max-xl:flex-wrap max-xl:flex-wrap max-xl:justify-center max-xl:h-full max-xl:py-20 max-sm:gap-10"
+            className="w-full h-[811px] max-2md:justify-center max-2md:gap-[100px] py-[0px] pl-[80px] pr-[144px] max-xl:px-[80px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[0] max-sm:gap-[40px] inline-flex box max-2md:flex-wrap max-md:h-full  max-[800px]:justify-center max-lg:px-[40px] max-sm:py-[56px] max-md:p-[40px] max-2md:flex-wrap max-flex-wrap max-xl:justify-between max-xl:items-start max-xl:h-full max-xl:p-20 max-lg:gap-[30px] max-sm:px-[20px] max-sm:gap-10"
           >
-            <div className="self-stretch h-[611px] flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[120px] max-sm:gap-[40px] max-lg:justify-start max-sm:h-full">
+            <div className="self-stretch h-[611px] max-xl:h-[523px] max-2md:h-auto flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[30px] max-sm:gap-[40px] max-lg:justify-start max-sm:h-full">
               <div className="flex-col justify-start items-start gap-[30px] flex max-sm:gap-[20px]">
-                <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
-                  <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
+                <div className="w-[521.42px] max-2md:w-full max-3lg:w-[400px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
+                  <div className="text-[#FFCD05] whitespace-nowrap text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
                     Digital transformation
                   </div>
-                  <div className="w-[316px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
+                  <div className="w-[316px] max-2md:w-full max-3lg:w-[196px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="text2 letter-spacing-2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
+                    <div className="text2 max-2md:w-full letter-spacing-2 max-3lg:w-[400px] w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
                       Transforming lives, one product at a time.{" "}
                     </div>
-                    <div className=" text3 text-[#B7B7B7] leading-[150%] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className=" text3 max-2md:w-[700px] text-[#B7B7B7] max-3lg:w-[390px] leading-[150%] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
                       Translate your vision into seamless, intuitive experiences
                       that captivate your customers and empower your employees.
                     </div>
@@ -109,9 +109,9 @@ const Vision = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-[38px] flex max-md:w-[100%]">
-                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-sm:w-full max-sm:opacity-0"></div>
-                <div className="w-[521px] overflow-hidden max-[786px]:w-full">
+              <div className="flex-col justify-start items-start gap-[38px] flex max-2md:w-[100%]">
+                <div className="w-[521.42px]  max-2md:w-full max-3lg:w-[400px] h-[0px] opacity-60 border border-white max-sm:w-full max-sm:opacity-0"></div>
+                <div className="w-[521px] max-2md:w-full max-3lg:w-[400px] overflow-hidden max-[786px]:w-full">
                   <div
                     className="flex align-center opacity-60 gap-[48px] w-[600px] max-[768px]:w-full"
                     ref={animateclient}
@@ -128,13 +128,16 @@ const Vision = () => {
                     <img src={img5} alt="" />
                     <img src={img6} alt="" />
                     <img src={img7} alt="" />
+                    <img src={img2} alt="" />
+                    <img src={img3} alt="" />
+                    <img src={img4} alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-xl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
+            <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
-                className="w-[513.40px] max-xl:w-[536px] h-[770.23px] max-md:h-full"
+                className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
                 src={img}
                 alt=""
               />

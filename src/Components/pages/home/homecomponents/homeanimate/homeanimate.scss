@@ -34,15 +34,15 @@
   .swiper-button-prev {
     position: absolute;
     transform: rotate(180deg);
-    top: 77.1%;
-    left: calc(100% - 232px);
+    top: calc(470px + 25%);
+    left: calc(50% + 332px);
     width: 68px;
     border-radius: 54px;
   }
   .swiper-button-next {
     position: absolute;
-    right: 80px;
-    top: 77%;
+    left: calc(50% + 425px);
+    top: calc(470px + 25%);
     width: 68px;
     border-radius: 54px;
   }
@@ -56,5 +56,55 @@
     background-position: 17px 3px;
     background-image: url("./arrow.svg");
     background-repeat: no-repeat;
+  }
+}
+@media (max-width: 2316px) {
+  .home-container {
+    .swiper-button-prev {
+      top: calc(420px + 25%);
+    }
+    .swiper-button-next {
+      top: calc(420px + 25%);
+    }
+  }
+}
+@media (max-width: 1860px) {
+  .home-container {
+    .swiper-button-prev {
+      top: calc(360px + 25%);
+    }
+    .swiper-button-next {
+      top: calc(360px + 25%);
+    }
+  }
+}
+@media (max-width: 1360px) {
+  .home-container {
+    .swiper-button-prev {
+      top: calc(290px + 25%);
+    }
+    .swiper-button-next {
+      top: calc(290px + 25%);
+    }
+  }
+}
+@media (max-width: 1260px) {
+  .home-container {
+    .swiper-button-prev {
+      top: calc(268px + 25%);
+    }
+    .swiper-button-next {
+      top: calc(268px + 25%);
+    }
+  }
+}
+@media (max-width: 1135px) {
+  .home-container {
+    .swiper-button-prev {
+      top: calc(228px + 25%);
+    }
+    .swiper-button-next {
+      top: calc(228px + 25%);
+    }
   }
 }

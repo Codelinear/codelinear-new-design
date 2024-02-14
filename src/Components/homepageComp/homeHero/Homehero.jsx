@@ -1,13 +1,13 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import homeimg from "../../../assets/homeassets/Hero section case study01.jpg";
-import img2 from "../../../assets/homeassets/Hero section case study02.jpg";
-import img3 from "../../../assets/homeassets/Hero section case study03.jpg";
+import img3 from "../../../assets/homeassets/Hero section case study02.jpg";
+import img2 from "../../../assets/homeassets/Hero section case study03.jpg";
 import img4 from "../../../assets/homeassets/Hero section case study04.jpg";
 import img5 from "../../../assets/homeassets/Hero section case study05.jpg";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
-
+import gsap from "gsap";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -51,14 +51,44 @@ const Homehero = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
+  let [widthscreen, setWidth] = useState(window.innerWidth);
+  let [heightscreen, setHeight] = useState(window.innerHeight);
+  const herocase = useRef(null);
+  const section = useRef(null);
+  const section2 = useRef(null);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    window.addEventListener("resizeh", () => setHeight(window.innerHeight));
+    if (heightscreen <= 690 && widthscreen >= 1525) {
+      gsap.to(section.current, 0, { height: "800px" });
+      gsap.to(section2.current, 0, { height: "800px" });
+    }
+    else if (heightscreen <= 650 && widthscreen >= 1416 && widthscreen <=1524) {
+      gsap.to(section.current, 0, { height: "800px" });
+      gsap.to(section2.current, 0, { height: "800px" });
+    }
+    else if (heightscreen <= 750 && widthscreen >= 1025 && widthscreen <=1415) {
+      gsap.to(section.current, 0, { height: "780px" });
+      gsap.to(section2.current, 0, { height: "780px" });
+    }
+  });
   return (
     <>
-      <div className="h-[100vh] max-lg:h-full max-sm:ml-[0px]">
-        <div className="w-full bg-white  h-[600px] z-0 max-lg:h-full ">
-          <div className="w-[55%] ml-[80px] pt-[115px]  text-black text-[66px] font-normal font-['Graphik'] leading-[108.195%] letter-spacing-1 max-lg:pb-[36px] max-lg:w-[80%] max-md:ml-2 max-sm:text-[50px] max-sm:ml-[20px]  max-sm:pt-[50px]  max-sm:leading-[54px]">
+      <div
+        ref={section}
+        className="h-[100vh] relative max-lg:h-full max-sm:ml-[0px]"
+      >
+        <div
+          ref={section2}
+          className="w-full bg-white  h-[600px] z-0 max-lg:h-full "
+        >
+          <div className="w-[730px] ml-[80px] pt-[115px]  text-black text-[66px] font-normal font-['Graphik'] leading-[108.195%] letter-spacing-1 max-lg:pb-[36px] max-lg:w-[80%] max-lg:ml-[40px] max-sm:text-[50px] max-sm:ml-[20px]  max-sm:pt-[50px]  max-sm:leading-[54px]">
             Transforming businesses through design-led product engineering.
           </div>
-          <div className="hero-animate absolute right-[80px] bottom-[40px] max-lg:relative max-lg:right-0 max-lg:bottom-0 flex max-lg:justify-center max-lg:w-[100%]  max-sm:mt-[0px]  max-sm:w-[100%] max-sm:justify-center max-lg:mt-20 ">
+          <div
+            ref={herocase}
+            className="hero-animate absolute w-[630px] right-[80px] bottom-[131px] max-lg:relative max-lg:right-0 max-lg:bottom-0 flex max-lg:justify-center max-lg:w-[100%]  max-sm:mt-[0px]  max-sm:w-[100%] max-sm:justify-center max-lg:mt-20 "
+          >
             <div className="flex maxlg:w-full justify-start w-[630px] max-lg:items-start items-end max-sm:w-full max-sm:px-[20px]">
               <Swiper
                 spaceBetween={30}
@@ -71,6 +101,7 @@ const Homehero = () => {
                 pagination={{
                   clickable: true,
                 }}
+                loop={true}
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 navigation={false}
                 modules={[Autoplay, Pagination, Navigation, EffectFade]}

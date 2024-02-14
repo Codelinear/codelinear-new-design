@@ -5,7 +5,7 @@ const Predictive = () => {
     <>
       <div className="w-full h-[992px] relative bg-white mt-20 max-lg:h-full">
         <div className="left-[80px] top-[88px]  flex-col justify-start items-start gap-[22px] inline-flex">
-          <div className="flex-col justify-start items-start gap-[30px] flex">
+          <div className="flex-col max-sm:w-full justify-start items-start gap-[30px] flex">
             <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-full">
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 Artificial Intelligence (AI) services{" "}
@@ -16,14 +16,14 @@ const Predictive = () => {
               Natural Language Processing solutions{" "}
             </div>
           </div>
-          <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
+          <div className="w-[536.02px] h-[85.15px] max-sm:h-auto opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
             Transform your operations with NLP expertise, leveraging language
             understanding for improved communication, insights, and
             decision-making within your organization.
           </div>
         </div>
 
-        <div className="flex gap-20 mt-[54px] max-lg:flex-wrap">
+        <div className="flex gap-20 max-sm:gap-[32px] mt-[54px] max-lg:flex-wrap">
           <div className="left-[80px] top-[376px]  flex-col justify-start items-start gap-[54px] inline-flex max-lg:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex max-sm:w-full">
               <div className="text-black letter-spacing-4 text-xl font-normal font-['Graphik'] leading-normal">
@@ -54,7 +54,7 @@ const Predictive = () => {
               </div>
             </div>
           </div>
-          <div className="h-[568px] left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
+          <div className="h-[568px] left-[516px] max-lg:w-full max-lg:justify-center top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
             <img
               className="w-[519.33px] h-[779.13px] max-sm:w-full max-sm:h-full"
               src={img}

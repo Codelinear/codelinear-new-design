@@ -122,24 +122,24 @@ const Allservice = () => {
     <>
       <div className="allservice relative">
         <div className="main-allservice">
-          <div className="w-full h-full relative bg-white flex justify-between max-xl:flex-wrap-reverse">
-            <div className="left max-md:w-full">
-              <div className="h-[1150px] max-lg:h-[1000px] max-md:h-[1000px] max-sm:h-[650px] max-[500px]:h-[620px] max-lg:flex-wrap max-md:w-full section max-md:p-5">
-                <div className="w-[738px] ml-[80px] mt-[59px] max-lg:mx-0 max-lg:px-10 max-md:p-0 letter-spacing-2 max-xl:ml-[40px] max-md:ml-0  text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-lg:m-8 max-sm:m-0 max-md:mt-10 max-sm:text-[24px] max-sm:leading-[29px]">
+          <div className="w-full h-full relative bg-white flex justify-between max-xl:justify-start max-xl:w-full max-xl:flex-wrap-reverse">
+            <div className="left max-xl:w-full">
+              <div className="pb-20 max-xl:pt-0 wrap-reverse relative h-auto flex flex-col-reverse max-lg:flex-wrap max-md:p-[40px] max-lg:w-full section max-sm:p-5">
+                <div className="w-[738px] max-xl:w-[900px] ml-[80px] mt-[59px] max-xl:mt-[70px] max-lg:mx-0 max-lg:px-10 max-md:p-0 letter-spacing-2 max-xl:ml-[80px] max-md:ml-0  text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-lg:m- max-sm:m-0 max-md:mt-10 max-sm:text-[24px] max-sm:leading-[29px]">
                   We help businesses launch their success and bring the luxury
                   of transformational technology and dynamic UI/UX right to
                   their threshold.
                 </div>
-                <div className="mt-[39px] w-[707px] relative left-[23%] max-xl:w-full max-xl:left-[40px] max-lg:left-0 max-lg:p-10 max-md:p-0">
+                <div className="mb-[39px] max-xl:flex max-xl:justify-center max-xl:w-full max-xl:left-0 w-[707px] relative left-[23%] max-lg:left-0 max-lg:p-0 max-md:p-0">
                   <img
-                    className="w-[707.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full max-sm:h-[400px]  max-lg:w-[665px] max-lg:h-[500px]"
+                    className="w-[707.30px] h-[676.40px] origin-top-left rotat-[19.37deg] max-md:w-full max-sm:h-auto  max-lg:w-[665px] max-lg:h-[500px]"
                     src={img}
                     alt=""
                   />
                 </div>
               </div>
 
-              <div className="max-md:p-[20px]">
+              <div className="pl-[80px] max-xl:px-[80px] max-lg:p-[40px] max-sm:p-[20px]">
                 <div
                   className="section"
                   id="product-design-and-innovation"
@@ -156,10 +156,10 @@ const Allservice = () => {
                 <div className="section" id="arvr" ref={ai}>
                   <AIservice />
                 </div>
-                <div className="section" id="Lowcode" ref={sf}>
+                <div className="section max-sm:hidden" id="Lowcode" ref={sf}>
                   <Salesforceservice />
                 </div>
-                <div className="section" id="Lowcode" ref={sp}>
+                <div className="section max-sm:hidden" id="Lowcode" ref={sp}>
                   <Sharepointservies />
                 </div>
                 <div className="section" id="ecommerce" ref={ecommerce}>
@@ -177,6 +177,12 @@ const Allservice = () => {
                 <div className="section" id="Lowcode" ref={lowcode}>
                   <Lowcode />
                 </div>
+                <div className="hidden max-sm:block" id="Lowcode" ref={sf}>
+                  <Salesforceservice />
+                </div>
+                <div className="hidden max-sm:block" id="Lowcode" ref={sp}>
+                  <Sharepointservies />
+                </div>
                 <div className="section" id="quality" ref={quality}>
                   <QalityAssurance />
                   <div className="section h-[210px] w-100% max-sm:h-4"></div>
@@ -184,7 +190,7 @@ const Allservice = () => {
               </div>
             </div>
 
-            <div className="right bg-transparent sticky max-xl:hidden h-[600px] top-[76px] mt-14  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
+            <div className="right bg-transparent sticky max-xl:hidden h-[600px] top-[76px] mt-0  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]">
               <div className="self-stretch flex-col justify-start items-start gap-[4px] inline-flex max-xl:w-full  max-xl:h-[300px]">
                 <div className=" overview p-2 bgneutral-100 rounded-[7px] justify-center items-center gap-2 inline-flex">
                   <div

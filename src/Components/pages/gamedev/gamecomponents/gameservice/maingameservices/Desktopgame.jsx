@@ -29,11 +29,11 @@ const Desktopgame = () => {
               audience seeking high-quality experiences.
             </div>
           </div>
-          <div className="ml-[80px] mb-[86px] mt-[42px] top-[345px]  flex-col justify-start items-start gap-[35px] inline-flex  max-sm:ml-[20px] max-lg:ml-[40px] max-sm:top-[150px]">
+          <div className="ml-[80px] mb-[86px] mt-[42px] top-[345px]  flex-col justify-start items-start gap-[35px] inline-flex  max-sm:px-[20px] max-lg:ml-[0px] max-md:px-[40px] max-sm:top-[150px]">
             <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
               Technologies we use
             </div>
-            <div className="w-[703px]  justify-start items-start gap-[47px] inline-flex max-sm:flex-wrap max-sm:justify-center max-sm:w-[90%]">
+            <div className="w-[703px] max-md:w-full  justify-start items-start gap-[47px] inline-flex max-md:flex-wrap max-md:justify-center max-sm:w-[100%]">
               <div className="w-[103px] flex-col justify-start items-center gap-4 inline-flex">
                 <div className="w-[64.14px] h-[64.14px] bg-black rounded-full justify-center items-center inline-flex">
                   <img className="w-[64.14px] h-[64.14px]" src={img} alt="" />
@@ -87,8 +87,8 @@ const Desktopgame = () => {
       </div>
 
       <div className="features">
-        <div className="w-full h-[755px] pl-20 pr-[45px] pt-[27.20px] pb-[105.80px] bg-white justify-start items-start gap-[131.63px] inline-flex max-lg:pl-[40px] max-sm:pl-[20px] max-xl:flex-wrap max-xl:h-full max-sm:gap-[50px] max-sm:py-[50px]">
-          <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex max-xl:flex-row max-lg:flex-wrap">
+        <div className="w-full h-[755px] pl-20 pr-[10px] pt-[27.20px] pb-[105.80px] bg-white justify-start items-start gap-[54px] inline-flex max-lg:pl-[40px] max-sm:px-[20px] max-lg:flex-wrap max-lg:h-full max-sm:gap-[50px] max-sm:py-[50px]">
+          <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex max-lg:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl letter-spacing-4 font-normal font-['Graphik'] leading-[120%]">
                 High-End Graphics Rendering{" "}
@@ -120,8 +120,8 @@ const Desktopgame = () => {
               </div>
             </div>
           </div>
-          <div className="w-[522px] self-stretch flex-col justify-start items-center inline-flex max-xl:w-full max-xl:px-[25%] max-lg:p-[40px] max-sm:p-[20px]">
-            <img className="w-[522px] h-[833.20px] max-xl:w-full max-xl:h-full" src={img6} alt="h" />
+          <div className="w-[522px] self-stretch flex-col justify-start items-center inline-flex max-lg:w-full max-lg:p-[0px] max-sm:p-[0px]">
+            <img className="w-[522px] h-[833.20px] max-md:w-full max-md:h-full" src={img6} alt="h" />
           </div>
         </div>
       </div>

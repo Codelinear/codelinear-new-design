@@ -9,7 +9,7 @@ const VR3 = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
-    <div className=" mb-[121px]">
+    <div className=" mb-[121px] max-sm:mb-20">
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap">
           AR/VR services <span></span>
@@ -50,14 +50,14 @@ const VR3 = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[20px] max-sm:mb-[50px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
+      <div className="justify-start max-sm:w-full max-sm:px-[20px] items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:ml-[0px] max-sm:mb-[0px]">
+        <div className="w-[267.25px] max-sm:text-[24px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
           Need help in making the next big thing?
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
-          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
+          className="px-8 max-sm:w-full py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[100%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
             Talk to our experts

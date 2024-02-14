@@ -9,7 +9,9 @@ function Openpositions() {
         <div className="position-container">
           <span>Open positions</span> <img src={Line} alt="bgimage" />
         </div>
-        <h2>Ultrices cum duis maecenas ac condimentum amet. </h2>
+        <h2>
+          Together, we'll create technology solutions that transform industries.
+        </h2>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -27,21 +29,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -59,21 +61,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -91,21 +93,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -123,21 +125,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -155,21 +157,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -187,21 +189,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -219,21 +221,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -251,21 +253,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -283,21 +285,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
@@ -315,21 +317,21 @@ function Openpositions() {
           <div className="applynowbtn">
             <button className="textBtnsz">Apply Now</button>
           </div>
-        </div> 
+        </div>
         <div className="loc-exp-2">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
+          <div className="locationdetails">
+            <span>Bangalore</span>
           </div>
+          <div className="expneed">
+            <span>3+ years of experience</span>
+          </div>
+        </div>
         <p className="req">
           In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
         </p>
-          <div className="applynowbtn-2">
-            <button className="textBtnsz-2">Apply Now</button>
-          </div>
+        <div className="applynowbtn-2">
+          <button className="textBtnsz-2">Apply Now</button>
+        </div>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const Footer = () => {
       <footer className="bg-white relative 0 h[1800px]">
         <Scrolltop />
         <div className="upr-footer" ref={footer}>
-          <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-4  max-lg:pl-[50px]">
+          <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-10 max-sm:p-5  max-lg:pl-[40px]">
             <div className="w-[548.68px]  letter-spacing-4 text-400 text-[#101415] text-[24px] font-normal font-['Graphik'] leading-[120%] max-md:w-full ">
               Transforming Ideas into Competitive Advantages.
             </div>
@@ -92,22 +92,22 @@ const Footer = () => {
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                       Codelinear Software Solutions.
                     </div>
-                    <div className="w-[305px] opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
+                    <div className="w-[305px] opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
                       Transforming businesses through design-led product
                       engineering.
                     </div>
                   </div>
-                  <div className="left-[80px] top-[586.39px] max-lg:gap-[20%] max-sm:gap-[32px] justify-start items-start gap-[57px] inline-flex max-[350px]:w-full max-sm:flex-wrap  max-lg:gap-48">
+                  <div className="left-[80px] top-[586.39px] max-lg:gap-[140px] max-sm:gap-[32px] justify-start items-start gap-[57px] inline-flex max-[350px]:w-full max-sm:flex-wrap">
                     <div className="flex-col justify-start items-start  gap-[20px] inline-flex">
                       <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                         Reach out to us
                       </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] underline leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] underline leading-normal">
                         <a href="mailto:info@codelinear.com">
                           info@codelinear.com
                         </a>
                       </div>
-                      <div className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <a href="tel:+1 415 523 5957">+1 415 523 5957</a>
                       </div>
                     </div>
@@ -229,57 +229,84 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-[390px] max-[1422px]:whitespace-normal whitespace-nowrap max-lg:hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
-                  Copyright © Codelinear Software Solutions Pvt Ltd. All Rights
-                  Reserved.{" "}
-                </div>
-              </div>
 
-              <div className="flex max-sm:flex-col-reverse flex-wrap gap-20 max-xl:gap-y-[64px] max-sm:gap-8 max-xl:gap-y-[102px] w-[55%] max-lg:p-0  max-md:flex-col max-md:w-full max-sm:flex-wrapreverse">
-                <div className=" max-sm:hidden flex gap-[80px] max-[1422px]:gap-[60px] pt-20 max-xl:pt-[0] h-[150px] max-sm:h-[400px]">
+                <div className=" max-lg:flex max-1sm:hidden hidden max-2lg:gap-[40px] flex gap-[80px] max-2xl:gap-[40px] max-1lg:gap-[80px] pt-20 max-2lg:gap-[40px] max-xl:pt-[0] h-[150px] max-sm:h-[120px]">
                   <div className="w-60 h-[116px] flex-col justify-start items-start  gap-[20px] inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
                       India
                     </div>
-                    <div className="w-[239.64px] opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <div className="w-[239.64px] opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal">
                       Wework Galaxy
                       <br />
                       Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001
                     </div>
                   </div>
 
-                  <div className="w-60 h-[92px] flex-col justify-start items-start gap-[20px] inline-flex">
+                  <div className="w-60  max-2lg:w-48 h-[92px] flex-col justify-start items-start gap-[20px] inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
                       USA
                     </div>
-                    <div className="w-60 opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <div className="w-60  max-2lg:w-48 opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal">
                       600 B Street, Suite 300, <br />
                       San Diego, CA 92101
                     </div>
                   </div>
                 </div>
-                <div className="w-[390px] hidden max-sm:block left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
+                <div className="w-[390px] max-sm:block max-sm:opacity-100 max-[1422px]:whitespace-normal whitespace-nowrap max-2md:hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
                   Copyright © Codelinear Software Solutions Pvt Ltd. All Rights
                   Reserved.{" "}
                 </div>
-                <div className="flex flex-row gap-[80px] max-[1422px]:gap-[60px] max-[1384px]:flex-col max-[1384px]:gap-0">
+              </div>
+
+              <div className="flex max-lg:items-end max-2md:items-start  max-sm:flex-col-reverse flex-wrap gap-20 max-2xl:gap-[40px] max-1lg:gap-[80px] max-2lg:gap-[40px]  max-1lg:gap-y-[40px] max-xl:gap-y-[64px] max-sm:gap-8 max-xl:gap-y-[82px] w-[55%] max-2lg:w-[40%] max-lg:w-[40%] max-2md:w-full max-lg:p-0  max-md:w-full max-sm:flex-wrapreverse">
+                <div className=" max-lg:hidden max-2lg:gap-[40px] flex gap-[80px] max-2xl:gap-[40px] max-1lg:gap-[80px] pt-20 max-2lg:gap-[40px] max-xl:pt-[0] h-[150px] max-sm:h-[400px]">
+                  <div className="w-60 h-[116px] flex-col justify-start items-start  gap-[20px] inline-flex">
+                    <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                      India
+                    </div>
+                    <div className="w-[239.64px] opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      Wework Galaxy
+                      <br />
+                      Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001
+                    </div>
+                  </div>
+
+                  <div className="w-60  max-2lg:w-48 h-[92px] flex-col justify-start items-start gap-[20px] inline-flex">
+                    <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
+                      USA
+                    </div>
+                    <div className="w-60  max-2lg:w-48 opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      600 B Street, Suite 300, <br />
+                      San Diego, CA 92101
+                    </div>
+                  </div>
+                </div>
+                <div className="flex max-lg:h-[500px] max-md:gap-0 max-md:flex-col max-2md:h-auto flex-row gap-[80px] max-2xl:gap-[40px] max-2md:flex-row max-2md:gap-[40px] max-1lg:flex-col max-1lg:gap-0">
                   <div className="left-[622px] w-[240px] max-xl:pt-0  pt-5 top-[201.89px]  flex-col justify-start items-start max-sm:gap-[16px] gap-[20px] inline-flex max-md:w-full">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
-                      Services
+                      <Link to={"/services"} onClick={scrollToTop}>
+                        Services
+                      </Link>
                     </div>
                     <div className="flex-col justify-start items-start gap-2 flex">
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
-                        <Link to={"/product-design-and-innovation"} onClick={scrollToTop}>
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                        <Link
+                          to={"/product-design-and-innovation"}
+                          onClick={scrollToTop}
+                        >
                           Product Design and Innovation
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
-                        <Link to={"/app-development-and-modernization"} onClick={scrollToTop}>
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                        <Link
+                          to={"/app-development-and-modernization"}
+                          onClick={scrollToTop}
+                        >
                           {" "}
                           App Development and Modernization
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link
                           to={"/technology-consulting"}
                           onClick={scrollToTop}
@@ -287,7 +314,7 @@ const Footer = () => {
                           Technology Consulting
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link
                           to={"/artificial-intelligence-(ai)-services"}
                           onClick={scrollToTop}
@@ -295,47 +322,50 @@ const Footer = () => {
                           Artificial Intelligence (AI) Services{" "}
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
-                        <Link to={"/ecommerce-marketplace-development"} onClick={scrollToTop}>
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                        <Link
+                          to={"/ecommerce-marketplace-development"}
+                          onClick={scrollToTop}
+                        >
                           Ecommerce Marketplace Development
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="left-[1056px w-[240px] max-[1385px]:pt-0 max-sm:ml-0 pt-5 max-xl:pt-0 top-[201.89px]  flex-col justify-start items-start gap-[20px] inline-flex max-md:flex-wrap max-md:w-full">
-                    <div className="text-black opacity-0 cursor-default max-[1385px]:hidden text-xl font-normal font-['Graphik'] leading-[30px]">
+                  <div className="left-[1056px w-[240px] max-1lg:pt-0 max-sm:ml-0 pt-5 max-xl:pt-0 top-[201.89px]  flex-col  justify-start items-start gap-[20px] inline-flex max-md:flex-wrap max-md:w-full">
+                    <div className="text-black opacity-0 max-md:hidden cursor-default max-2md:block max-1lg:hidden text-xl font-normal font-['Graphik'] leading-[30px]">
                       Services
                     </div>
-                    <div className="flex-col max-[1385px]:mt-2 justify-start items-start gap-2 flex">
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <div className="flex-col max-1lg:mt-2 max-2md:mt-0 max-md:mt-2 justify-start items-start gap-2 flex">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link to={"/cloud-engineering"} onClick={scrollToTop}>
                           Cloud Engineering
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link to={"/game-development"} onClick={scrollToTop}>
                           Game Development
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link to={"/ar-vr-services"} onClick={scrollToTop}>
                           AR/VR Services
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
-                        <Link to={"/low-code-and-no-code"} onClick={scrollToTop}>
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                        <Link
+                          to={"/low-code-and-no-code"}
+                          onClick={scrollToTop}
+                        >
                           Low-code and No-code
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
-                        <Link
-                          to={"/salesforce-services"}
-                          onClick={scrollToTop}
-                        >
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                        <Link to={"/salesforce-services"} onClick={scrollToTop}>
                           Salesforce Services
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link
                           to={"/microsoft-sharepoint-services"}
                           onClick={scrollToTop}
@@ -343,7 +373,7 @@ const Footer = () => {
                           Microsoft SharePoint services{" "}
                         </Link>
                       </div>
-                      <div className="opacity-60 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
+                      <div className="opacity-60 max-sm:opacity-100 w-60 text-black text-base font-normal font-['Graphik'] leading-normal">
                         <Link to={"/quality-assurance"} onClick={scrollToTop}>
                           Quality Assurance
                         </Link>
@@ -352,66 +382,66 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="w-[88px] h-[266px] flex-col pt-5 max-xl:pt-[0] justify-start items-start gap-[20px] inline-flex max-sm:order-1">
+                <div className="w-[88px] max-2md:h-auto max-lg:h-[500px] h-[266px] flex-col pt-5 max-xl:pt-[0] justify-start items-start gap-[20px] inline-flex max-sm:order-1">
                   <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                     Sitemap
                   </div>
 
                   <div className="w-[88px] justify-start items-start gap-[35px] inline-flex">
-                    <div className="flex-col justify-start items-start gap-2 inline-flex">
-                      <Link
-                        onClick={scrollToTop}
-                        to={"/about-us"}
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
-                      >
-                        About Us
-                      </Link>
+                    <div className="flex-col max-lg:w-28 justify-start items-start gap-2 inline-flex">
                       <Link
                         onClick={scrollToTop}
                         to="/services"
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Services
                       </Link>
                       <Link
                         onClick={scrollToTop}
-                        to="/contact-us"
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        to={"/about-us"}
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
-                        Contact Us
+                        About Us
                       </Link>
                       <Link
                         onClick={scrollToTop}
                         to="insights"
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Insights
                       </Link>
                       <Link
                         onClick={scrollToTop}
                         to="case-study"
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
-                        Case Study
+                        Case Studies
                       </Link>
                       <Link
                         onClick={scrollToTop}
                         to="/industry"
-                        className="w-[161.52px] opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Industries
                       </Link>
                       <Link
                         onClick={scrollToTop}
                         to="/career"
-                        className="opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Careers
+                      </Link>
+                      <Link
+                        onClick={scrollToTop}
+                        to="/contact-us"
+                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
+                      >
+                        Contact Us
                       </Link>
                     </div>
                   </div>
                 </div>
-                <div className="w-[390px] hidden max-sm:hidden max-lg:block hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
+                <div className="w-[390px] hidden max-sm:hidden max-2md:block hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
                   Copyright © Codelinear Software Solutions Pvt Ltd. All Rights
                   Reserved.{" "}
                 </div>

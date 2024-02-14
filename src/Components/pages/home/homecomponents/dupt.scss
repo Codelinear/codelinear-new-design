@@ -72,7 +72,7 @@
 
 @media (max-width: 1440px) {
   .adupt-cards {
-    width: 305px;
+    width: 300px;
     height: 229px;
   }
 }
@@ -93,6 +93,13 @@
 
   .adupt-cards {
     width: 40%;
+  }
+
+  .adupt-cards:hover {
+    filter: invert(0);
+  }
+  .adupt-cards:hover .Industries {
+    text-decoration: none;
   }
   .adupt-svg {
     background-image: url("./aduptsvg/ydolloar.svg");
@@ -141,8 +148,20 @@
     }
   }
   .adupt-cards {
-    width: 180px;
-    height: 200px;
+    width: 40%;
+    height: 170px;
+  }
+  .adupt-svg10,
+  .adupt-svg,
+  .adupt-svg2,
+  .adupt-svg3,
+  .adupt-svg4,
+  .adupt-svg5,
+  .adupt-svg6,
+  .adupt-svg7,
+  .adupt-svg8,
+  .adupt-svg9 {
+    background-size: 48px 48px;
   }
 }
 

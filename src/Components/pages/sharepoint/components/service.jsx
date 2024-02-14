@@ -62,7 +62,7 @@ const Service = () => {
   };
   return (
     <>
-      <div className="app-devepage mt-[40px]">
+      <div className="app-devepage mt-[40px] max-sm:mt-[10px]">
         <div className="w-full h-full pl-[80px] pb-[29px] bg-white justify-center items-center gap-[108px] inline-flex max-lg:px-[40px] max-sm:px-[20px]">
           <div className="flex justify-between w-full">
             <div className="left">
@@ -77,8 +77,8 @@ const Service = () => {
               </div>
 
               <div>
-                <div className="w-full mb-[70px] relative bg-white section">
-                  <div className="w-[670px] letter-spacing-6 mt-[130px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[100px]">
+                <div className="w-full mb-[70px] relative bg-white section max-sm:mb-0">
+                  <div className="w-[670px] letter-spacing-6 mt-[130px] max-sm:mt[40px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[66px]">
                     Break down silos and unite your digital landscape. Our
                     SharePoint services create a unified ecosystem where
                     information flows effortlessly, enhancing communication and

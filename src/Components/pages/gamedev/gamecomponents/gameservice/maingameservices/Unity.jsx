@@ -24,8 +24,8 @@ const Unity = () => {
             interactive experiences.
           </div>
         </div>
-        <div className="left-[80px] top-[350.20px] absolute justify-start items-start gap-[21px] inline-flex max-lg:flex-wrap max-lg:relative max-lg:left-[40px] max-lg:top-[100px] max-lg:w-[100%] max-sm:left-0 max-sm:justify-center">
-          <div className="pl-[25.38px] pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
+        <div className="left-[80px] top-[350.20px] absolute max-lg:pl-[40px] max-lg:left-0 justify-start items-start gap-[21px] inline-flex max-lg:flex-wrap max-lg:relative max-lg:top-[100px] max-lg:w-[100%] max-sm:px-[20px] max-sm:left-0 max-sm:justify-center">
+          <div className="pl-[25.38px] max-sm:w-full pr-11 pt-[38.18px] pb-[40.20px] bg-neutral-100 bg-opacity-90 backdrop-blur-[30.40px] flex-col justify-center items-start gap-[41.38px] inline-flex">
             <div className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex">
               <img
                 className="w-[47.71px] h-[35.78px] relative"
@@ -34,10 +34,10 @@ const Unity = () => {
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[185.22px] letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
+              <div className="w-[185.22px] max-sm:w-full letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
                 Easy cross-platform development
               </div>
-              <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+              <div className="w-[235.01px] max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                 Effortlessly create across platforms with streamlined and
                 user-friendly cross-platform development solutions.
               </div>
@@ -52,10 +52,10 @@ const Unity = () => {
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[195.22px] letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
+              <div className="w-[195.22px] max-sm:w-full letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
                 Robust development environment{" "}
               </div>
-              <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+              <div className="w-[235.01px] max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                 Unity provides a robust development environment fostering
                 efficiency, and seamless integration.
               </div>
@@ -70,10 +70,10 @@ const Unity = () => {
               />
             </div>
             <div className="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
-              <div className="w-[159.22px] letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
+              <div className="w-[159.22px] max-sm:w-full letter-spacing-4 text-black text-[20px] font-normal font-['Graphik'] leading-[120%]">
                 2D & 3D capabilities{" "}
               </div>
-              <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+              <div className="w-[235.01px] max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                 Unlock limitless creative possibilities , regardless of the type
                 of game you want to create.
               </div>

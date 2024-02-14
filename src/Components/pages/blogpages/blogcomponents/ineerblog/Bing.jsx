@@ -4,6 +4,7 @@ import arrow from "../../blogassets/arrow.svg";
 import { Link } from "react-router-dom";
 import img1 from "../../blogassets/Blogs Animation Thumbnail05.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail13.jpg";
+import Explore from '../../../production/Explore'
 import img3 from "../../blogassets/Blogs Animation Thumbnail12.jpg";
 
 const Bing = () => {
@@ -13,8 +14,28 @@ const Bing = () => {
   return (
     <>
       <div className="innerhero">
+      <Link
+          to="/insights"
+          onClick={scrollToTop}
+          className="px-4 py-2 hidden max-sm:flex left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:left-[20px]"
+        >
+          <Link
+            to="/insights"
+            onClick={scrollToTop}
+            className="w-[31px] h-[21px] relative "
+          >
+            <img
+              className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
+              src={arrow}
+              alt=""
+            />
+          </Link>
+          <div className="opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+            Go Back
+          </div>
+        </Link>
         <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:px-[20px] max-sm:mt-[90px]">
-          <div className="w-[953px] text-black text-[66px] font-normal font-['Graphik'] leading-[120%] max-lg:w-full max-sm:text-[46px]">
+        <div className="w-[953px] letter-spacing-2 text-black text-[66px] font-normal font-['Graphik'] leading-[108%] max-lg:w-full max-sm:text-[50px]">
             Bing Or Google? Where Should You Focus On, And Why?
           </div>
         </div>
@@ -36,7 +57,7 @@ const Bing = () => {
               <Link
                 to="/insights"
                 onClick={scrollToTop}
-                className="px-4 py-2 left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:top-[0px] max-lg:left-[20px]"
+                className="px-4 py-2 max-sm:hidden left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:top-[0px] max-lg:left-[20px]"
               >
                 <Link to="/insights"
                 onClick={scrollToTop}
@@ -170,7 +191,7 @@ const Bing = () => {
                 <br />
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-[28px] font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
+                <div className="text-black text-[28px] letter-spacing-3 font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   Here Are A Few Actionable Points For Businesses To Consider In
                   2023:
                 </div>
@@ -271,6 +292,7 @@ const Bing = () => {
               </div>
             </div>
           </div>
+          <Explore />
         </div>
       </div>
     </>

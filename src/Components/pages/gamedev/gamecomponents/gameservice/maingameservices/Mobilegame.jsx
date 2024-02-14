@@ -8,7 +8,7 @@ import colorDodge from "../../gameassets/Frame 1000003064.png";
 const Mobilegame = () => {
   return (
     <>
-      <div className="game-devs">
+      <div className="game-devs max-md:overflow-hidden">
         <div className="w-full relative bg-white max-sm:overflow-hidden">
 
           <div className="max-sm:w-full">
@@ -32,25 +32,25 @@ const Mobilegame = () => {
             </div>
           </div>
 
-          <div className="flex gap-[21px] ml-[80px] mt-[42px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:justify-center  max-[720px]:flex-wrap">
-            <div className="pl  -[25.95px] pr-11  z-[2] pt-[37.80px] pb-[40.20px]  top-[350.20px] back-drop  flex-col justify-center items-start gap-[41.75px] inline-flex">
+          <div className="flex gap-[21px]  max-sm:px-[20px] ml-[80px] mt-[42px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:justify-center  max-[720px]:flex-wrap">
+            <div className="pl-[25.95px] pr-11 max-sm:pr-[12px]  z-[2] pt-[37.80px] pb-[40.20px]  top-[350.20px] back-drop  flex-col justify-center items-start gap-[41.75px] inline-flex">
               <img
                 className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex"
                 src={ggl}
                 alt=""
               />
               <div className="self-stretch flex-col z-[2] justify-start items-start gap-2.5 inline-flex">
-                <div className="w-[159.68px] text-black text-[20px] letter-spacing-2 font-normal font-['Graphik'] leading-[120%]">
+                <div className="w-[159.68px] max-sm:w-full text-black text-[20px] letter-spacing-2 font-normal font-['Graphik'] leading-[120%]">
                   Android Game Development
                 </div>
-                <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[235.01px]  max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Craft exceptional Android games with our expertise, combining
                   creativity and technology for immersive and engaging user
                   experiences.
                 </div>
               </div>
             </div>
-            <div className="pl-[25.95px] pr-11 pt-[37.79px]  z-[2] pb-[40.20px] left-[406px] top-[350.20px]  back-drop flex-col justify-center items-start gap-[41.76px] inline-flex">
+            <div className="pl-[25.95px] pr-11 max-sm:pr-[12px] pt-[37.79px]  z-[2] pb-[40.20px] left-[406px] top-[350.20px]  back-drop flex-col justify-center items-start gap-[41.76px] inline-flex">
               {/* <div className="w-[57.25px] h-[57.25px] relative flex-col justify-start items-start flex" /> */}
 
               <img
@@ -60,10 +60,10 @@ const Mobilegame = () => {
               />
 
               <div className="self-stretch flex-col justify-start  z-[2] items-start gap-2.5 inline-flex">
-                <div className="w-[159.68px] text-black text-xl font-normal font-['Graphik'] letter-spacing-4 leading-[120%]">
+                <div className="w-[159.68px] max-sm:w-full text-black text-xl font-normal font-['Graphik'] letter-spacing-4 leading-[120%]">
                   iOS Game Development
                 </div>
-                <div className="w-[235.01px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[235.01px] max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                   Elevate entertainment with our iOS game development, crafting
                   visually stunning and engaging experiences for Apple users
                   worldwide.
@@ -72,7 +72,7 @@ const Mobilegame = () => {
             </div>
           </div>
 
-          <div className="w-[588.86px] left-[513px] relative mt-[67px] letter-spacing-6  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] z-[2] max-xl:left-[400px] max-lg:left-[40px] max-sm:left-[20px] max-sm:w-[90%] max-sm:text-[24px]">
+          <div className="w-full flex justify-end mt-[67px] max-xl:pr-[80px] max-lg:pr-[0px] letter-spacing-6  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] z-[2] max-xl:left-[400px] max-lg:left-[40px] max-sm:pl-[20px] max-sm:w-[90%] max-sm:text-[24px]">
             <p className="w-[588.86px] max-sm:w-[100%]">
               Mobile game development offers global accessibility, diverse
               revenue streams, real-time player engagement, and immersive

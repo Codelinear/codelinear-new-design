@@ -10,14 +10,14 @@ function Massa() {
       </div>
       <div className="massaContent">
         <h2>
-          “Quis nec massa felis ornare mauris sagittis egestas ultrices massa.
-          Ut mauris pellentesque adipiscing tortor nulla gravida ut senectus
-          volutpat. Rhoncus faucibus feugia”
+          We believe in the power of design-led technology to shape the future.
+          We are committed to fostering a work environment that encourages
+          creativity, collaboration, and continuous learning
         </h2>
-        <p>
+        {/* <p>
           Lorem Ipsum, Position <br />
           Codelinear
-        </p>
+        </p> */}
       </div>
     </div>
   );

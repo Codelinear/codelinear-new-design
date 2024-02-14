@@ -3,9 +3,9 @@ import img from './assets/App development02.jpg'
 const Progressive = () => {
   return (
     <>
-      <div className="w-full h-[992px] relative bg-white mt-20 max-lg:h-full">
+      <div className="w-full h-[992px] relative bg-white mt-20 max-sm:mt-0 max-lg:h-full">
         <div className="left-[80px] top-[88px]  flex-col justify-start items-start gap-[22px] inline-flex">
-          <div className="flex-col justify-start items-start gap-[30px] flex">
+          <div className="flex-col max-sm:w-full justify-start items-start gap-[30px] flex">
             <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-full">
               <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                 App Development and Modernization
@@ -23,7 +23,7 @@ const Progressive = () => {
           </div>
         </div>
 
-        <div className="flex gap-20 mt-[54px] max-lg:flex-wrap">
+        <div className="flex gap-20 max-sm:gap-[32px] mt-[54px] max-lg:flex-wrap">
           <div className="left-[80px] top-[376px]  flex-col justify-start items-start gap-[54px] inline-flex max-lg:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex max-sm:w-full">
               <div className="text-black letter-spacing-4 text-xl font-normal font-['Graphik'] leading-normal">
@@ -55,7 +55,7 @@ const Progressive = () => {
             </div>
           </div>
 
-          <div className="h-[568px] left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
+          <div className="h-[568px] left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-lg:justify-center max-lg:w-full max-sm:h-full">
             <img
               className="w-[519.33px] h-[779.13px] max-sm:w-full max-sm:h-full"
               src={img}

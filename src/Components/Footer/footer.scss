@@ -50,7 +50,7 @@
 
 .goup {
   height: 30px;
-  width: 30px;  
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,44 +77,74 @@
 // .bottonn:hover .twoarrow {
 //   top: 15px;
 // }
+@media (max-width: 1385px) {
+  .scroll-to-top-button {
+    position: absolute;
+    bottom: 700px;
+    right: 40px;
+  }
+}
 @media (max-width: 1229px) {
   .scroll-to-top-button {
     position: absolute;
-    bottom: 600px;
+    bottom: 750px;
     right: 40px;
   }
   .lets-talk {
     font-size: 160px;
   }
+  .bottom-line {
+    margin-left: 21px;
+    height: 12px;
+    border: 1px solid black;
+  }
+  .lets-talk:hover ~ .bottom-line {
+    width: 620px;
+  }
 }
 @media (max-width: 1075px) {
-  .scroll-to-top-button {
-    position: absolute;
-    bottom: 1200px;
-    right: 40px;
-  }
+  // .scroll-to-top-button {
+  //   position: absolute;
+  //   bottom: 1200px;
+  //   right: 40px;
+  // }
 }
 @media (max-width: 1024px) {
   .lets-talk {
     font-size: 149px;
     color: black !important;
+    text-shadow: 0px 0px 0px black, 0px 0px 0px black;
   }
   .bottom-line {
     background-color: black;
-    width: 95%;
+    width: 610px;
     height: 10px;
     margin-left: 20px;
   }
-}
-
-@media (max-width: 787px) {
-  .lets-talk {
-    font-size: 138px;
+  .lets-talk:hover ~ .bottom-line {
+    width: 610px;
   }
   .scroll-to-top-button {
     position: absolute;
-    bottom: 1500px;
+    bottom: 600px;
     right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lets-talk {
+    font-size: 138px;
+  }
+  .bottom-line {
+    width: 560px;
+  }
+  .lets-talk:hover ~ .bottom-line {
+    width: 560px;
+  }
+  .scroll-to-top-button {
+    position: absolute;
+    bottom: 610px;
+    right: 0px;
   }
 }
 
@@ -126,7 +156,7 @@
   .scroll-to-top-button {
     z-index: 99;
     position: absolute;
-    bottom: 890px;
+    bottom: 800px;
     right: 0px;
     padding: 0;
   }
@@ -135,6 +165,9 @@
     width: 380px;
     height: 7px;
     margin-left: 15px;
+  }
+  .lets-talk:hover ~ .bottom-line {
+    width: 380px;
   }
 }
 @media (max-width: 440px) {
@@ -150,5 +183,24 @@
     width: 270px;
     height: 5.71px;
     margin-left: 13px;
+  }
+  .lets-talk:hover ~ .bottom-line {
+    width: 270px;
+  }
+  .scroll-to-top-button {
+    z-index: 99;
+    position: absolute;
+    bottom: 800px;
+    right: 0px;
+    padding: 0;
+  }
+}
+@media (max-width: 340px) {
+  .scroll-to-top-button {
+    z-index: 99;
+    position: absolute;
+    bottom: 800px;
+    right: 0px;
+    padding: 0;
   }
 }

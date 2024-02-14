@@ -1,4 +1,4 @@
-import { FreeMode } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 import img11 from "./Explore-assets/services carousel01.jpg";
 import img12 from "./Explore-assets/services carousel02.jpg";
 import img13 from "./Explore-assets/services carousel03.jpg";
@@ -27,7 +27,8 @@ const Explore = () => {
             freeMode={{ enabled: false, slidesPerGroup: 1 }}
             spaceBetween={20}
             slidesPerView={2}
-            modules={[FreeMode]}
+            modules={[FreeMode, Pagination]}
+            pagination={{clickable: 'true'}}
             breakpoints={{
               590: {
                 slidesPerView: 3,
@@ -42,7 +43,7 @@ const Explore = () => {
                 spaceBetween: 80,
               },
               1350: {
-                slidesPerView: 5,
+                slidesPerView: 4.5,
                 spaceBetween: 80,
               },
             }}
@@ -52,13 +53,13 @@ const Explore = () => {
               <div className="exp-slides">
                 <Link
                   onClick={scrollToTop}
-                  to={"/product-design-and-development"}
+                  to={"/product-design-and-innovation"}
                 >
                   <img src={img11} alt="" srcset="" />
                 </Link>
                 <Link
                   onClick={scrollToTop}
-                  to={"/product-design-and-development"}
+                  to={"/product-design-and-innovation"}
                 >
                   <h6>Product Design and Innovation</h6>
                 </Link>

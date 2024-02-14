@@ -16,7 +16,7 @@ const Clients = () => {
   return (
     <>
       <div className="clients relative ">
-        <div className="w-full h-[693px] px-[0px] pt-[20px] pb-[33.98px] bg-white flex-col justify-center items-center gap-[72px] inline-flex max-lg:h-full max-md:px-0 max-lg:mt-40 max-lg:px-[0px] max-sm:px-[0px]">
+        <div className="w-full h-[693px] max-xl:h-auto max-xl:py-[60px] px-[0px] pt-[20px] pb-[33.98px] bg-white flex-col justify-center items-center gap-[72px] max-sm:gap-[40px] inline-flex max-lg:h-full max-md:px-0 max-lg:mt-40 max-lg:px-[0px] max-sm:mt-20 max-sm:px-[0px]">
           <div className="w-[358.91px] max-sm:px-[20px] text-center text-[#000] text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-3 max-lg:w-full">
             People bettering the world with us.
           </div>

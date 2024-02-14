@@ -5,7 +5,7 @@ const Commitment = () => {
   return (
     <>
       <div className="commitment">
-        <div className="w-full h-[full] pl-20 pr-[111.37px] pt-[73px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-lg:h-full max-md:p-5">
+        <div className="w-full h-[full] max-xl:px-[80px] pl-20 pr-[111.37px] pt-[73px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-lg:h-full max-lg:p-10 max-sm:p-5">
           <div className="flex-col justify-start items-start gap-9 inline-flex">
             <div className="opacity-60 w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
               <div className=" text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">

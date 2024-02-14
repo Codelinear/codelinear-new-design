@@ -33,12 +33,12 @@ const Casecards = () => {
   return (
     <>
       <div className="case-cards">
-        <div className="w-full px-[80px] max-lg:px-[40px] max-sm:px-[20px] h-full justify-start items-start gap-[62px] inline-flex flex-wrap   max-lg:p-5 max-xl:justify-center max-xl:items-center">
+        <div className="w-full px-[80px] max-lg:px-[40px] max-sm:px-[20px] h-full justify-start items-start gap-[62px] inline-flex flex-wrap max-sm:gap-[78px]   max-lg:p-5 max-xl:justify-center max-xl:items-center">
           <div className="flex-col w-[30%] h-full max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] w justify-end items-center inline-flex w-full h-full">
               <img className="w-full h-full" src={img1} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   william abraham{" "}
@@ -53,8 +53,8 @@ const Casecards = () => {
                   Elevating luxurious men’s socks digital platform{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -69,7 +69,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img2} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   wear well{" "}
@@ -84,8 +84,8 @@ const Casecards = () => {
                   Redefining the global presence of a leading garment exporter{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -100,7 +100,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img3} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   soch{" "}
@@ -115,8 +115,8 @@ const Casecards = () => {
                   uplifting pioneers in ethnic wear{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -131,7 +131,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img4} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   leaf & hive{" "}
@@ -146,8 +146,8 @@ const Casecards = () => {
                   Making an innovative beverage more accessible{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -162,7 +162,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img5} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   sodashi{" "}
@@ -177,8 +177,8 @@ const Casecards = () => {
                   helping Vegan, hand-crafted skincare go worldwide{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -193,7 +193,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img6} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   klub{" "}
@@ -208,8 +208,8 @@ const Casecards = () => {
                   Ensuring investments in startups are more secure{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -224,7 +224,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img7} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   vuori{" "}
@@ -239,8 +239,8 @@ const Casecards = () => {
                   shifting the pace with Performance Apparel{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -255,7 +255,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img8} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   tradejini{" "}
@@ -270,8 +270,8 @@ const Casecards = () => {
                   Transforming the digital presence of a trading giant.{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -286,7 +286,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img9} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   lyra{" "}
@@ -301,8 +301,8 @@ const Casecards = () => {
                   Driving business growth with revolutionary mental healthcare{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -317,7 +317,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img10} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   steelcase{" "}
@@ -332,8 +332,8 @@ const Casecards = () => {
                   Helping a thought leader in bettering workplaces{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -348,7 +348,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img11} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   MoveWorks{" "}
@@ -363,8 +363,8 @@ const Casecards = () => {
                   Automating tasks so businesses can focus on what matters{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -379,7 +379,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img12} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   SDU{" "}
@@ -394,8 +394,8 @@ const Casecards = () => {
                   Revamping the digital presence of a firm of CAs{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -410,7 +410,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img13} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Studio Neat{" "}
@@ -426,8 +426,8 @@ const Casecards = () => {
                   problems{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -442,7 +442,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img14} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Middle{" "}
@@ -457,8 +457,8 @@ const Casecards = () => {
                   easing the conversation between clients and brokers{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -473,7 +473,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img15} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Booking Factory
@@ -488,8 +488,8 @@ const Casecards = () => {
                   bettering the experience of a hotel management system{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -504,7 +504,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img16} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   IMAPAC
@@ -520,8 +520,8 @@ const Casecards = () => {
                   decisions{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -536,7 +536,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img17} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Klassen and Smith
@@ -551,8 +551,8 @@ const Casecards = () => {
                   a modern solution to traditional craftsmanship{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -567,7 +567,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img18} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   VacayStay 406
@@ -582,8 +582,8 @@ const Casecards = () => {
                   enabling vacations in south Montana to the world{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -598,7 +598,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img19} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Contrasted Marketing
@@ -613,8 +613,8 @@ const Casecards = () => {
                   shifting the presence of an upcoming marketing giant{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -629,7 +629,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img20} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Landmark
@@ -644,8 +644,8 @@ const Casecards = () => {
                   Refining the way surveys are done{" "}
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -660,7 +660,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img22} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   convoy{" "}
@@ -675,8 +675,8 @@ const Casecards = () => {
                   Supply Chain, logistics made seamless
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -691,7 +691,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img21} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   homes r us{" "}
@@ -706,8 +706,8 @@ const Casecards = () => {
                   innovating a home-grown furnishing brand’s reach
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -722,7 +722,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img23} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Course Hero
@@ -737,9 +737,9 @@ const Casecards = () => {
                   empowering students across the world through aI
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+                  <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                     View case study
                   </div>
                 </div>
@@ -753,7 +753,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img24} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   mica rino
@@ -768,8 +768,8 @@ const Casecards = () => {
                   reimagining neighborhoods and residences
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -784,7 +784,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img25} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   lit up visuals{" "}
@@ -799,8 +799,8 @@ const Casecards = () => {
                   Visualizing architecture made easy
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -815,7 +815,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img26} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   kernel wealth{" "}
@@ -830,8 +830,8 @@ const Casecards = () => {
                   Redefining the way people manage finances
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -846,7 +846,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img27} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   Wilderness Travel{" "}
@@ -862,8 +862,8 @@ const Casecards = () => {
                   agency
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
@@ -878,7 +878,7 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img28} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-[260px] items-start flex">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
                 <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
                   hinge health{" "}
@@ -893,8 +893,8 @@ const Casecards = () => {
                   Revolutionary healthcare now at your fingertips
                 </div>
               </div>
-              <div className="flex justify-between w-[100%] items-center max-lg:flex-col-reverse max-lg:h-[130px] max-lg:items-start">
-                <div className="px-4 py-2  rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>

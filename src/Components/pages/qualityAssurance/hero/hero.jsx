@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <section id="prod-hero">
-        <h1 className="prod-hero-h1 letter-spacing max-sm:mt-[-50px]">
+        <h1 className="prod-hero-h1 letter-spacing">
           We stand as your partners in ensuring seamless, flawless digital
           solutions.
         </h1>

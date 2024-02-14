@@ -66,7 +66,7 @@ const Cloudservice = () => {
   }, []);
   return (
     <>
-      <div className="app-devepage mt-[40px]">
+      <div className="app-devepage mt-[40px] max-sm:mt-[23px]">
         <div className="w-full h-full pl-[80px] pb-[29px] bg-white justify-center items-center gap-[108px] inline-flex max-lg:px-[40px] max-sm:px-[20px]">
           <div className="flex justify-between w-full">
             <div className="left">

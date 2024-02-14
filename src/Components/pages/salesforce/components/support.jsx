@@ -11,8 +11,8 @@ const Support = () => {
   return (
     <>
       <>
-        <div className="w-full h-[847x] pb-20 relative bg-white max-lg:h-full">
-          <div className="left-[80px] mt-[168px]  flex-col justify-start items-start gap-[22px] inline-flex">
+        <div className="w-full h-[847x] pb-20 max-sm:pb-0 relative bg-white max-lg:h-full">
+          <div className="left-[80px] mt-[168px]  max-sm:mt-20 flex-col justify-start items-start gap-[22px] inline-flex">
             <div className="flex-col justify-start items-start gap-[30px] flex">
               <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-full">
                 <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
@@ -67,14 +67,14 @@ const Support = () => {
                 </div>
               </div>
             </div>
-            <div className="justify-start items-center gap-[58px] inline-flex max-sm:flex-wrap">
-              <div className="w-[267.25px]  letter-spacing-4 text-black text-xl font-normal font-['Graphik'] leading-normal max-sm:w-full">
+            <div className="justify-start items-center gap-[58px] max-sm:gap-10 inline-flex max-sm:flex-wrap">
+              <div className="w-[267.25px]  letter-spacing-4 text-black text-xl max-sm:text-[24px] font-normal font-['Graphik'] leading-normal max-sm:w-full">
                 Need help in making the next big thing?
               </div>
               <Link
                 to={"/contact-us"}
                 onClick={scrollToTop}
-                className="px-8 py-4 rounded-full border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:full"
+                className="px-8 py-4 max-sm:w-[100%] rounded-full border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:full"
               >
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                   Talk to our experts

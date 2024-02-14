@@ -42,19 +42,19 @@ import Salesforce from "./Components/pages/salesforce/salesforce";
 import Sharepoint from "./Components/pages/sharepoint/sharepoint";
 
 function App() {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration :0.2,
-      smooth: true,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      lerp: 0.1,
-    });
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }, []);
+  // useEffect(() => {
+  //   const lenis = new Lenis({
+  //     duration :0.2,
+  //     smooth: true,
+  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  //     lerp: 0.1,
+  //   });
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+  //   requestAnimationFrame(raf);
+  // }, []);
 
   return (
     <>

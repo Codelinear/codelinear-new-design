@@ -19,12 +19,12 @@ const Mainindustry = () => {
     <>
       <div className="industry-main">
         <div className="flex flex-wrap">
-          <div className="w-full px-[132px] max-[1440px]:px-[80px] max-lg:px-[40px] max-lg:gap-[49px] max-sm:px-[20px] pb-[98px] bg-white justify-center gap-[126px] items-start inline-flex flex-wrap max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
+          <div className="w-full px-[132px] max-[1440px]:px-[80px] max-lg:px-[40px] max-lg:gap-[49px] max-sm:px-[20px] pb-[98px] bg-white justify-center gap-[126px] items-start inline-flex flex-wrap max-sm:gap-[72px] max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
             <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-start items-center flex">
                 <img className="w-[319.63px] h-[365.63px]" src={img9} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex w-[100%]">
                   <div className="w-8 h-8 relative">
                     <svg
@@ -60,7 +60,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Fintech
                   </div>
@@ -76,7 +76,7 @@ const Mainindustry = () => {
               <div className="flex-col justify-end items-center flex">
                 <img className="w-[316.90px] h-[364.89px]" src={img5} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -106,7 +106,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px]  max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Technology
                   </div>
@@ -126,7 +126,7 @@ const Mainindustry = () => {
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -163,7 +163,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Ecommerce
                   </div>
@@ -179,7 +179,7 @@ const Mainindustry = () => {
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img className="w-[319.63px] h-[365.63px]" src={img2} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
@@ -223,7 +223,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Manufacturing
                   </div>
@@ -239,7 +239,7 @@ const Mainindustry = () => {
               <div className="flex-col justify-end items-center flex">
                 <img className="w-[316.90px] h-[364.89px]" src={img3} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -290,7 +290,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Supply chain and logistics
                   </div>
@@ -310,7 +310,7 @@ const Mainindustry = () => {
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -340,7 +340,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Healthcare
                   </div>
@@ -356,7 +356,7 @@ const Mainindustry = () => {
               <div className="h-[353px] flex-col justify-start items-center flex">
                 <img className="w-[319.63px] h-[365.63px]" src={img} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
@@ -393,7 +393,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Food and beverages
                   </div>
@@ -409,7 +409,7 @@ const Mainindustry = () => {
               <div className="flex-col justify-end items-center flex">
                 <img className="w-[316.90px] h-[364.89px]" src={img4} alt="" />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%] ">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -447,7 +447,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Hospitality
                   </div>
@@ -467,7 +467,7 @@ const Mainindustry = () => {
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -518,7 +518,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Real estate
                   </div>
@@ -538,7 +538,7 @@ const Mainindustry = () => {
                   alt=""
                 />
               </div>
-              <div className="self-stretch h-[149px] flex-col justify-start items-start gap-6 flex ">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex ">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[19.51px] h-[25.36px] left-[6.25px] top-[3.32px] absolute">
@@ -589,7 +589,7 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] flex-col justify-start items-start gap-4 flex">
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
                     Sustainable energy
                   </div>
@@ -600,12 +600,12 @@ const Mainindustry = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[740px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-lg:p-5 max-lg:gap-5 ">
+            <div className="w-[740px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-sm:w-[308px] max-sm:h-[519px] max-sm:px-[21px] max-sm:py-[49px] max-lg:p-5 max-sm:gap-[133px] max-lg:gap-5 ">
               <div className="w-[551.45px] text-black text-5xl font-normal font-['Graphik']  letter-spacing-2 leading-[120%] max-lg:w-full">
                 Need help in making the next big thing?
               </div>
-              <Link to={"/contactus"} onClick={scrollToTop}>
-                <button className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
+              <Link to={"/contact-us"} className="max-sm:w-full" onClick={scrollToTop}>
+                <button className="px-8 py-4 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Talk to our experts
                   </div>

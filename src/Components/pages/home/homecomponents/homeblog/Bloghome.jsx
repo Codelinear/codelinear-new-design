@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 import "./homeblog.scss";
 import img5 from "../../../../../assets/homeassets/BLogs01.jpg";
 import img3 from "../../../../../assets/homeassets/BLogs03.jpg";
@@ -16,7 +16,7 @@ const Bloghome = () => {
   };
   return (
     <section className="overflow-hidden">
-      <div className="flex justify-between mt-[100px] w-full px-[80px] mb-[60px] max-lg:px-[40px] max-sm:px-[20px] max-sm:flex-wrap max-sm:gap-5">
+      <div className="flex justify-between mt-[100px] w-full px-[80px] mb-[60px] max-sm:mb-0 max-lg:px-[40px] max-sm:px-[20px] max-sm:flex-wrap max-sm:gap-5">
         <div>
           <div className="w-[443.95px] text-black text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-3 max-sm:w-full">
             Stay in the know. Check our insights into big things happening now.
@@ -34,13 +34,22 @@ const Bloghome = () => {
           </Link>
         </div>
       </div>
-      <div className="blog-more">
+      <div className="blog-more max-sm:mt-[40px]">
         <Swiper
           freeMode={{ enabled: false, slidesPerGroup: 1 }}
           spaceBetween={20}
-          slidesPerView={2}
-          modules={[FreeMode]}
+          slidesPerView={2.1}
+          pagination={{clickable: 'true'}}
+          modules={[FreeMode, Pagination]}
           breakpoints={{
+            440: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            520: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
             640: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -54,7 +63,7 @@ const Bloghome = () => {
               spaceBetween: 80,
             },
             1370: {
-              slidesPerView: 5,
+              slidesPerView: 4.5,
               spaceBetween: 80,
             },
           }}
@@ -64,12 +73,12 @@ const Bloghome = () => {
             <Link
               to={"/the-changing-nature-of-seo"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px]  max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img5}
                     alt=""
                   />
@@ -77,15 +86,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:h-[30px] max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     changing nature of SEO
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     Search engine optimization (SEO) has been around for over
                     two decades, and it has undergone significant changes....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -97,12 +106,12 @@ const Bloghome = () => {
             <Link
               to={"/design-system"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img2}
                     alt=""
                   />
@@ -110,16 +119,16 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     Design System{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     A design system is a guide or a standard structure with
                     parameters for design and code along with design
                     components....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -131,12 +140,12 @@ const Bloghome = () => {
             <Link
               to={"/minimum-viable-product"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img3}
                     alt=""
                   />
@@ -144,15 +153,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] h-[30px] max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     Minimum viable product{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     The bigger idea behind building an MVP is to test your
                     assumptions. That takes us to the next important segment....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -164,12 +173,12 @@ const Bloghome = () => {
             <Link
               to={"/the-art-of-disruptive-branding"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img6}
                     alt=""
                   />
@@ -177,15 +186,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] h-[29px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:w-full h-[30px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     The art of disruptive branding{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     Branded environments are not just for large corporations
                     with huge budgets. Any business can create a branded....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -197,12 +206,12 @@ const Bloghome = () => {
             <Link
               to={"/gestalt-psychology"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img4}
                     alt=""
                   />
@@ -210,15 +219,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:w-full max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     Gestalt psychology{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     The website redesign of the restaurant chain, Chili's, is a
                     great case study in UX design using Gestalt Psychology....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -230,12 +239,12 @@ const Bloghome = () => {
             <Link
               to={"/no-code-revolution"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img7}
                     alt=""
                   />
@@ -243,15 +252,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:w-full max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     No Code Revolution{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     The No-code revolution is indicative that modern businessmen
                     and women want to keep creative control....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -263,12 +272,12 @@ const Bloghome = () => {
             <Link
               to={"/shopify-vs-magento"}
               onClick={scrollToTop}
-              className="w-[317px] h-[548px] flex-col justify-start items-start gap-[36px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
+              className="w-[317px] max-sm:w-[270px] h-[548px] max-sm:h-[420px] flex-col justify-start items-start gap-[36px] max-sm:gap-[18px] inline-flex  ml-[80px] max-sm:ml-[20px] max-lg:ml-[40px]"
             >
               <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="w-[317px] h-[175px] bg-white justify-center items-center inline-flex">
+                <div className="w-[317px] max-sm:w-full h-[175px] bg-white justify-center items-center inline-flex">
                   <img
-                    className="w-[318px] object-cover relative flex-col justify-start items-start flex"
+                    className="w-[318px] max-sm:w-full object-cover relative flex-col justify-start items-start flex"
                     src={img1}
                     alt=""
                   />
@@ -276,15 +285,15 @@ const Bloghome = () => {
               </div>
               <div className="flex-col justify-center items-start gap-[24px] flex">
                 <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[317px] text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
+                  <div className="w-[317px] max-sm:w-full text-black text-[24px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize">
                     Spotify vs Magento{" "}
                   </div>
-                  <div className="w-[317px] mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] max-sm:w-full mt-[17px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
                     If you're a business owner of any kind, you've probably
                     heard of Shopify and Magento.Today, Shopify and....
                   </div>
                 </div>
-                <div className="px-4 py-2 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>

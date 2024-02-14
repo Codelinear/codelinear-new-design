@@ -271,7 +271,23 @@ html {
 }
 .explore-more {
   padding-bottom: 176px;
-  width: calc(100% + 140px);
+  width: calc(100% + 250px);
+  .swiper-pagination-bullet-active {
+    fill: #ffcd05 !important;
+    background-color: #ffcd05 !important;
+  }
+  .swiper-pagination-bullet {
+    width: 10.81px !important;
+    height: 10.81px !important;
+    margin: 0 !important;
+  }
+  .swiper-pagination {
+    display: inline-flex;
+    gap: 6px;
+    position: relative;
+    left: calc(((100% + 250px)/2) - 300px) !important;
+    top: 0px !important;
+  }
   h1 {
     color: #000;
     font-family: Graphik;
@@ -485,10 +501,39 @@ html {
   }
 }
 @media (max-width: 1024px) {
+  #prod-hero{
+    div{
+      padding: 0px 40px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .prod-hero-h1{
+      margin-left: 40px;
+    }
+    p{
+      margin-left: 40px;
+    }
+    button{
+      margin-left: 40px;
+    }
+  }
   .explore-more {
+    .swiper-pagination {
+      display: inline-flex;
+      gap: 6px;
+      position: relative;
+      left: calc(((100% + 0px)/2) - 300px) !important;
+      top: 0px !important;
+    }
+    h1{
+      margin-left: 40px;
+    }
     width: calc(100% + 530px);
   }
   .exp-design {
+    padding-left: 40px;
     .prod-container-2 {
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -502,6 +547,7 @@ html {
   }
   .animation-tree {
     padding-top: 20px;
+    padding-left: 40px;
     transform: scale(1);
     .at-h1 {
       position: relative;
@@ -535,6 +581,23 @@ html {
     left: 0px;
     top: 0px;
     width: 305px;
+  }
+  #prod-engg{
+    h2{
+      margin-left: 40px;
+    }
+    h1{
+      margin-left: 40px;
+    }
+    .exp-p{
+      margin-left: 40px;
+    }
+    h3{
+      margin-left: 40px;
+    }
+    .engg-container{
+      margin-left: 40px;
+    }
   }
 }
 @media (max-width: 840px) {
@@ -584,7 +647,7 @@ html {
     }
     div {
       img {
-        width: 90%;
+        width: 100%;
         margin-top: 60px;
         height: auto;
       }
@@ -619,6 +682,13 @@ html {
   }
   .explore-more {
     width: calc(100% + 250px);
+    .swiper-pagination {
+      display: inline-flex;
+      gap: 6px;
+      position: relative;
+      left: calc(((100% + 250px)/2) - 300px) !important;
+      top: 0px !important;
+    }
     h1 {
       font-size: 24px;
       margin-left: 40px;
@@ -636,36 +706,41 @@ html {
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   #prod-hero {
     .prod-hero-h1 {
       font-size: 50px;
-      margin-top: 50px;
+      margin-top: 0px;
       width: 90%;
-      margin-left: 5%;
+      margin-left: 20px;
       margin-bottom: 0;
+      padding-top: 50px;
     }
     div {
+      padding: 0 20px;
       img {
-        width: 90%;
-        margin-top: 60px;
+        width: 100%;
+        margin-top: 23px;
         height: auto;
         margin-bottom: 46px;
       }
     }
     p {
       width: 90%;
-      margin-left: 5%;
+      font-size: 24px;
+      margin-left: 20px;
       margin-top: 0;
       margin-bottom: 32px;
     }
     button {
-      margin-left: 5%;
+      margin-left: 20px;
       width: 90%;
+      margin-bottom: 66px;
     }
   }
   .exp-design {
-    padding-left: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     h1 {
       width: 95%;
@@ -673,9 +748,9 @@ html {
     }
     .prod-container-2 {
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 65px;
       justify-content: start;
-      width: 95%;
+      width: 100%;
       img {
         width: 100%;
       }
@@ -684,6 +759,7 @@ html {
         margin-top: 30px;
         h4 {
           width: 90%;
+          font-size: 24px;
         }
         button {
           width: 100%;
@@ -697,17 +773,25 @@ html {
       }
     }
     h2 {
+      width: 100%;
+      white-space: nowrap;
       span {
-        width: 50px;
+        width: 100%;
       }
     }
   }
   .explore-more {
     padding-bottom: 50px;
     width: calc(100% + 30px);
+    .swiper-pagination {
+      display: none;
+    }
     h1 {
       font-size: 24px;
-      margin-left: 20px;
+      padding-left: 20px;
+      margin-left: 0;
+      margin-bottom: 32px;
+      margin-top: 75px;
     }
     .exp-slides {
       width: 221px;
@@ -725,9 +809,12 @@ html {
   }
   #prod-engg {
     h2 {
-      margin-left: 20px;
+      margin-left: 0px;
+      padding: 0 20px;
+      width: 100%;
+      white-space: nowrap;
       span {
-        width: 50px;
+        width: 100%;
       }
     }
     h1 {
@@ -743,12 +830,20 @@ html {
     }
     .engg-container {
       margin-left: 0;
+      padding: 0px 20px;
       width: 100%;
       justify-content: center;
+      .engg-sub-contaner{
+        width: 100%;
+        p{
+          width: 100%;
+        }
+      }
     }
   }
   .animation-tree {
     padding-left: 20px;
+    margin: 88px 0;
   }
   .talk {
     button {
@@ -758,8 +853,11 @@ html {
 }
 @media (max-width: 390px) {
   .explore-more {
+    width: calc(100% + 130px);
+    margin-bottom: 0;
+    padding: 0;
     .exp-slides {
-      width: 180px;
+      width: 220px;
       img {
         height: 220px;
       }

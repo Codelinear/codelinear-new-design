@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const VR2 = () => {
   return (
     <>
-      <section id="exp-design" className="exp-design mb-[121px]">
+      <section id="exp-design" className="exp-design mb-[121px] max-sm:mb-20">
         <h2 className="capitilize whitespace-nowrap">
           AR/VR Services <span></span>
         </h2>

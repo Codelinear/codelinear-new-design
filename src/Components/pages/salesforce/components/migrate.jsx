@@ -16,7 +16,7 @@ const Migrate = () => {
               Upgrades and Migrations{" "}
             </div>
           </div>
-          <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
+          <div className="w-[536.02px] max-sm:h-auto h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
             Seamless Salesforce upgrades and migrations engineered for
             excellence. Elevate performance, enhance features, and navigate
             transitions effortlessly with our expert-led transformations
@@ -56,7 +56,7 @@ const Migrate = () => {
             </div>
           </div>
 
-          <div className="h-[568px] left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
+          <div className="h-[568px] left-[516px] max-lg:w-full max-lg:justify-center top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
             <img
               className="w-[519.33px] h-[779.13px] max-sm:w-full max-sm:h-full"
               src={img}

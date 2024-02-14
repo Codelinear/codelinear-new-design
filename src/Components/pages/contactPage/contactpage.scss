@@ -358,11 +358,12 @@ input {
   background: rgba(245, 245, 245, 0.5);
   backdrop-filter: blur(15px);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
   .contact-hero {
     .contact-form {
       .form {
         .form-div {
+          width: 428px;
           gap: 20px;
           .name {
             padding: 15px 0px;
@@ -371,11 +372,11 @@ input {
         }
         .email {
           width: 428px;
-          padding: 15px 350px 15px 0px;
+          padding: 15px 250px 15px 0px;
         }
         .text {
           width: 428px;
-          padding: 15px 350px 80px 0px;
+          padding: 15px 150px 80px 0px;
         }
       }
     }
@@ -399,6 +400,7 @@ input {
       .form {
         .form-div {
           gap: 20px;
+          width: 100%;
           flex-direction: column;
         }
         .email {
@@ -422,7 +424,7 @@ input {
     gap: 50px;
   }
 }
-@media (max-width: 866px) {
+@media (max-width: 950px) {
   .time-zones {
     gap: 30px;
     align-items: center;
@@ -511,7 +513,7 @@ input {
     }
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 680px) {
   .address-head2 {
     display: block;
   }
@@ -583,7 +585,7 @@ input {
     }
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .overflo {
     overflow: scroll;
   }
@@ -591,7 +593,12 @@ input {
     .contact-hero-h1 {
       font-size: 50px;
       width: 91%;
-      margin-top: 96px;
+      margin-top: 45px;
+    }
+    .contact-form{
+      button{
+        width: 100%;
+      }
     }
   }
   .regions {
@@ -602,7 +609,9 @@ input {
     }
   }
   .working-areas {
-    padding: 20px;
+    padding: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
     display: flex;
     div {
       width: 100%;
@@ -616,13 +625,10 @@ input {
     margin: 0 30px;
   }
   .contact-form {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
   .div-time {
-    border-bottom: 1px solid black;
     padding-bottom: 50px;
   }
   .our-contact {
@@ -669,7 +675,7 @@ input {
     gap: 10px;
   }
 }
-@media (max-width: 1024px) and (min-width: 660px) {
+@media (max-width: 1024px) and (min-width: 681px) {
   .div-time {
     position: relative;
     top: 30px;
@@ -677,6 +683,7 @@ input {
   }
   .clocks {
     flex-direction: row;
+    padding: 0px 20px;
   }
 
   .contact-hero .contact-form .form .form-div {

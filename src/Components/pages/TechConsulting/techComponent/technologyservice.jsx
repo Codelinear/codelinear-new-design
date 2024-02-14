@@ -90,14 +90,14 @@ const Technology = () => {
   };
   return (
     <>
-      <div className="app-devepage mt-[40px]">
+      <div className="app-devepage mt-[40px] max-sm:mt-[23px]">
         <div className="w-full h-full pl-[80px] pb-[29px] bg-white justify-center items-center gap-[108px] inline-flex max-lg:px-[40px] max-sm:px-[20px]">
-          <div className="flex justify-between w-full">
-            <div className="left">
-              <div>
-                <div className="section w-full self-stretch justify-center items-center inline-flex max-lg:justify-start">
+          <div className="flex justify-between w-full max-lg:w-[100%]">
+            <div className="left max-md:w-full">
+              <div className="max-md:w-full">
+                <div className="section w-full self-stretch max-md:w-full justify-center items-center inline-flex max-lg:justify-start">
                   <img
-                    className="w-[727.57px] h-[717.49px] max-lg:w-[100%] max-sm:h-full"
+                    className="w-[727.57px] h-[717.49px] max-lg:w-[100%] max-lg:h-auto"
                     src={img}
                     alt=""
                   />
@@ -105,8 +105,8 @@ const Technology = () => {
               </div>
 
               <div>
-                <div className="w-full mb-[70px] relative bg-white section">
-                  <div className="w-[670px] letter-spacing-6 mt-[130px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[100px]">
+                <div className="w-full mb-[70px] max-sm:mb-[62px] relative bg-white section">
+                  <div className="w-[670px] letter-spacing-6 mt-[130px] max-sm:mt-[54px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[100px]">
                     Our Technology Consulting services go beyond conventional
                     solutions; they are the intersection of vision, creativity,
                     and technological brilliance.

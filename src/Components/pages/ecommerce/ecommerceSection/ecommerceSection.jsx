@@ -19,7 +19,7 @@ const ESection = () => {
     <>
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap max-sm:whitespace-normal">
-          Ecommerce Marketplace Development <span></span>
+          Ecommerce Marketplace <br className="hidden max-[350px]:block"/> Development <span></span>
         </h2>
         <h1 className="whitespace-nowrap max-sm:whitespace-normal">
           Ecommerce Marketplace <br /> Development
@@ -116,14 +116,14 @@ const ESection = () => {
           </div>
         </div>
       </section>
-      <div className="justify-start items-center gap-[58px] ml-[80px] inline-flex max-sm:flex-wrap max-sm:pl-[20px] max-sm:ml-[0px]">
-        <div className="w-[267.25px] text-black text-xl font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[90%]">
+      <div className="justify-start items-center gap-[58px] ml-[80px] max-lg:ml-[40px] inline-flex max-sm:flex-wrap max-sm:px-[20px] max-sm:ml-[0px]">
+        <div className="w-[267.25px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[100%]">
           Need help in making the next big thing?
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
-          className="px-8 py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
+          className="px-8 py-4 max-sm:w-full max-lg:text[24px] rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
           <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
             Talk to our experts

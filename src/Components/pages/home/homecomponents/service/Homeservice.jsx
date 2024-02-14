@@ -714,9 +714,9 @@ const Homeservice = () => {
         </div>
       ) : (
         <div className="homeserv relative">
-          <div className="w-full flex-wrap px-20 py-[80px] bg-neutral-50 flex-col justify-center items-center inline-flex max-lg:h-full max-lg:p-10 max-md:w-full   max-md:p-4">
+          <div className="w-full flex-wrap px-20 py-[80px] bg-neutral-50 flex-col justify-center items-center inline-flex max-lg:h-full max-lg:p-10 max-md:w-full   max-">
             <div className="flex-wrap items-start justify-between inline-flex max-md:w-full max-[1320px]:justify-center max-[1320px]:gap-[20px]">
-              <div className="h-[150px] pl-[0px] pr-[] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:p-10  max-lg:  max-md:w-full  max-[376px]:h-[400px] max-md:p-2">
+              <div className="h-[150px] pl-[0px] pr-[] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:px-0  max-lg:  max-md:w-full  max-[376px]:h-[400px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
                   <div className="w-[300.22px] letter-spacing-2 text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-[350px]:w-full">
                     Our Services

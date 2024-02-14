@@ -71,30 +71,30 @@ const Gameservices = () => {
   return (
     <>
       <div className="game-service">
-        <div className="w-full hfull mt-[40px]  bg-white">
+        <div className="w-full hfull mt-[40px]  max-sm:mt-[8px] bg-white">
           <div className="w-full h-full relative bg-white flex justify-between">
             <div className="leftt">
-              <div>
-                <div className="flex gap-40 mb-[101px] w-full">
-                  <div className="flex flex-col gap-[436px] max-lg:gap-[40px]">
+              <div className="max-lg:w-full">
+                <div className="flex justify-between max-lg:w-full pr-[10px] max-lg:p-0 max-sm:mb-20 max-xl:pr-[80px] mb-[101px] w-full">
+                  <div className="flex max-lg:w-full flex-col gap-[436px] max-lg:gap-[40px]">
                     <p className="section w-[305px] ml-[80px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:ml-[40px] max-sm:ml-[20px]">
                       Immerse players in visually stunning landscapes. Our
                       design-centric approach ensures games that are not just
                       playable but also a visual feast for users.
                     </p>
                     <img
-                      className="w-full h-full hidden max-lg:block pl-[40px] max-sm:px-[20px]"
+                      className="w-full h-full hidden max-lg:block px-[40px] max-sm:px-[20px]"
                       src={img}
                       alt=""
                     />
-                    <div className="ml-[80px] top-[607.30px]  flex-col justify-start items-start gap-[25px] inline-flex max-lg:ml-[40px] max-sm:ml-[20px]">
-                      <p className="w-[305px] letter-spacing-4 text-black text-xl font-normal font-['Graphik']">
+                    <div className="ml-[80px] top-[607.30px]  flex-col justify-start items-start gap-[25px] inline-flex max-lg:ml-[40px] max-sm:px-[20px] max-sm:ml-[0px]">
+                      <p className="w-[305px] max-sm:text-[24px] letter-spacing-4 text-black text-xl font-normal font-['Graphik']">
                         Have an idea and want to get started?
                       </p>
-                      <Link onClick={scrollToTop} to={"/contact-us"}>
-                        <button className="section talk-btn  hover:bg-yellow-400 transition-all px-8 py-4 rounded-[31px]  hover:border-yellow-400  border border-black justify-center items-center gap-2 inline-flex">
-                          <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                            Let’s talk
+                      <Link onClick={scrollToTop} className=" max-sm:w-full" to={"/contact-us"}>
+                        <button className="section talk-btn  max-sm:w-full hover:bg-yellow-400 transition-all px-8 py-4 rounded-[31px]  hover:border-yellow-400  border border-black justify-center items-center gap-2 inline-flex">
+                          <div className="text-black  max-sm:w-full text-base font-normal font-['Graphik'] capitalize leading-normal">
+                            Talk To Our Experts
                           </div>
                         </button>
                       </Link>

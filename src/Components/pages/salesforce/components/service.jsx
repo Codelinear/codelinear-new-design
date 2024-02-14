@@ -83,7 +83,7 @@ const Service = () => {
               <div>
                 <div className="section w-full self-stretch justify-center items-center inline-flex max-lg:justify-start">
                   <img
-                    className="w-[727.57px] h-[717.49px] max-lg:w-[100%] max-sm:h-full"
+                    className="w-[727.57px] h-[717.49px] max-lg:w-[100%] max-lg:h-full"
                     src={img}
                     alt=""
                   />
@@ -91,8 +91,8 @@ const Service = () => {
               </div>
 
               <div>
-                <div className="w-full mb-[70px] relative bg-white section">
-                  <div className="w-[670px] letter-spacing-6 mt-[130px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[100px]">
+                <div className="w-full mb-[70px] max-sm:mb-0 relative bg-white section">
+                  <div className="w-[670px] letter-spacing-6 mt-[130px] max-sm:mt-[40px]  text-black text-[36px] font-normal font-['Graphik'] leading-[120%] max-lg:w-[100%] max-sm:text-[24px] max-sm:tracking-tight max-sm:mt-[100px]">
                     We're not just about CRM; we're about reimagining
                     possibilities. Our Salesforce services are infused with
                     innovation, ensuring your business stays ahead in a rapidly

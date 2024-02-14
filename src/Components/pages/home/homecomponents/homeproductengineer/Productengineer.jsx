@@ -89,29 +89,29 @@ const Productengineer = () => {
         <div className="mainproduct">
           <div
             ref={sectionRef2}
-            className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[56px] max-sm:gap-[40px] inline-flex box  max-md:h-full  max-[800px]:justify-center max-[800px]:px-[40px] max-sm:py-[56px] max-md:p-5 max-xl:flex-wrap-reverse max-xl:justify-center max-xl:h-full max-xl:py-20 max-sm:gap-10"
+            className="w-full h-[811px] max-2md:justify-center max-2md:gap-[100px] py-[0px] pl-[80px] pr-[144px] max-xl:px-[80px] max-lg:px-[40px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[0] max-sm:gap-[40px] inline-flex box max-2md:flex-wrap-reverse max-md:h-full  max-[800px]:justify-center max-lg:px-[40px] max-sm:py-[56px] max-md:p-[40px] max-2md:flex-wrap max-flex-wrap max-xl:justify-between max-xl:items-start max-xl:h-full max-xl:py-20 max-lg:gap-[30px] max-sm:px-5 max-sm:gap-10"
           >
-            <div className="w-[508px] max-sm:h-full h-[611.01px] flex-col justify-center items-center inline-flex max-xl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
+            <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
-                className="w-[513.40px] max-xl:w-[536px] h-[770.23px] max-md:h-full"
+                className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
                 src={img}
                 alt=""
               />
             </div>
-            <div className="self-stretch max-sm:h-full h-[611px] flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[120px] max-sm:gap-[40px] max-lg:justify-start max-[800px]:mt-5">
-              <div className="flex-col justify-start items-start gap-[30px] flex">
-                <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
-                  <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
+            <div className="self-stretch max-3lg:h-[600px] max-lg:h-auto h-[611px] max-xl:h-[523px] max-2md:h-auto flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[30px] max-sm:gap-[40px] max-lg:justify-start max-sm:h-full">
+              <div className="flex-col justify-start items-start gap-[30px] flex max-sm:gap-[20px]">
+                <div className="w-[521.42px] max-2md:w-full max-3lg:w-[400px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
+                  <div className="text-[#FFCD05] whitespace-nowrap text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
                     Technology consulting
                   </div>
-                  <div className="w-[316px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
+                  <div className="w-[316px] max-2md:w-full max-3lg:w-[196px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
                 </div>
                 <div className="flex-col justify-start items-start gap-[42px] flex">
                   <div className="flex-col justify-start items-start gap-[22px] flex">
-                    <div className="text2 letter-spacing-2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
+                    <div className="text2 max-2md:w-full letter-spacing-2 max-3lg:w-[400px] w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
                       Helping businesses get ready for the future.{" "}
                     </div>
-                    <div className=" text3  leading-[150%] text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                    <div className=" text3 max-2md:w-[700px] text-[#B7B7B7] max-3lg:w-[390px] leading-[150%] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
                       Our seasoned consultants bring a universal perspective to
                       your unique challenges, offering insights that redefine
                       possibilities.
@@ -127,12 +127,12 @@ const Productengineer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-[38px] flex max-md:w-[100%]">
-                <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-sm:opacity-0"></div>
-                <div className="flex-col justify-start items-start gap-[38px] flex">
-                  <div className="w-[521px] overflow-hidden max-md:w-[100%]">
+              <div className="flex-col justify-start items-start gap-[38px] flex max-2md:w-[100%]">
+                <div className="w-[521.42px]  max-2md:w-full max-3lg:w-[400px] h-[0px] opacity-60 border border-white max-sm:w-full max-sm:opacity-0"></div>
+                <div className="flex-col justify-start items-start gap-[38px] flex max-2md:w-[100%]">
+                  <div className="w-[521px] max-2md:w-full max-3lg:w-[400px] overflow-hidden max-[786px]:w-full">
                     <div
-                      className="flex align-center opacity-60 gap-[48px] w-[600px] max-sm:w-full"
+                      className="flex align-center opacity-60 gap-[48px] w-[600px] max-[768px]:w-full"
                       ref={animateclient}
                     >
                       <img src={img3} alt="" />
@@ -145,6 +145,13 @@ const Productengineer = () => {
                       <img src={img5} alt="" />
                       <img src={img6} alt="" />
                       <img src={img7} alt="" />
+                      <img src={img3} alt="" />
+                      <img src={img4} alt="" />
+                      <img src={img5} alt="" />
+                      <img src={img6} alt="" />
+                      <img src={img7} alt="" />
+                      <img src={img3} alt="" />
+                      <img src={img4} alt="" />
                     </div>
                   </div>
                 </div>
@@ -157,22 +164,22 @@ const Productengineer = () => {
       <div className="technology-consulting  max-sm:overflow-x-hidden">
         <div
           ref={sectionRef3}
-          className="w-full h-[811px] py-[0px] pl-[80px] pr-[144px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[56px] max-sm:gap-[40px] inline-flex box max-md:flex-wrap max-md:h-full  max-[800px]:justify-center max-[800px]:px-[40px] max-sm:py-[56px] max-md:p-5 max-xl:flex-wrap max-xl:flex-wrap max-xl:justify-center max-xl:h-full max-xl:py-20 max-sm:gap-10"
+          className="w-full h-[811px] max-2md:w-full max-2md:justify-center max-2md:gap-[100px] py-[0px] pl-[80px] pr-[144px] max-xl:px-[80px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[0] max-sm:gap-[40px] inline-flex box max-2md:flex-wrap max-md:h-full  max-[800px]:justify-center max-lg:px-[40px] max-sm:py-[56px] max-md:p-[40px] max-2md:flex-wrap max-flex-wrap max-xl:justify-between max-xl:items-start max-xl:h-full max-xl:py-20 max-lg:gap-[30px] max-sm:px-5 max-sm:gap-10"
         >
-          <div className="self-stretch h-[611px] max-sm:h-full flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[120px] max-sm:gap-[40px] max-lg:justify-start max-[800px]:mt-5">
-            <div className="flex-col justify-start items-start gap-[30px] flex">
-              <div className="w-[521.42px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
-                <div className="text-[#FFCD05] text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
+          <div className="self-stretch max-2md:w-full h-[611px] max-xl:h-[523px] max-2md:h-auto flex-col items-start justify-between inline-flex mt-[99.99px] max-xl:mt-[0px] max-md:w-full max-lg:gap-[30px] max-sm:gap-[40px] max-lg:justify-start max-sm:h-full">
+            <div className="flex-col max-2md:w-full justify-start items-start gap-[30px] flex max-sm:gap-[20px]">
+              <div className="w-[521.42px] max-2md:w-full max-3lg:w-[400px] h-[21px] justify-start items-center gap-[13.42px] inline-flex max-lg:w-full">
+                <div className="text-[#FFCD05] whitespace-nowrap text-[14px] font-normal font-['Archivo'] uppercase leading-snug">
                   Product Engineering
                 </div>
-                <div className="w-[316px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
+                <div className="w-[316px] max-2md:w-full max-3lg:w-[196px] h-[0px] opacity-60 border border-zinc-400 max-sm:w-[30%] "></div>
               </div>
               <div className="flex-col justify-start items-start gap-[42px] flex">
                 <div className="flex-col justify-start items-start gap-[22px] flex">
-                  <div className="text2 letter-spacing-2 w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
+                  <div className="text2 max-2md:w-full letter-spacing-2 max-3lg:w-[400px] w-[536.68px] text-[#B7B7B7] text-[48px] font-normal font-['Graphik'] leading-[120%]  max-md:w-full  max-[350px]:text-[25px] max-sm:text-[32px]">
                     Building experiences that drive growth.
                   </div>
-                  <div className=" text3 leading-[150%] text-[#B7B7B7] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
+                  <div className=" text3 max-2md:w-[700px] text-[#B7B7B7] max-3lg:w-[390px] leading-[150%] w-[513.61px] opacity-80 text-base font-normal font-['Graphik'] leading-normal max-md:w-full">
                     Sculpt digital products that stand out from the crowd, spark
                     emotions, and redefine what's possible.
                   </div>
@@ -187,13 +194,18 @@ const Productengineer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-[38px] flex">
-              <div className="w-[521.42px] h-[0px] opacity-60 border border-white max-md:w-full max-sm:opacity-0"></div>
-              <div className="w-[521px] overflow-hidden max-sm:w-full">
+            <div className="flex-col justify-start items-start gap-[38px] flex max-2md:w-[100%]">
+              <div className="w-[521.42px]  max-2md:w-full max-3lg:w-[400px] h-[0px] opacity-60 border border-white max-sm:w-full max-sm:opacity-0"></div>
+              <div className="w-[521px] max-2md:w-full max-3lg:w-[400px] overflow-hidden max-[786px]:w-full">
                 <div
-                  className="flex align-center opacity-60 gap-[48px] w-[600px] max-sm:w-full"
+                  className="flex align-center opacity-60 gap-[48px] w-[600px] max-[768px]:w-full"
                   ref={animateclient2}
                 >
+                  <img src={img8} alt="" />
+                  <img src={img9} alt="" />
+                  <img src={img10} alt="" />
+                  <img src={img11} alt="" />
+                  <img src={img12} alt="" />
                   <img src={img8} alt="" />
                   <img src={img9} alt="" />
                   <img src={img10} alt="" />
@@ -208,12 +220,12 @@ const Productengineer = () => {
               </div>
             </div>
           </div>
-          <div className="w-[508px] h-[611.01px] flex-col justify-center items-center inline-flex max-xl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
-            <img
-              className="w-[513.40px] max-xl:w-[536px] h-[770.23px] max-md:h-full"
-              src={img2}
-              alt=""
-            />
+          <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
+              <img
+                className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
+                src={img2}
+                alt=""
+              />
           </div>
         </div>
       </div>

@@ -5,9 +5,9 @@ const VR5 = () => {
     <>
       <div className="w-full h-[367px] relative bg-white">
         <div className="flex flex-col">
-          <div className="ml-[80px] mt-[67px]  flex-col justify-start items-start gap-[22px] inline-flex max-sm:mb-[50px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:pl-[20px]">
-            <div className="flex-col justify-start items-start gap-[30px] flex">
-              <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-[90%]">
+          <div className="ml-[80px] mt-[67px]  flex-col justify-start items-start gap-[22px] inline-flex max-sm:mb-[50px] max-lg:ml-[40px] max-sm:ml-[0px] max-sm:px-[20px]">
+            <div className="flex-col max-sm:w-full justify-start items-start gap-[30px] flex">
+              <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-[100%]">
                 <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                   AR/VR services
                 </div>
@@ -28,7 +28,7 @@ const VR5 = () => {
       </div>
 
       <div className="features">
-        <div className="w-full h-[755px] max-sm:mt-10 pl-20 pr-[45px] pt-[0px] pb-[145.80px] bg-white justify-start items-start gap-[141.63px] max-[1100px]:gap-[50px] inline-flex max-lg:flex-wrap max-lg:h-full max-lg:gap-[50px] max-lg:pl-[40px] max-sm:px-[20px] max-sm:gap-[50px]">
+        <div className="w-full h-[755px] max-sm:mt-10 pl-20 pr-[0px] pt-[0px] pb-[145.80px] bg-white justify-start items-start gap-[54px] max-[1100px]:gap-[50px] inline-flex max-lg:flex-wrap max-lg:h-full max-lg:gap-[50px] max-lg:pl-[40px] max-sm:px-[20px] max-sm:gap-[50px]">
           <div className="self-stretch flex-col justify-start items-start gap-[54px] inline-flex max-lg:flex-row max-lg:flex-wrap">
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
@@ -63,7 +63,7 @@ const VR5 = () => {
             </div>
           </div>
           <div className="w-[522px] self-stretch flex-col justify-start items-center inline-flex max-lg:w-full">
-            <img className="w-[522px] h-[833.20px] max-sm:h-full" src={img6} alt="h" />
+            <img className="w-[522px] h-[833.20px] max-sm:h-full max-sm:w-full" src={img6} alt="h" />
           </div>
         </div>
       </div>

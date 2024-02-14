@@ -8,7 +8,7 @@ const Experience = () => {
     <>
       <>
         <div className="w-full h-[847x] pb-20 relative bg-white max-lg:h-full">
-          <div className="left-[80px] mt-[168px]  flex-col justify-start items-start gap-[22px] inline-flex">
+          <div className="left-[80px] mt-[168px] max-sm:mt-0  flex-col justify-start items-start gap-[22px] inline-flex">
             <div className="flex-col justify-start items-start gap-[30px] flex">
               <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-full">
                 <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">

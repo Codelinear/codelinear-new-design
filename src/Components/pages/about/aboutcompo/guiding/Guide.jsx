@@ -3,9 +3,9 @@ import React from "react";
 const Guide = () => {
   return (
     <>
-      <div className="guide max-lg:p-5  max-lg:pl-12 max-md:pl-5">
+      <div className="guide max-lg:p-10  max-lg:pl-10 max-sm:px-5">
         <div className="w-full h-[809px] mb-[76px] relative bg-white max-lg:h-full">
-          <div className="flex ju gap-40 max-lg:flex-wrap max-lg:gap-10 max-[1200px]:gap-[90px]">
+          <div className="flex ju gap-40 max-lg:flex-wrap max-lg:gap-10 max-sm:gap-[60px] max-[1200px]:gap-[90px]">
             <div className="sticky top-10 h-[360px] max-lg:h-full max-lg:relative">
               <div className="ml-[80px] mt-[73px]  flex-col justify-start items-start gap-9 inline-flex max-lg:m-0">
                 <div className="opacity-60 w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
@@ -30,7 +30,7 @@ const Guide = () => {
             </div>
 
             <div className="left-[622px] mt-[136px]  flex-col justify-start items-start gap-[68px] inline-flex max-sm:mt-[32px] max-sm:gap-[32px]">
-              <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="flex-col justify-start items-start gap-6 flex max-sm:gap-[16px]">
                 <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Ideal
                 </div>
@@ -43,7 +43,7 @@ const Guide = () => {
                   your needs.
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="flex-col justify-start items-start gap-6 flex max-sm:gap-[16px]">
                 <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Innovation
                 </div>
@@ -56,7 +56,7 @@ const Guide = () => {
                   into our projects.
                 </div>
               </div>
-              <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="flex-col justify-start items-start gap-6 flex max-sm:gap-[16px]">
                 <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">
                   Impact
                 </div>

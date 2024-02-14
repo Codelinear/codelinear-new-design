@@ -73,7 +73,7 @@ const VR = () => {
   return (
     <>
       <div className="flex justify-between">
-        <div className="left">
+        <div className="left max-xl:w-full">
           <div className="section">
             <Hero />
           </div>
@@ -91,7 +91,7 @@ const VR = () => {
           <div id="vr4" className="section" ref={vr4}>
             <VR3 />
           </div>
-          <div id="vr5" className="section" ref={vr5}>
+           <div id="vr5" className="section" ref={vr5}>
             <VR6 />
           </div>
           <div id="vr6" className="section" ref={vr6}>

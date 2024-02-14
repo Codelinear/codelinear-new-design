@@ -15,8 +15,7 @@ function Career() {
     <>
       <div className="careerHero">
         <h1>
-          Quis ullamcorper felis elit dictum. Sed sapien curabitur at lacus nec.
-        </h1>
+        We're looking for talented individuals like you to join our team.        </h1>
         <button className="heroBtn" onClick={scrollTops}>
           See open positions
         </button>

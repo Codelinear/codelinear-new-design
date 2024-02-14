@@ -3,7 +3,7 @@ import img from "../assets/Frame 1000002802 (1).jpg";
 const Performance = () => {
   return (
     <>
-      <div className="w-full h-[992px] relative bg-white mt-20 max-lg:h-full">
+      <div className="w-full h-[992px] relative bg-white mt-20 max-lg:h-full max-sm:mt-0">
         <div className="left-[80px] top-[88px]  flex-col justify-start items-start gap-[22px] inline-flex">
           <div className="flex-col justify-start items-start gap-[30px] flex">
             <div className="w-[521.42px] justify-start items-center gap-[13.42px] inline-flex max-sm:w-full">
@@ -16,7 +16,7 @@ const Performance = () => {
               Performance Optimization{" "}
             </div>
           </div>
-          <div className="w-[536.02px] h-[85.15px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
+          <div className="w-[536.02px] h-[85.15px] max-sm:h-auto opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-sm:w-full">
             Revitalize your digital workspace with our SharePoint Performance
             Optimization. Enhance speed, streamline workflows, and ensure peak
             efficiency for a SharePoint experience that transcends expectations.
@@ -57,7 +57,7 @@ const Performance = () => {
             </div>
           </div>
 
-          <div className="h-[568px] left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
+          <div className="h-[568px] max-lg:w-full  left-[516px] top-[376px]  flex-col justify-start items-center inline-flex max-sm:w-full max-sm:h-full">
             <img
               className="w-[519.33px] h-[779.13px] max-sm:w-full max-sm:h-full"
               src={img}

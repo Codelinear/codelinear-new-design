@@ -20,7 +20,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos  > currentScrollPos || currentScrollPos < 10);
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -59,7 +59,7 @@ const Navbar = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   const scrollToTopmenu = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     gsap.to(menu.current, 0, { display: "none" });
     gsap.to(premenu.current, 0, { display: "flex" });
   };
@@ -71,13 +71,106 @@ const Navbar = () => {
     gsap.to(menu.current, 0, { display: "none" });
     gsap.to(premenu.current, 0, { display: "flex" });
   };
+  let [heightscreen, setHeight] = useState(window.innerHeight);
+  const cont = useRef(null);
+  const container = useRef(null);
+  const cont1 = useRef(null);
+  const cont2 = useRef(null);
+  const cont3 = useRef(null);
+  const cont4 = useRef(null);
+  const cont5 = useRef(null);
+  const cont6 = useRef(null);
+  const cont7 = useRef(null);
+  const cont8 = useRef(null);
+  const cont9 = useRef(null);
+  const cont10 = useRef(null);
+  const cont11 = useRef(null);
+  const cont12 = useRef(null);
+  const menutop = useRef(null);
+  const menubottom = useRef(null);
+  const svg1 = useRef(null);
+  const svg2 = useRef(null);
+  const svg3 = useRef(null);
+  const svg4 = useRef(null);
+  const svg5 = useRef(null);
+  const svg6 = useRef(null);
+  const svg7 = useRef(null);
+  const svg8 = useRef(null);
+  const svg9 = useRef(null);
+  const svg10 = useRef(null);
+  const svg11 = useRef(null);
+  const svg12 = useRef(null);
+  const serv = useRef(null);
+  useEffect(() => {
+    window.addEventListener("resize", () => setHeight(window.innerHeight));
+    if (heightscreen <= 720) {
+      gsap.to(cont.current, 0, { fontSize: "24px", width: "220px" });
+      gsap.to(container.current, 0, { height: "auto" });
+      gsap.to(cont1.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont2.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont3.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont4.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont5.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont6.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont7.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont8.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont9.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont10.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont11.current, 0, { fontSize: "14px", height: "30px" });
+      gsap.to(cont12.current, 0, { fontSize: "14px", height: "30px" });
+    }
+    if (heightscreen <= 620) {
+      gsap.to(menutop.current, 0, { top: "14px" });
+    }
+    if (heightscreen <= 550) {
+      gsap.to(menubottom.current, 0, { bottom: "14px" });
+      gsap.to(menutop.current, 0, { gap: "5px" });
+    }
+    if (heightscreen <= 500) {
+      gsap.to(svg1.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg2.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg3.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg4.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg5.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg6.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg7.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg8.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg9.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg10.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg11.current, 0, { width: "20px", height: "20px" });
+      gsap.to(svg12.current, 0, { width: "20px", height: "20px" });
+    }
+    if (heightscreen <= 450) {
+      gsap.to(menubottom.current, 0, { display: "none" });
+      gsap.to(menutop.current, 0, { top: "44px" });
+      gsap.to(svg1.current, 0, { display: "none" });
+      gsap.to(svg2.current, 0, { display: "none" });
+      gsap.to(svg3.current, 0, { display: "none" });
+      gsap.to(svg4.current, 0, { display: "none" });
+      gsap.to(svg5.current, 0, { display: "none" });
+      gsap.to(svg6.current, 0, { display: "none" });
+      gsap.to(svg7.current, 0, { display: "none" });
+      gsap.to(svg8.current, 0, { display: "none" });
+      gsap.to(svg9.current, 0, { display: "none" });
+      gsap.to(svg10.current, 0, { display: "none" });
+      gsap.to(svg11.current, 0, { display: "none" });
+      gsap.to(svg12.current, 0, { display: "none" });
+      gsap.to(container.current, 0, { rowGap: "20px" });
+    }
+    if (heightscreen <= 380) {
+      gsap.to(menutop.current, 0, { top: "14px" });
+      gsap.to(container.current, 0, { rowGap: "0px" });
+      gsap.to(cont.current, 0, { fontSize: "20px" });
+      gsap.to(serv.current, 0, { gap: "0px", height: "200px" });
+    }
+  });
   return (
     <>
       {width <= 900 ? (
         <>
           <div
             ref={premenu}
-            className="w-full z-[99999999999999] hx] px-20 bg-white flex-col justify-end items-center gap-2.5 inline-flex sticky top-0 max-sm:px-[20px]"
+            className="w-full z-[99999999999999] hx] px-10 pl-[32px] bg-white flex-col justify-end items-center gap-2.5 inline-flex sticky top-0 max-sm:px-[20px] max-sm:pl-[15px]"
           >
             <div className="self-stretch pt-[15px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
               <div className="w-[123px] mt-[8px] pr-[6.40px]  flex-col justify-center items-start gap-[14.69px] inline-flex">
@@ -123,9 +216,12 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="left-[20.04px] top-[85px] absolute flex-col justify-start items-start gap-3 inline-flex">
+              <div
+                ref={menutop}
+                className="left-[20.04px] top-[85px] absolute flex-col justify-start items-start gap-3 inline-flex"
+              >
                 <Link
-                  t0="/"
+                  to="/"
                   onClick={scrollToTopmenu}
                   className="w-80 text-black text-4xl font-normal font-['Graphik'] underlin leading-[43.20px]"
                 >
@@ -186,18 +282,24 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
-              <div className="left-[20.04px] bottom-[60px] absolute flex-col justify-start items-start gap-6 inline-flex">
+              <div
+                ref={menubottom}
+                className="left-[20.04px] bottom-[60px] absolute flex-col justify-start items-start gap-6 inline-flex"
+              >
                 <div className="flex-col justify-start items-start gap-2 flex">
                   <div className="opacity-80 text-black text-base font-normal font-['Graphik'] underline leading-normal">
-                   <a href="mailto:info@codelinear.com">info@codelinear.com</a>
+                    <a href="mailto:info@codelinear.com">info@codelinear.com</a>
                   </div>
                   <div className="opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
-                   <a href="tel:+1 415 523 5957">+1 415 523 5957</a>
+                    <a href="tel:+1 415 523 5957">+1 415 523 5957</a>
                   </div>
                 </div>
                 <div className="justify-start items-center gap-[19.84px] inline-flex">
                   <div className="w-6 h-6 relative">
-                    <a target="_blank" href="https://in.linkedin.com/company/codelinear">
+                    <a
+                      target="_blank"
+                      href="https://in.linkedin.com/company/codelinear"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -213,7 +315,10 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="w-6 h-6 relative">
-                    <a target="_blank" href="https://www.facebook.com/Codelinear/">
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/Codelinear/"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -229,7 +334,10 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="w-6 h-6 relative">
-                    <a target="_blank" href="https://www.instagram.com/codelinear_/">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/codelinear_/"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -273,7 +381,10 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="w-6 h-6 relative">
-                    <a target="_blank" href="https://www.youtube.com/channel/UCFsBmCBzxSX8fS8HxCHOYtA">
+                    <a
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCFsBmCBzxSX8fS8HxCHOYtA"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -300,7 +411,7 @@ const Navbar = () => {
               transform: visible ? "translate(0)" : "translateY(-100px)",
               transition: "transform 0.3s ease-in-out",
             }}
-            className="w-full z-[99999990999999] h-[91px] px-20 bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
+            className="w-full max-lg:px-[40px] max-lg:pl-[32px] z-[99999990999999] h-[91px] px-20 pl-[70px] bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
           >
             <div className="self-stretch pt-[30px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
               <div className="w-[123px] h-[51px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
@@ -331,8 +442,11 @@ const Navbar = () => {
                           onMouseLeave={toggleServicenew}
                           className="service-nav fixed top-[91px] left-0 z-[9999999999999] w-full"
                         >
-                          <div className="w-full h-[531px] overflow-y-scroll h-full pl-20 pr-[80px] pt-[22px] pb-[68px] justify-between items-start gap-[66.08px] inline-flex">
-                            <div className="self-stretch h-[265px] flex-col justify-between items-start gap-12 inline-flex ">
+                          <div className="w-full h-[100vh] overflow-y-scroll pl-20 max-1xl:px-[40px] max-[1250px]:gap-[20px] max-xl:gap-[40px] pr-[80px] pt-[22px] pb-[68px] justify-between items-start gap-[66.08px] inline-flex">
+                            <div
+                              ref={serv}
+                              className="self-stretch h-[265px] flex-col justify-between items-start gap-12 inline-flex "
+                            >
                               <div className="flex-col justify-start items-start gap-[26px] flex">
                                 <div className="self-stretch justify-start items-center gap-[26px] inline-flex">
                                   <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
@@ -341,7 +455,10 @@ const Navbar = () => {
                                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                                 </div>
                                 <div className="flex-col justify-start items-start gap-[17px] flex">
-                                  <div className="w-[366.92px] text-black text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
+                                  <div
+                                    ref={cont}
+                                    className="w-[366.92px] max-[1230px]:w-[250px] text-black text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2"
+                                  >
                                     We help you do amazing things through
                                     cutting-edge technology.
                                   </div>
@@ -357,13 +474,16 @@ const Navbar = () => {
                                 </div>
                               </Link>
                             </div>
-                            <div className=" justify-start w-[840px] h-[612px] overflow-scroll items-start inline-flex flex-wrap">
+                            <div
+                              ref={container}
+                              className=" justify-start w-[840px] h-[612px] max-xl:w-[765px] overflow-scroll items-start inline-flex flex-wrap"
+                            >
                               <Link
                                 to={"/product-design-and-innovation"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg1} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -378,16 +498,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont1}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Product Design and Innovation
                                 </div>
                               </Link>
                               <Link
                                 to="/app-development-and-modernization"
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg2} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 64"
@@ -423,16 +546,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont2}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   App Development and Modernization
                                 </div>
                               </Link>
                               <Link
                                 to="/technology-consulting"
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] borderr-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg3} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -461,16 +587,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont3}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Technology Consulting
                                 </div>
                               </Link>
                               <Link
                                 to="/ecommerce-marketplace-development"
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg4} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -499,16 +628,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont4}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Ecommerce Marketplace Development
                                 </div>
                               </Link>
                               <Link
                                 to={"/cloud-engineering"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg5} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -523,16 +655,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont5}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Cloud Engineering
                                 </div>
                               </Link>
                               <Link
                                 to="/game-development"
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border--[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] -[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg6} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -588,16 +723,19 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont6}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Game Development
                                 </div>
                               </Link>
                               <Link
                                 to="/ar-vr-services"
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg7} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -640,28 +778,34 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont7}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   AR/VR Services
                                 </div>
                               </Link>
                               <Link
                                 to={"/artificial-intelligence-(ai)-services"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg8} className="w-[32px] h-[32px] ">
                                   <img src={AI} alt="" />
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont8}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Artificial Intelligence (AI) Services{" "}
                                 </div>
                               </Link>
                               <Link
                                 to={"/low-code-and-no-code"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border-b-[2px] borderr-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg9} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -704,40 +848,49 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont9}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Low-code and No-code
                                 </div>
                               </Link>
                               <Link
                                 to={"/salesforce-services"}
                                 onClick={toggleDropdown}
-                                className=" nav-card borderb-[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg10} className="w-[32px] h-[32px] ">
                                   <img src={SF} alt="" />
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont10}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Salesforce Services
                                 </div>
                               </Link>
                               <Link
                                 to={"/microsoft-sharepoint-services"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border--[2px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card bo-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg11} className="w-[32px] h-[32px] ">
                                   <img src={SP} alt="" />
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont11}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Microsoft SharePoint Services{" "}
                                 </div>
                               </Link>
                               <Link
                                 to={"/quality-assurance"}
                                 onClick={toggleDropdown}
-                                className=" nav-card border--[2px] border--[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
-                                <div className="w-[32px] h-[32px] ">
+                                <div ref={svg12} className="w-[32px] h-[32px] ">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 63 63"
@@ -780,7 +933,10 @@ const Navbar = () => {
                                     />
                                   </svg>
                                 </div>
-                                <div className="w-[234px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                                <div
+                                  ref={cont12}
+                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                >
                                   Quality Assurance
                                 </div>
                               </Link>
@@ -791,7 +947,7 @@ const Navbar = () => {
                     )}
                   </div>
                   <div className="text-black text-base font-normal font-['Graphik']">
-                  <Link to={"/about-us"} onClick={toggleother}>
+                    <Link to={"/about-us"} onClick={toggleother}>
                       About us
                     </Link>
                   </div>

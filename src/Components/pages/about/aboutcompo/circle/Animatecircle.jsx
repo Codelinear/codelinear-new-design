@@ -50,7 +50,7 @@ const Animatecircle = () => {
     gsap.to(circle3, { opacity: 0, y: 0, x: 0, scale: 0.7 });
     gsap.to(circle4, { opacity: 0, y: 0, scale: 0.7 });
     gsap.to(intersecter.current, { width: 0 });
-    if (width <= 640) {
+    if (width <= 840) {
       gsap.to(circle1, { opacity: 0 });
       gsap.to(intersecter.current, { width: "182px" });
       gsap.to(arrow, { opacity: 1 });
@@ -64,7 +64,7 @@ const Animatecircle = () => {
   };
   const width = window.innerWidth;
   useEffect(() => {
-    if (width <= 640) {
+    if (width <= 840) {
       gsap.to(circle1, { opacity: 0 });
       gsap.to(intersecter.current, { width: "182px" });
       gsap.to(arrow, { opacity: 1 });
