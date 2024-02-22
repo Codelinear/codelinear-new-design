@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import img1 from "../../blogassets/Blogs Animation Thumbnail07.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail11.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail01.jpg";
-import Explore from '../../../production/Explore'
+import Explore from "../../../production/Explore";
+import { Helmet } from "react-helmet";
 
 const Branding = () => {
   const scrollToTop = () => {
@@ -13,8 +14,12 @@ const Branding = () => {
   };
   return (
     <>
+      {" "}
+      <Helmet>
+        <title>codelinear | The Art Of Disruptive Branding</title>
+      </Helmet>
       <div className="innerhero">
-      <Link
+        <Link
           to="/insights"
           onClick={scrollToTop}
           className="px-4 py-2 hidden max-sm:flex left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:left-[20px]"
@@ -35,7 +40,7 @@ const Branding = () => {
           </div>
         </Link>
         <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:px-[20px] max-sm:mt-[90px]">
-        <div className="w-[953px] letter-spacing-2 text-black text-[66px] font-normal font-['Graphik'] leading-[108%] max-lg:w-full max-sm:text-[50px]">
+          <div className="w-[953px] letter-spacing-2 text-black text-[66px] font-normal font-['Graphik'] leading-[108%] max-lg:w-full max-sm:text-[50px]">
             Branded Environments: The Art Of Disruptive Branding
           </div>
         </div>
@@ -50,7 +55,6 @@ const Branding = () => {
           </div>
         </div>
       </div>
-
       <div className="blog-content">
         <div className="w-full h-full relative bg-white max-xl:h-full">
           <div className="flex gap-40 max-xl:gap-10 max-xl:flex-wrap max-lg:justify-center">
@@ -60,9 +64,11 @@ const Branding = () => {
                 onClick={scrollToTop}
                 className="px-4 py-2 max-sm:hidden left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:top-[0px] max-lg:left-[20px]"
               >
-                <Link to="/insights"
-                onClick={scrollToTop}
-                className="w-[31px] h-[21px] relative ">
+                <Link
+                  to="/insights"
+                  onClick={scrollToTop}
+                  className="w-[31px] h-[21px] relative "
+                >
                   <img
                     className="origin-top-left rotate45 w-[21.83px] h-[21.83px] left-[1.58px] top-5.20px] absolute"
                     src={arrow}
@@ -162,7 +168,7 @@ const Branding = () => {
                 <br />
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-              <div className="text-black text-[28px] letter-spacing-3 font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
+                <div className="text-black text-[28px] letter-spacing-3 font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   What Are Branded Environments?
                 </div>
                 <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">
@@ -177,7 +183,7 @@ const Branding = () => {
                 </div>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-              <div className="text-black text-[28px] letter-spacing-3 font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
+                <div className="text-black text-[28px] letter-spacing-3 font-normal font-['Graphik'] leading-[34.16px] max-md:w-full">
                   The Art Of Disruptive Branding
                 </div>
                 <div className="w-[630px] opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-md:w-full max-sm:text-justify">

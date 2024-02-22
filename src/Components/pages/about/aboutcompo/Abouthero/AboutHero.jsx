@@ -1,19 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 
 import animationData from "./about page.json";
 
 const AboutHero = () => {
-  // const [setPlayLottie, playLottie] = useState(false);
-
-  // const clck = () => {
-  //   setPlayLottie(true);
-  //   setPlayLottie((prevPlayLottie) => {
-  //     console.log(prevPlayLottie);
-  //     console.log(true);
-  //     return true;
-  //   });
-  // };
   return (
     <>
       <div className="about-hero">
@@ -21,7 +10,6 @@ const AboutHero = () => {
           <Lottie
             className="mt5 w-[918px] h-[381px] max-lg:w-[663px] max-lg:h-[275px] max-sm:h-fill max-sm:w-[100%]"
             animationData={animationData}
-            // onClick={clck}
             loop={false}
             autoplay={true}
           />

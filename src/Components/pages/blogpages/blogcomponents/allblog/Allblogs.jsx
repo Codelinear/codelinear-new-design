@@ -8,7 +8,6 @@ import img6 from "../../blogassets/Frame 61.png";
 import img7 from "../../blogassets/Frame 64.png";
 import img8 from "../../blogassets/Blog Feed Images03.jpg";
 import img9 from "../../blogassets//Blog Feed Images11.jpg";
-
 import img10 from "../../blogassets/Frame 43.png";
 import img11 from "../../blogassets/Frame 44.png";
 import img12 from "../../blogassets/Frame 59.png";
@@ -18,8 +17,6 @@ import img16 from "../../blogassets/Frame 4.svg";
 import img17 from "../../blogassets/Frame 1000001793.png";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
-
-import "./blog.scss";
 
 const Allblogs = () => {
   const [isSortActive, setIsSortActive] = useState(true);
@@ -31,8 +28,6 @@ const Allblogs = () => {
   const [isSort7Active, setIsSort7Active] = useState(false);
   const [isSort8Active, setIsSort8Active] = useState(false);
   const [isSort9Active, setIsSort9Active] = useState(false);
-  const [isSort10Active, setIsSort10Active] = useState(false);
-  const [isSort11Active, setIsSort11Active] = useState(false);
   let empathy = useRef(null);
   let db = useRef(null);
   let digitalmarketing = useRef(null);
@@ -326,8 +321,6 @@ const Allblogs = () => {
               </div>
               <button
                 onClick={onClickSort6}
-                // className="p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex"
-
                 className={`p-2 bg-neutral-100 rounded-[7px] justify-center items-center gap-2 flex  maxlg:mi-w-[250px] ${
                   isSort6Active ? "active" : ""
                 }`}
@@ -409,7 +402,6 @@ const Allblogs = () => {
             </div>
           </div>
         </div>
-
         <div className="main-blog-section mx-[80px] mt-20 max-lg:m-5 max-md:px-5 max-md:mx-0">
           <div className="w-full mb-[100px] max-sm:mb-0 h-full justify-center items-start gap-x-[160px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-lg:justify-center max-lg:items-center max-sm:gap-[72px] max-[1432px]:gap-x-[100px]">
             <Link

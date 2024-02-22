@@ -119,11 +119,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         App Development and Modernization
                       </div>
-                      {/* <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                      Our commitment is not just to design; it's to create
-                      experiences that resonate, innovate, and lead industries
-                      into a bold new era.
-                    </div> */}
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -178,11 +173,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Technology Consulting
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -210,11 +200,6 @@ const Homeservice = () => {
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Artificial Intelligence (AI) services{" "}
-                      </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Drive business transformation with our cutting-edge
-                        Artificial Intelligence services for enhanced efficiency
-                        and innovation.
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -269,11 +254,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Ecommerce Marketplace Development
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -313,11 +293,6 @@ const Homeservice = () => {
                     <div className="w-[340px] flex-col justify-between items-start flex gap-16 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Cloud Engineering
-                      </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -400,11 +375,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Game Development
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -473,11 +443,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         AR/VR Services
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -490,7 +455,6 @@ const Homeservice = () => {
                     </div>
                   </div>
                 </Link>
-
                 <Link
                   to={"/low-code-and-no-code"}
                   onClick={scrollToTop}
@@ -546,11 +510,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Low-code and No-code
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -579,11 +538,6 @@ const Homeservice = () => {
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Salesforce Consulting
                       </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Optimize Salesforce for streamlined operations, improved
-                        customer engagement, and scalable business growth
-                        solutions.
-                      </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
                       <div className="w-[40px] h-[16px] relative -rotate-180 flex-col justify-center items-center flex">
@@ -610,10 +564,6 @@ const Homeservice = () => {
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Microsoft SharePoint services{" "}
-                      </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Enhance collaboration, secure data management, and
-                        streamline workflows with Microsoft SharePoint services.
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -681,11 +631,6 @@ const Homeservice = () => {
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
                         Quality Assurance
-                      </div>
-                      <div className="w-[340px] opacity-80  text-base font-normal font-['Graphik'] leading-normal max-lg:w-full">
-                        Our commitment is not just to design; it's to create
-                        experiences that resonate, innovate, and lead industries
-                        into a bold new era.
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">

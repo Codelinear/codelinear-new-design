@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import img2 from "../../blogassets/Blogs Animation Thumbnail10.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail14.jpg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Native = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Native = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | React Native Vs Flutter</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

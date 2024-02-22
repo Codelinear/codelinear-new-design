@@ -47,11 +47,11 @@
 }
 .loc-exp {
   display: flex;
-  gap: 32px;
+  gap: 52px;
 }
 .loc-exp-2 {
   display: flex;
-  gap: 32px;
+  gap: 42px;
   display: none;
 }
 .iconBtn {
@@ -110,6 +110,9 @@
     display: flex;
     gap: 32px;
     display: none;
+  }
+  .positionslisting{
+    height: auto;
   }
 }
 

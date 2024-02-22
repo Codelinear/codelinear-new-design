@@ -3,6 +3,7 @@ import QSection from "./qualitySection/qualitySection";
 import Explore from "../production/Explore";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const QualityAssurance = () => {
   const produc = useRef(null);
@@ -30,6 +31,9 @@ const QualityAssurance = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>codelinear | Quality Assurance</title>
+    </Helmet>
       <div className="flex">
         <div className="left w-[100%] max-xl:w-full">
           <div className="section">

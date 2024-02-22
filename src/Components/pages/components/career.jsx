@@ -3,6 +3,8 @@ import Imgsection from "./Imgsection/Imgsection";
 import Massa from "./Massa/Massa";
 import Openposition from "./Openpositions/Openpositions";
 import { useRef } from "react";
+import { Helmet } from "react-helmet";
+
 function Career() {
   const position = useRef(null);
 
@@ -13,6 +15,9 @@ function Career() {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | Career</title>
+    </Helmet>
       <div className="careerHero">
         <h1>
         We're looking for talented individuals like you to join our team.        </h1>

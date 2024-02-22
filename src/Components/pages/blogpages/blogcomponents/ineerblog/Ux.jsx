@@ -6,6 +6,7 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail01.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail09.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail02.jpg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Ux = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Ux = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | UX Design Benefits SMEs!</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

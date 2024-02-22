@@ -28,7 +28,6 @@ const Guide = () => {
                 </div>
               </div>
             </div>
-
             <div className="left-[622px] mt-[136px]  flex-col justify-start items-start gap-[68px] inline-flex max-sm:mt-[32px] max-sm:gap-[32px]">
               <div className="flex-col justify-start items-start gap-6 flex max-sm:gap-[16px]">
                 <div className="text-black text-4xl font-normal font-['Graphik'] letter-spacing-2 leading-[120%] max-sm:text-[24px]">

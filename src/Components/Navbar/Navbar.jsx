@@ -242,7 +242,7 @@ const Navbar = () => {
                   Services
                 </Link>
                 <Link
-                  to="/case-study"
+                  to="/case-studies"
                   onClick={scrollToTopmenu}
                   className="w-80 text-black text-4xl font-normal font-['Graphik'] leading-[43.20px]"
                 >
@@ -440,7 +440,7 @@ const Navbar = () => {
                       <>
                         <div
                           onMouseLeave={toggleServicenew}
-                          className="service-nav fixed top-[91px] left-0 z-[9999999999999] w-full"
+                          className="bg-[white] fixed top-[91px] left-0 z-[9999999999999] w-full"
                         >
                           <div className="w-full h-[100vh] overflow-y-scroll pl-20 max-1xl:px-[40px] max-[1250px]:gap-[20px] max-xl:gap-[40px] pr-[80px] pt-[22px] pb-[68px] justify-between items-start gap-[66.08px] inline-flex">
                             <div
@@ -946,22 +946,22 @@ const Navbar = () => {
                       </>
                     )}
                   </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
+                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/about-us"} onClick={toggleother}>
                       About us
                     </Link>
                   </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link to={"/case-study"} onClick={toggleother}>
+                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
+                    <Link to={"/case-studies"} onClick={toggleother}>
                       Case studies
                     </Link>
                   </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
+                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/insights"} onClick={toggleother}>
                       Insights
                     </Link>
                   </div>
-                  <div className="text-black text-base font-normal font-['Graphik']">
+                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/industries"} onClick={toggleother}>
                       Industries
                     </Link>
@@ -970,7 +970,7 @@ const Navbar = () => {
                 <Link
                   to={"/contact-us"}
                   onClick={toggleother}
-                  className="w-[99px] talk-btn px-[16px] py-[8px] bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
+                  className="w-[99px] whitespace-nowrap talk-btn px-[16px] py-[8px] bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
                 >
                   <div className="text-black text-base font-normal font-['Graphik']">
                     Let’s Talk

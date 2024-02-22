@@ -6,6 +6,7 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail13.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail09.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail02.jpg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Shopify = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Shopify = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | Shopify Vs Magento</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

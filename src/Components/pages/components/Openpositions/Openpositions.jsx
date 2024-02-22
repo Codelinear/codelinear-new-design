@@ -23,11 +23,13 @@ function Openpositions() {
               <span>Bangalore</span>
             </div>
             <div className="expneed">
-              <span>3+ years of experience</span>
+              <span>5+ Yrs of Exp</span>
             </div>
           </div>
           <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz">Apply Now</button>
+            </a>
           </div>
         </div>
         <div className="loc-exp-2">
@@ -35,31 +37,35 @@ function Openpositions() {
             <span>Bangalore</span>
           </div>
           <div className="expneed">
-            <span>3+ years of experience</span>
+            <span>5+ Yrs of Exp</span>
           </div>
         </div>
         <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+          UX Design | UI Design | Interaction Design | Experience Design
         </p>
         <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
+          <a href="mailto:hr@codelinear.com">
+            <button className="textBtnsz-2">Apply Now</button>
+          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
           <div className="positionName">
-            <h4>Product Designer</h4>
+            <h4>MERN Stack Developer</h4>
           </div>
           <div className="loc-exp max-lg:hidden">
             <div className="locationdetails">
               <span>Bangalore</span>
             </div>
             <div className="expneed">
-              <span>3+ years of experience</span>
+              <span>5+ Yrs of Exp</span>
             </div>
           </div>
           <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz">Apply Now</button>
+            </a>
           </div>
         </div>
         <div className="loc-exp-2">
@@ -67,31 +73,36 @@ function Openpositions() {
             <span>Bangalore</span>
           </div>
           <div className="expneed">
-            <span>3+ years of experience</span>
+            <span>5+ Yrs of Exp</span>
           </div>
         </div>
         <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+          JavaScript | React JS | Redux | D3 Charts | Node JS |
+          Express JS | Mongo DB | RESTful API
         </p>
         <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
+          <a href="mailto:hr@codelinear.com">
+            <button className="textBtnsz-2">Apply Now</button>
+          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
           <div className="positionName">
-            <h4>Product Designer</h4>
+            <h4>Android Application Developer</h4>
           </div>
           <div className="loc-exp max-lg:hidden">
             <div className="locationdetails">
               <span>Bangalore</span>
             </div>
             <div className="expneed">
-              <span>3+ years of experience</span>
+              <span>5+ Yrs of Exp</span>
             </div>
           </div>
           <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz">Apply Now</button>
+            </a>
           </div>
         </div>
         <div className="loc-exp-2">
@@ -99,31 +110,36 @@ function Openpositions() {
             <span>Bangalore</span>
           </div>
           <div className="expneed">
-            <span>3+ years of experience</span>
+            <span>5+ Yrs of Exp</span>
           </div>
         </div>
         <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+          Java | Kotlin | Android Studio | Android SDK | RESTful APi | RX Java |
+          MVVM | MVP
         </p>
         <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
+          <a href="mailto:hr@codelinear.com">
+            <button className="textBtnsz-2">Apply Now</button>
+          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
           <div className="positionName">
-            <h4>Product Designer</h4>
+            <h4>AR/ VR Game Developer</h4>
           </div>
           <div className="loc-exp max-lg:hidden">
             <div className="locationdetails">
               <span>Bangalore</span>
             </div>
             <div className="expneed">
-              <span>3+ years of experience</span>
+              <span>5+ Yrs of Exp</span>
             </div>
           </div>
           <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz">Apply Now</button>
+            </a>
           </div>
         </div>
         <div className="loc-exp-2">
@@ -131,31 +147,36 @@ function Openpositions() {
             <span>Bangalore</span>
           </div>
           <div className="expneed">
-            <span>3+ years of experience</span>
+            <span>5+ Yrs of Exp</span>
           </div>
         </div>
         <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
+          Unity | Unreal | ARKit and ARCore | Blender | Maya | Oculus SDK |
+          Oculus Rift
         </p>
         <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
+          <a href="mailto:hr@codelinear.com">
+            <button className="textBtnsz-2">Apply Now</button>
+          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
         <div className="productDesigner">
           <div className="positionName">
-            <h4>Product Designer</h4>
+            <h4>Cloud Engineer</h4>
           </div>
           <div className="loc-exp max-lg:hidden">
             <div className="locationdetails">
               <span>Bangalore</span>
             </div>
             <div className="expneed">
-              <span>3+ years of experience</span>
+              <span>5+ Yrs of Exp</span>
             </div>
           </div>
           <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz">Apply Now</button>
+            </a>
           </div>
         </div>
         <div className="loc-exp-2">
@@ -163,174 +184,14 @@ function Openpositions() {
             <span>Bangalore</span>
           </div>
           <div className="expneed">
-            <span>3+ years of experience</span>
+            <span>5+ Yrs of Exp</span>
           </div>
         </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
+        <p className="req">AWS | GCP | Azure | Docker | Kubernetes | Jenkins</p>
         <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
-        </div>
-      </div>
-      <div id="position" className="positionslisting">
-        <div className="productDesigner">
-          <div className="positionName">
-            <h4>Product Designer</h4>
-          </div>
-          <div className="loc-exp max-lg:hidden">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
-          </div>
-          <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
-          </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
-          </div>
-          <div className="expneed">
-            <span>3+ years of experience</span>
-          </div>
-        </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
-        <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
-        </div>
-      </div>
-      <div id="position" className="positionslisting">
-        <div className="productDesigner">
-          <div className="positionName">
-            <h4>Product Designer</h4>
-          </div>
-          <div className="loc-exp max-lg:hidden">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
-          </div>
-          <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
-          </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
-          </div>
-          <div className="expneed">
-            <span>3+ years of experience</span>
-          </div>
-        </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
-        <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
-        </div>
-      </div>
-      <div id="position" className="positionslisting">
-        <div className="productDesigner">
-          <div className="positionName">
-            <h4>Product Designer</h4>
-          </div>
-          <div className="loc-exp max-lg:hidden">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
-          </div>
-          <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
-          </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
-          </div>
-          <div className="expneed">
-            <span>3+ years of experience</span>
-          </div>
-        </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
-        <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
-        </div>
-      </div>
-      <div id="position" className="positionslisting">
-        <div className="productDesigner">
-          <div className="positionName">
-            <h4>Product Designer</h4>
-          </div>
-          <div className="loc-exp max-lg:hidden">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
-          </div>
-          <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
-          </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
-          </div>
-          <div className="expneed">
-            <span>3+ years of experience</span>
-          </div>
-        </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
-        <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
-        </div>
-      </div>
-      <div id="position" className="positionslisting">
-        <div className="productDesigner">
-          <div className="positionName">
-            <h4>Product Designer</h4>
-          </div>
-          <div className="loc-exp max-lg:hidden">
-            <div className="locationdetails">
-              <span>Bangalore</span>
-            </div>
-            <div className="expneed">
-              <span>3+ years of experience</span>
-            </div>
-          </div>
-          <div className="applynowbtn">
-            <button className="textBtnsz">Apply Now</button>
-          </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
-          </div>
-          <div className="expneed">
-            <span>3+ years of experience</span>
-          </div>
-        </div>
-        <p className="req">
-          In ipsum | nam ullamcorper | lectus etiam | Nec consectetur
-        </p>
-        <div className="applynowbtn-2">
-          <button className="textBtnsz-2">Apply Now</button>
+          <a href="mailto:hr@codelinear.com">
+            <button className="textBtnsz-2">Apply Now</button>
+          </a>
         </div>
       </div>
     </div>

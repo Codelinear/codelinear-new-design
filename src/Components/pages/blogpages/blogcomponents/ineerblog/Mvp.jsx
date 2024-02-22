@@ -6,6 +6,7 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail11.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail02.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail07.jpg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Mvp = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Mvp = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | Minimum Viable Product</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

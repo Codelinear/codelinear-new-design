@@ -5,13 +5,16 @@ import { Link } from "react-router-dom";
 import img2 from "../../blogassets/Blogs Animation Thumbnail03.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail06.jpg";
 import Explore from '../../../production/Explore'
-
+import { Helmet } from "react-helmet";
 const Ai = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
     <>
+     <Helmet>
+        <title>codelinear | AI-Powered Design Tools</title>
+      </Helmet>
       <div className="innerhero">
         <Link
           to="/insights"

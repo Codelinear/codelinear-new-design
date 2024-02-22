@@ -19,6 +19,7 @@ import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import Explore from "./Explore";
+import { Helmet } from "react-helmet";
 
 const Production = () => {
   const containerRef = useRef(null);
@@ -84,6 +85,9 @@ const Production = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>codelinear | Product Design & Innovation</title>
+    </Helmet>
       <div className="flex bg-[white]" ref={prod}>
         <div className="left">
           <section id="prod-hero">

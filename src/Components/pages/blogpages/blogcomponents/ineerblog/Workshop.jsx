@@ -6,6 +6,7 @@ import img1 from "../../blogassets//Blogs Animation Thumbnail08.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail09.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail02.jpg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Workshop = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Workshop = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | Discovery Workshop</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

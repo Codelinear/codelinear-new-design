@@ -4,6 +4,7 @@ import img from "../../../../../assets/homeassets/image 177.png";
 import gsap from "gsap";
 import { Linear } from "gsap";
 import { Link } from "react-router-dom";
+import VisionPara from "./visionPara";
 import img2 from "../../../../../assets/homeassets/2.svg";
 import img3 from "../../../../../assets/homeassets/3.svg";
 import img4 from "../../../../../assets/homeassets/4.svg";
@@ -36,10 +37,7 @@ const Vision = () => {
         scrub: true,
       },
     });
-    tl1
-      .from(".text1", { y: 10 })
-      .from(".text2", { y: 0 })
-      .from(".text3", { y: 0 });
+    tl1.from(".text2", { y: 0 }).from(".text3", { y: 0 });
   }, []);
 
   const sectionReff = useRef(null);
@@ -53,7 +51,6 @@ const Vision = () => {
       trigger: sectionu,
       start: "top top",
       end: "center bottom",
-      // markers: true,
       onEnter: () => {
         sectionu.style.background =
           "radial-gradient(162.56% 87.06% at 50% 50%, #001500 0%, #0E0E0E 100%)";
@@ -71,13 +68,7 @@ const Vision = () => {
     <>
       <div className="vision z-[9999] relative  max-sm:overflow-x-hidden">
         <div className="main-vision">
-          <div className="w-full h-] px-[80px] pb-[129px] pt-[38px] bgwhite justify-center items-center inline-flex max-lg:p-10 max-lg:my-20 max-sm:p-[20px]">
-            <div className="w-[1090.32px] letter-spacing-2 text-center text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-md:w-full max-sm:text-[36px] max-sm:text-left">
-              Our vision is to propel humanity forward by building digital
-              products that uplift our client's value proposition and enrich
-              their users' lives.
-            </div>
-          </div>
+          <VisionPara />
           <div
             ref={sectionReff}
             className="w-full h-[811px] max-2md:justify-center max-2md:gap-[100px] py-[0px] pl-[80px] pr-[144px] max-xl:px-[80px] bg-[#151515] justify-center items-center gap-[171px] max-xl:gap-[0] max-sm:gap-[40px] inline-flex box max-2md:flex-wrap max-md:h-full  max-[800px]:justify-center max-lg:px-[40px] max-sm:py-[56px] max-md:p-[40px] max-2md:flex-wrap max-flex-wrap max-xl:justify-between max-xl:items-start max-xl:h-full max-xl:p-20 max-lg:gap-[30px] max-sm:px-[20px] max-sm:gap-10"
@@ -137,6 +128,7 @@ const Vision = () => {
             </div>
             <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
+                loading="lazy"
                 className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
                 src={img}
                 alt=""

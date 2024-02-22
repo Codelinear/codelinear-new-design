@@ -42,7 +42,7 @@ const Commitment = () => {
                   where diversity thrives, driving innovation and success.
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
                 <svg
@@ -71,7 +71,6 @@ const Commitment = () => {
             </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
-                {/* <div className="w-[42.30px] h-[42.29px] left-[7.35px] top-[7.36px] absolute"></div> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="58"
@@ -135,7 +134,6 @@ const Commitment = () => {
             </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
-                {/* <div className="w-[35.78px] h-[42.29px] left-[10.61px] top-[7.36px] absolute"></div> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="58"
@@ -171,7 +169,6 @@ const Commitment = () => {
             </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className="w-[57px] h-[57px] relative">
-                {/* <div className="w-[29.28px] left-[13.86px] top-[7.36px] absolute"></div> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="57"

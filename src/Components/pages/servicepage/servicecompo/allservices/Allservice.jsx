@@ -177,10 +177,10 @@ const Allservice = () => {
                 <div className="section" id="Lowcode" ref={lowcode}>
                   <Lowcode />
                 </div>
-                <div className="hidden max-sm:block" id="Lowcode" ref={sf}>
+                <div className="hidden max-sm:block" id="Lowcode">
                   <Salesforceservice />
                 </div>
-                <div className="hidden max-sm:block" id="Lowcode" ref={sp}>
+                <div className="hidden max-sm:block" id="Lowcode">
                   <Sharepointservies />
                 </div>
                 <div className="section" id="quality" ref={quality}>
@@ -219,7 +219,6 @@ const Allservice = () => {
                     <Link
                       to="#Product-Design-and-Innovation"
                       onClick={scrollToMobileGameu}
-                      // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
@@ -233,7 +232,6 @@ const Allservice = () => {
                     <Link
                       to="#App-Development-and-Modernization"
                       onClick={scrollTodesktopgame}
-                      // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
@@ -247,7 +245,6 @@ const Allservice = () => {
                     <Link
                       to="#Technology-Consulting"
                       onClick={scrollTounreal}
-                      // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
                           ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"

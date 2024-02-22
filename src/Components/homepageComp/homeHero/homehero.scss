@@ -12,7 +12,11 @@
   font-weight: bold;
   color: #7ba0ff;
 }
-.letter-spacing-1 {
+.hero-height {
+  height: calc(100vh - 115px);
+}
+.letter-spacing-1,
+.letter-spacing {
   letter-spacing: -1.98px;
 }
 .letter-spacing-2 {
@@ -48,58 +52,42 @@
     position: relative;
     width: 310px;
     margin-left: 316px;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -2px; /* Adjust as needed */
+    height: 12px;
+    background-color: transparent;
+    margin-top: -2px;
   }
   .autoplay-progress4 {
     position: relative;
     width: 310px;
     margin-left: 316px;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -12px; /* Adjust as needed */
+    height: 12px;
+    background-color: transparent;
+    margin-top: -12px;
   }
   .autoplay-progress3 {
     position: relative;
     width: 310px;
     margin-left: 316px;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -12px; /* Adjust as needed */
+    height: 12px;
+    background-color: transparent;
+    margin-top: -12px;
   }
   .autoplay-progress2 {
     position: relative;
     width: 310px;
     margin-left: 316px;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -12px; /* Adjust as needed */
+    height: 12px;
+    background-color: transparent;
+    margin-top: -12px;
   }
   .autoplay-progress1 {
     position: relative;
     width: 310px;
     margin-left: 316px;
-    height: 12px; /* Set the height of the progress bar */
-    background-color: transparent; /* Set the background color of the progress bar container */
-    margin-top: -12px; /* Adjust as needed */
+    height: 12px;
+    background-color: transparent;
+    margin-top: -12px;
   }
-  .autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 4px;
-    stroke: #7ba0ff;
-    fill: none;
-    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
-  }
-
   .swiper-pagination-bullet-active {
     fill: #ffcd05 !important;
     background-color: #ffcd05 !important;
@@ -114,45 +102,45 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #7ba0ff; /* Set the color of the progress bar */
+    background-color: #7ba0ff;
     opacity: 0.7;
-    transition: width 0s ease; /* Add transition for a smooth effect */
+    transition: width 0s ease;
   }
   .progress-bar1 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #dfc18b; /* Set the color of the progress bar */
+    background-color: #dfc18b;
     opacity: 0.7;
-    transition: width 0s ease; /* Add transition for a smooth effect */
+    transition: width 0s ease;
   }
   .progress-bar2 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #98c1e6; /* Set the color of the progress bar */
+    background-color: #98c1e6;
     opacity: 0.7;
-    transition: width 0s ease; /* Add transition for a smooth effect */
+    transition: width 0s ease;
   }
   .progress-bar3 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #c2cfcf; /* Set the color of the progress bar */
+    background-color: #c2cfcf;
     opacity: 0.7;
-    transition: width 0s ease; /* Add transition for a smooth effect */
+    transition: width 0s ease;
   }
   .progress-bar4 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #a7bffc; /* Set the color of the progress bar */
+    background-color: #a7bffc;
     opacity: 0.7;
-    transition: width 0s ease; /* Add transition for a smooth effect */
+    transition: width 0s ease;
   }
 }
 @media (max-width: 1024px) {
@@ -162,57 +150,18 @@
   .letter-spacing-7 {
     letter-spacing: -3.44px;
   }
+  .hero-height {
+    height: auto;
+  }
 }
 @media (max-width: 640px) {
   .hero-animate {
     .autoplay-progress {
-      position: relative;
-      width: 100%;
-      margin-left: 0;
-      height: 12px; /* Set the height of the progress bar */
-      background-color: transparent; /* Set the background color of the progress bar container */
-      margin-top: -2px; /* Adjust as needed */
-      margin-left: 0%;
-    }
-    .autoplay-progress1 {
-      position: relative;
-      width: 100%;
-      margin-left: 0;
-      height: 12px; /* Set the height of the progress bar */
-      background-color: transparent; /* Set the background color of the progress bar container */
-      margin-top: -12px; /* Adjust as needed */
-      margin-left: 0%;
-    }
-    .autoplay-progress2 {
-      position: relative;
-      width: 100%;
-      margin-left: 0;
-      height: 12px; /* Set the height of the progress bar */
-      background-color: transparent; /* Set the background color of the progress bar container */
-      margin-top: -12px; /* Adjust as needed */
-      margin-left: 0%;
-    }
-    .autoplay-progress3 {
-      position: relative;
-      width: 100%;
-      margin-left: 0;
-      height: 12px; /* Set the height of the progress bar */
-      background-color: transparent; /* Set the background color of the progress bar container */
-      margin-top: -12px; /* Adjust as needed */
-      margin-left: 0%;
-    }
-    .autoplay-progress4 {
-      position: relative;
-      width: 100%;
-      margin-left: 0;
-      height: 12px; /* Set the height of the progress bar */
-      background-color: transparent; /* Set the background color of the progress bar container */
-      margin-top: -12px; /* Adjust as needed */
-      margin-left: 0%;
+      display: none;
     }
     .swiper-pagination {
-      left: calc( 100% - 100px) !important;
-      top: calc(100% - 50px) !important;
+      left: calc(100% - 100px) !important;
+      top: calc(100% - 30px) !important;
     }
   }
   .letter-spacing-7 {

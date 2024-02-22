@@ -6,6 +6,7 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail14.jpg";
 import img2 from "../../blogassets/Frame 1000001793.png";
 import img3 from "../../blogassets/Frame 4.svg";
 import Explore from '../../../production/Explore'
+import { Helmet } from "react-helmet";
 
 const Gestalt = () => {
   const scrollToTop = () => {
@@ -13,6 +14,9 @@ const Gestalt = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>codelinear | Gestalt Psychology</title>
+    </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

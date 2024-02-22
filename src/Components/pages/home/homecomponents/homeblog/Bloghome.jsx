@@ -25,7 +25,7 @@ const Bloghome = () => {
         <div className="max-sm:w-full">
           <Link
             onClick={scrollToTop}
-            to={"insights"}
+            to={"/insights"}
             className="w-[174px] h-14 px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[100%]"
           >
             <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal max-sm:w-[100%] max-sm:text-center">
@@ -94,7 +94,7 @@ const Bloghome = () => {
                     two decades, and it has undergone significant changes....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="px-4 py-2 max-sm:w-full hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -128,7 +128,7 @@ const Bloghome = () => {
                     components....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -161,7 +161,7 @@ const Bloghome = () => {
                     assumptions. That takes us to the next important segment....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -194,7 +194,7 @@ const Bloghome = () => {
                     with huge budgets. Any business can create a branded....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -227,7 +227,7 @@ const Bloghome = () => {
                     great case study in UX design using Gestalt Psychology....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -260,7 +260,7 @@ const Bloghome = () => {
                     and women want to keep creative control....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
@@ -293,7 +293,7 @@ const Bloghome = () => {
                     heard of Shopify and Magento.Today, Shopify and....
                   </div>
                 </div>
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
+                <div className="hover:bg-yellow-400 transition-all  hover:border-yellow-400 px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>

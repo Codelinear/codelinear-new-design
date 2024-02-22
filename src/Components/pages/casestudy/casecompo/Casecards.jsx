@@ -28,15 +28,20 @@ import img25 from "../assets/Desktop - 46 (4).jpg";
 import img26 from "../assets/Desktop - 46 (5).jpg";
 import img27 from "../assets/Desktop - 46 (6).jpg";
 import img28 from "../assets/Desktop - 46 (7).jpg";
+import img29 from "../assets/kanbar.jpg";
+import { Link } from "react-router-dom";
 
 const Casecards = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <div className="case-cards">
-        <div className="w-full px-[80px] max-lg:px-[40px] max-sm:px-[20px] h-full justify-start items-start gap-[62px] inline-flex flex-wrap max-sm:gap-[78px]   max-lg:p-5 max-xl:justify-center max-xl:items-center">
-          <div className="flex-col w-[30%] h-full max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
+        <div className="w-full px-[80px] max-lg:px-[40px] max-sm:px-[20px] h-full justify-start items-start gap-[62px] max-2xl:gap-[54px] inline-flex flex-wrap max-sm:gap-[78px]   max-lg:p-5 max-1xl:justify-center max-1xl:items-center">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] h-full max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] w justify-end items-center inline-flex w-full h-full">
-              <img className="w-full h-full" src={img1} alt="" />
+              <img className="w-full h-full" loading="lazy" src={img1} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -56,7 +61,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -65,9 +70,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img2} alt="" />
+              <img className="w-full " loading="lazy" src={img2} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -85,20 +90,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+                <Link
+                  to={"/wear-well"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Retail and apparel
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img3} alt="" />
+              <img className="w-full " loading="lazy" src={img3} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -118,7 +127,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -127,9 +136,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img4} alt="" />
+              <img className="w-full " loading="lazy" src={img4} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -147,20 +156,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+                <Link
+                  to={"/leaf-&-hive"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   food & beverages
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img5} alt="" />
+              <img className="w-full " loading="lazy" src={img5} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -180,7 +193,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -189,9 +202,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full   justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full   justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img6} alt="" />
+              <img className="w-full " loading="lazy" src={img6} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -211,7 +224,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -220,9 +233,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img7} alt="" />
+              <img className="w-full " loading="lazy" src={img7} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -242,7 +255,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -251,9 +264,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img8} alt="" />
+              <img className="w-full " loading="lazy" src={img8} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -271,20 +284,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+                <Link
+                  to={"/tradejini"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Fintech
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full   justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full   justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img9} alt="" />
+              <img className="w-full " loading="lazy" src={img9} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -304,7 +321,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -313,9 +330,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full ]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full ]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img10} alt="" />
+              <img className="w-full " loading="lazy" src={img10} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -335,7 +352,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -344,9 +361,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img11} alt="" />
+              <img className="w-full " loading="lazy" src={img11} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -366,7 +383,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -375,9 +392,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img12} alt="" />
+              <img className="w-full " loading="lazy" src={img12} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -395,20 +412,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+                <Link
+                  to={"/singhvi-dev-&-uni-llp-chartered-accountants"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Accounting and finance
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img13} alt="" />
+              <img className="w-full " loading="lazy" src={img13} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -429,7 +450,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -438,9 +459,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img14} alt="" />
+              <img className="w-full " loading="lazy" src={img14} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -460,7 +481,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -469,9 +490,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lgh-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lgh-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img15} alt="" />
+              <img className="w-full " loading="lazy" src={img15} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -491,7 +512,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -500,9 +521,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-l:h-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-l:h-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img16} alt="" />
+              <img className="w-full " loading="lazy" src={img16} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -523,7 +544,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -532,9 +553,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img17} alt="" />
+              <img className="w-full " loading="lazy" src={img17} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -552,20 +573,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <Link
+                  to={"/klassen-&-smith"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Construction
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img18} alt="" />
+              <img className="w-full " loading="lazy" src={img18} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -583,20 +608,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <Link
+                  to={"/vacaystay-406"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Hospitality
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img19} alt="" />
+              <img className="w-full " loading="lazy" src={img19} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -614,18 +643,22 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <Link
+                  to={"/contrasted-marketing"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   Marketing
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img20} alt="" />
             </div>
@@ -645,20 +678,24 @@ const Casecards = () => {
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
+              <Link
+                  to={"/landmark"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
                     View case study
                   </div>
-                </div>
+                </Link>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   construction
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img22} alt="" />
+              <img className="w-full " loading="lazy" src={img22} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -678,7 +715,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -687,9 +724,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img21} alt="" />
+              <img className="w-full " loading="lazy" src={img21} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -709,7 +746,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -718,9 +755,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img23} alt="" />
+              <img className="w-full " loading="lazy" src={img23} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -739,8 +776,8 @@ const Casecards = () => {
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                    View case study
+                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -749,9 +786,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img24} alt="" />
+              <img className="w-full " loading="lazy" src={img24} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -771,7 +808,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -780,9 +817,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img25} alt="" />
+              <img className="w-full " loading="lazy" src={img25} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -802,7 +839,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -811,9 +848,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img26} alt="" />
+              <img className="w-full " loading="lazy" src={img26} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -833,7 +870,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -842,9 +879,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img27} alt="" />
+              <img className="w-full " loading="lazy" src={img27} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -865,7 +902,7 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -874,9 +911,9 @@ const Casecards = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
-              <img className="w-full " src={img28} alt="" />
+              <img className="w-full " loading="lazy" src={img28} alt="" />
             </div>
             <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
               <div className="flex-col justify-start items-start gap-[12px] flex">
@@ -896,11 +933,46 @@ const Casecards = () => {
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
                   <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    View case study
+                    Coming Soon
                   </div>
                 </div>
                 <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
                   healthcare
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img29} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
+              <div className="flex-col justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+                  kanbar digital
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                    kanbar digital
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                  Digital marketing strategies made simple
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+              <Link
+                  to={"/kanbar-digital"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  Marketing
                 </div>
               </div>
             </div>

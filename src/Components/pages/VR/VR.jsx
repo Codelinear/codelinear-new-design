@@ -8,6 +8,8 @@ import VR6 from "./VRsections/VR6";
 import Explore from "../production/Explore";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 const VR = () => {
   const vr1 = useRef(null);
   const vr2 = useRef(null);
@@ -72,6 +74,9 @@ const VR = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>codelinear | AR/VR services</title>
+    </Helmet>
       <div className="flex justify-between">
         <div className="left max-xl:w-full">
           <div className="section">

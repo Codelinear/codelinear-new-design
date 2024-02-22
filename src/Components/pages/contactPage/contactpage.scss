@@ -46,7 +46,7 @@
         width: 100%;
         display: flex;
         width: 626px;
-        padding: 15px 476px 15px 0px;
+        padding: 15px 0px 15px 0px;
         align-items: center;
         border-bottom: 1px solid #000;
         margin: 32px 0;
@@ -176,7 +176,7 @@
 .hand.second {
   height: 40px;
   width: 1px;
-  background-color: #7C7C7C;
+  background-color: #7c7c7c;
 }
 .hand.minute {
   height: 35px;
@@ -279,10 +279,18 @@
 input:focus {
   outline: none;
 }
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 input {
+  color: rgba(0, 0, 0);
+  font-family: Graphik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+textarea {
   color: rgba(0, 0, 0);
   font-family: Graphik;
   font-size: 20px;
@@ -595,8 +603,8 @@ input {
       width: 91%;
       margin-top: 45px;
     }
-    .contact-form{
-      button{
+    .contact-form {
+      button {
         width: 100%;
       }
     }
@@ -717,7 +725,7 @@ input {
   }
 }
 @media (max-width: 370px) {
-  .div-time{
+  .div-time {
     transform: scale(0.9);
   }
 }

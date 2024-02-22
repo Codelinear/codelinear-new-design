@@ -1,17 +1,11 @@
-// ScrollToTopButton.js
 import React, { useState, useEffect } from "react";
-// import "./ScrollToTopButton.css";
-
 const Scrolltop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show the button when the user scrolls down
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    setIsVisible(scrollTop > 100); // Adjust the value as needed
+    setIsVisible(scrollTop > 100);
   };
-
-  // Scroll to the top when the button is clicked
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,24 +14,15 @@ const Scrolltop = () => {
   };
 
   useEffect(() => {
-    // Attach the scroll event listener when the component mounts
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    // <div
-
-    // >
-    //   <span>&#9650;</span>
-    // </div>
-
     <div
-      className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}
+      className='scroll-to-top-button'
       onClick={scrollToTop}
     >
       <div class="bottonn w-[189.13px] max-sm:w-[168px] max-sm:h-full h-[29.13px] opacity-80 justify-start items-center gap-3 inline-flex">
@@ -88,12 +73,11 @@ const Scrolltop = () => {
                 />
               </svg>
             </div>
-            {/* <div class="origin-top-left rotate-[135deg] w-[10.45px] h-[10.45px] left-[21.95px] top-[32px] absolute"></div> */}
           </div>
         </div>
-        <h1 class="topto text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+        <button class="topto text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
           Scroll to the top
-        </h1>
+        </button>
       </div>
     </div>
   );

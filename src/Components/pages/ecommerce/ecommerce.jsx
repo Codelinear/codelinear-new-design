@@ -1,17 +1,10 @@
 import Hero from "./hero/hero";
 import ESection from "./ecommerceSection/ecommerceSection";
 import Explore from "../production/Explore";
-import { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Ecommerce = () => {
-  const produc = useRef(null);
-
-  const scrollToMobileGameu = () => {
-    if (produc.current) {
-      produc.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const [activeSection, setActiveSection] = useState(null);
 
   const handleScroll = () => {
@@ -36,6 +29,9 @@ const Ecommerce = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>codelinear | Ecommerce Marketplace Development</title>
+    </Helmet>
       <div className="flex justify-between">
         <div className="left">
           <div className="section">

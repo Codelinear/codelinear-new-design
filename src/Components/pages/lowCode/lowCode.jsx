@@ -1,17 +1,10 @@
 import Hero from "./hero/hero";
 import LowSection from "./lowCodeSection/lowSection";
 import Explore from "../production/Explore";
-import { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Lowcode = () => {
-  const produc = useRef(null);
-
-  const scrollToMobileGameu = () => {
-    if (produc.current) {
-      produc.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const [activeSection, setActiveSection] = useState(null);
 
   const handleScroll = () => {
@@ -36,6 +29,9 @@ const Lowcode = () => {
   }, []);
   return (
     <>
+    <Helmet>
+      <title>codelinear | Low-code & No-code</title>
+    </Helmet>
       <div className="flex justify-between">
         <div className="section left w-[80%] max-xl:w-full">
           <div>

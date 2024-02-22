@@ -1,30 +1,55 @@
-import React, { useEffect } from "react";
-import "./home.scss";
+import React from "react";
 import Homehero from "../../homepageComp/homeHero/Homehero";
-import Vision from "./homecomponents/vision/Vision";
-import Productengineer from "./homecomponents/homeproductengineer/Productengineer";
-import Homeabout from "./homecomponents/homeabout/Homeabout";
-import Homeservice from "./homecomponents/service/Homeservice";
-import Clients from "./homecomponents/Clients";
-import Bloghome from "./homecomponents/homeblog/Bloghome";
-import Adupt from "./homecomponents/Adupt";
-import Homeanimate from "./homecomponents/homeanimate/Homeanimate";
+import { Helmet } from "react-helmet";
+import { Suspense } from "react";
+const Adupt = React.lazy(() => import("./homecomponents/Adupt"));
+const Bloghome = React.lazy(() => import("./homecomponents/homeblog/Bloghome"));
+const Clients = React.lazy(() => import("./homecomponents/Clients"));
+const Homeservice = React.lazy(() =>
+  import("./homecomponents/service/Homeservice")
+);
+const Homeanimate = React.lazy(() =>
+  import("./homecomponents/homeanimate/Homeanimate")
+);
+const Homeabout = React.lazy(() =>
+  import("./homecomponents/homeabout/Homeabout")
+);
+const Productengineer = React.lazy(() =>
+  import("./homecomponents/homeproductengineer/Productengineer")
+);
+const Vision = React.lazy(() => import("./homecomponents/vision/Vision"));
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  });
   return (
     <div>
+      <Helmet>
+        <title>codelinear</title>
+      </Helmet>
       <Homehero />
-      <Vision />
-      <Productengineer />
-      <Homeabout />
-      <Homeservice />
-      <Homeanimate />
-      <Clients />
-      <Adupt />
-      <Bloghome />
+      <Suspense>
+        <Vision />
+      </Suspense>
+      <Suspense>
+        <Productengineer />
+      </Suspense>
+      <Suspense>
+        <Homeabout />
+      </Suspense>
+      <Suspense>
+        <Homeservice />
+      </Suspense>
+      <Suspense>
+        <Homeanimate />
+      </Suspense>
+      <Suspense>
+        <Clients />
+      </Suspense>
+      <Suspense>
+        <Adupt />
+      </Suspense>
+      <Suspense>
+        <Bloghome />
+      </Suspense>
     </div>
   );
 };

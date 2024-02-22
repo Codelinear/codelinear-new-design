@@ -55,21 +55,10 @@
 }
 
 .adupt-cards:hover .Industries {
-  //   opacity: 1;
   text-decoration: underline #b7b7b7 50%;
-  // color: #fff;
-
   text-decoration-thickness: 1.5px;
   --webkit-text-decoration-thickness: 1.5px;
 }
-
-// .clients img {
-//   aspect-ratio: 1/2;
-//   object-fit: contain;
-
-//   // mix-blend-mode: color-dodge;
-// }
-
 @media (max-width: 1440px) {
   .adupt-cards {
     width: 300px;
@@ -85,16 +74,9 @@
   }
 }
 @media (max-width: 1024px) {
-  // .client-logos {
-  //   .b {
-  //     width: 50%;
-  //   }
-  // }
-
   .adupt-cards {
     width: 40%;
   }
-
   .adupt-cards:hover {
     filter: invert(0);
   }
@@ -117,9 +99,6 @@
   .adupt-svg5 {
     background-image: url("./aduptsvg/ystate.svg");
   }
-  // .adupt-cards:hover .adupt-svg5 {
-  //     background-image: url("./aduptsvg/yheart.svg");
-  //   }
   .adupt-svg6 {
     background-image: url("./aduptsvg/ycart.svg");
   }

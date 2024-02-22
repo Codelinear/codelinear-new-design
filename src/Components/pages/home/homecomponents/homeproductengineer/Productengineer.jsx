@@ -48,7 +48,6 @@ const Productengineer = () => {
       trigger: section,
       start: "top top",
       end: "bottom center",
-      // markers:true,
       onEnter: () => {
         section.style.background =
           "radial-gradient(157.06% 75.41% at 50% 50%, #001425 0%, #0E0E0E 100%)";
@@ -70,7 +69,6 @@ const Productengineer = () => {
       trigger: section2,
       start: "top top",
       end: "bottom center",
-      // markers:true,
       onEnter: () => {
         section2.style.background =
           "radial-gradient(80.26% 77.8% at 50% 50%, #180605 0%, #0E0E0E 100%)";
@@ -94,7 +92,8 @@ const Productengineer = () => {
             <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
                 className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
-                src={img}
+              loading="lazy"
+              src={img}
                 alt=""
               />
             </div>
@@ -117,7 +116,6 @@ const Productengineer = () => {
                       possibilities.
                     </div>
                   </div>
-
                   <Link to={"/services"} onClick={scrollToTop}>
                     <div className="hover:bg-yellow-400 transition-all  text-white hover:text-black px-8 py-4 rounded-[31px] border border-white justify-center items-center gap-2 inline-flex  hover:border-yellow-400 max-sm:w-full">
                       <div className="text-base font-normal font-['Graphik'] capitalize leading-normal ">
@@ -223,7 +221,8 @@ const Productengineer = () => {
           <div className="w-[508px] max-md:w-full max-md:m-0 max-xl:w-[436px] max-3lg:w-[] max-xl:h-auto h-[611.01px] max-xl:items-start flex-col justify-center items-center inline-flex maxxl:w-[536px] max:md:w-full   max-md:h-full  max-md:mt-5">
               <img
                 className="w-[513.40px] max-xl:w-[436px] max-md:w-full h-[770.23px] max-xl:h-auto"
-                src={img2}
+              loading="lazy"
+              src={img2}
                 alt=""
               />
           </div>

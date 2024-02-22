@@ -75,7 +75,7 @@ const Gameservices = () => {
           <div className="w-full h-full relative bg-white flex justify-between">
             <div className="leftt">
               <div className="max-lg:w-full">
-                <div className="flex justify-between max-lg:w-full pr-[10px] max-lg:p-0 max-sm:mb-20 max-xl:pr-[80px] mb-[101px] w-full">
+                <div className="flex gap-[103px] max-lg:w-full pr-[10px] max-lg:p-0 max-sm:mb-20 max-xl:pr-[80px] mb-[101px] w-full">
                   <div className="flex max-lg:w-full flex-col gap-[436px] max-lg:gap-[40px]">
                     <p className="section w-[305px] ml-[80px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:ml-[40px] max-sm:ml-[20px]">
                       Immerse players in visually stunning landscapes. Our

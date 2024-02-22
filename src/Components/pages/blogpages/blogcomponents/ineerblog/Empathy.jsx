@@ -6,13 +6,16 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail09.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail07.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail11.jpg";
 import Explore from '../../../production/Explore'
-
+import { Helmet } from "react-helmet";
 const Empathy = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
     <>
+     <Helmet>
+    <title>codelinear | Empathy In UX</title>
+  </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"

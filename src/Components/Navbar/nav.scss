@@ -1,10 +1,3 @@
-.nav-card:hover .service-arrow {
-  opacity: 1;
-}
-
-.nav-card:hover {
-  background-color: #fff;
-}
 .index-hover {
   display: none;
 }
@@ -13,6 +6,14 @@
 }
 .hover-logo:hover .index-hover2 {
   display: none;
+}
+.category-section {
+  .active {
+    background-color: black;
+    div {
+      color: #fff !important;
+    }
+  }
 }
 .lists {
   display: none;
@@ -25,9 +26,6 @@
   padding: 0px 0 40px 0;
   height: 100vh;
   overflow: hidden;
-}
-.service-nav {
-  background: white;
 }
 .stop-scrolling {
   height: 100vh;

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import img1 from "../../blogassets/Blogs Animation Thumbnail10.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail09.jpg";
 import img3 from "../../blogassets/Blogs Animation Thumbnail02.jpg";
-import Explore from '../../../production/Explore'
+import Explore from "../../../production/Explore";
+import { Helmet } from "react-helmet";
 
 const Digital = () => {
   const scrollToTop = () => {
@@ -13,8 +14,11 @@ const Digital = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>codelinear | Digital Marketing</title>
+      </Helmet>
       <div className="innerhero">
-      <Link
+        <Link
           to="/insights"
           onClick={scrollToTop}
           className="px-4 py-2 hidden max-sm:flex left-[80px] top-[90px] absolute rounded-[54px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-lg:left-[20px]"
@@ -35,7 +39,7 @@ const Digital = () => {
           </div>
         </Link>
         <div className="w-full h-full pl-20 pr-[407px] pt-[233.78px] pb-[65.22px] bg-white justify-start items-center inline-flex max-lg:p-10 max-sm:p-0 max-sm:px-[20px] max-sm:mt-[90px]">
-        <div className="w-[953px] letter-spacing-2 text-black text-[66px] font-normal font-['Graphik'] leading-[108%] max-lg:w-full max-sm:text-[50px]">
+          <div className="w-[953px] letter-spacing-2 text-black text-[66px] font-normal font-['Graphik'] leading-[108%] max-lg:w-full max-sm:text-[50px]">
             Digital Marketing
           </div>
         </div>

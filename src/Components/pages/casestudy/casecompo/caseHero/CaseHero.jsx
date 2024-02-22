@@ -10,8 +10,6 @@ const CaseHero = () => {
           </div>
         </div>
       </div>
-
-      <div className="bottom-cases"></div>
     </>
   );
 };

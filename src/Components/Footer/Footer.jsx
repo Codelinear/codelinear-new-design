@@ -5,16 +5,28 @@ import Scrolltop from "./Scrolltop";
 import { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import gsap from "gsap";
+
 const Footer = () => {
   const footer = useRef(null);
+  const mainfooter = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
     const live = location.pathname;
     if (live === "/contact-us") {
       gsap.to(footer.current, 0, { display: "none" });
+      gsap.fromTo(
+        mainfooter.current,
+        { display: "none" },
+        { display: "block", delay: 1 }
+      );
     } else {
       gsap.to(footer.current, 0, { display: "block" });
+      gsap.fromTo(
+        mainfooter.current,
+        { display: "none" },
+        { display: "block", delay: 2 }
+      );
     }
   });
   const scrollToTop = () => {
@@ -22,7 +34,7 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="bg-white relative 0 h[1800px]">
+      <footer ref={mainfooter} className="bg-white relative h[1800px]">
         <Scrolltop />
         <div className="upr-footer" ref={footer}>
           <div className="w-full h-full pl-20 pr.90px] mt-[76.61px] pb-[44.82px] bg-white flex-col justify-end items-start gap-[47.56px] inline-flex   max-md:p-10 max-sm:p-5  max-lg:pl-[40px]">
@@ -42,7 +54,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-
         <div className="down-footer mt-20">
           <div className="w-full pb-[20px] max-sm:p-0 relative bg-white max-lg:h-full">
             <div className="flex gap-[126px] pl-[80px]  max-xl:flex-wrap max-lg:ml-0 max-[1340px]:gap-[32px] max-sm:p-5  max-lg:p-10 max-sm:gap-10 max-lg:gap-10">
@@ -87,7 +98,6 @@ const Footer = () => {
                       </svg>
                     </div>
                   </div>
-
                   <div className="left-[80px] top-[401.50px]  flex-col justify-start items-start  gap-[20px] inline-flex max-[350px]:w-full">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                       Codelinear Software Solutions.
@@ -135,7 +145,6 @@ const Footer = () => {
                             </svg>
                           </a>
                         </div>
-
                         <div className="w-6 h-6 relative">
                           <a
                             target="_blank"
@@ -229,7 +238,6 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className=" max-lg:flex max-1sm:hidden hidden max-2lg:gap-[40px] flex gap-[80px] max-2xl:gap-[40px] max-1lg:gap-[80px] pt-20 max-2lg:gap-[40px] max-xl:pt-[0] h-[150px] max-sm:h-[120px]">
                   <div className="w-60 h-[116px] flex-col justify-start items-start  gap-[20px] inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
@@ -241,7 +249,6 @@ const Footer = () => {
                       Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001
                     </div>
                   </div>
-
                   <div className="w-60  max-2lg:w-48 h-[92px] flex-col justify-start items-start gap-[20px] inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
                       USA
@@ -252,12 +259,11 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-[390px] max-sm:block max-sm:opacity-100 max-[1422px]:whitespace-normal whitespace-nowrap max-2md:hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
+                <div className="w-[390px] max-sm:opacity-100 max-[1422px]:whitespace-normal whitespace-nowrap max-2md:hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
                   Copyright © Codelinear Software Solutions Pvt Ltd. All Rights
                   Reserved.{" "}
                 </div>
               </div>
-
               <div className="flex max-lg:items-end max-2md:items-start  max-sm:flex-col-reverse flex-wrap gap-20 max-2xl:gap-[40px] max-1lg:gap-[80px] max-2lg:gap-[40px]  max-1lg:gap-y-[40px] max-xl:gap-y-[64px] max-sm:gap-8 max-xl:gap-y-[82px] w-[55%] max-2lg:w-[40%] max-lg:w-[40%] max-2md:w-full max-lg:p-0  max-md:w-full max-sm:flex-wrapreverse">
                 <div className=" max-lg:hidden max-2lg:gap-[40px] flex gap-[80px] max-2xl:gap-[40px] max-1lg:gap-[80px] pt-20 max-2lg:gap-[40px] max-xl:pt-[0] h-[150px] max-sm:h-[400px]">
                   <div className="w-60 h-[116px] flex-col justify-start items-start  gap-[20px] inline-flex">
@@ -270,7 +276,6 @@ const Footer = () => {
                       Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001
                     </div>
                   </div>
-
                   <div className="w-60  max-2lg:w-48 h-[92px] flex-col justify-start items-start gap-[20px] inline-flex">
                     <div className="text-black text-xl font-normal font-['Graphik'] leading-normal">
                       USA
@@ -280,6 +285,10 @@ const Footer = () => {
                       San Diego, CA 92101
                     </div>
                   </div>
+                </div>
+                <div className="w-[390px] hidden max-sm:block hidden left-[80px] top-[723.50px] max-sm:w-[90%]  opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal max-[350px]:w-full">
+                  Copyright © Codelinear Software Solutions Pvt Ltd. All Rights
+                  Reserved.{" "}
                 </div>
                 <div className="flex max-lg:h-[500px] max-md:gap-0 max-md:flex-col max-2md:h-auto flex-row gap-[80px] max-2xl:gap-[40px] max-2md:flex-row max-2md:gap-[40px] max-1lg:flex-col max-1lg:gap-0">
                   <div className="left-[622px] w-[240px] max-xl:pt-0  pt-5 top-[201.89px]  flex-col justify-start items-start max-sm:gap-[16px] gap-[20px] inline-flex max-md:w-full">
@@ -381,12 +390,10 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="w-[88px] max-2md:h-auto max-lg:h-[500px] h-[266px] flex-col pt-5 max-xl:pt-[0] justify-start items-start gap-[20px] inline-flex max-sm:order-1">
                   <div className="text-black text-xl font-normal font-['Graphik'] leading-[30px]">
                     Sitemap
                   </div>
-
                   <div className="w-[88px] justify-start items-start gap-[35px] inline-flex">
                     <div className="flex-col max-lg:w-28 justify-start items-start gap-2 inline-flex">
                       <Link
@@ -412,14 +419,14 @@ const Footer = () => {
                       </Link>
                       <Link
                         onClick={scrollToTop}
-                        to="case-study"
-                        className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
+                        to="case-studies"
+                        className="w-[98px] opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Case Studies
                       </Link>
                       <Link
                         onClick={scrollToTop}
-                        to="/industry"
+                        to="/industries"
                         className="opacity-60 max-sm:opacity-100 text-black text-base font-normal font-['Graphik'] leading-normal"
                       >
                         Industries
@@ -453,5 +460,4 @@ const Footer = () => {
     </>
   );
 };
-
 export default Footer;

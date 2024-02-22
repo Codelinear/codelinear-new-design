@@ -4,8 +4,12 @@ import img2 from "../../assets/case study page22.jpg";
 import img3 from "../../assets/case study page23.jpg";
 import img4 from "../../assets/case study page24.jpg";
 import img5 from "../../assets/case study page25.jpg";
+import { Link } from "react-router-dom";
 
 const Cases = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   return (
     <>
       <div className="cases">
@@ -37,7 +41,7 @@ const Cases = () => {
               </div>
               <div className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]">
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  View Case study
+                  Coming Soon
                 </div>
               </div>
               <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -70,7 +74,7 @@ const Cases = () => {
               </div>
               <div className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]">
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  View Case study
+                  Coming Soon
                 </div>
               </div>
               <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -114,11 +118,15 @@ const Cases = () => {
                   optimization.
                 </div>
               </div>
-              <div className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]">
+              <Link
+                to={"/search-engine-amplify"}
+                onClick={scrollToTop}
+                className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]"
+              >
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  View Case study
+                  View case study
                 </div>
-              </div>
+              </Link>
               <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
                 Marketing/Services{" "}
               </div>
@@ -148,7 +156,7 @@ const Cases = () => {
               </div>
               <div className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]">
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  View Case study
+                  Coming Soon
                 </div>
               </div>
               <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">
@@ -194,7 +202,7 @@ const Cases = () => {
               </div>
               <div className="px-8 py-4 hover:bg-yellow-400 transition-all  hover:border-yellow-400 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex max-sm:w-[100%]">
                 <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                  View Case study
+                  Coming Soon
                 </div>
               </div>
               <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] mt-16 max-lg:hidden text-sm font-normal font-['Archivo'] uppercase leading-normal">

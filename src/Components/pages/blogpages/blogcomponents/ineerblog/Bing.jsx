@@ -6,13 +6,16 @@ import img1 from "../../blogassets/Blogs Animation Thumbnail05.jpg";
 import img2 from "../../blogassets/Blogs Animation Thumbnail13.jpg";
 import Explore from '../../../production/Explore'
 import img3 from "../../blogassets/Blogs Animation Thumbnail12.jpg";
-
+import { Helmet } from "react-helmet";
 const Bing = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
   return (
     <>
+     <Helmet>
+        <title>codelinear | Bing Or Google? Where Should You Focus On, And Why?</title>
+      </Helmet>
       <div className="innerhero">
       <Link
           to="/insights"
