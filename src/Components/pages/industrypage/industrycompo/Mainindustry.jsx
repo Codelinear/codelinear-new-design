@@ -10,6 +10,8 @@ import img7 from "../assets/Industries04.jpg";
 import img8 from "../assets/Industries10.jpg";
 import img9 from "../assets//Industries08.jpg";
 import img10 from "../assets/Industries01.jpg";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Mainindustry = () => {
   const scrollToTop = () => {
@@ -20,11 +22,16 @@ const Mainindustry = () => {
       <div className="industry-main">
         <div className="flex flex-wrap">
           <div className="w-full px-[132px] max-[1440px]:px-[80px] max-lg:px-[40px] max-lg:gap-[49px] max-sm:px-[20px] pb-[98px] bg-white justify-center gap-[126px] items-start inline-flex flex-wrap max-sm:gap-[72px] max-lg:flex-wrap max-lg:p-5 max-lg:justify-center max-lg:items-center max-lg:h-full">
-            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-start items-center flex">
-                <img className="w-[319.63px] h-[365.63px]" src={img9} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[319.63px] h-[365.63px]"
+                  loading="lazy"
+                  src={img9}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex w-[100%]">
                   <div className="w-8 h-8 relative">
                     <svg
@@ -56,27 +63,31 @@ const Mainindustry = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                    {/* </div> */}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Fintech
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Fintech{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Revolutionize finance with our Fintech Solutions, delivering
                     secure, efficient, and user-friendly financial services for
-                    modern consumers and businesses.
+                    modern consumers and businesses.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img className="w-[316.90px] h-[364.89px]" src={img5} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[316.90px] h-[364.89px]"
+                  loading="lazy"
+                  src={img5}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -107,26 +118,27 @@ const Mainindustry = () => {
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
                 <div className="self-stretch h-[93px]  max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Technology
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Technology{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Elevate operations with our Technology Solutions,
                     integrating cutting-edge technology, and strategic expertise
-                    for business excellence.
+                    for business excellence.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
-                  className="w-[307.73px] h-[361.26px]"
+                  className="widescreen:w-full widescreen:h-auto w-[307.73px] h-[361.26px]"
                   src={img8}
+                  loading="lazy"
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -163,23 +175,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Ecommerce
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Ecommerce{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Our E-commerce Solutions merge technology, personalization,
                     and seamless experiences for optimal engagement and
-                    conversions.
+                    conversions.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
-                <img className="w-[319.63px] h-[365.63px]" src={img2} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[319.63px] h-[365.63px]"
+                  loading="lazy"
+                  src={img2}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
@@ -223,23 +240,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Manufacturing
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Manufacturing{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     We ensure that your manufacturing solutions not only meet
                     current demands but also anticipate future needs for
-                    sustained success.
+                    sustained success.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img className="w-[316.90px] h-[364.89px]" src={img3} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[316.90px] h-[364.89px]"
+                  loading="lazy"
+                  src={img3}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -290,27 +312,27 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Supply chain and logistics
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Supply chain and logistics{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Streamline the supply chain with our integration solutions,
                     enhance visibility, reduce lead times, and ensure seamless
-                    collaboration between stakeholders.
+                    collaboration between stakeholders.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch  w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch  w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
-                  className="w-[307.73px] h-[361.26px]"
+                  className="widescreen:w-full widescreen:h-auto w-[307.73px] h-[361.26px]"
                   src={img6}
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -340,23 +362,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Healthcare
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Healthcare{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Seamlessly blend design brilliance, cutting-edge technology,
                     and strategic expertise to revolutionize healthcare
-                    delivery.
+                    delivery.{" "}
                   </div>
                 </div>
               </div>{" "}
             </div>
-            <div className="self-stretch w-[308px] flex-col  justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] widescreen:w-[25%] flex-col  justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] flex-col justify-start items-center flex">
-                <img className="w-[319.63px] h-[365.63px]" src={img} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[319.63px] h-[365.63px]"
+                  loading="lazy"
+                  src={img}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[10.05px] left-[10.97px] top-[4.50px] absolute">
@@ -393,23 +420,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Food and beverages
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Food and beverages{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Food and beverages solutions that are future-proof,
                     anticipating industry trends and technological advancements
-                    to keep your business agile and resilient.
+                    to keep your business agile and resilient.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="flex-col justify-end items-center flex">
-                <img className="w-[316.90px] h-[364.89px]" src={img4} alt="" />
+                <img
+                  className="widescreen:w-full widescreen:h-auto w-[316.90px] h-[364.89px]"
+                  loading="lazy"
+                  src={img4}
+                  alt=""
+                />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%] ">
                   <div className="w-8 h-8 relative">
                     <div className="w-[17.70px] left-[7.15px] top-[3.22px] absolute">
@@ -447,27 +479,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Hospitality
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Hospitality{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Elevate guest experiences with our Hospitality Solutions,
                     seamlessly merging technology innovation for unparalleled
-                    service.
+                    service.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
+            <div className="self-stretch w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center max-lg:h-full">
               <div className="h-[353px] pl-[0.27px] flex-col justify-end items-center flex">
                 <img
-                  className="w-[307.73px] h-[361.26px]"
+                  className="widescreen:w-full widescreen:h-auto w-[307.73px] h-[361.26px]"
                   src={img7}
+                  loading="lazy"
                   alt="placeholder"
                 />
               </div>
-              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex widescreen:h-[200px]">
                 <div className="self-stretch justify-start items-center gap-[13.42px] inline-flex  w-[100%]">
                   <div className="w-8 h-8 relative">
                     <div className="w-[24.49px] h-[24.51px] left-[3.76px] top-[3.75px] absolute">
@@ -518,24 +551,25 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Real estate
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Real estate{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Transform property ventures with our Real Estate Solutions,
                     integrating tech innovation for optimal efficiency and
-                    success.
+                    success.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="self-stretch mb-{30px} w-[308px] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center">
+            <div className="self-stretch mb-{30px} w-[308px] widescreen:w-[25%] flex-col justify-start items-start gap-8 inline-flex max-lg:justify-center max-lg:items-center">
               <div className="h-[353px] flex-col justify-end items-center flex ">
                 <img
-                  className="w-[321.78px] h-[402.39px] max-lg:w-full"
+                  className="widescreen:w-full widescreen:h-auto w-[321.78px] h-[402.39px] max-lg:w-full"
                   src={img10}
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div className="self-stretch h-[149px] max-lg:h-auto flex-col justify-start items-start gap-6 flex ">
@@ -589,24 +623,28 @@ const Mainindustry = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-30 border border-black"></div>
                 </div>
-                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%]">
-                    Sustainable energy
+                <div className="self-stretch h-[93px] max-lg:h-[140px] max-sm:h-auto flex-col justify-start items-start gap-4 flex widescreen:h-[140px]">
+                  <div className="self-stretch text-black text-2xl font-normal font-['Graphik'] capitalize letter-spacing-4 leading-[120%] widescreen:text-[30px] widestscreen:text-[35px]">
+                    Sustainable energy{" "}
                   </div>
-                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="self-stretch opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     Power a greener future, integrating innovative technology
-                    for eco-friendly and efficient solutions.
+                    for eco-friendly and efficient solutions.{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-[740px] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-sm:w-[308px] max-sm:h-[519px] max-sm:px-[21px] max-sm:py-[49px] max-lg:p-5 max-sm:gap-[133px] max-lg:gap-5 ">
+            <div className="w-[740px] widescreen:w-[calc(50%+126px)] self-stretch pl-20 pr-[163.58px] pt-[89.41px] pb-[84px] bg-neutral-50 flex-col justify-end items-start gap-[176.59px] inline-flex max-lg:w-full max-sm:w-[308px] max-sm:h-[519px] max-sm:px-[21px] max-sm:py-[49px] max-lg:p-5 max-sm:gap-[133px] max-lg:gap-5 ">
               <div className="w-[551.45px] text-black text-5xl font-normal font-['Graphik']  letter-spacing-2 leading-[120%] max-lg:w-full">
-                Need help in making the next big thing?
+                Need help in making the next big thing?{" "}
               </div>
-              <Link to={"/contact-us"} className="max-sm:w-full" onClick={scrollToTop}>
+              <Link
+                to={"/contact-us"}
+                className="max-sm:w-full"
+                onClick={scrollToTop}
+              >
                 <button className="px-8 py-4 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                     Talk to our experts
                   </div>
                 </button>

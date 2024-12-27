@@ -7,6 +7,8 @@ import img6 from "../assets/ph_globe-light.svg";
 import img7 from "../assets/ph_plug-light.svg";
 import img8 from "../assets/material-symbols-light_update.svg";
 import img9 from "../assets/ph_clipboard-light.svg";
+import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 
 import { Link } from "react-router-dom";
 
@@ -18,15 +20,15 @@ const QualitySection = () => {
     <>
       <section id="exp-design" className="exp-design">
         <h2>
-          QUALITY ASSURANCE <span></span>
+          Quality Assurance <span></span>
         </h2>
-        <h1 className="whitespace-nowrap">Quality Assurance</h1>
+        <h1 className="whitespace-nowrap">Quality Assurance </h1>
         <p className="exp-p">
           Your satisfaction is our priority. Our client-centric approach means
           you're involved at every stage. Transparent communication and
           collaboration ensure that your vision is not just met but exceeded.
         </p>
-        <div className="prod-container w-[924px] flex-wrap max-lg:w-full">
+        <div className="prod-container w-[924px] widescreen:w-[100%] flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" />
             <h3>Functional Testing</h3>
@@ -103,15 +105,15 @@ const QualitySection = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] max-sm:ml-0 inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:px-[20px]">
-        <div className="w-[267.25px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-          Need help in making the next big thing?
+        <div className="w-[267.25px] widescreen:w-[40%] widescreen:text-[30px] widestscreen:text-[40px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
+          Need help in making the next big thing?{" "}
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
           className="px-8 max-sm:w-full py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
-          <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
+          <div className="text-black rounded-[50px] text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
             Talk to our experts
           </div>
         </Link>

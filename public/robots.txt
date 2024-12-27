@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://www.codelinear.com/sitemap.xml
+Sitemap: https://codelinear.com/sitemap.xml

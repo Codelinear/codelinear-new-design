@@ -1,8 +1,11 @@
 import Hero from "./hero/hero";
+import gsap from "gsap";
 import ESection from "./ecommerceSection/ecommerceSection";
 import Explore from "../production/Explore";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import axios from "axios";
+import Footer from "../../Footer/Footer";
 
 const Ecommerce = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -15,12 +18,14 @@ const Ecommerce = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition + 200 >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 200 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -29,9 +34,21 @@ const Ecommerce = () => {
   }, []);
   return (
     <>
-    <Helmet>
-      <title>codelinear | Ecommerce Marketplace Development</title>
-    </Helmet>
+      <Helmet>
+        <title>Services - Ecommerce Marketplace Development</title>
+        <meta
+          name="description"
+          content="Discover Codelinear's Ecommerce marketplace development services, tailored to help businesses create scalable, feature-rich online marketplaces. Learn how we leverage cutting-edge technologies to deliver innovative solutions that drive sales and customer engagement."
+        />
+        <link
+          rel="canonical"
+          href="https://codelinear.com/services/ecommerce-marketplace-development"
+        />
+        <meta
+          name="keywords"
+          content="eCommerce marketplace development, online marketplaces, eCommerce platforms, digital marketplaces, marketplace solutions, marketplace features, technology solutions, sales growth, customer engagement"
+        />
+      </Helmet>
       <div className="flex justify-between">
         <div className="left">
           <div className="section">
@@ -47,23 +64,23 @@ const Ecommerce = () => {
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                    ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[232px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-[232px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-[4px] inline-flex max-xl:flex-wrap ">
+            <div className=" w-[232px] h-[463px] relative widescreen:w-[350px] left-[0px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-[232px] widescreen:w-full overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-[4px] inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                      ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                      : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
-                  Ecommerce Marketplace Development
+                  Ecommerce Marketplace Development{" "}
                 </div>
               </div>
             </div>
@@ -71,6 +88,7 @@ const Ecommerce = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Footer/Footer";
 import Homehero from "../../homepageComp/homeHero/Homehero";
 import { Helmet } from "react-helmet";
 import { Suspense } from "react";
@@ -23,7 +24,16 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>codelinear</title>
+        <title>Codelinear - Home Page</title>
+        <meta
+          name="keywords"
+          content="software solutions, application development solutions, mobile apps development, software consulting agency, cloud computing service, Codelinear, codelinear, codelinea, code, software service, game developers, game development service, software solutions in bangalore, sharepoint service, sharepoint services, app development services, product design, UI design, UI design services, UI designer, web developer"
+        />
+        <link rel="canonical" href="https://codelinear.com/" />
+        <meta
+          name="description"
+          content="Welcome to Codelinear - your go-to destination for cutting-edge software solutions. Explore our expertise in app development and modernization, game development, software consulting, AR/VR development, and more."
+        />
       </Helmet>
       <Homehero />
       <Suspense>
@@ -50,6 +60,7 @@ const Home = () => {
       <Suspense>
         <Bloghome />
       </Suspense>
+      <Footer />
     </div>
   );
 };

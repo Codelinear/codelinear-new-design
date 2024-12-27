@@ -8,7 +8,13 @@
   bottom: 60px;
   opacity: 0;
 }
-.we{
+.react-tabs__tab--selected {
+  background-color: #fbfbfbbb !important;
+  border-left: 2px solid black;
+  border-bottom: transparent;
+  border-radius: 0 !important;
+}
+.we {
   font-size: 16px;
   line-height: 130%;
   font-weight: normal;
@@ -61,8 +67,38 @@
   display: none;
   opacity: 0;
 }
-@media (max-width: 900px) {
+@media (min-width: 1900px) {
+  .circle11,
+  .circle20,
+  .we {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .we{
+    left: 238px;
+  }
+  .arrowanimate {
+    position: relative;
+    left: 233px;
+  }
+}
+@media (min-width: 2500px) {
+  .circle11,
+  .circle20,
+  .we {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .we{
+    left: 258px;
+  }
+  .arrowanimate {
+    position: relative;
+    left: 253px;
+  }
+}
+@media (max-width: 900px) {
+  .we {
     display: none;
   }
   .arrowanimate {
@@ -105,10 +141,10 @@
   .circles-animation {
     transform: scale(0.6);
   }
-  .circle20{
+  .circle20 {
     font-size: 25px;
   }
-  .text-graph{
+  .text-graph {
     font-size: 25px;
     bottom: -185px;
   }

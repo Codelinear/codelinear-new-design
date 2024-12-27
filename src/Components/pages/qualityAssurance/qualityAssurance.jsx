@@ -1,9 +1,12 @@
 import Hero from "./hero/hero";
 import QSection from "./qualitySection/qualitySection";
 import Explore from "../production/Explore";
+import gsap from "gsap";
 import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Footer from "../../Footer/Footer";
 
 const QualityAssurance = () => {
   const produc = useRef(null);
@@ -17,12 +20,17 @@ const QualityAssurance = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition +  200 >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 200 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
   };
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -31,9 +39,21 @@ const QualityAssurance = () => {
   }, []);
   return (
     <>
-    <Helmet>
-      <title>codelinear | Quality Assurance</title>
-    </Helmet>
+      <Helmet>
+        <title>Services - Quality Assurance</title>
+        <meta
+          name="description"
+          content="Explore Codelinear's quality assurance services, ensuring the reliability, performance, and security of your software products. Learn how our QA experts conduct thorough testing to identify and address any issues, delivering high-quality software solutions."
+        />
+        <link
+          rel="canonical"
+          href="https://codelinear.com/services/quality-assurance"
+        />
+        <meta
+          name="keywords"
+          content="quality assurance, software testing, reliability, performance, security, QA experts, testing process, software solutions"
+        />
+      </Helmet>
       <div className="flex">
         <div className="left w-[100%] max-xl:w-full">
           <div className="section">
@@ -51,20 +71,20 @@ const QualityAssurance = () => {
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                    ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[122px] h-[463px] relative left-[20px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-20 overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+            <div className=" w-[122px] h-[463px] widescreen:w-[300px] relative left-[20px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-20 widescreen:w-full overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                      ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                      : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
                   Quality Assurance
@@ -75,6 +95,7 @@ const QualityAssurance = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,9 @@
 import img1 from "../assets/ph_gear-light.svg";
 import img2 from "../assets/ph_eye-light.svg";
 import img3 from "../assets/ph_hand-light.svg";
-
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const VR1 = () => {
   const scrollToTop = () => {
@@ -11,7 +12,7 @@ const VR1 = () => {
   return (
     <>
       <section id="exp-design" className="exp-design">
-        <h2 className="capitilize whitespace-nowrap">
+        <h2 className="capitilize whitespace-nowrap widescreen:w-[700px] widestscreen:w-[900px]">
           AR/VR Services <span></span>
         </h2>
         <h1 className="whitespace-nowrap max-sm:whitespace-normal">
@@ -22,7 +23,7 @@ const VR1 = () => {
           where cutting-edge technology converges with design for captivating,
           memorable interactions.
         </p>
-        <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
+        <div className="prod-container w-[924px] widescreen:w-full flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Engaging Storytelling</h3>
@@ -51,15 +52,15 @@ const VR1 = () => {
         </div>
       </section>
       <div className="justify-start mb-[147px] items-center gap-[58px] max-sm:w-full max-sm:gap-10 ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:mx-0 max-sm:px-[20px] max-sm:mb-[80px]">
-        <div className="w-[267.25px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-          Need help in making the next big thing?
+        <div className="w-[267.25px] widescreen:text-[30px] widescreen:w-[40%] widestscreen:text-[40px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
+          Need help in making the next big thing?{" "}
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
           className="px-8 max-sm:w-full py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
         >
-          <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
+          <div className="text-black rounded-[50px] text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
             Talk to our experts
           </div>
         </Link>

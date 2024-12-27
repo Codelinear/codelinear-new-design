@@ -3,6 +3,8 @@ import img2 from "../assets/ph_map-pin-light.svg";
 import img3 from "../assets/Triangle Flag.svg";
 
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 const VR4 = () => {
   const scrollToTop = () => {
@@ -12,7 +14,7 @@ const VR4 = () => {
     <div className="mb-[121px] max-sm:mb-0">
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap">
-          AR/VR services <span></span>
+          AR/VR Services <span></span>
         </h2>
         <h1 className="whitespace-nowrap  max-sm:whitespace-normal">
           AR Navigation Solutions{" "}
@@ -22,7 +24,7 @@ const VR4 = () => {
           augmented reality to provide intuitive, interactive, and efficient
           guidance for users.
         </p>
-        <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
+        <div className="prod-container w-[924px] widescreen:w-full flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Interactive Wayfinding</h3>
@@ -42,7 +44,7 @@ const VR4 = () => {
           <div className="prod-sub-container">
             <img src={img3} alt="" className="w-[50px] h-[50px]" />
             <h3 className="whitespace-nowrap max-sm:whitespace-normal">
-              Seamless Navigation Experience
+              Seamless Navigation Experience{" "}
             </h3>
             <p>
               Utilize AR navigation to create a seamless and intuitive
@@ -53,15 +55,15 @@ const VR4 = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] max-sm:w-full ml-[80px] inline-flex max-sm:flex-wrap max-lg:ml-[40px] max-sm:px-[20px] max-sm:ml-[0px]">
-        <div className="w-[267.25px] max-sm:text-[24px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-          Need help in making the next big thing?
+        <div className="w-[267.25px] widescreen:w-[40%] widestscreen:text-[30px] widestscreen:text-[40px] max-sm:text-[24px] text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
+          Need help in making the next big thing?{" "}
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
           className="px-8  max-sm:w-full py-4 rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[100%]"
         >
-          <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
+          <div className="text-black rounded-[50px] text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
             Talk to our experts
           </div>
         </Link>

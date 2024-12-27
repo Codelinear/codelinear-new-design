@@ -9,6 +9,8 @@ import gsap from "gsap";
 import check from "./images/material-symbols-light_check.png";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import SubFooter from "../../Footer/subFooter";
+import Scrolltop from "../../Footer/Scrolltop";
 
 const Contact = () => {
   const [time, setTime] = useState(new Date());
@@ -17,7 +19,6 @@ const Contact = () => {
   const USAh1 = useRef(null);
   const India = useRef(null);
   const Indiahi = useRef(null);
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTime(new Date());
@@ -100,6 +101,7 @@ const Contact = () => {
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [message, Setmessage] = useState("");
+  const [ipAddress, SetipAddress] = useState("");
 
   const fname = useRef(null);
   const lname = useRef(null);
@@ -160,7 +162,7 @@ const Contact = () => {
       const data = { username, lastname, email, message };
       console.log(data);
       const response = await axios
-        .post("https://codelinear-backend.onrender.com/", data)
+        .post("https://codelinear-backend.onrender.com/sendMailContact", data)
         .then((response) => {
           if (response.status === 200) {
             gsap.to(success.current, { opacity: "1" });
@@ -176,19 +178,26 @@ const Contact = () => {
         });
     }
   };
-
   return (
     <>
       <Helmet>
-        <title>codelinear | Let's Talk</title>
+        <title>Codelinear - Contact Us Page</title>
+        <meta
+          name="description"
+          content="Contact Codelinear for inquiries, partnership opportunities, or to discuss your project requirements. Our team is ready to assist you with software development, UX/UI design, cloud engineering, and more."
+        />
+            <link rel="canonical" href="https://codelinear.com/contact-us" />
+        <meta
+          name="keywords"
+          content="contact us, inquiry, partnership, project requirements, software development, UX/UI design, cloud engineering"
+        />
       </Helmet>
       <section className="contact-hero">
         <h1 className="contact-hero-h1">
-          Let’s change the world, after a cup of coffee.
+          Let’s change the world, after a cup of coffee.{" "}
         </h1>
         <div className="contact-form">
           <form
-            action="http://localhost:5000/contact"
             id="form"
             className="form relative"
           >
@@ -321,7 +330,7 @@ const Contact = () => {
           <div className="working-areas">
             <div>
               <img src={America} alt="" />
-              <p>Americas</p>
+              <p> Americas</p>
             </div>
             <div>
               <img src={Europe} alt="" />
@@ -341,18 +350,17 @@ const Contact = () => {
             <img src={buildingind} className="img" alt="" ref={India} />
           </div>
           <div className="address-div2">
-            <h1 className="address-head">Our Offices</h1>
+            <h1 className="address-head"> Our Offices </h1>
             <div>
               <div className="max-3xl:hidden max-lg:block indiaimg">
                 <img src={building} className="indiaimg" alt="" />
               </div>
               <div onMouseEnter={hover2}>
                 <h1 ref={USAh1} className="USA">
-                  USA
+                  USA{" "}
                 </h1>
                 <p>
-                  600 B Street, Suite 300,
-                  <br /> San Diego, CA 92101
+                  600 B Street, Suite 300, <br /> San Diego, CA 92101
                 </p>
               </div>
             </div>
@@ -363,8 +371,8 @@ const Contact = () => {
               <div onMouseEnter={hover1}>
                 <h1 ref={Indiahi}>India</h1>
                 <p>
-                  Wework Galaxy <br /> Shanthala Nagar, Ashok Nagar,
-                  <br /> Bengaluru, Karnataka 560001
+                  Redwood, D3 Block,<br /> Manyata Embassy Business Park, Bangalore -
+                  560045
                 </p>
               </div>
             </div>
@@ -384,18 +392,22 @@ const Contact = () => {
             <div>
               <h1>Write to us</h1>
               <p>
-                <a href="mailto:info@codelinear.com">info@codelinear.com</a>
+                <a href="mailto:info@codelinear.com"> info@codelinear.com </a>
               </p>
             </div>
             <div>
               <h1>Career inquiry </h1>
               <p>
-                <a href="mailto:info@codelinear.com">hr@codelinear.com</a>
+                <a href="mailto:info@codelinear.com"> hr@codelinear.com </a>
               </p>
             </div>
           </div>
         </div>
       </section>
+      <footer className="bg-white relative h[1800px]">
+        <Scrolltop />
+        <SubFooter />
+      </footer>
     </>
   );
 };

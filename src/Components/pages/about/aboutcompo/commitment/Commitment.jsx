@@ -1,24 +1,25 @@
 import React from "react";
-import img from '../../../../../assets/aboutassets/ph_medal-thin.jpg'
-
+import img from "../../../../../assets/aboutassets/ph_medal-thin.jpg";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Commitment = () => {
   return (
     <>
       <div className="commitment">
-        <div className="w-full h-[full] max-xl:px-[80px] pl-20 pr-[111.37px] pt-[73px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-lg:h-full max-lg:p-10 max-sm:p-5">
-          <div className="flex-col justify-start items-start gap-9 inline-flex">
-            <div className="opacity-60 w-[413px] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
-              <div className=" text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
+        <div className="w-full h-[full] max-xl:px-[80px] pl-20 pr-[111.37px] pt-[73px] widescreen:pt-[123px] pb-[120px] bg-white flex-col justify-start items-start gap-[60px] inline-flex max-lg:h-full max-lg:p-10 max-sm:p-5">
+          <div className="flex-col justify-start widescreen:w-full items-start gap-9 inline-flex">
+            <div className="opacity-60 w-[413px] widescreen:w-[40%] max-md:w-full justify-start items-center gap-[13.42px] inline-flex">
+              <div className=" text-black text-sm widescreen:text-[16px] widescreen:text-[24px] font-normal font-['Archivo'] uppercase leading-snug">
                 our values and principles
               </div>
               <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
             </div>
-            <div className="text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2 max-sm:text-[36px]">
-              Our commitments
+            <div className="text-black text-[49.20px] widescreen:w-full widescreen:text-[54px] widestscreen:text-[60px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2 max-sm:text-[36px]">
+              Our commitments{" "}
             </div>
           </div>
           <div className="about-comit justify-start items-start gap-[52px] inline-flex flex-wrap">
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,16 +35,16 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Embracing Diversity
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Embracing Diversity{" "}
                 </div>
-                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   We celebrate unique voices, building an inclusive culture
-                  where diversity thrives, driving innovation and success.
+                  where diversity thrives, driving innovation and success.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,17 +60,17 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Upholding Integrity
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Upholding Integrity{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   Honesty, transparency, and ethical conduct guide our
                   operations, building trust with customers, partners, and
-                  stakeholders.
+                  stakeholders.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -123,16 +124,16 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Nurturing Talent
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Nurturing Talent{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   We prioritize our employees' well-being, fostering a positive
-                  work culture that supports growth and balance.
+                  work culture that supports growth and balance.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -158,16 +159,16 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Sustainable Practices
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Sustainable Practices{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   Committed to minimizing our environmental footprint, we
-                  implement eco-friendly initiatives for a sustainable future.
+                  implement eco-friendly initiatives for a sustainable future.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,17 +194,17 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Leading Innovation
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Leading Innovation{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   At the forefront of technology, we strive for continuous
                   innovation, delivering cutting-edge solutions for clients
-                  globally.
+                  globally.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -220,30 +221,30 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Connecting Globally
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Connecting Globally{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   Actively engaged in global collaborations, we work
-                  collectively to contribute positively to the global community.
+                  collectively to contribute positively to the global community.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <img src={img} alt="" />
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
                 <div className="text-black max-md:w-full text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Pursuit of Excellence
+                  Pursuit of Excellence{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   Dedicated to continuous improvement, we value feedback, assess
-                  regularly, and strive for excellence in all endeavors.
+                  regularly, and strive for excellence in all endeavors.{" "}
                 </div>
               </div>
             </div>
-            <div className="flex-col justify-start items-start gap-3 inline-flex">
+            <div className="flex-col justify-start items-start gap-3 inline-flex widescreen:w-[30%]">
               <div className="w-[57px] h-[57px] relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -259,12 +260,12 @@ const Commitment = () => {
                 </svg>
               </div>
               <div className="flex-col justify-start items-start gap-5 flex">
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4">
-                  Uncompromising Quality
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 widescreen:text-[30px] widestscreen:text-[40px] widescreen:w-full">
+                  Uncompromising Quality{" "}
                 </div>
-                <div className="w-[273.16px] max-sm:text-justify max-md:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                <div className="w-[273.16px] max-md:w-full max-sm:text-justify opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:w-full widescreen:text-[24px] widescreen:text-[24px] widescreen:w-full">
                   Adhering to industry standards, our commitment to quality
-                  assurance ensures the delivery of exceptional products.
+                  assurance ensures the delivery of exceptional products.{" "}
                 </div>
               </div>
             </div>

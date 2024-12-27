@@ -22,6 +22,21 @@
   background-color: #ffcd05;
   border-color: #ffcd05;
 }
+@media (min-width: 2500px) {
+  .service-cards {
+    height: 500px;
+  }
+}
+@media (min-width: 1900px) {
+  .service-cards {
+    height: 450px;
+  }
+}
+@media (min-width: 2500px) {
+  .service-cards {
+    height: 500px;
+  }
+}
 @media (max-width: 1310px) {
   .service-cards {
     width: 45%;

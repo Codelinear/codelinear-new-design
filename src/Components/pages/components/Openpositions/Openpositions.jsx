@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Line from "./Line.png";
 import Apbutton from "./openingPositions.png";
 import "./Openpositions.css";
+import axios from "axios";
+
 function Openpositions() {
   return (
     <div className="openPosition">
@@ -31,22 +33,22 @@ function Openpositions() {
               <button className="textBtnsz">Apply Now</button>
             </a>
           </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
+          <div className="loc-exp-2">
+            <div className="locationdetails my-[8px]">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed my-[8px]">
+              <span>5+ Yrs of Exp</span>
+            </div>
           </div>
-          <div className="expneed">
-            <span>5+ Yrs of Exp</span>
+          <p className="req w-[595px] widescreen:w-full">
+            UX Design | UI Design | Interaction Design | Experience Design{" "}
+          </p>
+          <div className="applynowbtn-2">
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz-2 mt-[12px]">Apply Now</button>
+            </a>
           </div>
-        </div>
-        <p className="req">
-          UX Design | UI Design | Interaction Design | Experience Design
-        </p>
-        <div className="applynowbtn-2">
-          <a href="mailto:hr@codelinear.com">
-            <button className="textBtnsz-2">Apply Now</button>
-          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
@@ -67,23 +69,23 @@ function Openpositions() {
               <button className="textBtnsz">Apply Now</button>
             </a>
           </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
+          <div className="loc-exp-2">
+            <div className="locationdetails my-[8px]">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed my-[8px]">
+              <span>5+ Yrs of Exp</span>
+            </div>
           </div>
-          <div className="expneed">
-            <span>5+ Yrs of Exp</span>
+          <p className="req w-[595px] widescreen:w-full">
+            HTML5 | CSS3 | JavaScript | React JS | Redux | D3 Charts | Node JS |
+            Express JS | Mongo DB | RESTful API{" "}
+          </p>
+          <div className="applynowbtn-2">
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz-2 mt-[12px]">Apply Now</button>
+            </a>
           </div>
-        </div>
-        <p className="req">
-          JavaScript | React JS | Redux | D3 Charts | Node JS |
-          Express JS | Mongo DB | RESTful API
-        </p>
-        <div className="applynowbtn-2">
-          <a href="mailto:hr@codelinear.com">
-            <button className="textBtnsz-2">Apply Now</button>
-          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
@@ -104,23 +106,23 @@ function Openpositions() {
               <button className="textBtnsz">Apply Now</button>
             </a>
           </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
+          <div className="loc-exp-2">
+            <div className="locationdetails my-[8px]">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed my-[8px]">
+              <span>5+ Yrs of Exp</span>
+            </div>
           </div>
-          <div className="expneed">
-            <span>5+ Yrs of Exp</span>
+          <p className="req w-[595px] widescreen:w-full">
+            Java | Kotlin | Android Studio | Android SDK | RESTful API | RX Java
+            | MVVM | MVP
+          </p>
+          <div className="applynowbtn-2">
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz-2 mt-[12px]">Apply Now</button>
+            </a>
           </div>
-        </div>
-        <p className="req">
-          Java | Kotlin | Android Studio | Android SDK | RESTful APi | RX Java |
-          MVVM | MVP
-        </p>
-        <div className="applynowbtn-2">
-          <a href="mailto:hr@codelinear.com">
-            <button className="textBtnsz-2">Apply Now</button>
-          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
@@ -141,23 +143,23 @@ function Openpositions() {
               <button className="textBtnsz">Apply Now</button>
             </a>
           </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
+          <div className="loc-exp-2">
+            <div className="locationdetails my-[8px]">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed my-[8px]">
+              <span>5+ Yrs of Exp</span>
+            </div>
           </div>
-          <div className="expneed">
-            <span>5+ Yrs of Exp</span>
+          <p className="req w-[595px] widescreen:w-full">
+            Unity | Unreal | ARKit and ARCore | Blender | Maya | Oculus SDK |
+            Oculus Rift
+          </p>
+          <div className="applynowbtn-2">
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz-2 mt-[12px]">Apply Now</button>
+            </a>
           </div>
-        </div>
-        <p className="req">
-          Unity | Unreal | ARKit and ARCore | Blender | Maya | Oculus SDK |
-          Oculus Rift
-        </p>
-        <div className="applynowbtn-2">
-          <a href="mailto:hr@codelinear.com">
-            <button className="textBtnsz-2">Apply Now</button>
-          </a>
         </div>
       </div>
       <div id="position" className="positionslisting">
@@ -178,20 +180,22 @@ function Openpositions() {
               <button className="textBtnsz">Apply Now</button>
             </a>
           </div>
-        </div>
-        <div className="loc-exp-2">
-          <div className="locationdetails">
-            <span>Bangalore</span>
+          <div className="loc-exp-2">
+            <div className="locationdetails my-[8px]">
+              <span>Bangalore</span>
+            </div>
+            <div className="expneed my-[8px]">
+              <span>5+ Yrs of Exp</span>
+            </div>
           </div>
-          <div className="expneed">
-            <span>5+ Yrs of Exp</span>
+          <p className="req w-[595px] widescreen:w-full">
+            AWS | GCP | Azure | Docker | Kubernetes | Jenkins
+          </p>
+          <div className="applynowbtn-2">
+            <a href="mailto:hr@codelinear.com">
+              <button className="textBtnsz-2 mt-[12px]">Apply Now</button>
+            </a>
           </div>
-        </div>
-        <p className="req">AWS | GCP | Azure | Docker | Kubernetes | Jenkins</p>
-        <div className="applynowbtn-2">
-          <a href="mailto:hr@codelinear.com">
-            <button className="textBtnsz-2">Apply Now</button>
-          </a>
         </div>
       </div>
     </div>

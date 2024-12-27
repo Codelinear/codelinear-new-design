@@ -26,7 +26,7 @@ const Scrolltop = () => {
       onClick={scrollToTop}
     >
       <div class="bottonn w-[189.13px] max-sm:w-[168px] max-sm:h-full h-[29.13px] opacity-80 justify-start items-center gap-3 inline-flex">
-        <div class="w-[29.13px] h-[29.13px] relative overflow-hidden">
+        <div class="w-[29.13px] widescreen:w-[40px] widescreen:h-[40px] h-[29.13px] relative overflow-hidden">
           <div class="w-[29.13px] h-[29.13px] left-0 top-0 absolute rounded-full border border-black"></div>
           <div className="goup flex gap-4 flex-col">
             <div class="onearrow rotate[135deg]">
@@ -75,7 +75,7 @@ const Scrolltop = () => {
             </div>
           </div>
         </div>
-        <button class="topto text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+        <button class="topto text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
           Scroll to the top
         </button>
       </div>

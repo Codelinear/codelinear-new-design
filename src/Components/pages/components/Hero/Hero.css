@@ -30,6 +30,26 @@
   background-color: #ffcd05;
   border: 1px solid #ffcd05;
 }
+@media only screen and (min-width: 1900px) {
+  .careerHero h1 {
+    width: 838px;
+    font-size: 76px;
+  }
+  .heroBtn {
+    border-radius: 50px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  .careerHero h1 {
+    width: 980px;
+    font-size: 90px;
+  }
+  .heroBtn {
+    border-radius: 80px;
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .careerHero {
     height: auto;
@@ -58,7 +78,7 @@
     font-size: 50px;
     text-align: left;
   }
-  .heroBtn{
+  .heroBtn {
     width: 100%;
   }
 }

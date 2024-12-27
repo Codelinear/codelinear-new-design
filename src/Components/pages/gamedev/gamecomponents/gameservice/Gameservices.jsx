@@ -7,6 +7,7 @@ import Unity from "./maingameservices/Unity";
 import ArVr from "./maingameservices/ArVr";
 import { Link } from "react-router-dom";
 import img from "../gameassets//Game development03.jpg";
+import axios from "axios";
 
 const Gameservices = () => {
   const mobileGameRefu = useRef(null);
@@ -40,6 +41,7 @@ const Gameservices = () => {
       arvr.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   const [activeSection, setActiveSection] = useState(null);
 
   const handleScroll = () => {
@@ -74,13 +76,13 @@ const Gameservices = () => {
         <div className="w-full hfull mt-[40px]  max-sm:mt-[8px] bg-white">
           <div className="w-full h-full relative bg-white flex justify-between">
             <div className="leftt">
-              <div className="max-lg:w-full">
-                <div className="flex gap-[103px] max-lg:w-full pr-[10px] max-lg:p-0 max-sm:mb-20 max-xl:pr-[80px] mb-[101px] w-full">
-                  <div className="flex max-lg:w-full flex-col gap-[436px] max-lg:gap-[40px]">
-                    <p className="section w-[305px] ml-[80px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:ml-[40px] max-sm:ml-[20px]">
+              <div className="max-lg:w-full widescreen:w-full">
+                <div className="flex widescreen:w-full gap-[103px] max-lg:w-full pr-[10px] max-lg:p-0 max-sm:mb-20 max-xl:pr-[80px] mb-[101px] w-full">
+                  <div className="flex max-lg:w-full widescreen:w-[30%] flex-col gap-[436px] max-lg:gap-[40px]">
+                    <p className="section w-[305px] ml-[80px] widescreen:w-full widestscreen:text-[24px] widescreen:text-[20px]  opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-lg:ml-[40px] max-sm:ml-[20px]">
                       Immerse players in visually stunning landscapes. Our
                       design-centric approach ensures games that are not just
-                      playable but also a visual feast for users.
+                      playable but also a visual feast for users.{" "}
                     </p>
                     <img
                       className="w-full h-full hidden max-lg:block px-[40px] max-sm:px-[20px]"
@@ -88,12 +90,16 @@ const Gameservices = () => {
                       alt=""
                     />
                     <div className="ml-[80px] top-[607.30px]  flex-col justify-start items-start gap-[25px] inline-flex max-lg:ml-[40px] max-sm:px-[20px] max-sm:ml-[0px]">
-                      <p className="w-[305px] max-sm:text-[24px] letter-spacing-4 text-black text-xl font-normal font-['Graphik']">
-                        Have an idea and want to get started?
+                      <p className="w-[305px] max-sm:text-[24px] widescreen:w-full widestscreen:text-[30px] widescreen:text-[40px] letter-spacing-4 text-black text-xl font-normal font-['Graphik']">
+                        Have an idea and want to get started?{" "}
                       </p>
-                      <Link onClick={scrollToTop} className=" max-sm:w-full" to={"/contact-us"}>
+                      <Link
+                        onClick={scrollToTop}
+                        className=" max-sm:w-full"
+                        to={"/contact-us"}
+                      >
                         <button className="section talk-btn  max-sm:w-full hover:bg-yellow-400 transition-all px-8 py-4 rounded-[31px]  hover:border-yellow-400  border border-black justify-center items-center gap-2 inline-flex">
-                          <div className="text-black  max-sm:w-full text-base font-normal font-['Graphik'] capitalize leading-normal">
+                          <div className="text-black  max-sm:w-full text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                             Talk To Our Experts
                           </div>
                         </button>
@@ -101,9 +107,9 @@ const Gameservices = () => {
                     </div>
                   </div>
 
-                  <div className="max-lg:hidden">
+                  <div className="max-lg:hidden widescreen:w-[50%]">
                     <img
-                      className="w-[556.98px] h-[696.22px] left-[498.02px] top-[40.08px] "
+                      className="w-[556.98px] widescreen:w-full widestscreen:h-auto h-[696.22px] left-[498.02px] top-[40.08px] "
                       src={img}
                       alt=""
                     />
@@ -136,38 +142,38 @@ const Gameservices = () => {
                   <div
                     className={
                       activeSection === 0
-                        ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                        : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                        ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                        : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                     }
                   >
                     Overview
                   </div>
                 </div>
-                <div className=" w-[190px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
-                  <div className="w-[190px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+                <div className=" w-[190px] widescreen:w-[300px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+                  <div className="w-[190px] widescreen:w-full overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                     <div
                       className={
                         activeSection >= 1
-                          ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                          : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                          ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                          : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                       }
                     >
-                      Game Development services
+                      Game development services{" "}
                     </div>
                   </div>
-                  <div className=" stick_list w-[197px] h-[412px] p-[8px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+                  <div className=" stick_list widescreen:w-full w-[197px] h-[412px] p-[8px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                     <Link
                       to="#Mobile-game-development"
                       onClick={scrollToMobileGameu}
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Mobile game development
+                      <div className="w-[130.52px] widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        Mobile Game Development{" "}
                       </div>
                     </Link>
                     <Link
@@ -176,12 +182,12 @@ const Gameservices = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Desktop game development
+                      <div className="w-[130.52px] widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        Desktop Game Development{" "}
                       </div>
                     </Link>
                     <Link
@@ -190,12 +196,12 @@ const Gameservices = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[130.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Unreal game development
+                      <div className="w-[130.52px] widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        Unreal Game Development{" "}
                       </div>
                     </Link>
                     <Link
@@ -203,12 +209,12 @@ const Gameservices = () => {
                       onClick={scrollTounity}
                       className={
                         activeSection === 5
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[130.72px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Unity game development
+                      <div className="w-[130.72px] widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        Unity Game Development{" "}
                       </div>
                     </Link>
                     <Link
@@ -216,12 +222,12 @@ const Gameservices = () => {
                       onClick={scrollToarvr}
                       className={
                         activeSection === 6
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
-                      <div className="w-[130.01px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        AR/VR game development
+                      <div className="w-[130.01px] widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                        AR/VR Game Development{" "}
                       </div>
                     </Link>
                   </div>

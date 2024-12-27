@@ -10,7 +10,7 @@
     margin-left: 80px;
     margin-top: 62px;
     letter-spacing: -1.98px;
-    width: 685.552px;
+    width: 685.552px;;
   }
   .contact-form {
     display: inline-flex;
@@ -352,6 +352,7 @@ textarea {
       margin-bottom: 20px;
     }
     p {
+      width: 250px;
       color: #000;
       font-family: Graphik;
       font-size: 16px;
@@ -365,6 +366,239 @@ textarea {
 .back-drop {
   background: rgba(245, 245, 245, 0.5);
   backdrop-filter: blur(15px);
+}
+@media (min-width: 1900px) {
+  .contact-hero {
+    margin-bottom: 147px;
+    .contact-hero-h1 {
+      font-size: 76px;
+      width: 50%;
+    }
+    .contact-form {
+      width: 50%;
+      .form {
+        width: 100%;
+        .form-div {
+          .name {
+            font-size: 24px;
+          }
+          .name::placeholder {
+            font-size: 24px;
+          }
+        }
+        .email {
+          width: 100%;
+          font-size: 24px;
+        }
+        .email::placeholder {
+          font-size: 24px;
+        }
+        .text {
+          width: 100%;
+          font-size: 24px;
+        }
+        .text::placeholder {
+          font-size: 24px;
+        }
+      }
+      button {
+        border-radius: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 150px;
+        height: 60px;
+      }
+    }
+  }
+  .div-time {
+    .time-h1 {
+      font-size: 24px;
+    }
+  }
+  .digital-clock {
+    h1 {
+      font-size: 62.744px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .regions {
+    h1 {
+      font-size: 60.202px;
+    }
+  }
+  .working-areas {
+    div {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+  .our-contact {
+    .contacts-info {
+      width: 100%;
+      align-items: center;
+    }
+    .contact-head {
+      font-size: 60.202px;
+    }
+  }
+  .contact-details {
+    div {
+      width: 330px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  input {
+    font-size: 24px;
+  }
+  textarea {
+    font-size: 24px;
+  }
+  .address-div2 {
+    .address-head {
+      font-size: 60.202px;
+    }
+    .address-head2 {
+      font-size: 60.202px;
+    }
+    div {
+      h1 {
+        color: #000;
+        font-family: Graphik;
+        font-size: 40px;
+      }
+      p {
+        width: 300px;
+        font-size: 20px;
+      }
+    }
+  } 
+}
+@media (min-width: 2500px) {
+  .contact-hero {
+    .contact-hero-h1 {
+      font-size: 90px;
+      width: 60%;
+    }
+    .contact-form {
+      width: 60%;
+      .form {
+        width: 100%;
+        .form-div {
+          .name {
+            font-size: 30px;
+          }
+          .name::placeholder {
+            font-size: 30px;
+          }
+        }
+        .email {
+          font-size: 30px;
+          width: 100%;
+        }
+        .email::placeholder {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 30px;
+          width: 100%;
+        }
+        .text::placeholder {
+          font-size: 30px;
+        }
+      }
+      button {
+        border-radius: 50px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 180px;
+        height: 60px;
+      }
+    }
+  }
+  .div-time {
+    .time-h1 {
+      font-size: 30px;
+    }
+  }
+  .digital-clock {
+    h1 {
+      font-size: 70px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  .regions {
+    h1 {
+      font-size: 70.202px;
+    }
+  }
+  .working-areas {
+    div {
+      p {
+        font-size: 35px;
+      }
+    }
+  }
+  .our-contact {
+    .contacts-info {
+      width: 100%;
+      align-items: center;
+    }
+    .contact-head {
+      font-size: 70.202px;
+    }
+  }
+  .contact-details {
+    div {
+      width: 380px;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+  input {
+    font-size: 30px;
+  }
+  textarea {
+    font-size: 30px;
+  }
+  .address-div2 {
+    .address-head {
+      font-size: 70.202px;
+    }
+    .address-head2 {
+      font-size: 70.202px;
+    }
+    div {
+      h1 {
+        color: #000;
+        font-family: Graphik;
+        font-size: 50px;
+      }
+      p {
+        width: 420px;
+        font-size: 30px;
+      }
+    }
+  } 
 }
 @media (max-width: 1220px) {
   .contact-hero {

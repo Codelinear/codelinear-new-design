@@ -2,8 +2,6 @@ import img1 from "../assets/ph_note-pencil-light.svg";
 import img2 from "../assets/ph_handshake-light.svg";
 import img3 from "../assets/ph_repeat-light.svg";
 
-import { Link } from "react-router-dom";
-
 const VR2 = () => {
   return (
     <>
@@ -19,7 +17,7 @@ const VR2 = () => {
           collaborative development and informed decision-making for businesses.
           Accelerate innovation with VR product prototyping
         </p>
-        <div className="prod-container w-[924px] flex-wrap flex-wrap max-lg:w-full">
+        <div className="prod-container w-[924px] widescreen:w-full flex-wrap flex-wrap max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" className="w-[50px] h-[50px]" />
             <h3>Visualize Concepts Efficiently</h3>

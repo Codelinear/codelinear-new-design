@@ -271,7 +271,6 @@ html {
 }
 .explore-more {
   padding-bottom: 176px;
-  width: calc(100% + 250px);
   .swiper-pagination-bullet-active {
     fill: #ffcd05 !important;
     background-color: #ffcd05 !important;
@@ -285,7 +284,7 @@ html {
     display: inline-flex;
     gap: 6px;
     position: relative;
-    left: calc(((100% + 250px)/2) - 300px) !important;
+    justify-content: center;
     top: 0px !important;
   }
   h1 {
@@ -298,9 +297,19 @@ html {
     letter-spacing: -1.476px;
     margin: 100px 0 66px 80px;
   }
+  .swiper {
+    width: 100% !important;
+    .swiper-slide {
+      width: 298px;
+      margin-left: 80px !important;
+      margin-right: 3px !important;
+    }
+    .swiper-slide:last-child {
+      margin-right: 80px !important;
+    }
+  }
   .exp-slides {
-    width: 300px;
-    margin-left: 80px;
+    width: 298px;
     img {
       height: 360px;
       width: 100%;
@@ -475,9 +484,305 @@ html {
   z-index: 10;
   background-color: transparent;
 }
-@media (max-width: 1350px) {
+@media (min-width: 1900px) {
+  #prod-hero {
+    .prod-hero-h1 {
+      font-size: 76px;
+    }
+    div {
+      img {
+        width: 65%;
+        height: auto;
+      }
+    }
+    p {
+      font-size: 40px;
+      width: 688.858px;
+    }
+    button {
+      font-size: 20px;
+      border-radius: 50px;
+    }
+  }
+  .exp-design {
+    width: 100%;
+    height: auto;
+    h2 {
+      font-family: Archivo;
+      font-size: 16px;
+      width: 90%;
+    }
+    h1 {
+      font-size: 59.202px;      
+      width: 100%;
+    }
+    .exp-p {
+      font-size: 20px;
+      width: 80%;
+      height: auto;
+    }
+    .prod-container {
+      .prod-sub-container {
+        gap: 12px;
+        width:25%;
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .prod-container-2 {
+      .prod-sub-container-2 {
+        width: 463.817px;
+        h4 {
+          font-size: 40px;
+        }
+
+        button {
+          font-size: 20px;
+          border-radius:50px;
+        }
+      }
+    }
+  }
+  #prod-engg {
+    width: 100%;
+    height: auto;
+    h2 {
+      font-size: 16px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 59.202px;
+      width: 100%;
+    }
+    .exp-p {
+      font-size: 20px;
+      width: 80%;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    .engg-container {
+      .engg-sub-contaner {
+        width: 25%;
+        height: auto;
+        h4 {
+          height: 30px;
+          font-size: 24px;
+        }
+        p {
+          font-size: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
   .explore-more {
-    width: calc(100% + 200px);
+    h1 {
+      font-size: 59.202px;
+    }
+    .swiper {
+      .swiper-slide {
+        width: 30%;
+      }
+    }
+    .exp-slides {
+      width: 100%;
+      img {
+        height: 600px;
+        object-fit: cover;
+        width: 100%;
+      }
+      h6 {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .animation-tree {
+    .at-h1 {
+      font-size: 40px;
+    }
+    p {
+      display: flex;
+      width: 305px;
+      height: 128px;
+      font-size: 24px;
+    }
+    .dsm {
+      position: relative;
+      left: 760px;
+      width: 305px;
+    }
+    .ia {
+      width: 305px;
+    }
+  }
+  .outter-circle {
+    left: 250px;
+  }
+  .inner-circle {
+    font-size: 20px;
+  }
+  .arrcurve {
+    left: 485px;
+  }
+  .talk {
+    position: relative;
+    left: 780px;
+    .talk-text {
+      font-size: 24px;
+      width: 355px;
+    }
+    button {
+      font-size: 20px;
+      border-radius: 50px;
+      width: 320px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #prod-hero {
+    .prod-hero-h1 {
+      font-size: 90px;
+      width: 60%;
+    }
+    div {
+      img {
+        width: 60%;
+        height: auto;
+      }
+    }
+    p {
+      font-size: 50px;
+      width: 788.858px;
+    }
+    button {
+      font-size: 24px;
+      border-radius: 80px;
+    }
+  }
+  .exp-design {
+    h2 {
+      font-family: Archivo;
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 69.202px;      
+    }
+    .exp-p {
+      font-size: 24px;
+    }
+    .prod-container {
+      .prod-sub-container {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+    .prod-container-2 {
+      .prod-sub-container-2 {
+        width: 603.817px;
+        h4 {
+          font-size: 50px;
+        }
+
+        button {
+          font-size: 24px;
+          border-radius:80px;
+        }
+      }
+    }
+  }
+  #prod-engg {
+    h2 {
+      font-size: 20px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 69.202px;
+      width: 100%;
+    }
+    .exp-p {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    .engg-container {
+      .engg-sub-contaner {
+        h4 {
+          height: 40px;
+          font-size: 30px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .explore-more {
+    h1 {
+      font-size: 69.202px;
+    }
+    .exp-slides {
+      width: 100%;
+      img {
+        height: 700px;
+        object-fit: cover;
+        width: 100%;
+      }
+      h6 {
+        font-size: 30px;
+      }
+    }
+  }
+  .animation-tree {
+    .at-h1 {
+      font-size: 50px;
+    }
+    p {
+      display: flex;
+      width: 405px;
+      height: 148px;
+      font-size: 30px;
+    }
+    .dsm {
+      position: relative;
+      left: 960px;
+      width: 405px;
+    }
+    .ia {
+      width: 405px;
+    }
+  }
+  .outter-circle {
+    left: 450px;
+  }
+  .inner-circle {
+    font-size: 24px;
+  }
+  .arrcurve {
+    left: 685px;
+  }
+  .talk {
+    position: relative;
+    left: 980px;
+    .talk-text {
+      font-size: 30px;
+      width: 355px;
+    }
+    button {
+      font-size: 24px;
+      border-radius: 80px;
+      width: 380px;
+    }
   }
 }
 @media (max-width: 1127px) {
@@ -486,51 +791,44 @@ html {
       flex-wrap: wrap;
     }
   }
-  .explore-more {
-    width: calc(100% + 100px);
-    .exp-slides {
-      width: 290px;
-      h6 {
-        font-size: 16px;
-      }
-    }
-  }
   .animation-tree {
     padding-top: 20px;
     transform: scale(0.7);
   }
 }
 @media (max-width: 1024px) {
-  #prod-hero{
-    div{
+  #prod-hero {
+    div {
       padding: 0px 40px;
-      img{
+      img {
         width: 100%;
         height: auto;
       }
     }
-    .prod-hero-h1{
+    .prod-hero-h1 {
       margin-left: 40px;
     }
-    p{
+    p {
       margin-left: 40px;
     }
-    button{
+    button {
       margin-left: 40px;
     }
   }
   .explore-more {
-    .swiper-pagination {
-      display: inline-flex;
-      gap: 6px;
-      position: relative;
-      left: calc(((100% + 0px)/2) - 300px) !important;
-      top: 0px !important;
-    }
-    h1{
+    h1 {
       margin-left: 40px;
     }
-    width: calc(100% + 530px);
+    .swiper {
+      width: 100% !important;
+      .swiper-slide {
+        margin-left: 40px !important;
+        margin-right: 27.55px !important;
+      }
+      .swiper-slide:last-child {
+        margin-right: 40px !important;
+      }
+    }
   }
   .exp-design {
     padding-left: 40px;
@@ -582,20 +880,20 @@ html {
     top: 0px;
     width: 305px;
   }
-  #prod-engg{
-    h2{
+  #prod-engg {
+    h2 {
       margin-left: 40px;
     }
-    h1{
+    h1 {
       margin-left: 40px;
     }
-    .exp-p{
+    .exp-p {
       margin-left: 40px;
     }
-    h3{
+    h3 {
       margin-left: 40px;
     }
-    .engg-container{
+    .engg-container {
       margin-left: 40px;
     }
   }
@@ -681,27 +979,19 @@ html {
     }
   }
   .explore-more {
-    width: calc(100% + 250px);
-    .swiper-pagination {
-      display: inline-flex;
-      gap: 6px;
-      position: relative;
-      left: calc(((100% + 250px)/2) - 300px) !important;
-      top: 0px !important;
-    }
     h1 {
       font-size: 24px;
       margin-left: 40px;
     }
     .exp-slides {
-      width: 253px;
-      padding-left: 0px;
-      margin-left: 40px;
+      width: 242px;
       img {
         height: 293px;
       }
-      h6 {
-        font-size: 16px;
+    }
+    .swiper {
+      .swiper-slide {
+        width: 242px;
       }
     }
   }
@@ -741,6 +1031,7 @@ html {
   .exp-design {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 42px;
     width: 100%;
     h1 {
       width: 95%;
@@ -751,12 +1042,13 @@ html {
       gap: 65px;
       justify-content: start;
       width: 100%;
+      margin-bottom: 0;
       img {
         width: 100%;
       }
       .prod-sub-container-2 {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 0px;
         h4 {
           width: 90%;
           font-size: 24px;
@@ -782,7 +1074,6 @@ html {
   }
   .explore-more {
     padding-bottom: 50px;
-    width: calc(100% + 30px);
     .swiper-pagination {
       display: none;
     }
@@ -793,18 +1084,30 @@ html {
       margin-bottom: 32px;
       margin-top: 75px;
     }
+    .swiper {
+      .swiper-slide {
+        width: 220px;
+        margin-left: 20px !important;
+        margin-right: 41px;
+      }
+      .swiper-slide:last-child {
+        margin-right: 20px !important;
+      }
+    }
     .exp-slides {
-      width: 221px;
-      margin-left: 20px;
+      width: 220px;
       img {
         height: 266px;
       }
       h6 {
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
       }
     }
   }
   #prod-engg {
+    padding-top: 42px;
     h2 {
       margin-left: 0px;
       padding: 0 20px;
@@ -830,9 +1133,9 @@ html {
       padding: 0px 20px;
       width: 100%;
       justify-content: center;
-      .engg-sub-contaner{
+      .engg-sub-contaner {
         width: 100%;
-        p{
+        p {
           width: 100%;
         }
       }
@@ -840,24 +1143,11 @@ html {
   }
   .animation-tree {
     padding-left: 20px;
-    margin: 88px 0;
+    margin: 42px 0 84px 0;
   }
   .talk {
     button {
       width: 100%;
-    }
-  }
-}
-@media (max-width: 390px) {
-  .explore-more {
-    width: calc(100% + 130px);
-    margin-bottom: 0;
-    padding: 0;
-    .exp-slides {
-      width: 220px;
-      img {
-        height: 220px;
-      }
     }
   }
 }

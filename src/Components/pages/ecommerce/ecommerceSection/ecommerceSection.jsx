@@ -8,7 +8,8 @@ import img7 from "../assets/4373224_hubspot_logo_logos_icon 1 (1).svg";
 import img8 from "../assets/Wix.com_website_logo 1 (1).svg";
 import img9 from "../assets/Font_Awesome_5_brands_squarespace 1.svg";
 import img10 from "../assets/shift4shop-logos-idK2bziH1E 1.svg";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const ESection = () => {
@@ -19,17 +20,17 @@ const ESection = () => {
     <>
       <section id="exp-design" className="exp-design">
         <h2 className="capitilize whitespace-nowrap max-sm:whitespace-normal">
-          Ecommerce Marketplace <br className="hidden max-[350px]:block"/> Development <span></span>
+          Ecommerce Marketplace Development <span></span>
         </h2>
         <h1 className="whitespace-nowrap max-sm:whitespace-normal">
-          Ecommerce Marketplace <br /> Development
+          Ecommerce Marketplace Development{" "}
         </h1>
         <p className="exp-p">
           We understand the dynamic landscape of e-commerce. Our E-commerce
           Marketplace Development services are designed to transform your vision
           into a thriving digital marketplace.
         </p>
-        <div className="prod-container w-[924px] flex-wrap max-sm:w-[90%] max-lg:w-full">
+        <div className="prod-container w-[924px] widescreen:w-full flex-wrap max-sm:w-[90%] max-lg:w-full">
           <div className="prod-sub-container">
             <img src={img1} alt="" className="w-[57px] h-[57px]" />
             <h3>Custom e-commerce Development</h3>
@@ -93,6 +94,7 @@ const ESection = () => {
             <img src={img8} alt="" className="w-[57px] h-[57px]" />
             <h3>WixCommerce</h3>
             <p>
+              {" "}
               Intuitive e-commerce platform empowering businesses with
               user-friendly design tools, and easy online store management.
             </p>
@@ -117,15 +119,15 @@ const ESection = () => {
         </div>
       </section>
       <div className="justify-start items-center gap-[58px] ml-[80px] max-lg:ml-[40px] inline-flex max-sm:flex-wrap max-sm:px-[20px] max-sm:ml-[0px]">
-        <div className="w-[267.25px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[100%]">
-          Need help in making the next big thing?
+        <div className="w-[267.25px] widescreen:w-[40%] widescreen:text-[30px] widestscreen:text-[40px] text-black text-xl max-sm:text-[24px] font-normal font-['Graphik']  leading-[120%] letter-spacing-4 max-sm:w-[100%]">
+          Need help in making the next big thing?{" "}
         </div>
         <Link
           to={"/contact-us"}
           onClick={scrollToTop}
           className="px-8 py-4 max-sm:w-full max-lg:text[24px] rounded-[50px] border border-black justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[90%]"
         >
-          <div className="text-black rounded-[50px] text-base font-normal font-['Graphik'] capitalize leading-normal">
+          <div className="text-black rounded-[50px] text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
             Talk to our experts
           </div>
         </Link>

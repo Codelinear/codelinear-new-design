@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import img from "../assets/Frame 1000002801.jpg";
 import SFCS from "./sfcs";
@@ -15,7 +16,6 @@ const Service = () => {
   const ecommerce = useRef(null);
   const support = useRef(null);
   const ea = useRef(null);
-
   const scrollToMobileGameu = () => {
     if (produc.current) {
       produc.current.scrollIntoView({ behavior: "smooth" });
@@ -83,7 +83,7 @@ const Service = () => {
               <div>
                 <div className="section w-full self-stretch justify-center items-center inline-flex max-lg:justify-start">
                   <img
-                    className="w-[727.57px] h-[717.49px] max-lg:w-[100%] max-lg:h-full"
+                    className="w-[727.57px] widescreen:w-[65%] widestscreen:w-[60%] widescreen:h-auto h-[717.49px] max-lg:w-[100%] max-lg:h-full"
                     src={img}
                     alt=""
                   />
@@ -96,14 +96,14 @@ const Service = () => {
                     We're not just about CRM; we're about reimagining
                     possibilities. Our Salesforce services are infused with
                     innovation, ensuring your business stays ahead in a rapidly
-                    evolving digital landscape.
+                    evolving digital landscape.{" "}
                   </div>
                   <Link
                     to="/contact-us"
                     onClick={scrollToTop}
                     className="px-8 py-4 ml80px] mt-[42px]  rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-[100%]"
                   >
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                       Talk to our experts
                     </div>
                   </Link>
@@ -136,8 +136,8 @@ const Service = () => {
                   <div
                     className={
                       activeSection === 0
-                        ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                        : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                        ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                        : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                     }
                   >
                     Overview
@@ -148,8 +148,8 @@ const Service = () => {
                     <div
                       className={
                         activeSection >= 1
-                          ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                          : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                          ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                          : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                       }
                     >
                       Salesforce Services{" "}
@@ -162,12 +162,12 @@ const Service = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 2
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Salesforce Consulting and Strategy
+                        Salesforce Consulting and Strategy{" "}
                       </div>
                     </Link>
                     <Link
@@ -176,12 +176,12 @@ const Service = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 3
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Upgrades and Migrations
+                        Upgrades and Migrations{" "}
                       </div>
                     </Link>
                     <Link
@@ -190,8 +190,8 @@ const Service = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 4
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
@@ -204,8 +204,8 @@ const Service = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 5
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
@@ -218,12 +218,12 @@ const Service = () => {
                       // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       className={
                         activeSection === 6
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Workflow and Process Automation
+                        Workflow and Process Automation{" "}
                       </div>
                     </Link>
                     <Link
@@ -231,12 +231,12 @@ const Service = () => {
                       onClick={scrollTounity}
                       className={
                         activeSection === 7
-                          ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
-                          : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
+                          ? "active p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
+                          : "active1 p-2 rounded-lg widescreen:text-[20px] widestscreen:text-[24px]  justify-center items-center gap-2 inline-flex"
                       }
                     >
                       <div className="w-[157.72px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                        Integration Service
+                        Integration Service{" "}
                       </div>
                     </Link>
                   </div>

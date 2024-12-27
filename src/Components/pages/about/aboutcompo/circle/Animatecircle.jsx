@@ -64,7 +64,7 @@ const Animatecircle = () => {
   };
   const width = window.innerWidth;
   useEffect(() => {
-    if (width <= 840) {
+    if (width <= 1024) {
       gsap.to(circle1, { opacity: 0 });
       gsap.to(intersecter.current, { width: "182px" });
       gsap.to(arrow, { opacity: 1 });
@@ -77,7 +77,7 @@ const Animatecircle = () => {
     }
   });
   return (
-    <div className="pt-[150px] max-[901px]:h-[700px] max-sm:pt-0 max-sm:h-[380px]">
+    <div className="pt-[150px] widescreen:pt-[300px] widestscreen:pt-[350px] max-[901px]:h-[700px] max-sm:pt-0 max-sm:h-[380px]">
       <div
         className="w-[50%] ml-[25%] h-[644px] absolute z-[3] insert-hover max-[901px]:h-[700px] max-[481px]:h-[500px] "
         onMouseOver={mouseOverAnimation}

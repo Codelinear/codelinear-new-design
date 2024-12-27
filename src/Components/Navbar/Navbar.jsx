@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import sparkle from "../pages/AI-studio/assets/sparkle.svg";
 import "./nav.scss";
 import img from "./ham.svg";
 import arrow from "./Frame 1000002996.svg";
 import navBar from "./nav bar.json";
 import Lottie from "lottie-react";
 import gsap from "gsap";
+import x from "../../assets/homeassets/akar-icons_x-fill.svg";
 import SP from "../../assets/homeassets/Group 1000001871.svg";
 import SF from "../../assets/homeassets/Group.svg";
 import AI from "../../assets/homeassets/Group 1000001873.svg";
@@ -16,6 +19,8 @@ const Navbar = () => {
   const premenu = useRef(null);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [aipage, setaipage] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,9 +106,19 @@ const Navbar = () => {
   const svg11 = useRef(null);
   const svg12 = useRef(null);
   const serv = useRef(null);
+  const homemenu = useRef(null);
+
+  useEffect(() => {
+    const live = location.pathname;
+    if (live === "/ai-studio") {
+      setaipage(true);
+    } else {
+      setaipage(false);
+    }
+  });
   useEffect(() => {
     window.addEventListener("resize", () => setHeight(window.innerHeight));
-    if (heightscreen <= 720) {
+    if (heightscreen <= 690) {
       gsap.to(cont.current, 0, { fontSize: "24px", width: "220px" });
       gsap.to(container.current, 0, { height: "auto" });
       gsap.to(cont1.current, 0, { fontSize: "14px", height: "30px" });
@@ -119,10 +134,10 @@ const Navbar = () => {
       gsap.to(cont11.current, 0, { fontSize: "14px", height: "30px" });
       gsap.to(cont12.current, 0, { fontSize: "14px", height: "30px" });
     }
-    if (heightscreen <= 620) {
+    if (heightscreen <= 680) {
       gsap.to(menutop.current, 0, { top: "14px" });
     }
-    if (heightscreen <= 550) {
+    if (heightscreen <= 610) {
       gsap.to(menubottom.current, 0, { bottom: "14px" });
       gsap.to(menutop.current, 0, { gap: "5px" });
     }
@@ -140,7 +155,7 @@ const Navbar = () => {
       gsap.to(svg11.current, 0, { width: "20px", height: "20px" });
       gsap.to(svg12.current, 0, { width: "20px", height: "20px" });
     }
-    if (heightscreen <= 450) {
+    if (heightscreen <= 510) {
       gsap.to(menubottom.current, 0, { display: "none" });
       gsap.to(menutop.current, 0, { top: "44px" });
       gsap.to(svg1.current, 0, { display: "none" });
@@ -157,7 +172,7 @@ const Navbar = () => {
       gsap.to(svg12.current, 0, { display: "none" });
       gsap.to(container.current, 0, { rowGap: "20px" });
     }
-    if (heightscreen <= 380) {
+    if (heightscreen <= 440) {
       gsap.to(menutop.current, 0, { top: "14px" });
       gsap.to(container.current, 0, { rowGap: "0px" });
       gsap.to(cont.current, 0, { fontSize: "20px" });
@@ -226,6 +241,19 @@ const Navbar = () => {
                   className="w-80 text-black text-4xl font-normal font-['Graphik'] underlin leading-[43.20px]"
                 >
                   Home
+                </Link>
+                <Link
+                  to={"/ai-studio"}
+                  onClick={scrollToTopmenu}
+                  className="w-80 text-black text-4xl font-normal flex gap-[8px] font-['Graphik'] leading-[43.20px]"
+                >
+                  AI Studio
+                  <img
+                    src={sparkle}
+                    alt=""
+                    className="w-[36px] h-[36px]"
+                    srcset=""
+                  />
                 </Link>
                 <Link
                   to="/about-us"
@@ -399,6 +427,11 @@ const Navbar = () => {
                       </svg>
                     </a>
                   </div>
+                  <div className="w-6 h-6 relative">
+                    <a target="_blank" href="https://twitter.com/Codelinear_">
+                      <img src={x} alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -408,39 +441,61 @@ const Navbar = () => {
         <>
           <div
             style={{
-              transform: visible ? "translate(0)" : "translateY(-100px)",
+              transform: visible ? "translate(0)" : "translateY(-130px)",
               transition: "transform 0.3s ease-in-out",
             }}
-            className="w-full max-lg:px-[40px] max-lg:pl-[32px] z-[99999990999999] h-[91px] px-20 pl-[70px] bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
+            ref={homemenu}
+            className={
+              aipage
+                ? isDropdownOpen
+                  ? "w-full max-hamburger:hidden max-lg:px-[40px] max-lg:pl-[32px] z-[99999990999999] h-[91px] widescreen:h-[124px] px-20 pl-[70px] bg-[white] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
+                  : "w-full max-hamburger:hidden max-lg:px-[40px] max-lg:pl-[32px] z-[99999990999999] h-[91px] widescreen:h-[124px] px-20 pl-[70px] bg-[transparent] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
+                : "w-full max-hamburger:hidden max-lg:px-[40px] max-lg:pl-[32px] z-[99999990999999] h-[91px] widescreen:h-[124px] px-20 pl-[70px] bg-white bg-opacity-70 backdrop-blur-[110.60px] flex-col justify-end items-center gap-2.5 inline-flex sticky top-0"
+            }
           >
             <div className="self-stretch pt-[30px] pb-2.5 justify-between items-center inline-flex sticky top-10 ">
-              <div className="w-[123px] h-[51px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
+              <div className="w-[123px] widescreen:w-[224px] widescreen:h-[99.65px] pr-[6.40px] pt-[16.37px] flex-col justify-center items-start gap-[14.69px] inline-flex">
                 <div className="origin-top-left text-black text-xl font-normal font-['Graphik']">
                   <Link to="/" onClick={toggleother} className="hover-logo">
                     <Lottie
                       loop={true}
                       animationData={navBar}
                       autoplay={true}
-                      className="absolute w-[120px] bottom-0 index-hover"
+                      className="absolute w-[120px] widescreen:w-[224px] bottom-0 index-hover"
                     />
                     <Lottie
                       loop={true}
                       animationData={navBar}
                       autoplay={false}
-                      className="absolute w-[120px] bottom-0 index-hover2"
+                      className="absolute w-[120px] widescreen:w-[224px] bottom-0 index-hover2"
                     />
                   </Link>
                 </div>
               </div>
-              <div className="w-[620px] justify-center items-center gap-[45px] flex max-lghidden">
-                <div className="w-[476px] justify-start items-start gap-[28px] flex">
-                  <div className="text-black text-base font-normal font-['Graphik']">
-                    <Link onClick={toggleService}>Services</Link>
+              <div className="w-[745px] widescreen:w-[1224px] widescreen:w-[1224px] justify-end items-center gap-[45px] max-lg:w-auto flex max-lg:gap-[28px]">
+                <div className="w-[601px] justify-start widescreen:w-[854px] items-start gap-[28px] max-lg:w-auto max-lg:gap-[18px] flex">
+                  <div className="text-black  whitespace-nowrap text-base font-normal font-['Graphik']">
+                    <Link
+                      to={"/ai-studio"}
+                      className="flex gap-[4px] widescreen:text-[20px] widescreen:text-[24px]"
+                      onClick={toggleother}
+                    >
+                      <img
+                        src={sparkle}
+                        alt=""
+                        className="w-[24px] h-[24px]"
+                        srcset=""
+                      />
+                      AI Studio
+                    </Link>
+                  </div>
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widescreen:text-[24px] font-['Graphik']">
+                    <Link onMouseEnter={toggleService}>Services</Link>
                     {isDropdownOpen && (
                       <>
                         <div
                           onMouseLeave={toggleServicenew}
-                          className="bg-[white] fixed top-[91px] left-0 z-[9999999999999] w-full"
+                          className="bg-[white] fixed top-[91px] widescreen:top-[124px] left-0 z-[9999999999999] w-full"
                         >
                           <div className="w-full h-[100vh] overflow-y-scroll pl-20 max-1xl:px-[40px] max-[1250px]:gap-[20px] max-xl:gap-[40px] pr-[80px] pt-[22px] pb-[68px] justify-between items-start gap-[66.08px] inline-flex">
                             <div
@@ -449,7 +504,7 @@ const Navbar = () => {
                             >
                               <div className="flex-col justify-start items-start gap-[26px] flex">
                                 <div className="self-stretch justify-start items-center gap-[26px] inline-flex">
-                                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
+                                  <div className="opacity-60 widescreen:text-[24px] text-black text-sm font-normal font-['Archivo'] uppercase leading-snug">
                                     Our services
                                   </div>
                                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
@@ -457,7 +512,7 @@ const Navbar = () => {
                                 <div className="flex-col justify-start items-start gap-[17px] flex">
                                   <div
                                     ref={cont}
-                                    className="w-[366.92px] max-[1230px]:w-[250px] text-black text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2"
+                                    className="w-[366.92px] widescreen:w-[524px] max-[1230px]:w-[250px] text-black text-[32px] font-normal font-['Graphik'] leading-[120%] letter-spacing-2"
                                   >
                                     We help you do amazing things through
                                     cutting-edge technology.
@@ -467,21 +522,21 @@ const Navbar = () => {
                               <Link
                                 onClick={toggleDropdown}
                                 to="/services"
-                                className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+                                className="px-8 py-4 rounded-[31px] widescreen:rounded-[50px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                               >
-                                <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                                <div className="text-black widescreen:text-[24px] text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                                   Explore all services
                                 </div>
                               </Link>
                             </div>
                             <div
                               ref={container}
-                              className=" justify-start w-[840px] h-[612px] max-xl:w-[765px] overflow-scroll items-start inline-flex flex-wrap"
+                              className=" justify-start w-[840px] widescreen:w-[calc(100%-650px)] h-[612px] widescreen:h-auto max-xl:w-[765px] overflow-scroll items-start inline-flex flex-wrap"
                             >
                               <Link
-                                to={"/product-design-and-innovation"}
+                                to={"/services/product-design-and-innovation"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg1} className="w-[32px] h-[32px] ">
                                   <svg
@@ -500,15 +555,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont1}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Product Design and Innovation
                                 </div>
                               </Link>
                               <Link
-                                to="/app-development-and-modernization"
+                                to="/services/app-development-and-modernization"
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg2} className="w-[32px] h-[32px] ">
                                   <svg
@@ -548,15 +603,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont2}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   App Development and Modernization
                                 </div>
                               </Link>
                               <Link
-                                to="/technology-consulting"
+                                to="/services/technology-consulting"
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg3} className="w-[32px] h-[32px] ">
                                   <svg
@@ -589,15 +644,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont3}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Technology Consulting
                                 </div>
                               </Link>
                               <Link
-                                to="/ecommerce-marketplace-development"
+                                to="/services/ecommerce-marketplace-development"
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg4} className="w-[32px] h-[32px] ">
                                   <svg
@@ -630,15 +685,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont4}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Ecommerce Marketplace Development
                                 </div>
                               </Link>
                               <Link
-                                to={"/cloud-engineering"}
+                                to={"/services/cloud-engineering"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg5} className="w-[32px] h-[32px] ">
                                   <svg
@@ -657,15 +712,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont5}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Cloud Engineering
                                 </div>
                               </Link>
                               <Link
-                                to="/game-development"
+                                to="/services/game-development"
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] -[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] -[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg6} className="w-[32px] h-[32px] ">
                                   <svg
@@ -725,15 +780,15 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont6}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Game Development
                                 </div>
                               </Link>
                               <Link
-                                to="/ar-vr-services"
+                                to="/services/ar-vr-services"
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg7} className="w-[32px] h-[32px] ">
                                   <svg
@@ -780,30 +835,32 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont7}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   AR/VR Services
                                 </div>
                               </Link>
                               <Link
-                                to={"/artificial-intelligence-(ai)-services"}
+                                to={
+                                  "/services/artificial-intelligence-services"
+                                }
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg8} className="w-[32px] h-[32px] ">
                                   <img src={AI} alt="" />
                                 </div>
                                 <div
                                   ref={cont8}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Artificial Intelligence (AI) Services{" "}
                                 </div>
                               </Link>
                               <Link
-                                to={"/low-code-and-no-code"}
+                                to={"/services/low-code-and-no-code"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card border-b-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg9} className="w-[32px] h-[32px] ">
                                   <svg
@@ -850,45 +907,45 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont9}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Low-code and No-code
                                 </div>
                               </Link>
                               <Link
-                                to={"/salesforce-services"}
+                                to={"/services/salesforce-services"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg10} className="w-[32px] h-[32px] ">
                                   <img src={SF} alt="" />
                                 </div>
                                 <div
                                   ref={cont10}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Salesforce Services
                                 </div>
                               </Link>
                               <Link
-                                to={"/microsoft-sharepoint-services"}
+                                to={"/services/microsoft-sharepoint-services"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card bo-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card bo-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] border-r-[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg11} className="w-[32px] h-[32px] ">
                                   <img src={SP} alt="" />
                                 </div>
                                 <div
                                   ref={cont11}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Microsoft SharePoint Services{" "}
                                 </div>
                               </Link>
                               <Link
-                                to={"/quality-assurance"}
+                                to={"/services/quality-assurance"}
                                 onClick={toggleDropdown}
-                                className="max-[1230px]:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
+                                className="max-[1230px]:w-[33%] widescreen:w-[33%] nav-card bor-[2px] max-1xl:p-[10px] max-2xl:border-0 max-2xl:px-[10px] bor[2px] pt-[24.36px] pr-[18px] pl-[24.5px] pb-[31px] gap-[16px] rounded flex-col justify-between items-start inline-flex"
                               >
                                 <div ref={svg12} className="w-[32px] h-[32px] ">
                                   <svg
@@ -935,7 +992,7 @@ const Navbar = () => {
                                 </div>
                                 <div
                                   ref={cont12}
-                                  className="w-[234px] max-[1230px]:w-full w-[100%] max-[1230px]:h-[60px] h-[48px] text-black text-xl font-normal font-['Graphik'] leading-[120%]"
+                                  className="w-[234px] max-[1230px]:w-full widestscreen:w-[100%] max-[1230px]:h-[60px] h-[48px] widestscreen:h-[80px] text-black text-xl font-normal font-['Graphik'] leading-[120%] widesceen:text-[24px] widestscreen:text-[32px]"
                                 >
                                   Quality Assurance
                                 </div>
@@ -946,22 +1003,22 @@ const Navbar = () => {
                       </>
                     )}
                   </div>
-                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
+                  <div className="text-black widescreen:text-[20px] widescreen:text-[24px] whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/about-us"} onClick={toggleother}>
                       About us
                     </Link>
                   </div>
-                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
+                  <div className="text-black widescreen:text-[20px] widescreen:text-[24px] whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/case-studies"} onClick={toggleother}>
                       Case studies
                     </Link>
                   </div>
-                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
+                  <div className="text-black widescreen:text-[20px] widescreen:text-[24px] whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/insights"} onClick={toggleother}>
                       Insights
                     </Link>
                   </div>
-                  <div className="text-black whitespace-nowrap text-base font-normal font-['Graphik']">
+                  <div className="text-black widescreen:text-[20px] widescreen:text-[24px] whitespace-nowrap text-base font-normal font-['Graphik']">
                     <Link to={"/industries"} onClick={toggleother}>
                       Industries
                     </Link>
@@ -970,9 +1027,9 @@ const Navbar = () => {
                 <Link
                   to={"/contact-us"}
                   onClick={toggleother}
-                  className="w-[99px] whitespace-nowrap talk-btn px-[16px] py-[8px] bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
+                  className="w-[99px] whitespace-nowrap widescreen:w-[150px] widestscreen:w-[174px] widescreen:py-[12px] widestscreen:py-[16px] talk-btn px-[16px] py-[8px] bg-neutral-100 rounded-[30px] justify-center items-center gap-2 flex hover:bg-yellow-400 transition-all"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik']">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik']">
                     Let’s Talk
                   </div>
                 </Link>

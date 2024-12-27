@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import img from "../../blogassets/Frame 566.png";
 import img2 from "../../blogassets/Frame 568.png";
 import img3 from "../../blogassets/Blog Page Featured Image.jpg";
@@ -15,7 +15,9 @@ import img13 from "../../blogassets/Frame 58.png";
 import img15 from "../../blogassets/Frame 63.png";
 import img16 from "../../blogassets/Frame 4.svg";
 import img17 from "../../blogassets/Frame 1000001793.png";
+import imgmotion from "../../blogassets/Slide 16_9 - 1 (1).png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import gsap from "gsap";
 
 const Allblogs = () => {
@@ -298,7 +300,6 @@ const Allblogs = () => {
     setIsSortActive(false);
     setIsSort2Active(false);
   };
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   };
@@ -315,7 +316,7 @@ const Allblogs = () => {
                   isSortActive ? "active" : ""
                 }`}
               >
-                <div className="textwhite text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="textwhite text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   Show all
                 </div>
               </div>
@@ -325,7 +326,7 @@ const Allblogs = () => {
                   isSort6Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   Product Development
                 </div>
               </button>
@@ -335,7 +336,7 @@ const Allblogs = () => {
                   isSort3Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   UI/UX Design
                 </div>
               </button>
@@ -355,7 +356,7 @@ const Allblogs = () => {
                   isSort2Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   Branding
                 </div>
               </button>
@@ -365,7 +366,7 @@ const Allblogs = () => {
                   isSort5Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   Social Media
                 </div>
               </button>
@@ -375,7 +376,7 @@ const Allblogs = () => {
                   isSort7Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   Digital Marketing
                 </div>
               </button>
@@ -385,7 +386,7 @@ const Allblogs = () => {
                   isSort8Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   eCommerce
                 </div>
               </button>
@@ -395,7 +396,7 @@ const Allblogs = () => {
                   isSort9Active ? "active" : ""
                 }`}
               >
-                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%]">
+                <div className="text-black text-xl font-normal font-['Graphik'] leading-[120%] widescreen:text-[24px] widescreen:text-[24px]">
                   No Code
                 </div>
               </button>
@@ -405,321 +406,365 @@ const Allblogs = () => {
         <div className="main-blog-section mx-[80px] mt-20 max-lg:m-5 max-md:px-5 max-md:mx-0">
           <div className="w-full mb-[100px] max-sm:mb-0 h-full justify-center items-start gap-x-[160px] gap-y-[75px] inline-flex flex-wrap  max-lg:gap-x-[50px] max-lg:justify-center max-lg:items-center max-sm:gap-[72px] max-[1432px]:gap-x-[100px]">
             <Link
-              to={"/the-changing-nature-of-seo"}
+              to={"/insights/the-changing-nature-of-seo"}
               onClick={scrollToTop}
               ref={(el) => (NSEO = el)}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-md:wfull"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-md:wfull"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img7} alt="" />
-              <div className="w-[317px] max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto max-sm:w-full justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full text-black text-2xl font-normal font-['Graphik'] leading-[120%] letter-spacing-4 capitalize max-[400px]:w-full">
-                    the changing nature of sEO
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img7}
+                alt=""
+              />
+              <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto max-sm:w-full justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full capitalize max-sm:h-auto max-sm:w-full text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] leading-[120%] letter-spacing-4 capitalize max-[400px]:w-full">
+                    the changing nature of sEO{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     Search engine optimization (SEO) has been around for over
-                    two decades, and it has undergone significant changes....
+                    two decades, and it has undergone significant changes....{" "}
                   </div>
                 </div>
                 <Link
                   onClick={scrollToTop}
-                  to="/the-changing-nature-of-seo"
+                  to="/insights/the-changing-nature-of-seo"
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/no-code-revolution"
+              to="/insights/no-code-revolution"
               ref={(el) => (NCR = el)}
               onClick={scrollToTop}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-md:wfull"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-md:wfull"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img3} alt="" />
-              <div className="w-[317px] max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full text-black text-2xl leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize max-[400px]:w-full">
-                    No-Code Revolution: 5 Platforms To Keep An....
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img3}
+                alt=""
+              />
+              <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    No-Code Revolution: 5 Platforms To Keep An....{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     The No-code revolution is indicative that modern businessmen
                     and women want to keep creative control....
                   </div>
                 </div>
                 <Link
-                  to="/no-code-revolution"
+                  to="/insights/no-code-revolution"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/shopify-vs-magento"
+              to="/insights/shopify-vs-magento"
               ref={(el) => (SVM = el)}
               onClick={scrollToTop}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img2} alt="" />
-              <div className="w-[317px] max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col justify-between max-sm:gap-5 max-sm:h-auto h-[142px] items-start  flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full text-black text-2xl leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img2}
+                alt=""
+              />
+              <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col justify-between max-sm:gap-5 max-sm:h-auto h-[142px] widescreen:h-[180px] items-start  flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] leading-[120%] letter-spacing-4 font-normal font-['Graphik'] capitalize max-[400px]:w-full">
                     Shopify vs magento{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     If you're a business owner of any kind, you've probably
                     heard of Shopify and Magento.Today, Shopify and....
                   </div>
                 </div>
                 <Link
-                  to="/shopify-vs-magento"
+                  to="/insights/shopify-vs-magento"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/design-system"
+              to="/insights/design-system"
               ref={(el) => (design = el)}
               onClick={scrollToTop}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img}
+                alt=""
+              />
 
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="text-black leading-[120%] letter-spacing-4 text-2xl font-normal font-['Graphik'] capitalize">
-                    design system
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="text-black leading-[120%] letter-spacing-4 text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
+                    design system{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     A design system is a guide or a standard structure with
                     parameters for design and code along with design
-                    components....
+                    components....{" "}
                   </div>
                 </div>
                 <Link
                   onClick={scrollToTop}
-                  to="/design-system"
+                  to="/insights/design-system"
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/gestalt-psychology"
+              to="/insights/gestalt-psychology"
               ref={(el) => (gp = el)}
               onClick={scrollToTop}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img8} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img8}
+                alt=""
+              />
 
               <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="text-black leading-[120%] letter-spacing-4 text-2xl font-normal font-['Graphik'] capitalize">
-                    Gestalt psychology
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="text-black leading-[120%] letter-spacing-4 text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
+                    Gestalt psychology{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     The website redesign of the restaurant chain, Chili's, is a
-                    great case study in UX design using Gestalt Psychology....
+                    great case study in UX design using Gestalt Psychology....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/gestalt-psychology"
+                  to="/insights/gestalt-psychology"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/storytelling-in-marketing"
+              to="/insights/storytelling-in-marketing"
               onClick={scrollToTop}
               ref={(el) => (STM = el)}
-              className="flex-col h-[422px] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full justify-start items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img5} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img5}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
-                    Storytelling in marketing
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
+                    Storytelling in marketing{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     Customers don’t buy products or services, they buy the
                     feeling that the said product or service evokes within
-                    them....
+                    them....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/storytelling-in-marketing"
+                  to="/insights/storytelling-in-marketing"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/minimum-viable-product"
+              to="/insights/minimum-viable-product"
               onClick={scrollToTop}
               ref={(el) => (MVP = el)}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
               <div className="flex-col justify-start max-sm:h-auto max-sm:w-full items-start gap-9 flex">
-                <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img9} alt="" />
+                <img
+                  className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                  src={img9}
+                  alt=""
+                />
               </div>
-              <div className="w-[317px] max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
-                    Minimum viable product
+              <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    Minimum viable product{" "}
                   </div>
                   <div className="flex-col justify-start items-start gap-6 flex">
-                    <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal">
                       The bigger idea behind building an MVP is to test your
                       assumptions. That takes us to the next important
-                      segment....
+                      segment....{" "}
                     </div>
                   </div>
                 </div>
                 <Link
-                  to="/minimum-viable-product"
+                  to="/insights/minimum-viable-product"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/the-art-of-disruptive-branding"
+              to="/insights/the-art-of-disruptive-branding"
               onClick={scrollToTop}
               ref={(el) => (db = el)}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img6} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img6}
+                alt=""
+              />
 
-              <div className="w-[317px] max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize max-[400px]:w-full">
-                    The art of disruptive branding
+              <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize max-[400px]:w-full">
+                    The art of disruptive branding{" "}
                   </div>
                   <div className="flex-col justify-start items-start gap-6 flex">
-                    <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                    <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal">
                       Branded environments are not just for large corporations
-                      with huge budgets. Any business can create a branded....
+                      with huge budgets. Any business can create a branded....{" "}
                     </div>
                   </div>
                 </div>
                 <Link
-                  to="/the-art-of-disruptive-branding"
+                  to="/insights/the-art-of-disruptive-branding"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/ux-design-benefits-smes!"
+              to="/insights/ux-design-benefits-smes"
               ref={(el) => (UXi = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start h-[422px] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img4} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img4}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
-                    UX design Benefits SMEs!
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
+                    UX design Benefits SMEs!{" "}
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     For SMEs, the initial buzz around their product, or service
-                    helps them scale faster while also bringing....
+                    helps them scale faster while also bringing....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/ux-design-benefits-smes!"
+                  to="/insights/ux-design-benefits-smes"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/bing-vs-google"
+              to="/insights/bing-vs-google"
               ref={(el) => (Bg = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start h-[422px] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] h-[175.55px] max-sm:h-auto max-sm:w-full" src={img12} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full widescreen:h-auto h-[175.55px] max-sm:h-auto max-sm:w-full"
+                src={img12}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     Bing Vs Google
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     Search engines, there has been a noticeable shift in the
-                    market, and Bing is emerging as a strong competitor.....
+                    market, and Bing is emerging as a strong competitor.....{" "}
                   </div>
                 </div>
                 <Link
                   ref={(el) => (Bg = el)}
-                  to="/bing-vs-google"
+                  to="/insights/bing-vs-google"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/listing-to-your-customer"
+              to="/insights/listening-to-your-customer"
               ref={(el) => (Cust = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start h-[422px] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img15} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img15}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     Listening To Your Customer
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     A few years ago, a Fortune 500 company called American
-                    Family Insurance (AFI) learned....
+                    Family Insurance (AFI) learned....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/listing-to-your-customer"
+                  to="/insights/listening-to-your-customer"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
@@ -727,56 +772,64 @@ const Allblogs = () => {
             </Link>
             <Link
               onClick={scrollToTop}
-              to="/react-native-vs-flutter"
+              to="/insights/react-native-vs-flutter"
               ref={(el) => (RVF = el)}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img16} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img16}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     React Native V/S Flutter
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     Only a decade ago, it was hard to imagine life without
                     mobile apps. They now make our lives easier, with some
-                    even....
+                    even....{" "}
                   </div>
                 </div>
                 <Link
                   onClick={scrollToTop}
-                  to="/react-native-vs-flutter"
+                  to="/insights/react-native-vs-flutter"
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/empthy-in-ux"
+              to="/insights/empathy-in-ux"
               ref={(el) => (empathy = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start h-[422px] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start h-[422px] widescreen:h-auto widescreen:w-[25%] max-sm:h-auto max-sm:w-full items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img10} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img10}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     Empathy In UX
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     Since 1989, Intuit (maker of Quickbooks, Mint, and TurboTax)
-                    has run a “Follow me Home ” program that involves
+                    has run a “Follow me Home ” program that involves{" "}
                   </div>
                 </div>
                 <Link
-                  to="/empthy-in-ux"
+                  to="/insights/empathy-in-ux"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
@@ -784,83 +837,126 @@ const Allblogs = () => {
             </Link>
             <Link
               ref={(el) => (aii = el)}
-              to="/ai-powered-design-tools"
+              to="/insights/ai-powered-design-tools"
               onClick={scrollToTop}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px]  max-sm:h-auto max-sm:w-full h-[175.55px]" src={img17} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full widescreen:h-auto max-sm:h-auto max-sm:w-full h-[175.55px]"
+                src={img17}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     AI-Powered Design Tools
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     The impact of AI on design is an ongoing topic of
-                    discussion, with both potential benefits and ethical.....
+                    discussion, with both potential benefits and ethical.....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/ai-powered-design-tools"
+                  to="/insights/ai-powered-design-tools"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/discovery-workshop"
+              to="/insights/discovery-workshop"
               ref={(el) => (dw = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img13} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img13}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full leading-[120%] letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     Discovery Workshop
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     A noted health insurance company recognized the need to
-                    improve its member portal to provide.....
+                    improve its member portal to provide.....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/discovery-workshop"
+                  to="/insights/discovery-workshop"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>
               </div>
             </Link>
             <Link
-              to="/digital-marketing-trends-in-2023"
+              to="/insights/digital-marketing-trends-in-2023"
               ref={(el) => (digitalmarketing = el)}
               onClick={scrollToTop}
-              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] items-start gap-9 inline-flex max-mdw-full"
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
             >
-              <img className="w-[317px] max-sm:h-auto max-sm:w-full h-[175.55px]" src={img11} alt="" />
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={img11}
+                alt=""
+              />
               <div className="flex-col justify-center items-start gap-6 flex">
-                <div className="flex-col h-[142px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
-                  <div className="w-[317px] leading-[120%] max-sm:h-auto max-sm:w-full letter-spacing-4 text-black text-2xl font-normal font-['Graphik'] capitalize">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full leading-[120%] max-sm:h-auto max-sm:w-full letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
                     Digital Marketing Trends 2023
                   </div>
-                  <div className="w-[317px] max-sm:h-auto max-sm:w-full opacity-80 text-black text-base font-normal font-['Graphik'] leading-normal">
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
                     An interesting study published by Think With Google
-                    described how Domino's and Diageo....
+                    described how Domino's and Diageo....{" "}
                   </div>
                 </div>
                 <Link
-                  to="/digital-marketing-trends-in-2023"
+                  to="/insights/digital-marketing-trends-in-2023"
                   onClick={scrollToTop}
                   className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
+                    Read more
+                  </div>
+                </Link>
+              </div>
+            </Link>
+            <Link
+              to="/insights/the-secret-power-of-motion"
+              onClick={scrollToTop}
+              className="flex-col justify-start max-sm:h-auto max-sm:w-full h-[422px] widescreen:h-auto widescreen:w-[25%] items-start gap-9 inline-flex max-mdw-full"
+            >
+              <img
+                className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full h-[175.55px] widescreen:w-full widescreen:h-auto"
+                src={imgmotion}
+                alt=""
+              />
+              <div className="flex-col justify-center items-start gap-6 flex">
+                <div className="flex-col h-[142px] widescreen:h-[180px] max-sm:gap-5 max-sm:h-auto justify-between items-start flex max-lg:h-[146px] max-lg:justify-between">
+                  <div className="w-[317px] widescreen:w-full leading-[120%] max-sm:h-auto max-sm:w-full letter-spacing-4 text-black text-2xl widescreen:text-[30px] widestscreen:text-[35px] font-normal font-['Graphik'] capitalize">
+                    The Secret Power of Motion
+                  </div>
+                  <div className="w-[317px] widescreen:w-full max-sm:h-auto max-sm:w-full opacity-80 text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-normal max-[500px]:w-full">
+                    We all know that good design makes a product easier and more
+                    enjoyable to use. But what if...{" "}
+                  </div>
+                </div>
+                <Link
+                  to="/insights/the-secret-power-of-motion"
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
+                >
+                  <div className="text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] capitalize leading-normal">
                     Read more
                   </div>
                 </Link>

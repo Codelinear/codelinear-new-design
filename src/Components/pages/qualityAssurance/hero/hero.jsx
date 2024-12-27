@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import image from "../assets/QA.jpg";
+import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 const Hero = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -9,7 +11,7 @@ const Hero = () => {
       <section id="prod-hero">
         <h1 className="prod-hero-h1 letter-spacing">
           We stand as your partners in ensuring seamless, flawless digital
-          solutions.
+          solutions.{" "}
         </h1>
         <div>
           <img src={image} alt="" />

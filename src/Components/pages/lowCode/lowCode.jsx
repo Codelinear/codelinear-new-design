@@ -1,9 +1,12 @@
 import Hero from "./hero/hero";
 import LowSection from "./lowCodeSection/lowSection";
 import Explore from "../production/Explore";
-import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
+import gsap from "gsap";
+import { useState, useEffect, useRef } from "react";
+import axios from "axios";
 
+import { Helmet } from "react-helmet";
+import Footer from "../../Footer/Footer";
 const Lowcode = () => {
   const [activeSection, setActiveSection] = useState(null);
 
@@ -15,12 +18,14 @@ const Lowcode = () => {
       const sectionTop = section.offsetTop;
       const sectionBottom = sectionTop + section.offsetHeight;
 
-      if (scrollPosition + 300 >= sectionTop && scrollPosition < sectionBottom) {
+      if (
+        scrollPosition + 300 >= sectionTop &&
+        scrollPosition < sectionBottom
+      ) {
         setActiveSection(index);
       }
     });
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -29,9 +34,21 @@ const Lowcode = () => {
   }, []);
   return (
     <>
-    <Helmet>
-      <title>codelinear | Low-code & No-code</title>
-    </Helmet>
+      <Helmet>
+        <title>Services - Low-code & No-code</title>
+        <meta
+          name="description"
+          content="Discover Codelinear's low-code and no-code development services, offering efficient and rapid application development solutions. Learn how we leverage low-code and no-code platforms to accelerate the development process and deliver innovative solutions."
+        />
+        <link
+          rel="canonical"
+          href="https://codelinear.com/services/low-code-and-no-code"
+        />
+        <meta
+          name="keywords"
+          content="low-code development, no-code development, rapid application development, application development solutions, low-code platforms, no-code platforms, innovation, development process acceleration"
+        />
+      </Helmet>
       <div className="flex justify-between">
         <div className="section left w-[80%] max-xl:w-full">
           <div>
@@ -47,23 +64,23 @@ const Lowcode = () => {
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                    ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[143.4px] relative max-xl:h-[200px] max-xl:w-full">
+            <div className=" w-[143.4px] widescreen:w-[300px] relative max-xl:h-[200px] max-xl:w-full">
               <div className="w-full w-[117px] overview h-[35px] p-[8px] top-0 absolute rounded-lg justify-start items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                      ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                      : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
-                  Low-code and No-code
+                  Low-code and No-code{" "}
                 </div>
               </div>
             </div>
@@ -71,6 +88,7 @@ const Lowcode = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };

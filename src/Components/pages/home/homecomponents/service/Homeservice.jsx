@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./homeservice.scss";
 import SP from "../../../../../assets/homeassets/Group 1000001871.svg";
 import SC from "../../../../../assets/homeassets/Group.svg";
@@ -12,7 +13,6 @@ const Homeservice = () => {
   };
 
   let [width, setWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
@@ -25,14 +25,14 @@ const Homeservice = () => {
               <div className="h-[150px] pl-[0px] pr-[89.78px] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:p-10  max-lg:  max-md:w-full  max-sm:h-[80px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
                   <div className="w-[300.22px] text-black text-[49.20px] font-normal font-['Graphik'] leading-[120%] max-[350px]:w-full  max-sm:text-[32px]">
-                    Our Services
+                    Our Services{" "}
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-wrap justify-center gap-[18px] max-sm:gap-[12px]">
                 <Link
-                  to={"/product-design-and-innovation"}
+                  to={"/services/product-design-and-innovation"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -56,7 +56,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Product Design and Innovation
+                        Product Design and Innovation{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -72,7 +72,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/app-development-and-modernization"}
+                  to={"/services/app-development-and-modernization"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -117,7 +117,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        App Development and Modernization
+                        App Development and Modernization{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -133,7 +133,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/technology-consulting"}
+                  to={"/services/technology-consulting"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -171,7 +171,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-14 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Technology Consulting
+                        Technology Consulting{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -187,7 +187,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/artificial-intelligence-(ai)-services"}
+                  to={"/services/artificial-intelligence-services"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -214,7 +214,7 @@ const Homeservice = () => {
                   </div>
                 </Link>
                 <Link
-                  to={"/ecommerce-marketplace-development"}
+                  to={"/services/ecommerce-marketplace-development"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -252,7 +252,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Ecommerce Marketplace Development
+                        Ecommerce Marketplace Development{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -268,7 +268,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/cloud-engineering"}
+                  to={"/services/cloud-engineering"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -292,7 +292,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-16 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Cloud Engineering
+                        Cloud Engineering{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -308,7 +308,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/game-development"}
+                  to={"/services/game-development"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -373,7 +373,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-16 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Game Development
+                        Game Development{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -389,7 +389,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/ar-vr-services"}
+                  to={"/services/ar-vr-services"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -441,7 +441,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        AR/VR Services
+                        AR/VR Services{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -456,7 +456,7 @@ const Homeservice = () => {
                   </div>
                 </Link>
                 <Link
-                  to={"/low-code-and-no-code"}
+                  to={"/services/low-code-and-no-code"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -508,7 +508,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Low-code and No-code
+                        Low-code and No-code{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -524,7 +524,7 @@ const Homeservice = () => {
                 </Link>
 
                 <Link
-                  to={"/salesforce-services"}
+                  to={"/services/salesforce-services"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -536,7 +536,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Salesforce Consulting
+                        Salesforce Services{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -551,7 +551,7 @@ const Homeservice = () => {
                   </div>
                 </Link>
                 <Link
-                  to={"/microsoft-sharepoint-services"}
+                  to={"/services/microsoft-sharepoint-services"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -578,7 +578,7 @@ const Homeservice = () => {
                   </div>
                 </Link>
                 <Link
-                  to={"/quality-assurance"}
+                  to={"/services/quality-assurance"}
                   onClick={scrollToTop}
                   className=" service-cards w-[32px] h-[32px] px-[17px]  py-[21px] bg-white flex-col justify-between items-start inline-flex  transitionall text-black    max-lg:w-full"
                 >
@@ -630,7 +630,7 @@ const Homeservice = () => {
                   <div className="flex-col justify-end items-start gap-6 inline-flex">
                     <div className="w-[340px] flex-col justify-between items-start flex gap-6 max-lg:w-full">
                       <div className="service-heading  text-2xl font-normal font-['Graphik'] leading-[28.80px]">
-                        Quality Assurance
+                        Quality Assurance{" "}
                       </div>
                     </div>
                     <div className=" arrow-svg w-[40px] h-[16px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -649,7 +649,7 @@ const Homeservice = () => {
                   onClick={scrollToTop}
                   className="px-8 py-4 mt-[20px] rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400 max-sm:w-full mb-10"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                     Explore all services
                   </div>
                 </Link>
@@ -664,7 +664,7 @@ const Homeservice = () => {
               <div className="h-[150px] pl-[0px] pr-[] pt-[30px] pb-[31px] flex-col justify-start items-center inline-flex  w-full  max-lg:px-0  max-lg:  max-md:w-full  max-[376px]:h-[400px] max-md:p-2">
                 <div className="self-stretch flexcol justify-between  items-start gap-10 inline-flex  max-md:flex-wrap">
                   <div className="w-[300.22px] letter-spacing-2 text-black text-[48px] font-normal font-['Graphik'] leading-[120%] max-[350px]:w-full">
-                    Our Services
+                    Our Services{" "}
                   </div>
 
                   <Link
@@ -672,7 +672,7 @@ const Homeservice = () => {
                     onClick={scrollToTop}
                     className="px-8 py-4 rounded-[31px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400 transition-all  hover:border-yellow-400"
                   >
-                    <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                    <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal">
                       Explore all services
                     </div>
                   </Link>
@@ -680,9 +680,9 @@ const Homeservice = () => {
               </div>
 
               <Link
-                to={"/product-design-and-innovation"}
+                to={"/services/product-design-and-innovation"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+                className="mb-[17px] service-cards w-[32.451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -702,13 +702,13 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1310px]:w-full">
-                    <div className="service-heading letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      Product Design and Innovation
+                  <div className="w-[340px] widescreen:w-full h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] widescreen:h-[210px] max-[1310px]:w-full">
+                    <div className="service-heading widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Product Design and Innovation{" "}
                     </div>
-                    <div className="w-[340px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1310px]:w-full">
+                    <div className="w-[340px] bigscreen:w-[80%] widescreen:text-[20px] widestscreen:text-[24px]  leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1310px]:w-full">
                       Sculpt digital products that stand out from the crowd,
-                      spark emotions, and redefine what's possible.
+                      spark emotions, and redefine what's possible.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -720,9 +720,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/app-development-and-modernization"}
+                to={"/services/app-development-and-modernization"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -765,14 +765,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1025px]:w-full">
-                    <div className="service-heading  letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                  <div className="w-[340px] widescreen:w-full h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] widescreen:h-[210px] max-[1025px]:w-full">
+                    <div className="service-heading widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       {" "}
-                      App Development and Modernization
+                      App Development and Modernization{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  w-[80%] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Build enduring app experiences that captivate users, drive
-                      growth, and leave a lasting impact.
+                      growth, and leave a lasting impact.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -784,9 +784,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/technology-consulting"}
+                to={"/services/technology-consulting"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -822,14 +822,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] max-[1025px]:w-full">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      Technology Consulting
+                  <div className="w-[340px] widescreen:w-full h-[143px] flex-col justify-between items-start flex max-[800px]:h-[174px] widescreen:h-[210px] max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Technology Consulting{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Our seasoned consultants bring a universal perspective to
                       your unique challenges, offering insights that redefine
-                      possibilities.
+                      possibilities.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -841,9 +841,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/artificial-intelligence-(ai)-services"}
+                to={"/services/artificial-intelligence-services"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -851,15 +851,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
+                  <div className="w-[340px] widescreen:w-full h-[143px] max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Artificial Intelligence (AI) services{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Drive business transformation with our cutting-edge
                       Artificial Intelligence services for enhanced efficiency
-                      and innovation.
+                      and innovation.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -870,9 +869,9 @@ const Homeservice = () => {
                 </div>
               </Link>
               <Link
-                to={"/ecommerce-marketplace-development"}
+                to={"/services/ecommerce-marketplace-development"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -908,14 +907,13 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col justify-between items-start flex  max-[800px]:h-[174px] max-[1025px]:w-full">
-                    <div className="service-heading letter-spacing-4 w-[280px]  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
-                      Ecommerce Marketplace Development
+                  <div className="w-[340px] h-[143px] widescreen:w-full flex-col justify-between items-start flex  max-[800px]:h-[174px] widescreen:h-[210px] max-[1025px]:w-full">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] widescreen:w-full w-[280px]  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Ecommerce Marketplace Development{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Elevate your business to new heights with our cutting-edge
-                      marketplace development services.
+                      marketplace development services.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -927,9 +925,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/cloud-engineering"}
+                to={"/services/cloud-engineering"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -951,15 +949,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col max-[800px]:h-[174px] justify-between items-start flex max-[1025px]:w-full">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
-                      Cloud Engineering
+                  <div className="w-[340px] h-[143px] widescreen:w-full flex-col max-[800px]:h-[174px] widescreen:h-[210px] justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Cloud Engineering{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 w-[80%] widescreen:text-[20px] widestscreen:text-[24px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Engineered to meet the unique needs of your business,
                       empower your business to thrive in the face of evolving
-                      challenges.
+                      challenges.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -971,9 +968,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/game-development"}
+                to={"/services/game-development"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black   "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1036,14 +1033,13 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] flex-col max-[800px]:h-[174px] justify-between items-start flex max-[1025px]:w-full">
-                    <div className="service-heading  letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
-                      Game Development
+                  <div className="w-[340px] widescreen:w-full h-[143px] flex-col max-[800px]:h-[174px] widescreen:h-[210px] justify-between items-start flex max-[1025px]:w-full">
+                    <div className="service-heading widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] letter-spacing-4 text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Game Development{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Breathe life into gaming experiences that resonate with
-                      players and leave an indelible mark.
+                      players and leave an indelible mark.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1055,9 +1051,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/ar-vr-services"}
+                to={"/services/ar-vr-services"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1107,15 +1103,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
-                      AR/VR Services
+                  <div className="w-[340px] h-[143px] widescreen:w-full max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      AR/VR Services{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Transport users to realms where the extraordinary becomes
                       ordinary, boundaries blur, and possibilities are
-                      limitless.
+                      limitless.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1127,9 +1122,9 @@ const Homeservice = () => {
               </Link>
 
               <Link
-                to={"/low-code-and-no-code"}
+                to={"/services/low-code-and-no-code"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black"
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1179,15 +1174,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
-                      Low-code and No-code
+                  <div className="w-[340px] h-[143px] widescreen:w-full max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
+                      Low-code and No-code{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Creating dynamic applications without diving into complex
                       code. Our Low Code/No Code solutions help liberate your
-                      creativity.
+                      creativity.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1198,9 +1192,9 @@ const Homeservice = () => {
                 </div>
               </Link>
               <Link
-                to={"/salesforce-services"}
+                to={"/services/salesforce-services"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1208,15 +1202,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
+                  <div className="w-[340px] widescreen:w-full h-[143px] max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Salesforce Services{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:w-[80%] widescreen:text-[20px] widestscreen:text-[24px]  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Optimize Salesforce for streamlined operations, improved
                       customer engagement, and scalable business growth
-                      solutions.
+                      solutions.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1227,9 +1220,9 @@ const Homeservice = () => {
                 </div>
               </Link>
               <Link
-                to={"/microsoft-sharepoint-services"}
+                to={"/services/microsoft-sharepoint-services"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1237,14 +1230,13 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
+                  <div className="w-[340px] h-[143px] widescreen:w-full max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Microsoft SharePoint services{" "}
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Enhance collaboration, secure data management, and
-                      streamline workflows with Microsoft SharePoint services.
+                      streamline workflows with Microsoft SharePoint services.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">
@@ -1255,9 +1247,9 @@ const Homeservice = () => {
                 </div>
               </Link>
               <Link
-                to={"/quality-assurance"}
+                to={"/services/quality-assurance"}
                 onClick={scrollToTop}
-                className="mb-[17px] service-cards w-[32.4451%] h-[392px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
+                className="mb-[17px] service-cards w-[32.4451%] h-[392px] widestscreen:h-[500px] pl-[30px] pr-[30px] py-[45px] bg-white flex-col items-start gap-[46.12px] inline-flex  transitionall text-black  "
               >
                 <div className="justify-center items-center inline-flex">
                   <div className="w-[62.77px] h-[62.77px] relative flex-col justify-start items-start flex">
@@ -1307,15 +1299,14 @@ const Homeservice = () => {
                   </div>
                 </div>
                 <div className="flex-col justify-end items-start gap-6 inline-flex max-[800px]:justify-between">
-                  <div className="w-[340px] h-[143px] max-[800px]:h-[174px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
-                    <div className="service-heading letter-spacing-4  text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
-                      {" "}
+                  <div className="w-[340px] h-[143px] widescreen:w-full max-[800px]:h-[174px] widescreen:h-[210px] flex-col justify-between items-start flex max-[1025px]:w-full max-[800px]:gap-[20px]">
+                    <div className="service-heading letter-spacing-4 widescreen:text-[32px] widestscreen:text-[40px] widescreen:leading-[120%] text-[24px] font-normal font-['Graphik'] leading-[28.80px]">
                       Quality Assurance
                     </div>
-                    <div className="w-[340px] leading-[150%] opacity-80  text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
+                    <div className="w-[340px] leading-[150%] opacity-80 widescreen:text-[20px] widestscreen:text-[24px]  widescreen:w-[80%] widestscreen:text-[24px] widestscreen:mt-[15px] text-base font-normal font-['Graphik'] leading-normal  max-[1025px]:w-full">
                       Partner with a team that understands the universal
                       standards of quality, and aligns seamlessly with your
-                      digital vision.
+                      digital vision.{" "}
                     </div>
                   </div>
                   <div className=" arrow-svg w-[68px] h-[27px] px-[18.50px] py-[3px] rounded-[54px] border border-black justify-center items-center inline-flex">

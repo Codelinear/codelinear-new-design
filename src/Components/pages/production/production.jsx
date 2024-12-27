@@ -16,10 +16,12 @@ import arrdown from "./images/Frame 1000002750 --_ Frame 1000002751.svg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import Explore from "./Explore";
 import { Helmet } from "react-helmet";
+import Footer from "../../Footer/Footer";
 
 const Production = () => {
   const containerRef = useRef(null);
@@ -66,28 +68,30 @@ const Production = () => {
       }
     });
   };
-  const body = document.getElementById("root");
-  const handleMouseEnter = () => {
-    gsap.to(body, { backgroundColor: '#E3E3E3', duration: 0.8 });
-    gsap.to(body, { filter: 'invert(100%)', duration: 0.8 });
-  };
-
-  const handleMouseLeave = () => {
-    gsap.to(body, { backgroundColor: 'transparent', duration: 0.8 });
-    gsap.to(body, { filter: 'invert(0%)', duration: 0.8 });
-
-  };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
-    <Helmet>
-      <title>codelinear | Product Design & Innovation</title>
-    </Helmet>
+      <Helmet>
+        <title>Services - Product Design & Innovation</title>
+        <meta
+          name="description"
+          content="Explore Codelinear's product design and innovation services, tailored to help businesses create innovative and user-centric digital products. Learn how we combine design thinking, user research, and prototyping to bring your product ideas to life."
+        />
+        <link
+          rel="canonical"
+          href="https://codelinear.com/services/product-design-and-innovation"
+        />
+        <meta
+          name="keywords"
+          content="product design, innovation, digital products, user-centric design, design thinking, user research, prototyping, product development"
+        />
+      </Helmet>
       <div className="flex bg-[white]" ref={prod}>
         <div className="left">
           <section id="prod-hero">
@@ -95,7 +99,7 @@ const Production = () => {
               Tailored to turn your ideas into exceptional products{" "}
             </h1>
             <div className="section">
-              <img src={bulb} alt="" ref={bulbimg}/>
+              <img src={bulb} alt="" ref={bulbimg} />
             </div>
             <p>
               We believe in the power of visionary design and cutting-edge
@@ -147,7 +151,7 @@ const Production = () => {
               </div>
             </div>
             <div className="prod-container-2">
-              <img src={img4} alt="" ref={imglap}/>
+              <img src={img4} alt="" ref={imglap} />
               <div className="prod-sub-container-2">
                 <h4>
                   Your users, our expertise – let's create digital delight
@@ -184,7 +188,7 @@ const Production = () => {
               </div>
               <div className="engg-sub-contaner">
                 <img src={img6} alt="" />
-                <h4>Scalability and Performance</h4>
+                Scalability and Performance{" "}
                 <p className="w-[235px]">
                   Prioritize scalability and performance, ensuring your digital
                   solutions evolve effortlessly with increasing user demands.{" "}
@@ -201,11 +205,7 @@ const Production = () => {
               </div>
             </div>
             <section className="animation-tree" ref={containerRef}>
-              <div
-                className="hover"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              ></div>
+              <div className="hover"></div>
               <h5 className="at-h1">
                 Deploying Product Engineering is necessary to keep up with
                 digital hypergrowth.
@@ -237,7 +237,7 @@ const Production = () => {
               </div>
               <div className="talk">
                 <div className="talk-text">
-                  Ready to transition into the future?
+                  Ready to transition into the future?{" "}
                 </div>
                 <Link to={"/contact-us"} onClick={scrollToTop}>
                   <button>Talk to our design experts</button>
@@ -287,7 +287,7 @@ const Production = () => {
           </section>
         </div>
         <div
-          className="right sticky max-xl:hidden h-[100vh] top-0 pt-28 mt-[300px]  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] pr-[80px]"
+          className="right bg-transparent sticky max-xl:hidden h-[600px] top-[76px] mt-0  max-xl:w-full bg-white max-xl:h-[300px] max-xl:top-10  max-md:h-[400px] widescreen:w-[380px] pr-[80px]"
           ref={sidebar}
         >
           <div className="self-stretch flex-col justify-start items-start gap-3 inline-flex max-xl:w-full  max-xl:h-[300px]">
@@ -295,23 +295,23 @@ const Production = () => {
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base p-2 font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-2"
+                    ? "active text-black text-base  widescreen:text-[20px] widestscreen:text-[24px] p-2 font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base  widescreen:text-[20px] widestscreen:text-[24px] font-normal font-['Graphik'] leading-tight p-2"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[190px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-[190px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-[11px] inline-flex max-xl:flex-wrap ">
+            <div className=" w-[190px] h-[463px] widescreen:w-[300px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-[190px] overview widescreen:w-full h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-[11px] inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active  -2 text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : "text-black  -2 text-base font-normal font-['Graphik'] leading-tight p-2"
+                      ? "active  -2 text-black text-base  widescreen:text-[20px] widestscreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                      : "text-black  -2 text-base  widescreen:text-[20px] widestscreen:text-[24px] font-normal font-['Graphik'] leading-tight p-2"
                   }
                 >
-                  Product Design and Innovation
+                  Product Design and Innovation{" "}
                 </div>
               </div>
               <div className="mt-[11px] stick_list w-[190px] h-[412px] left-[25px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
@@ -325,8 +325,8 @@ const Production = () => {
                       : "acive1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    Experience Design
+                  <div className="w-[137.52px] opacity-80 widescreen:w-full widescreen:leading-[120%] text-black text-[14px] widescreen:text-[20px] widestscreen:text-[24px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Experience Design{" "}
                   </div>
                 </Link>
                 <Link
@@ -339,8 +339,8 @@ const Production = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    Product Engineering
+                  <div className="w-[137.52px] opacity-80 widescreen:w-full widescreen:leading-[120%] text-black widescreen:text-[20px] widestscreen:text-[24px] text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Product Engineering{" "}
                   </div>
                 </Link>
                 <Link
@@ -353,8 +353,8 @@ const Production = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[137.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    Innovation and Strategy
+                  <div className="w-[137.52px] opacity-80 widescreen:w-full widescreen:leading-[120%] text-black widescreen:text-[20px] widestscreen:text-[24px] text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Innovation and Strategy{" "}
                   </div>
                 </Link>
               </div>
@@ -363,6 +363,7 @@ const Production = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };

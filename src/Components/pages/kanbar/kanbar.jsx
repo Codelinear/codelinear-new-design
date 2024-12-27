@@ -1,32 +1,46 @@
-import CasestudyCarousal from "../tradejini/components/casestudyCarousal";
-// import TradejiniAbout from "./components/tradejiniAbout";
-// import TradejiniDesc from "./components/tradejiniDesc";
-// import Tradejinihero from "./components/tradejinihero";
-// import TradejiniDetails from "./components/tradejniDetails";
+import CasestudyCarousal from "../casestudy carousel/casestudyCarousal";
+import About from "./components/about";
+import Desc from "./components/desc";
+import Hero from "./components/hero";
+import Details from "./components/details";
 import Blog from "../home/homecomponents/homeblog/Bloghome";
 import { Helmet } from "react-helmet";
-// import Tradejiniquote from "./tradejiniquote";
-// import Collage from "./collage";
-// import Blursection from "./components/blursection";
+import Quote from "./components/quote";
+import Collage from "./components/collage";
+import Blursection from "./components/blursection";
+import Footer from "../../Footer/Footer";
 
-const KD = () => {
+const Kanbar = () => {
   return (
     <>
       <Helmet>
-        <title>codelinear | Kanbar Digital. LLC</title>
+        <title>Case Studies - Kanbar Digital</title>
+        <meta
+          name="description"
+          content="Explore how Codelinear collaborated with Kanbar Digital to develop innovative solutions and drive business growth. Learn about the strategies and technologies implemented to achieve project objectives and exceed client expectations."
+        />
+         <link
+          rel="canonical"
+          href="https://codelinear.com/case-studies/kanbar-digital"
+        />
+        <meta
+          name="keywords"
+          content="Kanbar Digital, case study, business growth, innovative solutions, project objectives, client expectations, collaboration, technology solutions"
+        />
       </Helmet>
       <main className="px-[80px] max-lg:px-[40px] max-sm:px-[20px] ">
-        {/* <Tradejinihero /> */}
-        {/* <TradejiniDesc /> */}
-        {/* <TradejiniAbout /> */}
-        {/* <TradejiniDetails /> */}
-         {/* <Tradejiniquote /> */}
-        {/* <Collage /> */}
-        {/* <Blursection /> */}
+        <Hero />
+        <Desc />
+        <About />
+        <Details />
+        {/* <Quote /> */}
+        <Collage />
+        <Blursection />
         <CasestudyCarousal />
       </main>
       <Blog />
+      <Footer />
     </>
   );
 };
-export default KD;
+export default Kanbar;

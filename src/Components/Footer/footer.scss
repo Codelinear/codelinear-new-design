@@ -28,7 +28,7 @@
 .scroll-to-top-button {
   z-index: 99;
   position: absolute;
-  bottom: 600px;
+  top: 89.78px;
   right: 80px;
   color: #fff;
   border: none;
@@ -57,15 +57,14 @@
 .bottonn:hover .topto {
   text-decoration: underline;
 }
-@media (max-width: 1385px) {
+@media (max-width: 1280px) {
   .scroll-to-top-button {
-    bottom: 700px;
-    right: 40px;
+    top: 19px;
   }
 }
 @media (max-width: 1229px) {
   .scroll-to-top-button {
-    bottom: 750px;
+    bottom: 830px;
   }
   .lets-talk {
     font-size: 160px;
@@ -95,7 +94,7 @@
     width: 610px;
   }
   .scroll-to-top-button {
-    bottom: 600px;
+    bottom: 680px;
   }
 }
 @media (max-width: 768px) {
@@ -120,7 +119,8 @@
     color: black !important;
   }
   .scroll-to-top-button {
-    bottom: 765px;
+    bottom: 805px;
+    top: auto;
   }
   .bottom-line {
     width: 380px;

@@ -9,6 +9,9 @@ import Explore from "../production/Explore";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import gsap from "gsap";
+import axios from "axios";
+import Footer from "../../Footer/Footer";
 
 const VR = () => {
   const vr1 = useRef(null);
@@ -74,9 +77,21 @@ const VR = () => {
   }, []);
   return (
     <>
-    <Helmet>
-      <title>codelinear | AR/VR services</title>
-    </Helmet>
+      <Helmet>
+        <title>Services - AR/VR services</title>
+        <meta
+          name="description"
+          content="Discover Codelinear's AR/VR services, offering expertise in augmented reality (AR) and virtual reality (VR) development. Learn how we help businesses leverage AR and VR technologies to create immersive experiences, enhance training programs, and drive customer engagement."
+        />
+        <meta
+          name="keywords"
+          content="AR/VR services, augmented reality, virtual reality, AR development, VR development, immersive experiences, training programs, customer engagement, technology solutions"
+        />
+        <link
+          rel="canonical"
+          href="https://codelinear.com/services/ar-vr-services"
+        />
+      </Helmet>
       <div className="flex justify-between">
         <div className="left max-xl:w-full">
           <div className="section">
@@ -96,7 +111,7 @@ const VR = () => {
           <div id="vr4" className="section" ref={vr4}>
             <VR3 />
           </div>
-           <div id="vr5" className="section" ref={vr5}>
+          <div id="vr5" className="section" ref={vr5}>
             <VR6 />
           </div>
           <div id="vr6" className="section" ref={vr6}>
@@ -109,52 +124,50 @@ const VR = () => {
               <div
                 className={
                   activeSection === 0
-                    ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                    : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                    ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                    : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                 }
               >
                 Overview
               </div>
             </div>
-            <div className=" w-[222px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
-              <div className="w-[160px] overview h-[35px] p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
+            <div className=" w-[222px] widescreen:w-[300px] h-[463px] relative left-[0px] max-xl:h-[200px] max-xl:w-full">
+              <div className="w-[160px] overview h-[35px] widescreen:w-full p-2 top-0 absolute rounded-lg justify-center items-center gap-2 inline-flex max-xl:flex-wrap ">
                 <div
                   className={
                     activeSection >= 1
-                      ? "active text-black text-base font-normal font-['Graphik'] leading-tight"
-                      : " text-black text-base font-normal font-['Graphik'] leading-tight p-3"
+                      ? "active text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight"
+                      : " text-black text-base widescreen:text-[20px] widescreen:text-[24px] font-normal font-['Graphik'] leading-tight p-3"
                   }
                 >
-                  AR/VR services
+                  AR/VR Services{" "}
                 </div>
               </div>
-              <div className=" stick_list w-[197px] h-[412px] left-[55px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
+              <div className=" stick_list widescreen:w-full w-[197px] h-[412px] left-[55px] top-[51px] absolute flex-col justify-start items-start gap-[4px] inline-flex max-xl:flex-row max-xl:flex-wrap  max-xl:w-full  max-xl:h-[200px]  max-lg:relative max-lg:left-[0]">
                 <Link
                   to="#immersive-experiences"
                   onClick={scrollToMobileGameu}
-                  // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 2
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    Immersive Experiences
+                  <div className="w-[153.widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] 52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Immersive Experiences{" "}
                   </div>
                 </Link>
                 <Link
                   to="#ar-vr-app-development"
                   onClick={scrollTodesktopgame}
-                  // className="p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   className={
                     activeSection === 3
                       ? "active p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    AR/VR App Development
+                  <div className="widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] w-[153.52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR/VR App Development{" "}
                   </div>
                 </Link>
                 <Link
@@ -167,8 +180,8 @@ const VR = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    VR Product Prototyping
+                  <div className="widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] w-[153.52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    VR Product Prototyping{" "}
                   </div>
                 </Link>
                 <Link
@@ -181,8 +194,8 @@ const VR = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    Web AR/VR Integration
+                  <div className="wwidescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] -[153.52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    Web AR/VR Integration{" "}
                   </div>
                 </Link>
                 <Link
@@ -195,8 +208,8 @@ const VR = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    AR for E-commerce
+                  <div className="widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] w-[153.52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR for E-commerce{" "}
                   </div>
                 </Link>
                 <Link
@@ -209,8 +222,8 @@ const VR = () => {
                       : "active1 p-2 rounded-lg  justify-center items-center gap-2 inline-flex"
                   }
                 >
-                  <div className="w-[153.52px] opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
-                    AR navigation solutions
+                  <div className="widescreen:text-[20px] widestscreen:text-[24px] widescreen:leading-[120%] w-[153.52px] widescreen:w-full opacity-80 text-black text-[14px] font-normal font-['Graphik'] leading-[16.80px]">
+                    AR Navigation Solutions{" "}
                   </div>
                 </Link>
               </div>
@@ -219,6 +232,7 @@ const VR = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };

@@ -29,7 +29,14 @@ import img26 from "../assets/Desktop - 46 (5).jpg";
 import img27 from "../assets/Desktop - 46 (6).jpg";
 import img28 from "../assets/Desktop - 46 (7).jpg";
 import img29 from "../assets/kanbar.jpg";
+import img30 from "../assets/Group 17.png";
+import img31 from "../assets/shubham-dhage-3JjnYjHCK0c-unsplash 1.png";
+import img32 from "../assets/image 3 (1).png";
+import img33 from "../assets/niklas-jonasson-kEUqqARSlrw-unsplash 1 (1).png";
+import img34 from "../assets/shubham-dhage-RJEuYGR5tBg-unsplash 2 (1).png";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Casecards = () => {
   const scrollToTop = () => {
@@ -43,29 +50,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] w justify-end items-center inline-flex w-full h-full">
               <img className="w-full h-full" loading="lazy" src={img1} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   william abraham{" "}
                 </div>
-                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    william abraham
+                <div className="hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    william abraham{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Elevating luxurious men’s socks digital platform{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/william-abraham"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Clothing
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Clothing{" "}
                 </div>
               </div>
             </div>
@@ -74,33 +85,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img2} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   wear well{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     wear well{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Redefining the global presence of a leading garment exporter{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <Link
-                  to={"/wear-well"}
+                  to={"/case-studies/wear-well"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Retail and apparel
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Retail and apparel{" "}
                 </div>
               </div>
             </div>
@@ -109,29 +120,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img3} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   soch{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     soch{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   uplifting pioneers in ethnic wear{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/soch"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Retail and apparel
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Retail and apparel{" "}
                 </div>
               </div>
             </div>
@@ -140,33 +155,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img4} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   leaf & hive{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     leaf & hive{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Making an innovative beverage more accessible{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <Link
-                  to={"/leaf-&-hive"}
+                  to={"/case-studies/leaf-and-hive"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  food & beverages
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  food & beverages{" "}
                 </div>
               </div>
             </div>
@@ -175,29 +190,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img5} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-ful justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   sodashi{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     sodashi{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   helping Vegan, hand-crafted skincare go worldwide{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/sodashi"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Skincare
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Skincare{" "}
                 </div>
               </div>
             </div>
@@ -206,29 +225,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img6} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-ful justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   klub{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     klub{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Ensuring investments in startups are more secure{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/klub"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Fintech
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Fintech{" "}
                 </div>
               </div>
             </div>
@@ -237,29 +260,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img7} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   vuori{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     vuori{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   shifting the pace with Performance Apparel{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/vouri"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Retail and apparel
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Retail and apparel{" "}
                 </div>
               </div>
             </div>
@@ -268,33 +295,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img8} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   tradejini{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     tradejini{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Transforming the digital presence of a trading giant.{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <Link
-                  to={"/tradejini"}
+                  to={"/case-studies/tradejini"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Fintech
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Fintech{" "}
                 </div>
               </div>
             </div>
@@ -303,29 +330,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img9} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  lyra{" "}
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  lyra health{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    lyra{" "}
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    lyra health{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Driving business growth with revolutionary mental healthcare{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/lyra"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Healthcare
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Healthcare{" "}
                 </div>
               </div>
             </div>
@@ -334,29 +365,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img10} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   steelcase{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     steelcase{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Helping a thought leader in bettering workplaces{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/steelcase"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Furnishing
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Furnishing{" "}
                 </div>
               </div>
             </div>
@@ -365,29 +400,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img11} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   MoveWorks{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     MoveWorks{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Automating tasks so businesses can focus on what matters{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/moveworks"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Technology
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Technology{" "}
                 </div>
               </div>
             </div>
@@ -396,33 +435,35 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img12} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   SDU{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     SDU{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Revamping the digital presence of a firm of CAs{" "}
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Pioneering Financial Excellence in the Digital Frontier{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
                 <Link
-                  to={"/singhvi-dev-&-uni-llp-chartered-accountants"}
+                  to={
+                    "/case-studies/singhvi-dev-and-uni-llp-chartered-accountants"
+                  }
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Accounting and finance
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Accounting and finance{" "}
                 </div>
               </div>
             </div>
@@ -431,61 +472,69 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img13} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   Studio Neat{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     Studio Neat{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   empowering designers to make simple products that solve
                   problems{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/studio-neat"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Products
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Products{" "}
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max- max-lg:w-[45%] max-sm:w-full max-510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img14} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   Middle{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     Middle{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   easing the conversation between clients and brokers{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/middle"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  fintech
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  fintech{" "}
                 </div>
               </div>
             </div>
@@ -494,29 +543,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img15} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  Booking Factory
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Booking Factory{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    Booking Factory
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Booking Factory{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   bettering the experience of a hotel management system{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/booking-factory"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Technology
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Technology{" "}
                 </div>
               </div>
             </div>
@@ -525,30 +578,34 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img16} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  IMAPAC
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  IMAPAC{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    IMAPAC
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    IMAPAC{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Actionable insights to aid biopharma businesses in making big
                   decisions{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/imapac"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  biopharmaceutical
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  biopharmaceutical{" "}
                 </div>
               </div>
             </div>
@@ -557,68 +614,68 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img17} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  Klassen and Smith
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Klassen and Smith{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    Klassen and Smith
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Klassen and Smith{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   a modern solution to traditional craftsmanship{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-              <Link
-                  to={"/klassen-&-smith"}
+                <Link
+                  to={"/case-studies/klassen-and-smith"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Construction
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Construction{" "}
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510px]  justify-start items-start gap-[42px] inline-flex">
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max510px]  justify-start items-start gap-[42px] inline-flex">
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img18} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  VacayStay 406
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  VacayStay 406{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    VacayStay 406
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    VacayStay 406{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   enabling vacations in south Montana to the world{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-              <Link
-                  to={"/vacaystay-406"}
+                <Link
+                  to={"/case-studies/vacaystay-406"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Hospitality
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Hospitality{" "}
                 </div>
               </div>
             </div>
@@ -627,33 +684,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img19} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  Contrasted Marketing
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Contrasted Marketing{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    Contrasted Marketing
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Contrasted Marketing{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   shifting the presence of an upcoming marketing giant{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-              <Link
-                  to={"/contrasted-marketing"}
+                <Link
+                  to={"/case-studies/contrasted-marketing"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Marketing
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Marketing{" "}
                 </div>
               </div>
             </div>
@@ -662,33 +719,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " src={img20} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  Landmark
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Landmark{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    Landmark
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Landmark{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   Refining the way surveys are done{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-              <Link
-                  to={"/landmark"}
+                <Link
+                  to={"/case-studies/landmark"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  construction
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  construction{" "}
                 </div>
               </div>
             </div>
@@ -697,29 +754,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img22} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   convoy{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     convoy{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Supply Chain, logistics made seamless
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Supply Chain, logistics made seamless{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/convoy"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Supply chain, logistics
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Supply chain, logistics{" "}
                 </div>
               </div>
             </div>
@@ -728,29 +789,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img21} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   homes r us{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     homes r us{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  innovating a home-grown furnishing brand’s reach
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  innovating a home-grown furnishing brand’s reach{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/homes-r-us"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Retail
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Retail{" "}
                 </div>
               </div>
             </div>
@@ -759,29 +824,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img23} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  Course Hero
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Course Hero{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    Course Hero
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Course Hero{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  empowering students across the world through aI
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  empowering students across the world through aI{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/course-hero"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Ed-Tech
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Ed-Tech{" "}
                 </div>
               </div>
             </div>
@@ -790,29 +859,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img24} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  mica rino
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  mica rino{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    mica rino
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    mica rino{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  reimagining neighborhoods and residences
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  reimagining neighborhoods and residences{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/mica-rino"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  real estate
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  real estate{" "}
                 </div>
               </div>
             </div>
@@ -821,29 +894,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img25} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   lit up visuals{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     lit up visuals{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Visualizing architecture made easy
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Visualizing architecture made easy{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/lit-up-visuals"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Visualization-real estate
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Visualization-real estate{" "}
                 </div>
               </div>
             </div>
@@ -852,29 +929,33 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img26} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   kernel wealth{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     kernel wealth{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Redefining the way people manage finances
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Redefining the way people manage finances{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/kernel-wealth"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  fintech
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  fintech{" "}
                 </div>
               </div>
             </div>
@@ -883,30 +964,34 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img27} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   Wilderness Travel{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
                     Wilderness Travel{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
                   A Breath-taking digital presence for a Breath-taking tour
-                  agency
+                  agency{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/wilderness-travel"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  Travel
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Travel{" "}
                 </div>
               </div>
             </div>
@@ -915,9 +1000,9 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img28} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
                   hinge health{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
@@ -926,18 +1011,22 @@ const Casecards = () => {
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Revolutionary healthcare now at your fingertips
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Revolutionary healthcare now at your fingertips{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-                <div className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex">
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
-                    Coming Soon
+                <Link
+                  to={"/case-studies/hinge-health"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
                   </div>
-                </div>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                  healthcare
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  healthcare{" "}
                 </div>
               </div>
             </div>
@@ -946,33 +1035,208 @@ const Casecards = () => {
             <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
               <img className="w-full " loading="lazy" src={img29} alt="" />
             </div>
-            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex">
-              <div className="flex-col justify-start items-start gap-[12px] flex">
-                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize">
-                  kanbar digital
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  kanbar digital{" "}
                 </div>
                 <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
-                  <div className="opacity-60 text-black text-sm font-normal font-['Archivo'] uppercase leading-normal">
-                    kanbar digital
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    kanbar digital{" "}
                   </div>
                   <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
                 </div>
-                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize">
-                  Digital marketing strategies made simple
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Digital marketing strategies made simple{" "}
                 </div>
               </div>
               <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
-              <Link
-                  to={"/kanbar-digital"}
+                <Link
+                  to={"/case-studies/kanbar-digital"}
                   onClick={scrollToTop}
-                  className="px-4 py-2 max-sm:w-full rounded-[31px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
                 >
-                  <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                     View case study
                   </div>
                 </Link>
-                <div className="bg-[#F7F7F7] text-[#000000] p-[8px] rounded-[8px] text-sm font-normal font-['Archivo'] uppercase leading-normal">
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Marketing{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img30} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  IEA Training
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    IEA Training
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Empowering professionals for emerging industries.
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <Link
+                  to={"/case-studies/iea-training"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Ed-Tech{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img31} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Digital Toolkit
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Digital Toolkit
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Transforming through digital lens.
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <Link
+                  to={"/case-studies/digital-toolkit"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
                   Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img32} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  WoolAid
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    WoolAid
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Healing with nature: A sustainable solution.
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <Link
+                  to={"/case-studies/woolaid"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Healthcare
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img33} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  Altitude Charter
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    Altitude Charter
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Living luxury in the sky at: Altitude.
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <Link
+                  to={"/case-studies/altitude-charter"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Private Aviation
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col w-[30%] max-1xl:w-[40%] max-lg:w-[45%] max-sm:w-full max-lg:h-[510p  justify-start items-start gap-[42px] inline-flex">
+            <div className="pl-[0.14px] bg-neutral-100 justify-end items-center inline-flex  w-full max-sm:h-full">
+              <img className="w-full " loading="lazy" src={img34} alt="" />
+            </div>
+            <div className="flex-col justify-between w-full h-[176px] max-lg:h-[241px] max-sm:h-auto items-start flex widescreen:h-[200px] widestscreen:h-[250px]">
+              <div className="flex-col max-md:w-full justify-start items-start gap-[12px] flex">
+                <div className=" opacity-60 max-sm:hidden text-black text-xl font-normal font-['Graphik'] capitalize widescreen:text-[24px] widescreen:text-[24px]">
+                  LocalSEOguys
+                </div>
+                <div className="w-[521.42px] hidden max-sm:flex justify-start items-center gap-[13.42px] inline-flex max-md:w-full">
+                  <div className="opacity-60 text-black text-base font-normal font-['Archivo'] uppercase leading-normal">
+                    LocalSEOguys
+                  </div>
+                  <div className="grow shrink basis-0 h-[0px] opacity-60 border border-black"></div>
+                </div>
+                <div className="w-full letter-spacing-4 text-black text-[24px] leading-[120%] font-normal font-['Graphik'] capitalize widescreen:text-[30px] widestscreen:text-[40px]">
+                  Building brands in digital age: SEO experts
+                </div>
+              </div>
+              <div className="flex max-sm:mt-[12px] justify-between w-[100%] items-center max-lg:flex-col-reverse max-sm:gap-[24px] max-lg:h-[130px] max-sm:h-auto max-lg:items-start">
+                <Link
+                  to={"/case-studies/localseoguys"}
+                  onClick={scrollToTop}
+                  className="px-4 py-2 max-sm:w-full rounded-[31px] widescreen:px-[16px] widescreen:rounded-[50px] widestscreen:rounded-[80px] hover:bg-yellow-400 transition-all  hover:border-yellow-400 border border-black justify-center items-center gap-2 inline-flex"
+                >
+                  <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                    View case study
+                  </div>
+                </Link>
+                <div className="bg-[#F2F2F2] capitalize text-[#000000] p-[8px] rounded-[8px] text-base font-normal font-['Archivo'] leading-normal widescreen:text-[20px] widescreen:text-[24px]">
+                  Marketing{" "}
                 </div>
               </div>
             </div>

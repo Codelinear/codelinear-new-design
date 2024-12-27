@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import axios from "axios";
 import {
   Autoplay,
   Pagination,
@@ -67,16 +68,16 @@ const Homeanimate = () => {
                     </div>
                     <div className="flex flex-col w-[100%]  justify-between p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
                       <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
-                        <div className="text-[#FFCD05] text-base opacity-80 font-normal font-['Graphik']">
-                          IKEA
+                        <div className="text-[#FFCD05] text-base opacity-80 font-normal font-['Graphik'] widescreen:text-[20px] widest-screen:text-[24px]">
+                          IKEA{" "}
                         </div>
                         <div className="w-[205.63px] text-[#FFCD05] text-[20px] leading-[120%] font-normal font-['Graphik']">
-                          Changing the way people shop.
+                          Changing the way people shop.{" "}
                         </div>
                       </div>
                       <Link onClick={scrollToTop} to={"/case-studies"}>
                         <button className="px-[16px] py-[8px] left-[353px] top-[170.50px] max-sm:w-full rounded-[30px] border border-[#FFCD05] justify-center items-center gap-2 inline-flex hover:bg-[#FFCD05]  transition-all  hover:border-[#FFCD05]  text-[#FFCD05] hover:text-black">
-                          <div className=" text-base font-normal font-['Graphik']">
+                          <div className=" widescreen:text-[24px] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
                         </button>
@@ -97,16 +98,16 @@ const Homeanimate = () => {
                     <div className="flex flex-col w-[100%]  justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
                       <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] inline-flex max-sm:gap-[12px] ">
                         <div className="text-black text-base font-normal opacity-80 font-['Graphik']">
-                          COWBOY
+                          COWBOY{" "}
                         </div>
                         <div className="w-[205.63px] text-black  text-[20px] leading-[120%] font-normal font-['Graphik']">
                           Helping the world switch to sustainable energy-
-                          seamlessly.
+                          seamlessly{" "}
                         </div>
                       </div>
                       <Link onClick={scrollToTop} to={"/case-studies"}>
                         <button className="px-[16px] py-[8px] max-sm:w-full left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                          <div className="text- text-base font-normal font-['Graphik']">
+                          <div className="text- widescreen:text-[24px] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
                         </button>
@@ -117,22 +118,27 @@ const Homeanimate = () => {
                 <SwiperSlide>
                   <div className="w-full h-auto left-[730px] top-[469px]  bg-[#D1EBFE] flex max-md:w-full  max-sm:flex max-sm:flex-wrap max-sm:h-auto">
                     <div className="w-full left-0 top-0  bg-neutral-100 justify-center items-center inline-flex max-sm:w-full">
-                      <img className="w-full h-auto" src={img3} alt="" />
+                      <img
+                        className="w-full h-auto"
+                        loading="lazy"
+                        src={img3}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col w-[100%]  justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
-                          <div className="text-[#EF5019] text-base opacity-80 font-normal font-['Graphik']">
-                            SEA
+                          <div className="text-[#EF5019] text-base opacity-80 font-normal font-['Graphik'] widescreen:text-[20px] widest-screen:text-[24px]">
+                            SEA{" "}
                           </div>
                           <div className="w-[205.63px] text-[#EF5019]  text-[20px] leading-[120%] font-normal font-['Graphik']">
-                            A Disruptive marketing solution
+                            A Disruptive marketing solution{" "}
                           </div>
                         </div>
                       </div>
                       <Link onClick={scrollToTop} to={"/case-studies"}>
                         <button className="px-[16px] py-[8px] left-[353px] top-[170.50px] max-sm:w-full rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                          <div className="textyellow-400 text-base font-normal font-['Graphik']">
+                          <div className="textyellow-400 widescreen:text-[24px] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
                         </button>
@@ -153,8 +159,8 @@ const Homeanimate = () => {
                     <div className="flex flex-col w-[100%] justify-between  p-[37.5px] pb-[44.5px] max-sm:h-[274px] max-sm:w-full">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
-                          <div className="text-[#06212B] text-base opacity-80 font-normal font-['Graphik']">
-                            MANGO
+                          <div className="text-[#06212B] text-base opacity-80 font-normal font-['Graphik'] widescreen:text-[20px] widest-screen:text-[24px]">
+                            mango{" "}
                           </div>
                           <div className="w-[205.63px] text-[#06212B]  text-[20px] leading-[120%] font-normal font-['Graphik']">
                             Expanding the global reach of a clothing giant.{" "}
@@ -163,7 +169,7 @@ const Homeanimate = () => {
                       </div>
                       <Link onClick={scrollToTop} to={"/case-studies"}>
                         <button className="px-[16px] max-sm:w-full py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-black justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                          <div className="textyellow-400 text-base font-normal font-['Graphik']">
+                          <div className="textyellow-400 widescreen:text-[24px] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
                         </button>
@@ -184,8 +190,8 @@ const Homeanimate = () => {
                     <div className="flex w-[100%] flex-col max-sm:w-full  justify-between p-[37.5px] pb-[44.5px] max-sm:h-[274px]">
                       <div>
                         <div className="left-[352.68px] top-[37.50px]  flex-col justify-start items-start gap-[18px] max-sm:gap-[12px] inline-flex">
-                          <div className="text-[#15357A] text-base opacity-80 font-normal font-['Graphik']">
-                            DEEL
+                          <div className="text-[#15357A] text-base opacity-80 font-normal font-['Graphik'] widescreen:text-[20px] widest-screen:text-[24px]">
+                            deel{" "}
                           </div>
                           <div className="w-[205.63px] text-[#15357A]  text-[20px] leading-[120%] font-normal font-['Graphik']">
                             Making recruiting accessible worldwide{" "}
@@ -194,7 +200,7 @@ const Homeanimate = () => {
                       </div>
                       <Link onClick={scrollToTop} to={"/case-studies"}>
                         <button className="px-[16px] max-sm:w-full py-[8px] left-[353px] top-[170.50px]  rounded-[30px] border border-[#15357A] justify-center items-center gap-2 inline-flex hover:bg-yellow-400  transition-all  hover:border-yellow-400  text-black hover:text-black">
-                          <div className="text-[#15357A] text-base font-normal font-['Graphik']">
+                          <div className="text-[#15357A] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                             View Case study
                           </div>
                         </button>
@@ -207,7 +213,7 @@ const Homeanimate = () => {
           </div>
         </>
       ) : (
-        <div className="home-container">
+        <div className="home-container max-lg:hidden">
           <Swiper
             navigation={true}
             allowTouchMove={false}
@@ -226,30 +232,30 @@ const Homeanimate = () => {
                     alt=""
                   />
                 </div>
-                <div className="h-[515.38px] max-1xl:h-[430px] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
+                <div className="h-[515.38px] max-1xl:h-[430px] widescreen:h-[700px] widestscreen:h-[920px] widescreen:w-[40%] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
                   <div className="w-full flex-col justify-between items-start gap-20 max-1xl:gap-[60px] max1lg:gap-[40px] max-3lg:gap-[20px] flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-[#FFCD05] text-xl font-normal font-['Graphik']">
-                        IKEA
+                      <div className="opacity-80 text-[#FFCD05] text-xl font-normal font-['Graphik'] widescreen:text-[24px] widescreen:text-[24px]">
+                        IKEA{" "}
                       </div>
-                      <div className="h-[115.2px] w-[414px] text-[#FFCD05] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
-                        Changing the way people shop.
+                      <div className="h-[115.2px] w-[414px] text-[#FFCD05] text-[32px] font-normal font-['Graphik'] leading-[38.40px] widescreen:text-[40px] widestscreen:text-[50px] widescreen:leading-[120%] widestscreen:w-[100%]">
+                        Changing the way people shop.{" "}
                       </div>
                     </div>
                     <Link onClick={scrollToTop} to={"/case-studies"}>
-                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] widescreen:px-[35px] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                        <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[24px]">
                           View Case study
                         </div>
                       </div>
                     </Link>
                   </div>
-                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex">
-                    <div className="w-[100%] justify-between items-center inline-flex">
-                      <div className="text-[#FFCD05] text-base font-normal font-['Graphik']">
+                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex widescreen:relative">
+                    <div className="w-[100%] justify-between items-center inline-flex widescreen:relative">
+                      <div className="text-[#FFCD05] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                         01 / 05
                       </div>
-                      <div className="justify-start items-start gap-[15px] flex"></div>
+                      <div className="justify-start widescreen:scale-[1.5] items-start gap-[15px] flex"></div>
                     </div>
                     <div className="w-full h-[10.38px] rounded-[9px] relative bg-[#F5F5F5]">
                       <div className="w-[20%] h-[10.38px] rounded-[9px] relative bg-[#FFCD05]"></div>
@@ -268,28 +274,28 @@ const Homeanimate = () => {
                     alt=""
                   />
                 </div>
-                <div className="h-[515.38px] max-1xl:h-[430px] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
+                <div className="h-[515.38px] max-1xl:h-[430px] widescreen:h-[700px] widestscreen:h-[920px] widescreen:w-[40%] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
                   <div className="w-full flex-col justify-between items-start gap-20 max-1xl:gap-[60px] max1lg:gap-[40px] max-3lg:gap-[20px] flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-[#000000] text-xl font-normal font-['Graphik']">
-                        COWBOY
+                      <div className="opacity-80 text-[#000000] text-xl font-normal font-['Graphik'] widescreen:text-[24px] widescreen:text-[24px]">
+                        COWBOY{" "}
                       </div>
-                      <div className="h-[115.2px] w-[414px] text-[#000000] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
+                      <div className="h-[115.2px] w-[414px] text-[#000000] text-[32px] font-normal font-['Graphik'] leading-[38.40px] widescreen:text-[40px] widestscreen:text-[50px] widescreen:leading-[120%] widestscreen:w-[100%]">
                         Helping the world switch to sustainable energy-
-                        seamlessly.
+                        seamlessly{" "}
                       </div>
                     </div>
                     <Link onClick={scrollToTop} to={"/case-studies"}>
-                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] widescreen:px-[35px] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                        <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[24px]">
                           View Case study
                         </div>
                       </div>
                     </Link>
                   </div>
-                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex">
-                    <div className="w-[100%] justify-between items-center inline-flex">
-                      <div className="text-[#000000] text-base font-normal font-['Graphik']">
+                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex widescreen:relative">
+                    <div className="w-[100%] justify-between items-center inline-flex widescreen:relative">
+                      <div className="text-[#000000] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                         02 / 05
                       </div>
                       <div className="justify-start items-start gap-[15px] flex"></div>
@@ -311,27 +317,27 @@ const Homeanimate = () => {
                     alt=""
                   />
                 </div>
-                <div className="h-[515.38px] max-1xl:h-[430px] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
+                <div className="h-[515.38px] max-1xl:h-[430px] widescreen:h-[700px] widestscreen:h-[920px] widescreen:w-[40%] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
                   <div className="w-full flex-col justify-between items-start gap-20 max-1xl:gap-[60px] max1lg:gap-[40px] max-3lg:gap-[20px] flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-[#EF5019] text-xl font-normal font-['Graphik']">
-                        SEA
+                      <div className="opacity-80 text-[#EF5019] text-xl font-normal font-['Graphik'] widescreen:text-[24px] widescreen:text-[24px]">
+                        SEA{" "}
                       </div>
-                      <div className="h-[115.2px] w-[414px] text-[#EF5019] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
-                        A Disruptive marketing solution
+                      <div className="h-[115.2px] w-[414px] text-[#EF5019] text-[32px] font-normal font-['Graphik'] leading-[38.40px] widescreen:text-[40px] widestscreen:text-[50px] widescreen:leading-[120%] widestscreen:w-[100%]">
+                        A Disruptive marketing solution{" "}
                       </div>
                     </div>
                     <Link onClick={scrollToTop} to={"/case-studies"}>
-                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] widescreen:px-[35px] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                        <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[24px]">
                           View Case study
                         </div>
                       </div>
                     </Link>
                   </div>
-                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex">
-                    <div className="w-[100%] justify-between items-center inline-flex">
-                      <div className="text-[#EF5019] text-base font-normal font-['Graphik']">
+                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex widescreen:relative">
+                    <div className="w-[100%] justify-between items-center inline-flex widescreen:relative">
+                      <div className="text-[#EF5019] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                         03 / 05
                       </div>
                       <div className="justify-start items-start gap-[15px] flex"></div>
@@ -353,27 +359,27 @@ const Homeanimate = () => {
                     alt=""
                   />
                 </div>
-                <div className="h-[515.38px] max-1xl:h-[430px] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
+                <div className="h-[515.38px] max-1xl:h-[430px] widescreen:h-[700px] widestscreen:h-[920px] widescreen:w-[40%] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
                   <div className="w-full flex-col justify-between items-start gap-20 max-1xl:gap-[60px] max1lg:gap-[40px] max-3lg:gap-[20px] flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-[#06212B] text-xl font-normal font-['Graphik']">
-                        MANGO
+                      <div className="opacity-80 text-[#06212B] text-xl font-normal font-['Graphik'] widescreen:text-[24px] widescreen:text-[24px]">
+                        mango{" "}
                       </div>
-                      <div className="h-[115.2px] w-[414px] text-[#06212B] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
-                        Expanding the global reach of a clothing giant.
+                      <div className="h-[115.2px] w-[414px] text-[#06212B] text-[32px] font-normal font-['Graphik'] leading-[38.40px] widescreen:text-[40px] widestscreen:text-[50px] widescreen:leading-[120%] widestscreen:w-[100%]">
+                        Expanding the global reach of a clothing giant.{" "}
                       </div>
                     </div>
                     <Link onClick={scrollToTop} to={"/case-studies"}>
-                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] widescreen:px-[35px] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                        <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[24px]">
                           View Case study
                         </div>
                       </div>
                     </Link>
                   </div>
-                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex">
-                    <div className="w-[100%] justify-between items-center inline-flex">
-                      <div className="text-[#06212B] text-base font-normal font-['Graphik']">
+                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex widescreen:relative">
+                    <div className="w-[100%] justify-between items-center inline-flex widescreen:relative">
+                      <div className="text-[#06212B] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                         04 / 05
                       </div>
                       <div className="justify-start items-start gap-[15px] flex"></div>
@@ -395,27 +401,27 @@ const Homeanimate = () => {
                     alt=""
                   />
                 </div>
-                <div className="h-[515.38px] max-1xl:h-[430px] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
+                <div className="h-[515.38px] max-1xl:h-[430px] widescreen:h-[700px] widestscreen:h-[920px] widescreen:w-[40%] max-1lg:h-[380px] max-3lg:h-[350px] flex-col justify-between items-start inline-flex">
                   <div className="w-full flex-col justify-between items-start gap-20 max-1xl:gap-[60px] max1lg:gap-[40px] max-3lg:gap-[20px] flex">
                     <div className="flex-col justify-start items-start gap-8 flex">
-                      <div className="opacity-80 text-[#15357A] text-xl font-normal font-['Graphik']">
-                        DEEL
+                      <div className="opacity-80 text-[#15357A] text-xl font-normal font-['Graphik'] widescreen:text-[24px] widescreen:text-[24px]">
+                        deel{" "}
                       </div>
-                      <div className="h-[115.2px] w-[414px] text-[#15357A] text-[32px] font-normal font-['Graphik'] leading-[38.40px]">
+                      <div className="h-[115.2px] w-[414px] text-[#15357A] text-[32px] font-normal font-['Graphik'] leading-[38.40px] widescreen:text-[40px] widestscreen:text-[50px] widescreen:leading-[120%] widestscreen:w-[100%]">
                         Making recruiting accessible worldwide{" "}
                       </div>
                     </div>
                     <Link onClick={scrollToTop} to={"/case-studies"}>
-                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
-                        <div className="text-black text-base font-normal font-['Graphik'] capitalize leading-normal">
+                      <div className="px-8 absolue top-[326px] hover:bg-[#FFCD05] widescreen:px-[35px] transition-all  hover:border-[#FFCD05] py-4 bg-white rounded-[31px] justify-center items-center gap-2 inline-flex">
+                        <div className="text-black text-base font-normal widescreen:text-[20px] widestscreen:text-[24px] font-['Graphik'] capitalize leading-normal widescreen:text-[24px]">
                           View Case study
                         </div>
                       </div>
                     </Link>
                   </div>
-                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex">
-                    <div className="w-[100%] justify-between items-center inline-flex">
-                      <div className="text-[#15357A] text-base font-normal font-['Graphik']">
+                  <div className="flex-col w-[100%]  justify-between items-start gap-[38px] flex widescreen:relative">
+                    <div className="w-[100%] justify-between items-center inline-flex widescreen:relative">
+                      <div className="text-[#15357A] widescreen:text-[24px] text-base font-normal font-['Graphik']">
                         05 / 05
                       </div>
                       <div className="justify-start items-start gap-[15px] flex"></div>

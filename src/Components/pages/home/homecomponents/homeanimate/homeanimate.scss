@@ -37,6 +37,15 @@
     background-image: url("./arrow.svg");
     background-repeat: no-repeat;
   }
+  .swiper-pagination{
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    text-align: right;
+    width: calc(100% - 189px);
+    font-family: graphik;
+    font-size: 16px;
+  }
 }
 .home-container {
   .swiper-pagination-progressbar {
@@ -97,7 +106,23 @@
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 2316px) {
+@media (min-width: 1900px) {
+  .home-container {
+    .swiper-button-prev {
+      top: auto;
+      bottom:calc(13%);
+      left:auto;
+      right: 12%;
+    }
+    .swiper-button-next {
+      top: auto;
+      bottom:calc(13%);
+      right: 6%;
+      left:auto;
+    }
+  }
+}
+@media (max-width: 1900px) {
   .home-container {
     .swiper-button-prev {
       top: calc(420px + 25%);
@@ -107,7 +132,7 @@
     }
   }
 }
-@media (max-width: 1860px) {
+  @media (max-width: 1860px) {
   .home-container {
     .swiper-button-prev {
       top: calc(360px + 25%);
@@ -147,13 +172,16 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   .container-casestudy {
     .swiper-button-prev {
-      top: calc(100% - 94px);
+      display: none;
     }
     .swiper-button-next {
-      top: calc(100% - 94px);
+      display: none;
+    }
+    .swiper-pagination{
+      display: none;
     }
   }
 }
